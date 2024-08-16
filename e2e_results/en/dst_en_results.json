@@ -1,0 +1,602 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello! I'm from out-of-town and here to visit Suzhou. Can you recommend a fun place? <endofhistory>",
+    "output": "null",
+    "prediction": "The type \"fun place\" does not match any of the normalized values listed for the domain \"attraction\". The closest normalized value would depend on the specific nature of the \"fun place\". If it is an amusement park, the normalized value would be \"amusement park\". If it is a general term for a place where people can have fun without specifying the type, it cannot be normalized to any of the given options without additional context. Therefore, the belief state remains unchanged:"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> AGENT_ACTS: ( attraction ) greeting , request area USER: Kunshan. A good place to travel with friends, it's OK if it's a bit more expensive. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" travel with friends \"",
+    "prediction": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: null AGENT_ACTS: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" USER: What's special about it? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" travel with friends \"",
+    "prediction": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" AGENT_ACTS: ( attraction ) inform features equal_to \" Zhouzhuang Town is famous for its many small bridges, winding waterways, the Twin Bridges, traditional Chinese riverboats, and the historical figure Shen Wansan. \" USER: That's great. What's the address? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" travel with friends \"",
+    "prediction": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" Zhouzhuang Town is famous for its many small bridges, winding waterways, the Twin Bridges, traditional Chinese riverboats, and the historical figure Shen Wansan. \" AGENT_ACTS: ( attraction ) inform address equal_to \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" USER: Can I get there directly by subway? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" travel with friends \"",
+    "prediction": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" false \" USER: Well, thanks for your recommendation. Goodbye! <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" travel with friends \"",
+    "prediction": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm coming to Suzhou with my friends on business, and I'd like to visit Jinji Lake Scenic Area. Can you tell me more about what's special about it? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \"",
+    "prediction": "( attraction ) name equal_to \" Jinji Lake Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Jinji Lake Scenic Area \" <endofstate> <history> AGENT_ACTS: ( attraction ) inform features equal_to \" Jinji Lake Scenic Area offers a view of tall buildings like the Gate of the Orient, a Ferris wheel, night cruises, and showcases the modern side of Suzhou. \" USER: It sounds beautiful. I can't wait to go there. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \"",
+    "prediction": "( attraction ) name equal_to \" Jinji Lake Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Jinji Lake Scenic Area \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" Jinji Lake Scenic Area offers a view of tall buildings like the Gate of the Orient, a Ferris wheel, night cruises, and showcases the modern side of Suzhou. \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" all day \" , inform ticket_price equal_to \" free \" USER: What's the phone number? I want to call to book tickets. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \"",
+    "prediction": "( attraction ) name equal_to \" Jinji Lake Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Jinji Lake Scenic Area \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" all day \" , inform ticket_price equal_to \" free \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 400-7558558 \" USER: OK. What are the opening hours of the attraction? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \"",
+    "prediction": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 400-7558558 \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" all day \" USER: Open all day, great. Then I can go anytime. That's convenient. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \"",
+    "prediction": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" all day \" AGENT_ACTS: ( general ) affirm USER: No, thanks. Goodbye. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \"",
+    "prediction": "( attraction ) name equal_to \" Jinji Lake Scenic Area \" , opening_hours equal_to \" all day \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm coming to Suzhou with my friends on business, and I'd like to visit Lingyan Mountain Scenic Area. Can you help me find the address of this place? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , score equal_to \" 4.3 \" , ticket_price equal_to \" free \"",
+    "prediction": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" <endofstate> <history> AGENT_ACTS: ( attraction ) inform address equal_to \" at the end of Shantang Street, Mudu Ancient Town, Wuzhong District, Suzhou City \" USER: What's its rating? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , score equal_to \" 4.3 \" , ticket_price equal_to \" free \"",
+    "prediction": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" at the end of Shantang Street, Mudu Ancient Town, Wuzhong District, Suzhou City \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.3 \" USER: 4.3, that's a bit low, haha. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , score equal_to \" 4.3 \" , ticket_price equal_to \" free \"",
+    "prediction": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.3 \" AGENT_ACTS: ( attraction ) inform features equal_to \" It is a good place to climb the mountain, overlook the scenery of Suzhou City, worship Buddha, and pray for blessings in Lingyan Mountain Temple. \" USER: You're right. I'll go try it. Could you tell me the price of the ticket? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , score equal_to \" 4.3 \" , ticket_price equal_to \" free \"",
+    "prediction": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" It is a good place to climb the mountain, overlook the scenery of Suzhou City, worship Buddha, and pray for blessings in Lingyan Mountain Temple. \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" free \" USER: Awesome. I'm even happier now that I know it's free. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , score equal_to \" 4.3 \" , ticket_price equal_to \" free \"",
+    "prediction": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , ticket_price equal_to \" free \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , ticket_price equal_to \" free \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" free \" AGENT_ACTS: ( general ) acknowledge USER: No, thank you and bye. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , score equal_to \" 4.3 \" , the_most_suitable_people equal_to \" friends \" , ticket_price equal_to \" free \"",
+    "prediction": "( attraction ) name equal_to \" Lingyan Mountain Scenic Area \" , ticket_price equal_to \" free \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I live in Suzhou, but I don't go out much. My friend is coming to Suzhou to visit me and I'm thinking about taking him to a university campus. Do you have any recommendations? <endofhistory>",
+    "output": "( attraction ) the_most_suitable_people equal_to \" friend \" , type equal_to \" campus \"",
+    "prediction": "( attraction ) type equal_to \" campus \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" campus \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Soochow University \" USER: I'd like a cheap one. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" campus \"",
+    "prediction": "( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Soochow University \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" free \" USER: OK, is there a subway station near the university? I want to go there by subway. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" cheap \" , name equal_to \" Soochow University \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" campus \"",
+    "prediction": "( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \" , metro_station equal_to \" true \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" free \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" true \" USER: That's great. What are the opening hours of the university? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" cheap \" , name equal_to \" Soochow University \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" campus \"",
+    "prediction": "( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \" , metro_station equal_to \" true \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" true \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" all day \" USER: That's good, that makes fitting it in easier. What's special about the university? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" cheap \" , name equal_to \" Soochow University \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" campus \"",
+    "prediction": "( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \" , metro_station equal_to \" true \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" all day \" AGENT_ACTS: ( attraction ) inform features equal_to \" Soochow University, part of the national '211 Project', has a rich history with its predecessor founded in 1900, located in the old town of Suzhou. \" USER: I see. Thank you so much for your patience. Bye. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" cheap \" , name equal_to \" Soochow University \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" campus \"",
+    "prediction": "( attraction ) type equal_to \" campus \" , consumption equal_to \" cheap \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm traveling in Suzhou and I'm now in Wuzhong District. Can you recommend to me some interesting attractions? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Tianping Mountain Scenic Area \" USER: I'm going with a few friends. Please help me find a suitable attraction. I don't want the price to be too high, something mid-priced is fine. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , the_most_suitable_people equal_to \" friends \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Tianping Mountain Scenic Area \" AGENT_ACTS: ( attraction ) inform name equal_to \" Tianping Mountain Scenic Area \" USER: Well, I heard from my friends that Tianping Mountain Scenic Area is good. How much is a ticket? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Tianping Mountain Scenic Area \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" , name equal_to \" Tianping Mountain Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" , name equal_to \" Tianping Mountain Scenic Area \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform name equal_to \" Tianping Mountain Scenic Area \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 30 yuan \" USER: Yes, the price is acceptable. What's the address of the attraction? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Tianping Mountain Scenic Area \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" , name equal_to \" Tianping Mountain Scenic Area \" , ticket_price equal_to \" 30 yuan \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" , name equal_to \" Tianping Mountain Scenic Area \" , ticket_price equal_to \" 30 yuan \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 30 yuan \" AGENT_ACTS: ( attraction ) inform address equal_to \" Lingtian Road, Wuzhong District, Suzhou City \" USER: OK. What's the phone number of the attraction? I want to call to ask some questions before I go. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Tianping Mountain Scenic Area \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" , name equal_to \" Tianping Mountain Scenic Area \" , ticket_price equal_to \" 30 yuan \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" , name equal_to \" Tianping Mountain Scenic Area \" , ticket_price equal_to \" 30 yuan \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" Lingtian Road, Wuzhong District, Suzhou City \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-66387422 \" USER: OK, got it. Thanks for your patience. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Tianping Mountain Scenic Area \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" , name equal_to \" Tianping Mountain Scenic Area \" , ticket_price equal_to \" 30 yuan \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm from out-of-town and I'm here visiting Suzhou. Can you recommend a place I could go with friends in Wujiang District? Something in the higher price range. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Tongli Town \" USER: OK, what's its rating? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Tongli Town \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: Good, how much is the ticket? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 100 yuan \" USER: Can I get there by subway? That would be more convenient. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 100 yuan \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" false \" USER: Well, I see. Thanks, bye. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Wujiang District \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I want to visit a landscape scenic spot in Suzhou with my friends. Can you recommend a mid-priced attraction? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Tianping Mountain Scenic Area \" USER: How much is the ticket? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Tianping Mountain Scenic Area \" , the_most_suitable_people equal_to \" friends \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Tianping Mountain Scenic Area \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 30 yuan \" USER: What's special about this attraction? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Tianping Mountain Scenic Area \" , the_most_suitable_people equal_to \" friends \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 30 yuan \" AGENT_ACTS: ( attraction ) inform features equal_to \" It's the burial place of the ancestors of Fan Zhongyan and offers rocky road climbing. In mid-to-late November, there are beautiful red maple trees to enjoy. \" USER: And last of all, what is the phone number of the attraction? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Tianping Mountain Scenic Area \" , the_most_suitable_people equal_to \" friends \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" It's the burial place of the ancestors of Fan Zhongyan and offers rocky road climbing. In mid-to-late November, there are beautiful red maple trees to enjoy. \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-66387422 \" USER: Got it. Thanks, bye. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Tianping Mountain Scenic Area \" , the_most_suitable_people equal_to \" friends \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm in Suzhou on business with my besties. We want to visit Taihu Lake Wetland Park on the weekend. Could you please give me its address? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Taihu Lake Wetland Park \"",
+    "prediction": "( attraction ) name equal_to \" Taihu Lake Wetland Park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Taihu Lake Wetland Park \" <endofstate> <history> AGENT_ACTS: ( attraction ) inform address equal_to \" No. 1, Town Lake Embroidery Street, Suzhou New District, Suzhou City \" USER: What are the opening hours? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Taihu Lake Wetland Park \"",
+    "prediction": "( attraction ) name equal_to \" Taihu Lake Wetland Park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Taihu Lake Wetland Park \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" No. 1, Town Lake Embroidery Street, Suzhou New District, Suzhou City \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 09:00-16:30 \" USER: I see. And could you tell me its phone number? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Taihu Lake Wetland Park \"",
+    "prediction": "( attraction ) name equal_to \" Taihu Lake Wetland Park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Taihu Lake Wetland Park \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 09:00-16:30 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-66918088 \" USER: OK, got it. Thank you. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Taihu Lake Wetland Park \" , the_most_suitable_people equal_to \" besties \"",
+    "prediction": "( attraction ) name equal_to \" Taihu Lake Wetland Park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Taihu Lake Wetland Park \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-66918088 \" AGENT_ACTS: ( general ) you_are_welcome USER: No, that's all. Goodbye. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Taihu Lake Wetland Park \" , the_most_suitable_people equal_to \" besties \"",
+    "prediction": "( attraction ) name equal_to \" Taihu Lake Wetland Park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm traveling to Suzhou with my girlfriend and we want to visit Wuzhong District first. Could you recommend a landscape scenic spot with a subway station nearby? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" with a subway station nearby \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Stone Lake \" USER: Great, could you tell me the address? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" with a subway station nearby \" , name equal_to \" Stone Lake \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Stone Lake \" AGENT_ACTS: ( attraction ) inform address equal_to \" No. 333, Youxin Road, Wuzhong District, Suzhou City. \" USER: OK, what's the phone number for the attraction? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" with a subway station nearby \" , name equal_to \" Stone Lake \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" No. 333, Youxin Road, Wuzhong District, Suzhou City. \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65646668 \" USER: We also want to know what's special about the attraction. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" with a subway station nearby \" , name equal_to \" Stone Lake \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-65646668 \" AGENT_ACTS: ( attraction ) inform features equal_to \" Stone Lake is famous for its wonderful scenery, endless rows of mountains and ridges, and is a great place to appreciate the mountain and water culture of Suzhou. \" USER: Got it. I can't wait to go and enjoy the natural scenery. Thank you. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" with a subway station nearby \" , name equal_to \" Stone Lake \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" Stone Lake is famous for its wonderful scenery, endless rows of mountains and ridges, and is a great place to appreciate the mountain and water culture of Suzhou. \" AGENT_ACTS: ( general ) you_are_welcome USER: Thank you, goodbye! <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" with a subway station nearby \" , name equal_to \" Stone Lake \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \" , name equal_to \" Stone Lake \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm visiting Suzhou from out of town. Could you recommend a family-friendly place in Wuzhong District? I'd prefer a mid-priced one. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , the_most_suitable_people equal_to \" family-friendly \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Dongting Dongshan \" USER: Can I get there directly by subway? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Dongting Dongshan \" , the_most_suitable_people equal_to \" family-friendly \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Dongting Dongshan \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" false \" USER: What's the phone number? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Dongting Dongshan \" , the_most_suitable_people equal_to \" family-friendly \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" false \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-66399231 \" USER: And where exactly is it? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Dongting Dongshan \" , the_most_suitable_people equal_to \" family-friendly \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-66399231 \" AGENT_ACTS: ( attraction ) inform address equal_to \" Near Moli Road, Wuzhong District, Suzhou City \" USER: Thank you. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Dongting Dongshan \" , the_most_suitable_people equal_to \" family-friendly \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" Near Moli Road, Wuzhong District, Suzhou City \" AGENT_ACTS: ( general ) you_are_welcome USER: Goodbye. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , consumption equal_to \" mid \" , name equal_to \" Dongting Dongshan \" , the_most_suitable_people equal_to \" family-friendly \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , the_most_suitable_people equal_to \" family-friendly \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello! I don't like going out very much, but my friend is coming to Suzhou to visit me. Could you recommend an amusement park? <endofhistory>",
+    "output": "( attraction ) type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Suzhou Amusement Land Forest and Water World \" USER: Something in the mid-price range. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Suzhou Amusement Land Forest and Water World \" AGENT_ACTS: ( attraction ) recommend name equal_to \" Suzhou Aquarium \" USER: Could you tell me the phone number for the attraction? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Suzhou Aquarium \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Suzhou Aquarium \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-69381000 \" USER: What about the opening hours? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Suzhou Aquarium \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-69381000 \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" USER: What's special about it? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Suzhou Aquarium \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" AGENT_ACTS: ( attraction ) inform features equal_to \" enjoy a variety of marine creatures, watch wonderful animal performances, and experience the colorful ocean world \" USER: Well, that's great. Thanks! Goodbye! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Suzhou Aquarium \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, can you recommend a cheaper place in Gusu District where I could go with friends? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheaper \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Suzhou Museum \" USER: What are the opening hours? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheaper \" , name equal_to \" the Suzhou Museum \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Suzhou Museum \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" USER: Can I get there by subway? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheaper \" , name equal_to \" the Suzhou Museum \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" false \" USER: How much is the ticket? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheaper \" , name equal_to \" the Suzhou Museum \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" false \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" free \" USER: Thank you so much for your help, bye! <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheaper \" , name equal_to \" the Suzhou Museum \" , the_most_suitable_people equal_to \" go with friends \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" cheap \" , the_most_suitable_people equal_to \" friends \" , ticket_price equal_to \" free \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, my girlfriend and I are going to visit some popular commercial centers in Gusu District on the weekend. Do you have any recommendations? We want to take the subway there. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" commercial center \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Shilu Pedestrian Street \" USER: Got it. No tickets needed, right? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , name equal_to \" Shilu Pedestrian Street \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" commercial center \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Shilu Pedestrian Street \" AGENT_ACTS: ( attraction ) confirm ticket_price equal_to \" free \" USER: Haha, could you please tell me the address? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , name equal_to \" Shilu Pedestrian Street \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" commercial center \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) confirm ticket_price equal_to \" free \" AGENT_ACTS: ( attraction ) inform address equal_to \" Shilu Pedestrian Street, Jinchang District, Suzhou City \" USER: And could you please help to double-check if there is a subway station nearby? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , metro_station equal_to \" there is \" , name equal_to \" Shilu Pedestrian Street \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" commercial center \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" Shilu Pedestrian Street, Jinchang District, Suzhou City \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" true \" USER: Good, then we can get there by subway from the railway station. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , metro_station equal_to \" there is \" , name equal_to \" Shilu Pedestrian Street \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" commercial center \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" true \" AGENT_ACTS: ( attraction ) inform name equal_to \" Shilu Pedestrian Street \" USER: No, thank you. Bye. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , metro_station equal_to \" there is \" , name equal_to \" Shilu Pedestrian Street \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" commercial center \"",
+    "prediction": "( attraction ) area equal_to \" Gusu District \" , type equal_to \" commercial center \" , metro_station equal_to \" true \" , ticket_price equal_to \" free \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I live in Suzhou, but I don't go out much. My friend is coming to Suzhou to visit me and I'm thinking about taking him to landscape scenic spots. Do you have any recommendations? <endofhistory>",
+    "output": "( attraction ) type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Jinji Lake Scenic Area \" USER: Oh, I'd like to go somewhere slightly more expensive. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Jinji Lake Scenic Area \" buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou \" AGENT_ACTS: ( attraction ) recommend name equal_to \" Jinji Lake Scenic Area \" buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou \" USER: What's its rating? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Jinji Lake Scenic Area \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: Can I get there by subway? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Jinji Lake Scenic Area \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" true \" USER: What's the phone number for the attraction? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Jinji Lake Scenic Area \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" true \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 400-7558558 \" USER: Thank you so much for your help, bye! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Jinji Lake Scenic Area \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, my friend is coming to visit me and we're going to an amusement park tomorrow. But I don't go out much, so can you recommend a slightly more expensive amusement park? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Suzhou Amusement Land Forest and Water World \" USER: Could you tell me about its special features? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Suzhou Amusement Land Forest Waterworld \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Suzhou Amusement Land Forest and Water World \" AGENT_ACTS: ( attraction ) inform features equal_to \" forest-themed, like being in a vast forest close to the ocean \" USER: That sounds fun. What are the opening hours? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Suzhou Amusement Land Forest Waterworld \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" forest-themed, like being in a vast forest close to the ocean \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" USER: I see. It has a high rating, right? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Suzhou Amusement Land Forest Waterworld \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.4 \" USER: OK, I see. Thank you for your help. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Suzhou Amusement Land Forest Waterworld \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.4 \" AGENT_ACTS: ( general ) you_are_welcome USER: Sure, but I have no more questions for now. Goodbye! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Suzhou Amusement Land Forest Waterworld \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) type equal_to \" amusement park \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, My friend is coming to Suzhou to visit me and I'm thinking about taking him to a landscape scenic spot. Can you please recommend a more expensive attraction? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" a slightly more expensive \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Jinji Lake Scenic Area \" USER: What's the attraction like? Anything special? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" a slightly more expensive \" , name equal_to \" Shajiabang Scenic Area \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Jinji Lake Scenic Area \" AGENT_ACTS: ( attraction ) inform features equal_to \" the birthplace of the revolutionary Peking opera 'Shajiabang'. You can visit the scene from the opera and take a boat amid reed marshes. \" USER: That's great. My friend likes Peking opera very much. Could you tell me the opening hours of the attraction? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" a slightly more expensive \" , name equal_to \" Shajiabang Scenic Area \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" the birthplace of the revolutionary Peking opera 'Shajiabang'. You can visit the scene from the opera and take a boat amid reed marshes. \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 08:00-16:30 \" USER: Can we get there by subway? That would be convenient. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" a slightly more expensive \" , name equal_to \" Shajiabang Scenic Area \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" , metro_station equal_to \" true \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 08:00-16:30 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" false \" USER: All right, we'll drive there then. Thank you for answering all my questions. Bye! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" expensive \" , name equal_to \" Shajiabang Scenic Area \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" landscape scenic spot \"",
+    "prediction": "( attraction ) type equal_to \" landscape scenic spot \" , consumption equal_to \" slightly expensive \" , metro_station equal_to \" false \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm in Suzhou Industrial Park and I'd like to go to an amusement park with a subway station nearby. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" with a subway station nearby \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Huayi Brothers Movie World \" USER: What's the address? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Industrial Park \" , metro_station equal_to \" with a subway station nearby \" , name equal_to \" Huayi Brothers Movie World \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \" , name equal_to \" Huayi Brothers Movie World \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \" , name equal_to \" Huayi Brothers Movie World \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Huayi Brothers Movie World \" AGENT_ACTS: ( attraction ) inform address equal_to \" No. 188, Yangchenghu Avenue, Suzhou Industrial Park, Suzhou City \" USER: What's its rating? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Industrial Park \" , metro_station equal_to \" with a subway station nearby \" , name equal_to \" Huayi Brothers Movie World \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \" , name equal_to \" Huayi Brothers Movie World \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \" , name equal_to \" Huayi Brothers Movie World \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" No. 188, Yangchenghu Avenue, Suzhou Industrial Park, Suzhou City \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: Can I get there by subway? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Industrial Park \" , metro_station equal_to \" can \" , name equal_to \" Huayi Brothers Movie World \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \" , name equal_to \" Huayi Brothers Movie World \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \" , name equal_to \" Huayi Brothers Movie World \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) confirm metro_station equal_to \" true \" USER: Thank you so much for your help, bye! <endofhistory>",
+    "output": "( attraction ) area equal_to \" Industrial Park \" , metro_station equal_to \" can \" , name equal_to \" Huayi Brothers Movie World \" , type equal_to \" amusement park \"",
+    "prediction": "( attraction ) area equal_to \" Suzhou Industrial Park \" , type equal_to \" amusement park \" , metro_station equal_to \" true \" , name equal_to \" Huayi Brothers Movie World \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, we're coming to Suzhou on a business trip and we'd like to visit Eslite Bookstore. Can we get there by subway? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Eslite Bookstore \"",
+    "prediction": "( attraction ) name equal_to \" Eslite Bookstore \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Eslite Bookstore \" <endofstate> <history> AGENT_ACTS: ( attraction ) inform metro_station equal_to \" true \" USER: That's great. What are its opening hours? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Eslite Bookstore \"",
+    "prediction": "( attraction ) name equal_to \" Eslite Bookstore \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Eslite Bookstore \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" true \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 10:00-22:00 \" USER: What's its rating? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Eslite Bookstore \"",
+    "prediction": "( attraction ) name equal_to \" Eslite Bookstore \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Eslite Bookstore \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 10:00-22:00 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.7 \" USER: Well, no tickets are needed there, right? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Eslite Bookstore \"",
+    "prediction": "( attraction ) name equal_to \" Eslite Bookstore \" , ticket_price equal_to \" free \""
+  }
+]

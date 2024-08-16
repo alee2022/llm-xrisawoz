@@ -1,0 +1,21 @@
+name: multi_llama
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - make
+  - pip
+  - pip:
+    - openai==0.28
+    - text-generation==0.6.0
+    - tenacity
+    - python-dateutil
+    - matplotlib
+    - pytz
+    - jinja2
+    - Flask
+    - flask_restful
+    - git+https://github.com/stanford-oval/genienlp.git@llm-predict

@@ -1,0 +1,14 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 저는 쑤저우 출신이지만 외출을 잘 하지는 않습니다. 제 친구가 저를 보러 쑤저우로 오기로해서 수향마을로 데려갈 생각입니다. <endofhistory>",
+    "output": "( attraction ) type equal_to \" 수향마을 \"",
+    "prediction": "It seems like you've entered \"null\" which typically indicates an absence of data or a desire to end the conversation. If you have any more questions or need further assistance, feel free to ask. Otherwise, have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 저우좡 마을 \" USER: 저는 가격대가 꽤 보통인 곳을 찾고 있습니다. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) type equal_to \" 수향마을 \", consumption equal_to \" 적당한 \""
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: मैं Suzhou से हूँ , लेकिन मैं ज्यादा बाहर नहीं जाता हूँ । मेरी friend मुझसे मिलने Suzhou आ रही है और मैं उसे water town में ले जाने के बारे में सोच रहा हूं । <endofhistory>",
+    "output": "( attraction ) type equal_to \" water town \"",
+    "prediction": "( attraction ) type equal_to \" water town \" , area equal_to \" Suzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" water town \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" USER: मैं एक ऐसी जगह की तलाश में हूँ जहां कीमतें काफी average हों <endofhistory>",
+    "output": "( attraction ) type equal_to \" water town \"",
+    "prediction": "( attraction ) type equal_to \" water town \" , consumption equal_to \" average \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" water town \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" AGENT_ACTS: ( attraction ) recommend name equal_to \" Shantang स्ट्रीट। \" USER: इसका phone number क्या है? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \"",
+    "prediction": "( attraction ) type equal_to \" water town \" , name equal_to \" Shantang Street \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Shantang स्ट्रीट। \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" USER: क्या इसकी rating अच्छी है? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \"",
+    "prediction": "( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5। \" USER: यह high ज़रूर है । क्या वहां देखने के लिए कुछ special है ? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \"",
+    "prediction": "( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \" , special_equal_to \" yes \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5। \" AGENT_ACTS: ( attraction ) inform features equal_to \" old Suzhou के दृश्यों का आनंद ले सकते हैं, old guild hall और अन्य historical sites की यात्रा कर सकते हैं, नदी पर एक cruise ले सकते हैं और सुंदर night scenery की photos ले सकते हैं। \" USER: धन्यवाद , bye! <endofhistory>",
+    "output": "( attraction ) name equal_to \" Shantang स्ट्रीट। \" , type equal_to \" water town \"",
+    "prediction": "( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: मैं Suzhou से हूँ , लेकिन मैं ज्यादा बाहर नहीं जाता हूँ । मेरी friend मुझसे मिलने Suzhou आ रही है और मैं उसे water town में ले जाने के बारे में सोच रहा हूं । <endofhistory>",
+    "output": "( attraction ) type equal_to \" water town \"",
+    "prediction": "( attraction ) type equal_to \" water town \" , area equal_to \" Suzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" water town \" <endofstate> <history> AGENT_ACTS: ( attraction ) request consumption USER: मैं कुछ ज़्यादा expensive देख रहा हूं । <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly expensive \" , type equal_to \" water town \"",
+    "prediction": "( attraction ) type equal_to \" water town \" , consumption equal_to \" expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" slightly expensive \" , type equal_to \" water town \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) request consumption AGENT_ACTS: ( attraction ) recommend name equal_to \" झोउज़ुआंग टाउन \" USER: क्या मैं subway से directly वहां जा सकता हूँ? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Zhouzhuang Town \" , type equal_to \" water town \"",
+    "prediction": "( attraction ) consumption equal_to \" slightly expensive \" , type equal_to \" water town \" , transport equal_to \" subway \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Zhouzhuang Town \" , type equal_to \" water town \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" झोउज़ुआंग टाउन \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" No \" USER: opening hours क्या हैं? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Zhouzhuang Town \" , type equal_to \" water town \"",
+    "prediction": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Zhouzhuang Town \" , type equal_to \" water town \" , query equal_to \" opening hours \""
+  }
+]

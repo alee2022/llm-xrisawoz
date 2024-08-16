@@ -1,0 +1,10 @@
+{{system_start}}Given the provided information, respond to the user.{{system_end}}
+
+{# comments #}
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: 안녕하세요, 재미있는 일본 TV 프로그램을 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}네, 어떤 시기의 일본 TV 프로그램을 찾으시나요?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( tv ) request type <endofactions> <history> USER: 2010년대의 일본 TV 프로그램이요. <endofhistory>{{user_end}}
+{{assistant_start}}보통 어떤 종류의 일본 TV 프로그램을 시청하시나요?{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

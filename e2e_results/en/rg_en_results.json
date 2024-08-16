@@ -1,0 +1,602 @@
+[
+  {
+    "instruction": "",
+    "input": "RG: <actions> I'm sorry, it seems like there was no input. How can I assist you further? <endofactions> <history> USER: Hello! I'm from out-of-town and here to visit Suzhou. Can you recommend a fun place? <endofhistory>",
+    "output": "Hello! No problem. Which area do you want to go?",
+    "prediction": "Of course! Suzhou is famous for its classical gardens. You might enjoy visiting the Humble Administrator's Garden or the Lingering Garden. If you're interested in silk production, the Suzhou Silk Museum is also a fascinating place to visit. Enjoy your time in Suzhou!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Zhouzhuang Town \" <endofactions> <history> USER: Kunshan. A good place to travel with friends, it's OK if it's a bit more expensive. <endofhistory>",
+    "output": "The small bridges and winding waterways are a must-see in Suzhou. So I recommend Zhouzhuang Town.",
+    "prediction": "Zhouzhuang Town would be a great choice for a trip with friends. It's a beautiful water town near Kunshan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" Zhouzhuang Town is famous for its many small bridges, winding waterways, the Twin Bridges, traditional Chinese riverboats, and the historical figure Shen Wansan. \" <endofactions> <history> USER: What's special about it? <endofhistory>",
+    "output": "It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan.",
+    "prediction": "Zhouzhuang Town is famous for its many small bridges, winding waterways, the Twin Bridges, traditional Chinese riverboats, and the historical figure Shen Wansan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" <endofactions> <history> USER: That's great. What's the address? <endofhistory>",
+    "output": "No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City.",
+    "prediction": "The address is No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" false \" <endofactions> <history> USER: Can I get there directly by subway? <endofhistory>",
+    "output": "There is no subway station nearby.",
+    "prediction": "No, you cannot get there directly by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Well, thanks for your recommendation. Goodbye! <endofhistory>",
+    "output": "My pleasure. I'm glad to be at your service. Goodbye!",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" Jinji Lake Scenic Area offers a view of tall buildings like the Gate of the Orient, a Ferris wheel, night cruises, and showcases the modern side of Suzhou. \" <endofactions> <history> USER: Hello, I'm coming to Suzhou with my friends on business, and I'd like to visit Jinji Lake Scenic Area. Can you tell me more about what's special about it? <endofhistory>",
+    "output": "OK. In the scenic area, you can get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou.",
+    "prediction": "Jinji Lake Scenic Area offers a view of tall buildings like the Gate of the Orient, a Ferris wheel, night cruises, and showcases the modern side of Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" all day \" , inform ticket_price equal_to \" free \" <endofactions> <history> USER: It sounds beautiful. I can't wait to go there. <endofhistory>",
+    "output": "Yes, it's really a beautiful place. I personally like it very much.",
+    "prediction": "Great! Just so you know, it's open all day and there's no admission fee. Enjoy your visit!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 400-7558558 \" <endofactions> <history> USER: What's the phone number? I want to call to book tickets. <endofhistory>",
+    "output": "It's 400-7558558.",
+    "prediction": "The phone number for booking tickets is 400-7558558."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" all day \" <endofactions> <history> USER: OK. What are the opening hours of the attraction? <endofhistory>",
+    "output": "Hold on. It's open all day.",
+    "prediction": "The attraction is open all day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) affirm <endofactions> <history> USER: Open all day, great. Then I can go anytime. That's convenient. <endofhistory>",
+    "output": "Yes, it is. Do you have any other questions?",
+    "prediction": "Yes, it's definitely convenient to have access to places that are open all day. If you need anything else, just let me know!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: No, thanks. Goodbye. <endofhistory>",
+    "output": "Goodbye.",
+    "prediction": "Goodbye, if you need any more help in the future, just let me know. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" at the end of Shantang Street, Mudu Ancient Town, Wuzhong District, Suzhou City \" <endofactions> <history> USER: Hello, I'm coming to Suzhou with my friends on business, and I'd like to visit Lingyan Mountain Scenic Area. Can you help me find the address of this place? <endofhistory>",
+    "output": "No problem. Just a moment. It's at the end of Shantang Street, Mudu Ancient Town, Wuzhong District, Suzhou City.",
+    "prediction": "Sure, Lingyan Mountain Scenic Area is located at the end of Shantang Street, Mudu Ancient Town, Wuzhong District, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.3 \" <endofactions> <history> USER: What's its rating? <endofhistory>",
+    "output": "Its rating is 4.3.",
+    "prediction": "The Humble Administrator's Garden has a rating of 4.3."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" It is a good place to climb the mountain, overlook the scenery of Suzhou City, worship Buddha, and pray for blessings in Lingyan Mountain Temple. \" <endofactions> <history> USER: 4.3, that's a bit low, haha. <endofhistory>",
+    "output": "Yes, but you can still give it a try. After all, ratings are not always that accurate.",
+    "prediction": "If you're looking for a place with a higher rating, Lingyan Mountain could be a great choice. It is a good place to climb the mountain, overlook the scenery of Suzhou City, worship Buddha, and pray for blessings in Lingyan Mountain Temple."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" free \" <endofactions> <history> USER: You're right. I'll go try it. Could you tell me the price of the ticket? <endofhistory>",
+    "output": "OK, hold on, it's free.",
+    "prediction": "The entrance to Humble Administrator's Garden is free of charge."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) acknowledge <endofactions> <history> USER: Awesome. I'm even happier now that I know it's free. <endofhistory>",
+    "output": "Yeah, that's great. Any other questions?",
+    "prediction": "I'm glad to hear that you're pleased with the information. If you have any more questions or need further assistance, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: No, thank you and bye. <endofhistory>",
+    "output": "Bye!",
+    "prediction": "Goodbye, if you have any more questions in the future, feel free to ask. Take care!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Soochow University \" <endofactions> <history> USER: Hello, I live in Suzhou, but I don't go out much. My friend is coming to Suzhou to visit me and I'm thinking about taking him to a university campus. Do you have any recommendations? <endofhistory>",
+    "output": "Yes, would you like a cheaper or more expensive campus?",
+    "prediction": "Sure, you can visit Soochow University. It's a beautiful campus with a rich history and lovely scenery."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" free \" <endofactions> <history> USER: I'd like a cheap one. <endofhistory>",
+    "output": "OK, just a moment. Soochow University is good.",
+    "prediction": "If you're looking for an attraction that is free of charge, you can visit many public parks and some museums that offer free entry."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" true \" <endofactions> <history> USER: OK, is there a subway station near the university? I want to go there by subway. <endofhistory>",
+    "output": "There is a subway station near the university.",
+    "prediction": "Yes, there is a subway station near the university, which will make your trip convenient."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" all day \" <endofactions> <history> USER: That's great. What are the opening hours of the university? <endofhistory>",
+    "output": "It's open all day. You can go there anytime.",
+    "prediction": "The university is open all day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" Soochow University, part of the national '211 Project', has a rich history with its predecessor founded in 1900, located in the old town of Suzhou. \" <endofactions> <history> USER: That's good, that makes fitting it in easier. What's special about the university? <endofhistory>",
+    "output": "Soochow University is located in the old town of Suzhou and is part of the national 211 Project. Its predecessor was the original Soochow University founded in 1900.",
+    "prediction": "Soochow University, part of the national '211 Project', has a rich history with its predecessor founded in 1900, located in the old town of Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: I see. Thank you so much for your patience. Bye. <endofhistory>",
+    "output": "Happy to help, bye!",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Tianping Mountain Scenic Area \" <endofactions> <history> USER: Hello, I'm traveling in Suzhou and I'm now in Wuzhong District. Can you recommend to me some interesting attractions? <endofhistory>",
+    "output": "Hello, there are many attractions in Wuzhong District. What kind of place would you like to visit? Are you going alone or with friends?",
+    "prediction": "Sure, you can visit Tianping Mountain Scenic Area. It's a beautiful place with natural scenery and historical significance."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform name equal_to \" Tianping Mountain Scenic Area \" <endofactions> <history> USER: I'm going with a few friends. Please help me find a suitable attraction. I don't want the price to be too high, something mid-priced is fine. <endofhistory>",
+    "output": "I've found two mid-priced attractions for you, Tianping Mountain Scenic Area and Qionglong Mountain Scenic Area. They're both landscape scenic spots.",
+    "prediction": "Tianping Mountain Scenic Area would be a suitable attraction for you and your friends. It's mid-priced and offers beautiful natural scenery."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 30 yuan \" <endofactions> <history> USER: Well, I heard from my friends that Tianping Mountain Scenic Area is good. How much is a ticket? <endofhistory>",
+    "output": "The tickets are 30 yuan per person. It won't cost much even if you go with several friends, very cost-effective.",
+    "prediction": "The ticket price for Tianping Mountain Scenic Area is 30 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" Lingtian Road, Wuzhong District, Suzhou City \" <endofactions> <history> USER: Yes, the price is acceptable. What's the address of the attraction? <endofhistory>",
+    "output": "It's located at Lingtian Road, Wuzhong District, Suzhou City.",
+    "prediction": "The address of the attraction is Lingtian Road, Wuzhong District, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66387422 \" <endofactions> <history> USER: OK. What's the phone number of the attraction? I want to call to ask some questions before I go. <endofhistory>",
+    "output": "Yeah, well, it's good to settle all questions in advance. The phone number of the attraction is 0512-66387422.",
+    "prediction": "The phone number for the attraction is 0512-66387422."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: OK, got it. Thanks for your patience. <endofhistory>",
+    "output": "You're welcome. Feel free to ask me anytime.",
+    "prediction": "You're welcome! If you have any more questions, feel free to ask. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Tongli Town \" <endofactions> <history> USER: Hello, I'm from out-of-town and I'm here visiting Suzhou. Can you recommend a place I could go with friends in Wujiang District? Something in the higher price range. <endofhistory>",
+    "output": "OK, I would recommend Tongli Ancient Town.",
+    "prediction": "Certainly, for a higher-end experience in Wujiang District, Suzhou, I recommend visiting Tongli Town. It's a beautiful water town with a rich history and charming scenery."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: OK, what's its rating? <endofhistory>",
+    "output": "Its rating is 4.5.",
+    "prediction": "The Humble Administrator's Garden has a rating of 4.5."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 100 yuan \" <endofactions> <history> USER: Good, how much is the ticket? <endofhistory>",
+    "output": "The ticket costs 100 yuan.",
+    "prediction": "The ticket price for the attraction is 100 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" false \" <endofactions> <history> USER: Can I get there by subway? That would be more convenient. <endofhistory>",
+    "output": "Sorry, there is no subway station nearby.",
+    "prediction": "No, you can't get there by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Well, I see. Thanks, bye. <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Tianping Mountain Scenic Area \" <endofactions> <history> USER: Hello, I want to visit a landscape scenic spot in Suzhou with my friends. Can you recommend a mid-priced attraction? <endofhistory>",
+    "output": "OK, I would recommend Tianping Mountain Scenic Area, it's at Lingtian Road, Wuzhong District, Suzhou City.",
+    "prediction": "Sure, Tianping Mountain Scenic Area is a great mid-priced attraction in Suzhou that you and your friends can visit."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 30 yuan \" <endofactions> <history> USER: How much is the ticket? <endofhistory>",
+    "output": "The ticket is 30 yuan, very affordable.",
+    "prediction": "The ticket price is 30 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" It's the burial place of the ancestors of Fan Zhongyan and offers rocky road climbing. In mid-to-late November, there are beautiful red maple trees to enjoy. \" <endofactions> <history> USER: What's special about this attraction? <endofhistory>",
+    "output": "It is the burial place of the ancestors of Fan Zhongyan. The place is rich in cultural and historical aura. It's great fun climbing on the rocky roads in the area. Besides, you can enjoy red maple in mid-to-late November.",
+    "prediction": "It's the burial place of the ancestors of Fan Zhongyan and offers rocky road climbing. In mid-to-late November, there are beautiful red maple trees to enjoy."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66387422 \" <endofactions> <history> USER: And last of all, what is the phone number of the attraction? <endofhistory>",
+    "output": "0512-66387422.",
+    "prediction": "The phone number of the attraction is 0512-66387422."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Got it. Thanks, bye. <endofhistory>",
+    "output": "You're welcome. Feel free to call anytime.",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" No. 1, Town Lake Embroidery Street, Suzhou New District, Suzhou City \" <endofactions> <history> USER: Hi, I'm in Suzhou on business with my besties. We want to visit Taihu Lake Wetland Park on the weekend. Could you please give me its address? <endofhistory>",
+    "output": "Hello, the park is located at No. 1, Xiupin Street, Zhenhu, Suzhou New District, Suzhou City.",
+    "prediction": "Sure, Taihu Lake Wetland Park is located at No. 1, Town Lake Embroidery Street, Suzhou New District, Suzhou City. Enjoy your visit!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-16:30 \" <endofactions> <history> USER: What are the opening hours? <endofhistory>",
+    "output": "It's open 09:00 to 16:30.",
+    "prediction": "The opening hours are from 09:00 to 16:30."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66918088 \" <endofactions> <history> USER: I see. And could you tell me its phone number? <endofhistory>",
+    "output": "OK, the number is 0512-66918088.",
+    "prediction": "Sure, the phone number for the Humble Administrator's Garden is 0512-66918088."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: OK, got it. Thank you. <endofhistory>",
+    "output": "You're welcome. Is there anything else you want to know?",
+    "prediction": "You're welcome! If you have any more questions, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: No, that's all. Goodbye. <endofhistory>",
+    "output": "All right, have a good day, bye!",
+    "prediction": "Goodbye, if you have any more questions in the future, feel free to ask. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Stone Lake \" <endofactions> <history> USER: Hello, I'm traveling to Suzhou with my girlfriend and we want to visit Wuzhong District first. Could you recommend a landscape scenic spot with a subway station nearby? <endofhistory>",
+    "output": "Hello, welcome to Suzhou. The scenery at Stone Lake is very beautiful. I'd recommend you to give it a visit.",
+    "prediction": "Sure, you can visit Stone Lake. It's a beautiful scenic spot in Wuzhong District and has convenient subway access."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" No. 333, Youxin Road, Wuzhong District, Suzhou City. \" <endofactions> <history> USER: Great, could you tell me the address? <endofhistory>",
+    "output": "The attraction is located at No. 333, Youxin Road, Wuzhong District, Suzhou City.",
+    "prediction": "Sure, the address is No. 333, Youxin Road, Wuzhong District, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-65646668 \" <endofactions> <history> USER: OK, what's the phone number for the attraction? <endofhistory>",
+    "output": "The phone number is 0512-65646668.",
+    "prediction": "The phone number for the attraction is 0512-65646668."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" Stone Lake is famous for its wonderful scenery, endless rows of mountains and ridges, and is a great place to appreciate the mountain and water culture of Suzhou. \" <endofactions> <history> USER: We also want to know what's special about the attraction. <endofhistory>",
+    "output": "It's famous for Stone Lake's wonderful scenery and the endless rows of mountains and ridges. It's a great place to appreciate the mountain and water culture of Suzhou.",
+    "prediction": "Stone Lake is famous for its wonderful scenery, endless rows of mountains and ridges, and is a great place to appreciate the mountain and water culture of Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: Got it. I can't wait to go and enjoy the natural scenery. Thank you. <endofhistory>",
+    "output": "You're welcome. I'm happy to help.",
+    "prediction": "You're welcome! Enjoy your trip and the beautiful scenery! If you need any more information, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thank you, goodbye! <endofhistory>",
+    "output": "Have a good time, bye.",
+    "prediction": "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Dongting Dongshan \" <endofactions> <history> USER: Hello, I'm visiting Suzhou from out of town. Could you recommend a family-friendly place in Wuzhong District? I'd prefer a mid-priced one. <endofhistory>",
+    "output": "Dongting Dongshan fits your requirements.",
+    "prediction": "Sure, Dongting Dongshan in Wuzhong District is a great family-friendly place that you can visit."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" false \" <endofactions> <history> USER: Can I get there directly by subway? <endofhistory>",
+    "output": "There is no subway station nearby.",
+    "prediction": "No, you cannot get there directly by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66399231 \" <endofactions> <history> USER: What's the phone number? <endofhistory>",
+    "output": "0512-66399231.",
+    "prediction": "The phone number is 0512-66399231."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" Near Moli Road, Wuzhong District, Suzhou City \" <endofactions> <history> USER: And where exactly is it? <endofhistory>",
+    "output": "Near Moli Road, Wuzhong District, Suzhou City.",
+    "prediction": "The Humble Administrator's Garden is located near Moli Road, Wuzhong District, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: Thank you. <endofhistory>",
+    "output": "My pleasure.",
+    "prediction": "You're welcome! If you have any more questions, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Goodbye. <endofhistory>",
+    "output": "Goodbye.",
+    "prediction": "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Suzhou Amusement Land Forest and Water World \" <endofactions> <history> USER: Hello! I don't like going out very much, but my friend is coming to Suzhou to visit me. Could you recommend an amusement park? <endofhistory>",
+    "output": "Hello! What price point are you after?",
+    "prediction": "Sure, you can take your friend to Suzhou Amusement Land Forest and Water World. It's a great place to have fun."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Suzhou Aquarium \" <endofactions> <history> USER: Something in the mid-price range. <endofhistory>",
+    "output": "I'd recommend Suzhou Aquarium.",
+    "prediction": "For a mid-price range attraction, you can visit the Suzhou Aquarium."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-69381000 \" <endofactions> <history> USER: Could you tell me the phone number for the attraction? <endofhistory>",
+    "output": "0512-69381000.",
+    "prediction": "Sure, the phone number for the attraction is 0512-69381000."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" <endofactions> <history> USER: What about the opening hours? <endofhistory>",
+    "output": "09:00-17:00.",
+    "prediction": "The opening hours are from 09:00 to 17:00."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" enjoy a variety of marine creatures, watch wonderful animal performances, and experience the colorful ocean world \" <endofactions> <history> USER: What's special about it? <endofhistory>",
+    "output": "There you can enjoy a variety of marine creatures, watch wonderful animal performances, and experience the colorful ocean world.",
+    "prediction": "You can enjoy a variety of marine creatures, watch wonderful animal performances, and experience the colorful ocean world."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Well, that's great. Thanks! Goodbye! <endofhistory>",
+    "output": "Happy to help, bye!",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Suzhou Museum \" <endofactions> <history> USER: Hello, can you recommend a cheaper place in Gusu District where I could go with friends? <endofhistory>",
+    "output": "I'd recommend the Suzhou Museum.",
+    "prediction": "Certainly, you can visit the Suzhou Museum. It's a great place to explore with friends and it's affordable."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" <endofactions> <history> USER: What are the opening hours? <endofhistory>",
+    "output": "It's open 09:00-17:00.",
+    "prediction": "The opening hours are from 09:00 to 17:00."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" false \" <endofactions> <history> USER: Can I get there by subway? <endofhistory>",
+    "output": "No.",
+    "prediction": "No, it's not accessible by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" free \" <endofactions> <history> USER: How much is the ticket? <endofhistory>",
+    "output": "It's free.",
+    "prediction": "The ticket is free."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thank you so much for your help, bye! <endofhistory>",
+    "output": "You’re welcome.",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Shilu Pedestrian Street \" <endofactions> <history> USER: Hello, my girlfriend and I are going to visit some popular commercial centers in Gusu District on the weekend. Do you have any recommendations? We want to take the subway there. <endofhistory>",
+    "output": "Then Shilu Pedestrian Street would be a perfect choice.",
+    "prediction": "Sure, you can visit Shilu Pedestrian Street. It's a popular commercial area in Gusu District and is accessible by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) confirm ticket_price equal_to \" free \" <endofactions> <history> USER: Got it. No tickets needed, right? <endofhistory>",
+    "output": "That's right, it's free.",
+    "prediction": "Yes, that's correct. The attraction is free of charge."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" Shilu Pedestrian Street, Jinchang District, Suzhou City \" <endofactions> <history> USER: Haha, could you please tell me the address? <endofhistory>",
+    "output": "No problem. The address is Shilu Pedestrian Street, Jinchang District, Suzhou City.",
+    "prediction": "Sure, it's located at Shilu Pedestrian Street, Jinchang District, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" true \" <endofactions> <history> USER: And could you please help to double-check if there is a subway station nearby? <endofhistory>",
+    "output": "Rest assured, there is.",
+    "prediction": "Yes, there is a subway station nearby the Humble Administrator's Garden, which makes it convenient for transportation."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform name equal_to \" Shilu Pedestrian Street \" <endofactions> <history> USER: Good, then we can get there by subway from the railway station. <endofhistory>",
+    "output": "Yes, do you have any other questions?",
+    "prediction": "Yes, Shilu Pedestrian Street is easily accessible by subway from the railway station."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: No, thank you. Bye. <endofhistory>",
+    "output": "Hope you enjoy it! Goodbye!",
+    "prediction": "Goodbye! If you need any more help in the future, feel free to ask. Take care!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Jinji Lake Scenic Area \" <endofactions> <history> USER: Hello, I live in Suzhou, but I don't go out much. My friend is coming to Suzhou to visit me and I'm thinking about taking him to landscape scenic spots. Do you have any recommendations? <endofhistory>",
+    "output": "I'd recommend Tianping Mountain Scenic Area.",
+    "prediction": "Sure, you can take your friend to the Jinji Lake Scenic Area. It's a beautiful spot in Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou \" <endofactions> <history> USER: Oh, I'd like to go somewhere slightly more expensive. <endofhistory>",
+    "output": "Then I'd recommend Jinji Lake Scenic Area. It's very good.",
+    "prediction": "In that case, you might enjoy the Suzhou Industrial Park area. You can get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: What's its rating? <endofhistory>",
+    "output": "Its rating is 4.5.",
+    "prediction": "The attraction has a rating of 4.5."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" true \" <endofactions> <history> USER: Can I get there by subway? <endofhistory>",
+    "output": "Yes, you can.",
+    "prediction": "Yes, you can reach there by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 400-7558558 \" <endofactions> <history> USER: What's the phone number for the attraction? <endofhistory>",
+    "output": "It's 400-7558558.",
+    "prediction": "The phone number for the attraction is 400-7558558."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thank you so much for your help, bye! <endofhistory>",
+    "output": "Goodbye.",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Suzhou Amusement Land Forest and Water World \" <endofactions> <history> USER: Hello, my friend is coming to visit me and we're going to an amusement park tomorrow. But I don't go out much, so can you recommend a slightly more expensive amusement park? <endofhistory>",
+    "output": "I'd recommend Suzhou Amusement Land Forest Waterworld.",
+    "prediction": "Sure, you can visit Suzhou Amusement Land Forest and Water World. It's a great place with various attractions and is a bit more upscale."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" forest-themed, like being in a vast forest close to the ocean \" <endofactions> <history> USER: Could you tell me about its special features? <endofhistory>",
+    "output": "OK, its amusement facilities are forest-themed. It is like being in a vast forest close to the ocean.",
+    "prediction": "The attraction is forest-themed, giving visitors the feeling of being in a vast forest close to the ocean."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" <endofactions> <history> USER: That sounds fun. What are the opening hours? <endofhistory>",
+    "output": "The opening hours are 09:00-17:00, all days.",
+    "prediction": "The opening hours are from 09:00 to 17:00."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.4 \" <endofactions> <history> USER: I see. It has a high rating, right? <endofhistory>",
+    "output": "Its rating is 4.4.",
+    "prediction": "Yes, it has a good rating of 4.4."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: OK, I see. Thank you for your help. <endofhistory>",
+    "output": "My pleasure. Feel free to ask if you have any more questions.",
+    "prediction": "You're welcome! If you have any more questions, feel free to ask. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Sure, but I have no more questions for now. Goodbye! <endofhistory>",
+    "output": "Goodbye!",
+    "prediction": "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Jinji Lake Scenic Area \" <endofactions> <history> USER: Hello, My friend is coming to Suzhou to visit me and I'm thinking about taking him to a landscape scenic spot. Can you please recommend a more expensive attraction? <endofhistory>",
+    "output": "Shajiabang Scenic Area is a great landscape scenic spot to go with friends.",
+    "prediction": "Certainly, you can take your friend to the Jinji Lake Scenic Area. It's a beautiful and upscale spot in Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" the birthplace of the revolutionary Peking opera 'Shajiabang'. You can visit the scene from the opera and take a boat amid reed marshes. \" <endofactions> <history> USER: What's the attraction like? Anything special? <endofhistory>",
+    "output": "It's the birthplace of the Peking Opera Shajiabang. Here, you can look at the settings from the opera and take a boat deep into the reeds.",
+    "prediction": "The attraction is the birthplace of the revolutionary Peking opera 'Shajiabang'. You can visit the scene from the opera and take a boat amid reed marshes."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 08:00-16:30 \" <endofactions> <history> USER: That's great. My friend likes Peking opera very much. Could you tell me the opening hours of the attraction? <endofhistory>",
+    "output": "It's open 08:00-16:30.",
+    "prediction": "The attraction is open from 08:00 to 16:30."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" false \" <endofactions> <history> USER: Can we get there by subway? That would be convenient. <endofhistory>",
+    "output": "There is no subway station nearby. You can drive there. It's also convenient.",
+    "prediction": "No, the Humble Administrator's Garden is not accessible directly by subway. You'll need to consider other forms of transportation."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: All right, we'll drive there then. Thank you for answering all my questions. Bye! <endofhistory>",
+    "output": "You're welcome. Have a nice day. Goodbye.",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye and have a safe trip!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Huayi Brothers Movie World \" <endofactions> <history> USER: Hello, I'm in Suzhou Industrial Park and I'd like to go to an amusement park with a subway station nearby. <endofhistory>",
+    "output": "I'd recommend Huayi Brothers Movie World.",
+    "prediction": "You can visit Huayi Brothers Movie World. It's an amusement park with convenient access to a subway station."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" No. 188, Yangchenghu Avenue, Suzhou Industrial Park, Suzhou City \" <endofactions> <history> USER: What's the address? <endofhistory>",
+    "output": "No. 188, Yangchenghu Avenue, Industrial Park, Suzhou City.",
+    "prediction": "The address is No. 188, Yangchenghu Avenue, Suzhou Industrial Park, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: What's its rating? <endofhistory>",
+    "output": "Its rating is 4.5.",
+    "prediction": "The attraction has a rating of 4.5."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) confirm metro_station equal_to \" true \" <endofactions> <history> USER: Can I get there by subway? <endofhistory>",
+    "output": "You can get there by subway.",
+    "prediction": "Yes, you can get there by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thank you so much for your help, bye! <endofhistory>",
+    "output": "That's OK, goodbye.",
+    "prediction": "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" true \" <endofactions> <history> USER: Hello, we're coming to Suzhou on a business trip and we'd like to visit Eslite Bookstore. Can we get there by subway? <endofhistory>",
+    "output": "Hello, welcome to Suzhou. You can get there by subway.",
+    "prediction": "Yes, you can reach Eslite Bookstore by subway in Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 10:00-22:00 \" <endofactions> <history> USER: That's great. What are its opening hours? <endofhistory>",
+    "output": "It opens at 10 am and closes at 10 pm.",
+    "prediction": "The opening hours are from 10:00 to 22:00."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.7 \" <endofactions> <history> USER: What's its rating? <endofhistory>",
+    "output": "Its rating is 4.7. It's a commercial center, so this rating is not bad.",
+    "prediction": "The attraction has a rating of 4.7."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) confirm ticket_price equal_to \" free \" <endofactions> <history> USER: Well, no tickets are needed there, right? <endofhistory>",
+    "output": "Yes, no tickets are needed. As I said, it's a commercial center.",
+    "prediction": "Yes, that's correct. The attraction is free to enter."
+  }
+]

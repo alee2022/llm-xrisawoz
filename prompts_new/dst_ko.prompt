@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, generate belief state based on previous state and history.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 재미있는 일본 TV 프로그램을 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " 일본 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( tv ) decade equal_to " 2010년대 " , production_country_or_area equal_to " 일본 " , type equal_to " 서스펜스가 있는 " <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform Douban_score equal_to " 9.1점 " AGENT_ACTS: ( tv ) inform director equal_to " 도이 노부히로 " USER: 감사합니다, 인도 영화를 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " 인도 " ( tv ) decade equal_to " 2010년대 " , production_country_or_area equal_to " 일본 TV 프로그램 " , type equal_to " 서스펜스가 있는 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " 인도 " , ( tv ) decade equal_to " 2010년대 " , production_country_or_area equal_to " 일본 TV 프로그램 " , type equal_to " 서스펜스가 있는 " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0점 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172분 " USER: 네, 오랜 시간 답변해주셔서 감사합니다. 안녕히 계세요. <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " 인도 " ( tv ) decade equal_to " 2010년대 " , production_country_or_area equal_to " 일본 TV 프로그램 " , type equal_to " 서스펜스가 있는 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 제 친구들이 저를 보러 올 예정입니다. 구수구 근처에 많이 비싸지 않고 경치가 아름다운 곳이 있을까요? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " 구수구 " , consumption equal_to " 적당한 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) consumption equal_to " 적당한 " , name equal_to " 저우좡 마을의 " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to " No. 178, Dongbei Street, Gusu District, Suzhou City. " AGENT_ACTS: ( attraction ) inform score equal_to " 4.5점 " USER: 네, 아마 종일 같이 시간을 보낼 것 같은데, 여기 근처에 있는 조금 더 비싼 식당을 추천해 주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) consumption equal_to " 그렇게 비싸지 않은 " , name equal_to " 졸정원 " ( restaurant ) pricerange equal_to " 조금 비싼 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 가솔린 SUV를 사려고 하는데, 150,000위안 이하로 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( car ) classification equal_to " SUV " , hybrid equal_to " 가솔린 " , pricerange equal_to " 150,000미만 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " 쑤저우 공업원구 " , name equal_to " 하이디라오 훠궈 " , pricerange equal_to " 조금 비싼 " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform phone_number equal_to " 0512-67603337 " AGENT_ACTS: ( restaurant ) inform business_hours equal_to " 월요일부터 일요일까지 오전 9시부터 오후 7시까지 " USER: 우와, 밤새 영업하네요, 그러면 조금 더 오래 머무를 수 있겠어요. 스탠다드 객실이 있는 많이 비싸지 않은 호텔을 찾아주실 수 있으신가요? <endofhistory>{{user_end}}
+{{assistant_start}}( hotel ) pricerange equal_to " 적당한 " , room_type equal_to " 일반 객실 " ( restaurant ) area equal_to " 쑤저우 공업원구 " , name equal_to " 하이디라오 훠궈 " , pricerange equal_to " 조금 더 비싼 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 저희 아이가 몸이 안좋아서 소아과에 데려가려고 합니다. 어느 종합병원에 좋은 소아과가 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( hospital ) general_or_specialized equal_to " 종합 병원 " , key_departments equal_to " 소아과 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 저는 다음 주에 일 때문에 샤먼에 갈 예정인데, 언제 출발할지 아직 확실하지 않고, 날씨에 달려있어요. 다음 주 일요일 풍력과 풍향 확인을 도와주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( weather ) city equal_to " 샤먼 " , date equal_to " 다음 주 일요일 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 저는 다음 주에 출장을 갑니다. 다음 주 금요일 항저우에서 선전으로 가는 비행기 확인을 도와주세요, 가급적이면 이코노미석으로요. <endofhistory>{{user_end}}
+{{assistant_start}}( flight ) class_cabin equal_to " 이코노미석 " , date equal_to " 다음 주 금요일 " , departure equal_to " 항저우 " , destination equal_to " 선전 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 레노버사의 14인치 경량 노트북을 구매하고 싶은데, 가급적이면 8GB의 메모리 용량이면 좋겠습니다. <endofhistory>{{user_end}}
+{{assistant_start}}( pc ) brand equal_to " 레노버 " , memory_capacity equal_to " 8GB " , screen_size equal_to " 14인치 " , usage equal_to " 경량 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 저는 다음 주에 출장을 갈 예정입니다. 다음 주 샤먼행 고속 열차가 있는지 확인하는 것을 도와주시겠어요? <endofhistory>{{user_end}}
+{{assistant_start}}( train ) classification equal_to " 고속 " , destination equal_to " 샤먼 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 제 아이가 6학년입니다. 과외 수업을 추천해 주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( class ) grade equal_to " 6학년 "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

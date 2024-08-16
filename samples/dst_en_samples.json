@@ -1,0 +1,1252 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" Japanese TV show \" , star equal_to \" Jun Matsumoto \" <endofstate> <history> AGENT_ACTS: ( tv ) recommend title equal_to \" Lucky Seven \" USER: Well, that seems like a good choice, but can you tell me its Douban rating? <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" Japanese TV show \" , star equal_to \" Jun Matsumoto \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5,000 to 10,000 yuan \" , usage equal_to \" lightweight laptop \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform hard_disk_capacity equal_to \" 512GB SSD \" AGENT_ACTS: ( pc ) inform features equal_to \" backlit keyboard, quick charge, and a Type-c port \" USER: What's the CPU type of the desktop? <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5,000 to 10,000 yuan \" , usage equal_to \" lightweight laptop \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm just about to plan a trip to Suzhou. Could you help me find a hotel? I'd like a king-size room at a resort hotel. <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" resort \" , room_type equal_to \" king-size room \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" friends to have an outing \" , ( hotel ) star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( hotel ) recommend name equal_to \" Shui'an Hanshe Boutique Hotel \" USER: I forgot to tell you, I'd prefer it if the hotel has standard rooms. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" friends to have an outing \" ( hotel ) name equal_to \" Shui'an Hanshe Boutique Hotel \" , room_type equal_to \" standard room \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" Suzhou New District \" , grade equal_to \" fifth grade \" , level equal_to \" upgrading class \" , subject equal_to \" Chinese \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform type equal_to \" face-to-face \" AGENT_ACTS: ( class ) inform times equal_to \" 10 \" USER: How much is the tuition fee? <endofhistory>",
+    "output": "( class ) area equal_to \" Suzhou New District \" , grade equal_to \" fifth grade \" , level equal_to \" upgrading class \" , subject equal_to \" Chinese \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" yes \" , name equal_to \" Xi’an Jiaotong-Liverpool University \" , type equal_to \" school campus \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" free \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" yes \" USER: Thank you very much! <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" yes \" , name equal_to \" Xi’an Jiaotong-Liverpool University \" , type equal_to \" school campus \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Sunday \" , departure equal_to \" Chengdu \" , destination equal_to \" Guangzhou \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform departure_time equal_to \" 17:05 that day \" AGENT_ACTS: ( flight ) inform ticket_price equal_to \" 1,720 yuan \" USER: Will it be windy in Guangzhou next Sunday? We're planning to spend a lot of time outside the first day. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Sunday \" , departure equal_to \" Chengdu \" , destination equal_to \" Guangzhou \" ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Sunday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" commercial center \" , ( hotel ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform parking equal_to \" free \" AGENT_ACTS: ( attraction ) recommend name equal_to \" Harmony Times Square \" USER: Could you also tell me its opening hours? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Harmony Times Square \" , type equal_to \" commercial center \" ( hotel ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" Changshu \" , name equal_to \" Vienna Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 3 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform score equal_to \" 4.8 \" AGENT_ACTS: ( hotel ) inform phone_number equal_to \" 0512-52018188 \" USER: How much is a standard room? <endofhistory>",
+    "output": "( hotel ) area equal_to \" Changshu \" , name equal_to \" Vienna Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 3 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) metro_station equal_to \" Yes \" , name equal_to \" Nongleyuan Charcoal Fire Barbecue \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform business_hours equal_to \" 11:00–14:00 and 16:30–21:30, Monday to Sunday \" AGENT_ACTS: ( restaurant ) inform metro_station equal_to \" Yes \" USER: Are there any good dishes? <endofhistory>",
+    "output": "( restaurant ) metro_station equal_to \" Yes \" , name equal_to \" Nongleyuan Charcoal Fire Barbecue \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'd like to buy a gas-powered notchback and my budget is between 150,000 and 200,000 yuan. Can you recommend a suitable model? <endofhistory>",
+    "output": "null"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Tianping Mountain Scenic Area \" , type equal_to \" landscape scenic spot \" , ( hotel ) area equal_to \" Wuzhong District \" , name equal_to \" Suzhou Marriott Hotel Taihu Lake \" , pricerange equal_to \" slightly more expensive \" , ( restaurant ) cuisine equal_to \" fast food and quick meals \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-66387422 \" AGENT_ACTS: ( restaurant ) recommend name equal_to \" Goodman Folk Snacks \" USER: Thank you for your help, bye. <endofhistory>",
+    "output": "( attraction ) name equal_to \" Tianping Mountain Scenic Area \" , type equal_to \" landscape scenic spot \" ( hotel ) area equal_to \" Wuzhong District \" , name equal_to \" Suzhou Marriott Hotel Taihu Lake \" , pricerange equal_to \" slightly more expensive \" ( restaurant ) cuisine equal_to \" fast food and quick meals \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , consumption equal_to \" cheap \" , name equal_to \" Dushu Lake Church \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" No. 99, Cuiwei Road, Suzhou City \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" don't need any tickets \" USER: Fantastic, that's great. I also want to look for a restaurant nearby, help me find one. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou Industrial Park \" , consumption equal_to \" cheap \" , name equal_to \" Dushu Lake Church \" , the_most_suitable_people equal_to \" friend \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" cheap \" , type equal_to \" landscape scenic spot \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Xishan Island Scenic Area \" USER: Do you know its rating? How much are the tickets? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" cheap \" , name equal_to \" Xishan Island Scenic Area \" , type equal_to \" landscape scenic spot \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou New district \" , consumption equal_to \" cheap \" , name equal_to \" Suzhou Taihu Lake Wetland Park \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Suzhou Taihu Lake Wetland Park \" AGENT_ACTS: ( attraction ) inform features equal_to \" The wetland park integrates tourism, entertainment, leisure, and education all in one. You could say it's a paradise on earth. \" USER: Sounds great, can we get there directly by subway? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou New district \" , consumption equal_to \" cheap \" , name equal_to \" Suzhou Taihu Lake Wetland Park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Xiamen \" , date equal_to \" next Tuesday \" <endofstate> <history> AGENT_ACTS: ( weather ) inform weather_condition equal_to \" Sunny \" USER: How about the temperature? <endofhistory>",
+    "output": "( weather ) city equal_to \" Xiamen \" , date equal_to \" next Tuesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends to have an outing \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: What's the exact address? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends to have an outing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I like watching TV shows and movies. Do you know any popular American TV shows from the 2000s that you would like to recommend? <endofhistory>",
+    "output": "( tv ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" American \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" resort \" , room_type equal_to \" a standard room \" , star equal_to \" 3 \" <endofstate> <history> AGENT_ACTS: ( hotel ) recommend name equal_to \" Womu Boutique Hotel \" USER: What's the phone number of the hotel? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" resort \" , name equal_to \" Womu Boutique Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 3 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) pricerange equal_to \" under 5,000 yuan \" , series equal_to \" Mi laptop \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform game_performance equal_to \" entry-level \" AGENT_ACTS: ( pc ) inform GPU_category equal_to \" discrete graphics card \" USER: I'd like to compare it with one from the HP Zhan series in the same price range. Can you recommend me another one? <endofhistory>",
+    "output": "( pc ) pricerange equal_to \" under 5,000 yuan \" , series equal_to \" HP Zhan series \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Wednesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Chengdu \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform ticket_price equal_to \" 420 yuan \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 12:55 that day \" USER: Is there a risk it might be delayed? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Wednesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Chengdu \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Saturday \" , departure equal_to \" Hangzhou \" , destination equal_to \" Chengdu \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform departure_time equal_to \" 18:50 that day \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 22:15 that day \" USER: How's the punctuality rate of this flight? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Saturday \" , departure equal_to \" Hangzhou \" , destination equal_to \" Chengdu \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010 \" , ( tv ) production_country_or_area equal_to \" Korean \" , type equal_to \" comedy \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) greeting AGENT_ACTS: ( tv ) recommend title equal_to \" Reply 1988 \" USER: How long is each episode? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010 \" ( tv ) production_country_or_area equal_to \" Korean \" , type equal_to \" comedy \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" Hong Kong TV show \" , type equal_to \" romantic TV show \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform name_list equal_to \" Bosco Wong, Michael Tse, Fala Chen, and Kate Tsui \" AGENT_ACTS: ( tv ) inform director equal_to \" Chong Wai-kin \" USER: How long does each episode last? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" Hong Kong TV show \" , type equal_to \" romantic TV show \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" bullet train \" , date equal_to \" next Monday morning \" , departure equal_to \" Xiamen \" , destination equal_to \" Shanghai \" , seat_type equal_to \" second class ticket \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform train_number equal_to \" D3292 \" AGENT_ACTS: ( train ) inform ticket_price equal_to \" 411.0 yuan \" USER: Can you tell me the specific departure and arrival times? Because I want to arrange a cab. <endofhistory>",
+    "output": "( train ) classification equal_to \" bullet train \" , date equal_to \" next Monday morning \" , departure equal_to \" Xiamen \" , destination equal_to \" Shanghai \" , seat_type equal_to \" second class ticket \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" mid \" , name equal_to \" The Humble Administrator's Garden \" , type equal_to \" Suzhou-styled garden \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) inform features equal_to \" a UNESCO World Heritage Site and one of China's four most famous gardens \" USER: All right, I'm also looking for a resort hotel with king-size rooms. Are there any cheaper options here in Suzhou? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" The Humble Administrator's Garden \" , type equal_to \" Suzhou-styled garden \" ( hotel ) hotel_type equal_to \" resort \" , pricerange equal_to \" cheaper \" , room_type equal_to \" king-size room \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello! I've heard that Suzhou's Wufangzhai is absolutely delicious. Do you know what its recommended dish is? <endofhistory>",
+    "output": "( restaurant ) dishes equal_to \" meat and egg yolk dumpling \" , name equal_to \" Wufangzhai \" , per_capita_consumption equal_to \" 33 yuan \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Tongli Ancient Town \" <endofstate> <history> AGENT_ACTS: ( attraction ) inform address equal_to \" Tongli Ancient Town, Wujiang District, Suzhou City \" USER: And what's its rating? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Tongli Ancient Town \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" Gusu District \" , metro_station equal_to \" be \" , name equal_to \" Songhelou Restaurant \" , pricerange equal_to \" slightly more expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to \" Songhelou Restaurant \" AGENT_ACTS: ( restaurant ) inform phone_number equal_to \" 0512-67700688 \" USER: And what's the address? <endofhistory>",
+    "output": "( restaurant ) area equal_to \" Gusu District \" , metro_station equal_to \" be \" , name equal_to \" Songhelou Restaurant \" , pricerange equal_to \" slightly more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" university campus \" , ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Super 8 Hotel \" , pricerange equal_to \" cheap \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform address equal_to \" No. 318, Loumen Road, Gusu District, Suzhou \" , inform parking equal_to \" free \" AGENT_ACTS: ( attraction ) recommend name equal_to \" Soochow University \" USER: What's the university's phone number? How's its rating? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Soochow University \" , type equal_to \" university campus \" ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Super 8 Hotel \" , pricerange equal_to \" cheap \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" Suzhou New District \" , grade equal_to \" fifth grade \" , level equal_to \" upgrading class \" , subject equal_to \" Chinese \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform times equal_to \" 10 \" AGENT_ACTS: ( class ) inform price equal_to \" 1,600 \" USER: Okay. I'll think about it. Thank you! Goodbye! <endofhistory>",
+    "output": "( class ) area equal_to \" Suzhou New District \" , grade equal_to \" fifth grade \" , level equal_to \" upgrading class \" , subject equal_to \" Chinese \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Thursday \" , departure equal_to \" Guangzhou \" , destination equal_to \" Xiamen \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform ticket_price equal_to \" 2,590 yuan \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 13:30 that day \" USER: What's the punctuality rate of this flight? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Thursday \" , departure equal_to \" Guangzhou \" , destination equal_to \" Xiamen \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang \" , consumption equal_to \" slightly more expensive \" , name equal_to \" Tongli Ancient Town \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 100 yuan \" AGENT_ACTS: ( attraction ) inform address equal_to \" Tongli Ancient Town, Wujiang District, Suzhou City \" USER: I would also like to ask if you could recommend any cheap hotels nearby. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , consumption equal_to \" slightly more expensive \" , name equal_to \" Tongli Ancient Town \" ( hotel ) pricerange equal_to \" cheap \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Tuesday \" , departure equal_to \" Nanjing \" , destination equal_to \" Chengdu \" <endofstate> <history> AGENT_ACTS: ( flight ) inform flight_information equal_to \" CA4524 of Air China from Terminal 2 of Lukou International Airport to Terminal 2 of Shuangliu International Airport \" USER: How much is the ticket? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Tuesday \" , departure equal_to \" Nanjing \" , destination equal_to \" Chengdu \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" Hong Kong \" , star equal_to \" Bosco Wong \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) recommend title equal_to \" Lives of Omission \" AGENT_ACTS: ( tv ) inform Douban_score equal_to \" 8.5 \" USER: OK, thank you very much. I've got what I came for, goodbye. <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" Hong Kong \" , star equal_to \" Bosco Wong \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" friend \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 07:30-18:50 \" AGENT_ACTS: ( general ) general USER: Bye-bye! <endofhistory>",
+    "output": "( attraction ) name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" friend \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" Wuzhong District \" , day equal_to \" Saturdays or Sundays \" , grade equal_to \" fourth grade \" , subject equal_to \" Chinese \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform teacher equal_to \" Xu Zhong \" AGENT_ACTS: ( class ) inform end_date equal_to \" April 11, 2020 \" USER: Okay. I'll think about it. Thank you! Goodbye! <endofhistory>",
+    "output": "( class ) area equal_to \" Wuzhong District \" , day equal_to \" Saturdays or Sundays \" , grade equal_to \" fourth grade \" , subject equal_to \" Chinese \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) production_country_or_area equal_to \" America \" , type equal_to \" horror movie \" <endofstate> <history> AGENT_ACTS: ( movie ) request decade USER: Let's say the 2000s. <endofhistory>",
+    "output": "( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" America \" , type equal_to \" horror movie \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou New district \" , name equal_to \" Suzhou Taihu Lake Wetland Park \" , the_most_suitable_people equal_to \" family-friendly \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 60 yuan \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: Okay. We also need to find a 3-star hotel in Suzhou New District. We'll need a standard room, are there any suitable options? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou New district \" , name equal_to \" Suzhou Taihu Lake Wetland Park \" , the_most_suitable_people equal_to \" family-friendly \" ( hotel ) area equal_to \" Suzhou New district \" , room_type equal_to \" a standard room \" , star equal_to \" 3 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Suzhou \" , date equal_to \" next Tuesday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" intensity \" AGENT_ACTS: ( weather ) inform wind equal_to \" northwest force 2 \" USER: All right, got it. Thank you. I'll go and pack my bag. Goodbye! <endofhistory>",
+    "output": "( weather ) city equal_to \" Suzhou \" , date equal_to \" next Tuesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010s \" , type equal_to \" action TV show \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform director equal_to \" Chong Wai-kin \" AGENT_ACTS: ( tv ) inform Douban_score equal_to \" 8.5 \" USER: Sounds great. Thank you for your recommendation. <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010s \" , type equal_to \" action TV show \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Thursday \" , departure equal_to \" Guangzhou \" , destination equal_to \" Hangzhou \" , ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Thursday \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" CZ3501 of China Southern Airlines from Terminal 2 of Baiyun International Airport to Terminal 3 of Xiaoshan International Airport \" AGENT_ACTS: ( flight ) inform punctuality_rate equal_to \" 100% \" USER: It's pretty reliable then. What time does it take off? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Thursday \" , departure equal_to \" Guangzhou \" , destination equal_to \" Hangzhou \" ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Thursday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Saturday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request flight_information AGENT_ACTS: ( flight ) request arrival_time , request departure_time USER: Awesome. Thank you. I'll book the ticket later, bye. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Saturday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , metro_station equal_to \" We can get there directly by subway \" , name equal_to \" Stone Road Pedestrian Street \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" commercial center \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" The Stone Road was built during the Westernization Movement in the late Qing. The road is paved with stones, thereof the name Stone Road. Here you'll find many famous stores with a long history. \" , inform score equal_to \" 4.4 \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" free \" USER: Thank you. I'm going to get ready to go, goodbye. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , metro_station equal_to \" We can get there directly by subway \" , name equal_to \" Stone Road Pedestrian Street \" , the_most_suitable_people equal_to \" girlfriend \" , type equal_to \" commercial center \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou New district \" , the_most_suitable_people equal_to \" family-friendly \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Suzhou Taihu Lake Wetland Park \" USER: Is there anything special to see there? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou New district \" , name equal_to \" Suzhou Taihu Lake Wetland Park \" , the_most_suitable_people equal_to \" family-friendly \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" Acer \" , computer_type equal_to \" laptop \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 inches \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) recommend product_name equal_to \" Acer Extensa EX215 \" AGENT_ACTS: ( pc ) inform standby_time equal_to \" 5-8 hours \" USER: What are its special features? <endofhistory>",
+    "output": "( pc ) brand equal_to \" Acer \" , computer_type equal_to \" laptop \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 inches \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010s \" , type equal_to \" comedy \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) request type AGENT_ACTS: ( movie ) recommend title equal_to \" Dying to Survive \" USER: Who is the director of the movie? When did it premiere? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010s \" , type equal_to \" comedy \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Saturday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" the maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 6 degrees Celsius \" AGENT_ACTS: ( weather ) inform UV_intensity equal_to \" intensity \" USER: That's OK, should be fine. Please recommend a flight with business class seats from Shanghai to Nanjing next Saturday. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Saturday \" , departure equal_to \" Shanghai \" , destination equal_to \" Nanjing \" ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Saturday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" Suzhou New District \" , day equal_to \" Saturday \" , grade equal_to \" fifth grade \" , subject equal_to \" English \" , time equal_to \" morning \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform class_number equal_to \" PE5T44034A \" , inform time equal_to \" morning \" AGENT_ACTS: ( class ) inform classroom equal_to \" Room 220 of Jinhe International Building \" , inform price equal_to \" 1,600 \" USER: The price is acceptable. What time does the class dismiss? How many sessions are there? <endofhistory>",
+    "output": "( class ) area equal_to \" Suzhou New District \" , day equal_to \" Saturday \" , grade equal_to \" fifth grade \" , subject equal_to \" English \" , time equal_to \" morning \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" Hong Kong \" , star equal_to \" Bosco Wong \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform episode_length equal_to \" 45 minutes \" AGENT_ACTS: ( tv ) request decade USER: Of course, what do you have? <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" Hong Kong \" , star equal_to \" Bosco Wong \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" Wednesday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Hangzhou \" , ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Friday \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" Flight HU7393 of Hainan Airlines \" AGENT_ACTS: ( flight ) inform flight_information equal_to \" HU7393 of Hainan Airlines from Terminal 3 of Bao'an International Airport to Terminal 3 of Xiaoshan International Airport \" USER: I know the arrival time, but what's the departure time? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" Wednesday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Hangzhou \" ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Friday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) production_country_or_area equal_to \" Hong Kong \" , type equal_to \" action movies \" <endofstate> <history> AGENT_ACTS: ( movie ) recommend title equal_to \" Chasing the Dragon \" USER: Right, what's its Douban rating? <endofhistory>",
+    "output": "( movie ) production_country_or_area equal_to \" Hong Kong \" , type equal_to \" action movies \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Japan \" , type equal_to \" romantic TV show \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform episodes equal_to \" 11 episodes \" , inform name_list equal_to \" Tomohisa Yamashita, Masami Nagasawa, and Naoto Fujiki \" AGENT_ACTS: ( tv ) inform director equal_to \" Gaku Narita \" USER: All right, got it. That's all I wanted to ask. Thanks! Goodbye <endofhistory>",
+    "output": "( tv ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Japan \" , type equal_to \" romantic TV show \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" bullet train \" , date equal_to \" next Tuesday afternoon \" , departure equal_to \" Nanjing \" , destination equal_to \" Shanghai \" , seat_type equal_to \" first class \" <endofstate> <history> AGENT_ACTS: ( train ) recommend train_number equal_to \" D951 from Nanjingnan to Shanghai \" USER: All right. What time will the train leave from Nanjing? <endofhistory>",
+    "output": "( train ) classification equal_to \" bullet train \" , date equal_to \" next Tuesday afternoon \" , departure equal_to \" Nanjing \" , destination equal_to \" Shanghai \" , seat_type equal_to \" first class \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5,000 to 10,000 yuan \" , usage equal_to \" gaming laptop \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) recommend product_name equal_to \" Dell Inspiron Gaming G3 3590 \" AGENT_ACTS: ( pc ) inform GPU_model equal_to \" GTX1660ti MQ6G \" USER: Can you check the CPU model? <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5,000 to 10,000 yuan \" , usage equal_to \" gaming laptop \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010 \" , production_country_or_area equal_to \" America \" , star equal_to \" Vera Farmiga \" , ( tv ) production_country_or_area equal_to \" Korean \" , type equal_to \" comedy \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) recommend title equal_to \" The Conjuring \" AGENT_ACTS: ( movie ) inform Douban_score equal_to \" 7.9 \" , inform film_length equal_to \" 112 minutes \" USER: Got it. Thanks, bye. <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010 \" , production_country_or_area equal_to \" America \" , star equal_to \" Vera Farmiga \" ( tv ) production_country_or_area equal_to \" Korean \" , type equal_to \" comedy \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" mid \" , name equal_to \" Huqiu Scenic Area \" , type equal_to \" historic sites in Gusu District \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform name equal_to \" Huqiu Scenic Area \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.6 \" USER: Is there anything special to see there? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Huqiu Scenic Area \" , type equal_to \" historic sites in Gusu District \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" Huayi Brothers Movie World \" , the_most_suitable_people equal_to \" partner \" , type equal_to \" amusement park \" , ( restaurant ) cuisine equal_to \" Cantonese food \" , name equal_to \" Zhen Pin Yue Teahouse \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform pricerange equal_to \" mid \" AGENT_ACTS: ( restaurant ) inform metro_station equal_to \" the subway will take you directly there \" USER: That's awesome. Do you have the restaurant's phone number? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" Huayi Brothers Movie World \" , the_most_suitable_people equal_to \" partner \" , type equal_to \" amusement park \" ( restaurant ) cuisine equal_to \" Cantonese food \" , metro_station equal_to \" the subway will take you directly there \" , name equal_to \" Zhen Pin Yue Teahouse \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" can \" , name equal_to \" Stone Lake \" , type equal_to \" landscape scenic spot \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" all day \" USER: Okay, thank you. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" can \" , name equal_to \" Stone Lake \" , type equal_to \" landscape scenic spot \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" Mi \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6-inch \" , usage equal_to \" regular laptop \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) greeting , recommend product_name equal_to \" Mi Ruby \" AGENT_ACTS: ( pc ) inform operating_system equal_to \" Windows 10 \" USER: What's its standby time? <endofhistory>",
+    "output": "( pc ) brand equal_to \" Mi \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6-inch \" , usage equal_to \" regular laptop \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) area equal_to \" Xiangcheng District \" , key_departments equal_to \" neurosurgery department \" , name equal_to \" Suzhou Xiangcheng People's Hospital \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) inform address equal_to \" No. 1060, Huayuan Road \" AGENT_ACTS: ( hospital ) inform bus_routes equal_to \" No. 5, No. 7, No. 809, No. 814, No. 839, or No. 878 \" USER: Well, does the hospital provide CT scans? <endofhistory>",
+    "output": "( hospital ) area equal_to \" Xiangcheng District \" , key_departments equal_to \" neurosurgery department \" , name equal_to \" Suzhou Xiangcheng People's Hospital \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Monday \" , departure equal_to \" Beijing \" , destination equal_to \" Guangzhou \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform class_cabin equal_to \" economy \" AGENT_ACTS: ( flight ) inform punctuality_rate equal_to \" 98.26% \" USER: What time will the flight arrive in Guangzhou? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Monday \" , departure equal_to \" Beijing \" , destination equal_to \" Guangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Monday \" , departure equal_to \" Nanjing \" , destination equal_to \" Shenzhen \" , ( weather ) city equal_to \" Shenzhen \" , date equal_to \" next Monday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform wind equal_to \" northeast force 2 \" AGENT_ACTS: ( general ) general USER: Bye-bye. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Monday \" , departure equal_to \" Nanjing \" , destination equal_to \" Shenzhen \" ( weather ) city equal_to \" Shenzhen \" , date equal_to \" next Monday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, can you help me find a general hospital with a psychological department? A member of my family has not felt well the past few days. <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" general hospital \" , key_departments equal_to \" psychological department \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) cuisine equal_to \" Korean foods \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS: ( restaurant ) recommend name equal_to \" Nongleyuan Charcoal Fire Barbecue \" USER: What;s there restaurant's exact location? <endofhistory>",
+    "output": "( restaurant ) cuisine equal_to \" Korean foods \" , name equal_to \" Nongleyuan Charcoal Fire Barbecue \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Sunday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" The maximum temperature will be 24 degrees Celsius, and the minimum temperature will be 14 degrees Celsius \" , inform weather_condition equal_to \" cloudy \" AGENT_ACTS: ( weather ) inform UV_intensity equal_to \" moderate \" USER: That's great then. Please help me recommend a flight from Hangzhou to Guangzhou. I'd like to fly economy class. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , departure equal_to \" Hangzhou \" , destination equal_to \" Guangzhou \" ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Sunday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) classification equal_to \" SUV \" , hybrid equal_to \" gas \" , pricerange equal_to \" between 200,000 and 300,000 \" , series equal_to \" T-ROC \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) recommend name equal_to \" 280TSI \" , recommend series equal_to \" T-ROC \" AGENT_ACTS: ( car ) inform parking_assist_system equal_to \" have \" , inform ventilated_seats equal_to \" it does not have seat ventilation at the moment \" USER: What about seat heating? <endofhistory>",
+    "output": "( car ) classification equal_to \" SUV \" , hybrid equal_to \" gas \" , pricerange equal_to \" between 200,000 and 300,000 \" , series equal_to \" T-ROC \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello! I've thought about a batch of desktop computers recently, but I don't know what brand. Can you recommend some? <endofhistory>",
+    "output": "null"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" more expensive \" , name equal_to \" Shajiabang Scenic Spot \" , type equal_to \" landscape scenic spot \" , ( hotel ) hotel_type equal_to \" resort \" , name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" more expensive \" , ( restaurant ) cuisine equal_to \" Cantonese food \" , name equal_to \" Zhen Pin Yue Teahouse \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to \" Zhen Pin Yue Teahouse \" AGENT_ACTS: ( restaurant ) inform address equal_to \" No.133, TianXiang Garden, No.386, Suxiu Road \" , inform dishes equal_to \" roasted goose \" USER: Okay, thank you for your help, bye! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" more expensive \" , name equal_to \" Shajiabang Scenic Spot \" , type equal_to \" landscape scenic spot \" ( hotel ) hotel_type equal_to \" resort \" , name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" more expensive \" ( restaurant ) cuisine equal_to \" Cantonese food \" , name equal_to \" Zhen Pin Yue Teahouse \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) CPU equal_to \" Intel Core i7 \" , memory_capacity equal_to \" 16GB \" , pricerange equal_to \" between 5,000 and 10,000 yuan \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform GPU_category equal_to \" discrete graphics card \" AGENT_ACTS: ( pc ) inform hard_disk_capacity equal_to \" 256GB SSD + 1TB HDD \" USER: Ok, I'm happy with it so far, how much is it? <endofhistory>",
+    "output": "( pc ) CPU equal_to \" Intel Core i7 \" , memory_capacity equal_to \" 16GB \" , pricerange equal_to \" between 5,000 and 10,000 yuan \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) pricerange equal_to \" slightly more expensive \" , room_type equal_to \" a standard room \" , ( restaurant ) area equal_to \" Gusu District \" , name equal_to \" Dongwu Noodle House \" , pricerange equal_to \" cheap \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform metro_station equal_to \" there is \" AGENT_ACTS: ( hotel ) recommend name equal_to \" Pan Pacific Suzhou \" USER: Does it have a parking lot? Do you need to pay for parking? <endofhistory>",
+    "output": "( hotel ) name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" slightly more expensive \" , room_type equal_to \" a standard room \" ( restaurant ) area equal_to \" Gusu District \" , name equal_to \" Dongwu Noodle House \" , pricerange equal_to \" cheap \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" Suzhou Industrial Park \" , pricerange equal_to \" slightly more expensive \" <endofstate> <history> AGENT_ACTS: ( restaurant ) request cuisine USER: It doesn't really matter, but I would like if we could go to the restaurant directly by subway. <endofhistory>",
+    "output": "( restaurant ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" directly by subway \" , pricerange equal_to \" slightly more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" can \" , name equal_to \" Stone Lake \" , the_most_suitable_people equal_to \" friends to have an outing \" , ( restaurant ) cuisine equal_to \" Korean foods \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" It's famous for Stone Lake's wonderful scenery and the endless rows of mountains and ridges. It's a great place to appreciate the mountain and water culture of Suzhou. \" AGENT_ACTS: ( restaurant ) recommend name equal_to \" Seoul Korean Cuisine \" USER: Great, then I guess its rating is high, is it? What are the opening hours? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" can \" , name equal_to \" Stone Lake \" , the_most_suitable_people equal_to \" friends to have an outing \" ( restaurant ) cuisine equal_to \" Korean foods \" , name equal_to \" Seoul Korean Cuisine \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, my friend is coming to Suzhou to visit me. Could you recommend a fun place in Gusu District in the mid-price range? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, can you recommend any popular Japanese TV shows from the 2010s? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" Japanese TV show \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" business \" , room_type equal_to \" king-size room \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) request room_type AGENT_ACTS: ( hotel ) inform name equal_to \" Shui'an Hanshe Boutique Hotel \" USER: What's the hotel's address? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" business \" , name equal_to \" Shui'an Hanshe Boutique Hotel \" , room_type equal_to \" king-size room \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) departure equal_to \" Beijing \" , destination equal_to \" Chengdu \" , ( weather ) city equal_to \" Chengdu \" , date equal_to \" next Wednesday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" The maximum temperature will be 13 degrees Celsius, and the minimum temperature will be 4 degrees Celsius. \" AGENT_ACTS: ( flight ) request class_cabin USER: Economy class. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , departure equal_to \" Beijing \" , destination equal_to \" Chengdu \" ( weather ) city equal_to \" Chengdu \" , date equal_to \" next Wednesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" for friends \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" AGENT_ACTS: ( attraction ) inform address equal_to \" 4.5 \" USER: Okay. And what are the opening hours? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" for friends \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Saturday \" , departure equal_to \" Beijing \" , destination equal_to \" Guangzhou \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform ticket_price equal_to \" 1,060 yuan \" AGENT_ACTS: ( flight ) inform ticket_price equal_to \" 1,800 yuan \" USER: Got it. Thank you! Goodbye! <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Saturday \" , departure equal_to \" Beijing \" , destination equal_to \" Guangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou New district \" , consumption equal_to \" above-average \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Suzhou Amusement Land Forest Waterworld \" USER: How much do they charge? Can we get there directly by subway? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou New district \" , consumption equal_to \" above-average \" , name equal_to \" Suzhou Amusement Land Forest Waterworld \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Has HP released any new laptops lately? If it has, please recommend a lightweight laptop. <endofhistory>",
+    "output": "( pc ) brand equal_to \" HP \" , computer_type equal_to \" laptops \" , usage equal_to \" lightweight laptop \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Tuesday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform weather_condition equal_to \" Sunny \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius. \" USER: All right. I'll think about it and discuss it with my friends. Thank you, bye. <endofhistory>",
+    "output": "( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Tuesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I want to go to a mid-priced restaurant in Suzhou New District. It would be best if I could get there directly by subway, please recommend me one. <endofhistory>",
+    "output": "( restaurant ) area equal_to \" Suzhou New district \" , metro_station equal_to \" get there directly by subway \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello! I want to buy a business computer, do you know which one to choose? <endofhistory>",
+    "output": "( pc ) usage equal_to \" business computer \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" mid \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" The Humble Administrator's Garden \" USER: It sure has a well-known reputation. What's the exact address? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" mid \" , name equal_to \" The Humble Administrator's Garden \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) brand equal_to \" imported Volkswagens \" , classification equal_to \" SUV \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) recommend name equal_to \" Touareg 2.0TSI Ruiyi Version \" AGENT_ACTS: ( car ) inform price equal_to \" 619,800 \" USER: Does it have ventilated seats? <endofhistory>",
+    "output": "( car ) brand equal_to \" imported Volkswagens \" , classification equal_to \" SUV \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) star equal_to \" Brigitte Lin \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to \" 7.4 \" AGENT_ACTS: ( movie ) inform film_length equal_to \" 108 minutes \" USER: Well, thank you for your patience. I've got all I came for. <endofhistory>",
+    "output": "( movie ) star equal_to \" Brigitte Lin \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" America \" , type equal_to \" horror movie \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) recommend title equal_to \" The Conjuring \" AGENT_ACTS: ( movie ) inform name_list equal_to \" Vera Farmiga, Patrick Wilson, and Lili Taylor. \" USER: How long will it take me to watch this movie? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" America \" , type equal_to \" horror movie \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" business \" , name equal_to \" Shui'an Hanshe Boutique Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform room_charge equal_to \" 789 yuan \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.6 \" USER: What's the address of the hotel? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" business \" , name equal_to \" Shui'an Hanshe Boutique Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" mid \" , name equal_to \" Suzhou Aquarium \" , type equal_to \" amusement park \" , ( hotel ) hotel_type equal_to \" business \" , name equal_to \" Jinjiang Inn \" , pricerange equal_to \" cheaper \" , ( restaurant ) cuisine equal_to \" hot pot \" , name equal_to \" Aobanian Hot Pot \" , pricerange equal_to \" more expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform score equal_to \" 4.2 \" AGENT_ACTS: ( general ) general USER: No, that's all. I'll let you get back to your business, bye. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Suzhou Aquarium \" , type equal_to \" amusement park \" ( hotel ) hotel_type equal_to \" business \" , name equal_to \" Jinjiang Inn \" , pricerange equal_to \" cheaper \" ( restaurant ) cuisine equal_to \" hot pot \" , name equal_to \" Aobanian Hot Pot \" , pricerange equal_to \" more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) cuisine equal_to \" hot pot \" , name equal_to \" Laotianqiao Frog Hot Pot \" , pricerange equal_to \" slightly more expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform dishes equal_to \" bullfrogs \" , inform per_capita_consumption equal_to \" 120 yuan \" AGENT_ACTS: ( restaurant ) inform phone_number equal_to \" 0512-65816338 \" USER: Thanks, goodbye! <endofhistory>",
+    "output": "( restaurant ) cuisine equal_to \" hot pot \" , name equal_to \" Laotianqiao Frog Hot Pot \" , pricerange equal_to \" slightly more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Sunday \" , departure equal_to \" Shanghai \" , destination equal_to \" Guangzhou \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform arrival_time equal_to \" 16:05 that day \" AGENT_ACTS: ( flight ) inform ticket_price equal_to \" 1,500 yuan \" USER: Please help me check whether it will be windy in Guangzhou next Sunday. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Sunday \" , departure equal_to \" Shanghai \" , destination equal_to \" Guangzhou \" ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Sunday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" can \" , the_most_suitable_people equal_to \" friends to have an outing \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) greeting , request metro_station AGENT_ACTS: ( attraction ) recommend name equal_to \" Stone Lake \" USER: What's there to see there? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wuzhong District \" , metro_station equal_to \" can \" , name equal_to \" Stone Lake \" , the_most_suitable_people equal_to \" friends to have an outing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello! I've wanted to buy a new computer recently, preferably a desktop. Can you help me to recommend a good model? <endofhistory>",
+    "output": "( pc ) computer_type equal_to \" desktop \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I've been looking for a good Hong Kong TV show recently. Can you help me find one? <endofhistory>",
+    "output": "null"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" high-speed \" , date equal_to \" next Saturday afternoon \" , departure equal_to \" Nanjing \" , destination equal_to \" Beijing \" , seat_type equal_to \" second class \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform departure_time equal_to \" 13:02 \" AGENT_ACTS: ( train ) inform ticket_price equal_to \" 443.5 yuan \" USER: I also want to know what the weather in Beijing will be like next Saturday. <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Saturday afternoon \" , departure equal_to \" Nanjing \" , destination equal_to \" Beijing \" , seat_type equal_to \" second class \" ( weather ) city equal_to \" Beijing \" , date equal_to \" next Saturday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Taiwan \" , ( tv ) type equal_to \" feature drama \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform film_length equal_to \" 101 minutes \" AGENT_ACTS: ( tv ) recommend title equal_to \" The World Between Us \" USER: What's its Douban rating? How about the main actors? <endofhistory>",
+    "output": "( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Taiwan \" ( tv ) type equal_to \" feature drama \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) series equal_to \" Teramont X \" <endofstate> <history> AGENT_ACTS: ( car ) inform 4WD equal_to \" all-wheel \" , recommend name equal_to \" Teramont X 380TSI All-wheel Luxury \" USER: How much does this model cost? <endofhistory>",
+    "output": "( car ) series equal_to \" Teramont X \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) name equal_to \" Suzhou Municipal Hospital (East Branch) \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) inform registration_time equal_to \" 7:30-11:30 and 12:30-16:30 \" AGENT_ACTS: ( hospital ) inform 3.0T_MRI equal_to \" As of now, no \" USER: Well, how about CT scan services? <endofhistory>",
+    "output": "( hospital ) name equal_to \" Suzhou Municipal Hospital (East Branch) \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> AGENT_ACTS: ( car ) request pricerange USER: I'm willing to spend more than 300,000 yuan. <endofhistory>",
+    "output": "null"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" the 2000s \" , type equal_to \" action movie \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) request AGENT_ACTS: ( movie ) inform title equal_to \" YiP Man \" USER: What's its Douban rating? <endofhistory>",
+    "output": "( movie ) decade equal_to \" the 2000s \" , type equal_to \" action movie \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) 4WD equal_to \" all-wheel \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) recommend name equal_to \" T-ROC 280TSI DSG all-wheel Luxury \" AGENT_ACTS: ( car ) inform price equal_to \" 203,800 \" USER: Does this car have seat ventilation and cruise control? <endofhistory>",
+    "output": "( car ) 4WD equal_to \" all-wheel \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) day equal_to \" Saturday \" , grade equal_to \" fifth grade \" , subject equal_to \" math \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) request day AGENT_ACTS: ( class ) request area USER: We live between Gusu District and Suzhou New District, so any place in either of the two areas is OK. Both are close to where we live. <endofhistory>",
+    "output": "( class ) area equal_to \" Suzhou New District \" , day equal_to \" Saturday \" , grade equal_to \" fifth grade \" , subject equal_to \" math \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" specialized hospital \" , level equal_to \" tertiary \" <endofstate> <history> AGENT_ACTS: ( hospital ) general USER: I'd prefer a public hospital. <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" specialized hospital \" , level equal_to \" tertiary \" , public_or_private equal_to \" public hospital \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) departure equal_to \" Hangzhou \" , destination equal_to \" Shenzhen \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request departure AGENT_ACTS: ( flight ) request date USER: Please check the flights for next Saturday. <endofhistory>",
+    "output": "( flight ) date equal_to \" next Saturday \" , departure equal_to \" Hangzhou \" , destination equal_to \" Shenzhen \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" business \" , name equal_to \" Shui'an Hanshe Boutique Hotel \" , room_type equal_to \" standard room \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform room_charge equal_to \" 789 yuan \" AGENT_ACTS: ( hotel ) inform parking equal_to \" free \" USER: What's the address of the hotel? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" business \" , name equal_to \" Shui'an Hanshe Boutique Hotel \" , room_type equal_to \" standard room \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm preparing a trip to Suzhou, could you help me find a clean hotel in Suzhou Industrial Park? <endofhistory>",
+    "output": "( hotel ) area equal_to \" Suzhou Industrial Park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm coming to Suzhou to visit a friend and I'd like to explore the city when I'm there. What scenic area would be a good place for friends to have an outing in Gusu District? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , the_most_suitable_people equal_to \" friends to have an outing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" bullet train \" , date equal_to \" next Tuesday afternoon \" , departure equal_to \" Beijing \" , destination equal_to \" Shanghai \" , seat_type equal_to \" sleeper in second class \" <endofstate> <history> AGENT_ACTS: ( train ) inform train_number equal_to \" D709 from Beijingnan to Shanghai \" USER: OK, what's the price of a sleeper in second class on this train? <endofhistory>",
+    "output": "( train ) classification equal_to \" bullet train \" , date equal_to \" next Tuesday afternoon \" , departure equal_to \" Beijing \" , destination equal_to \" Shanghai \" , seat_type equal_to \" sleeper in second class \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" Acer \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) recommend product_name equal_to \" Acer Veriton SQX4270 660N \" AGENT_ACTS: ( pc ) inform price equal_to \" 3,499.0 yuan \" USER: Great, my budget is under 5,000 yuan and this price is just perfect for me. <endofhistory>",
+    "output": "( pc ) brand equal_to \" Acer \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I would like to find a public hospital, preferably a specialized hospital in Gusu district. Can you help me select one? <endofhistory>",
+    "output": "( hospital ) area equal_to \" Gusu District \" , general_or_specialized equal_to \" specialized hospital \" , public_or_private equal_to \" public hospital \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" Lenovo \" , computer_type equal_to \" laptop \" , screen_size equal_to \" 15.6 inches \" , usage equal_to \" lightweight laptop \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) request screen_size AGENT_ACTS: ( pc ) request memory_capacity USER: 8GB. <endofhistory>",
+    "output": "( pc ) brand equal_to \" Lenovo \" , computer_type equal_to \" laptop \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 inches \" , usage equal_to \" lightweight laptop \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) name equal_to \" Changshu Yiwenge Hotel \" , ( restaurant ) name equal_to \" Guimijia \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform parking equal_to \" free \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.4 \" USER: Okay. That's great! Thank you for your service. Goodbye! <endofhistory>",
+    "output": "( hotel ) name equal_to \" Changshu Yiwenge Hotel \" ( restaurant ) name equal_to \" Guimijia \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) name equal_to \" Genting Star Chain Hotel \" , room_type equal_to \" king-size room \" , star equal_to \" 1 \" , ( restaurant ) area equal_to \" Suzhou Industrial Park \" , cuisine equal_to \" riben Cuisine \" , name equal_to \" Wanyuting·hejiariben Cuisine Teppanyaki \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform parking equal_to \" free \" AGENT_ACTS: ( hotel ) inform room_charge equal_to \" 152 yuan \" USER: OK, thank you very much. <endofhistory>",
+    "output": "( hotel ) name equal_to \" Genting Star Chain Hotel \" , room_type equal_to \" king-size room \" , star equal_to \" 1 \" ( restaurant ) area equal_to \" Suzhou Industrial Park \" , cuisine equal_to \" riben Cuisine \" , name equal_to \" Wanyuting·hejiariben Cuisine Teppanyaki \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello! Could you help check the weather in Beijing for next Saturday? <endofhistory>",
+    "output": "( weather ) city equal_to \" Beijing \" , date equal_to \" next Saturday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" Suzhou Industrial Park \" , grade equal_to \" fifth grade \" , level equal_to \" upgrading class \" , subject equal_to \" English \" <endofstate> <history> AGENT_ACTS: ( class ) recommend class_number equal_to \" PE5P36112A \" USER: Where is the class held? <endofhistory>",
+    "output": "( class ) area equal_to \" Suzhou Industrial Park \" , grade equal_to \" fifth grade \" , level equal_to \" upgrading class \" , subject equal_to \" English \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" general hospital \" , key_departments equal_to \" general surgery department \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) request general_or_specialized AGENT_ACTS: ( hospital ) recommend name equal_to \" The First Affiliated Hospital of Soochow University \" USER: I don't know where it is. <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" general hospital \" , key_departments equal_to \" general surgery department \" , name equal_to \" The First Affiliated Hospital of Soochow University \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Taiwan \" , type equal_to \" science fiction movie \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform release_date equal_to \" Taiwan, China \" AGENT_ACTS: ( movie ) inform name_list equal_to \" Chang Chen, Karena Lam, Yōsuke Eguchi, and Barbie Hsu \" USER: Wow! Barbie Hsu is in it. That's just what I was looking for, a Taiwanese TV show with her starring in it. <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" Taiwanese TV show \" , star equal_to \" Barbie Hsu \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" directly by subway \" , name equal_to \" L'Arôme \" , pricerange equal_to \" slightly more expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to \" L'Arôme \" AGENT_ACTS: ( restaurant ) inform business_hours equal_to \" between 11:30 am and 10 pm, Monday to Sunday \" USER: OK, could you help me check this restaurant's rating? <endofhistory>",
+    "output": "( restaurant ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" directly by subway \" , name equal_to \" L'Arôme \" , pricerange equal_to \" slightly more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I'd like to buy an SUV for off-road use. It just needs to fit three people. What do you suggest? <endofhistory>",
+    "output": "null"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" the Gate of the Orient \" , the_most_suitable_people equal_to \" for friends to have some fun \" , ( hotel ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" Genting Star Chain Hotel \" , room_type equal_to \" king-size room \" , star equal_to \" 1 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" Genting Star Chain Hotel \" AGENT_ACTS: ( hotel ) inform address equal_to \" No. 288, Suzhou Avenue East, Suzhou Industrial Park, Suzhou \" USER: What's the hotel's reservation phone number? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" the Gate of the Orient \" , the_most_suitable_people equal_to \" for friends to have some fun \" ( hotel ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" Genting Star Chain Hotel \" , room_type equal_to \" king-size room \" , star equal_to \" 1 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) pricerange equal_to \" cheaper \" , room_type equal_to \" king-size room \" , ( restaurant ) area equal_to \" Kunshan \" , name equal_to \" Zhou Zhuang Hua Jian Tang Jie Geng Restaurant \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) request room_type AGENT_ACTS: ( hotel ) recommend name equal_to \" Yinjiangnan Xujia Hostel \" USER: OK, then please give me the address and I'll drive there. <endofhistory>",
+    "output": "( hotel ) area equal_to \" Kunshan \" , name equal_to \" Yinjiangnan Xujia Hostel \" , pricerange equal_to \" cheaper \" , room_type equal_to \" king-size room \" ( restaurant ) area equal_to \" Kunshan \" , name equal_to \" Zhou Zhuang Hua Jian Tang Jie Geng Restaurant \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I've heard that Miss Fu in Chengdu is supposed to be really good and I wanted to ask for its phone number. <endofhistory>",
+    "output": "( restaurant ) name equal_to \" Miss Fu in Chengdu \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" mid \" , name equal_to \" Huqiu Scenic Area \" , type equal_to \" historical sites in Gusu District \" , ( restaurant ) cuisine equal_to \" Jiangsu Zhejiang Cuisine \" , name equal_to \" Grandma's Home \" , pricerange equal_to \" cheap \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend business_hours equal_to \" 11:00–14:00 and 16:30–21:00, Monday to Sunday \" AGENT_ACTS: ( restaurant ) inform phone_number equal_to \" 0512-62857757 \" USER: Thank you for your help, bye. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Huqiu Scenic Area \" , type equal_to \" historical sites in Gusu District \" ( restaurant ) cuisine equal_to \" Jiangsu Zhejiang Cuisine \" , name equal_to \" Grandma's Home \" , pricerange equal_to \" cheap \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'd like to buy a desktop that costs less than 5,000 yuan. <endofhistory>",
+    "output": "( pc ) pricerange equal_to \" less than 5,000 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5,000 and 10,000 \" , usage equal_to \" business computer \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform features equal_to \" No specific description \" AGENT_ACTS: ( pc ) inform GPU_category equal_to \" discrete graphics card \" USER: OK. Is there a lightweight laptop with the same specification? <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5,000 and 10,000 \" , usage equal_to \" lightweight laptop \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" bullet train \" , date equal_to \" next Thursday morning \" , departure equal_to \" Shenzhen \" , destination equal_to \" Shanghai \" , seat_type equal_to \" second class ticket \" , ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Thursday \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) request arrival_time AGENT_ACTS: ( general ) request duration USER: How much is the ticket? <endofhistory>",
+    "output": "( train ) classification equal_to \" bullet train \" , date equal_to \" next Thursday morning \" , departure equal_to \" Shenzhen \" , destination equal_to \" Shanghai \" , seat_type equal_to \" second class ticket \" ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Thursday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" Chinese mainland \" , star equal_to \" Hu Ge \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform episodes equal_to \" 50 episodes \" AGENT_ACTS: ( tv ) inform director equal_to \" Jeffrey Chiang \" USER: How long are the episodes of this TV show? <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" Chinese mainland \" , star equal_to \" Hu Ge \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Wednesday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 5 degrees Celsius. \" , inform weather_condition equal_to \" cloudy and later sunny \" AGENT_ACTS: ( weather ) inform wind equal_to \" It will be northwest force 3 to 4. \" USER: Okay. I'm planning to buy a first class ticket for high-speed trains from Shanghai to Xiamen next Wednesday afternoon. Which train is available? <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed trains \" , date equal_to \" next Wednesday afternoon \" , departure equal_to \" Shanghai \" , destination equal_to \" Xiamen \" , seat_type equal_to \" first class \" ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Wednesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" the 1980s \" , production_country_or_area equal_to \" Taiwan \" <endofstate> <history> AGENT_ACTS: ( movie ) recommend title equal_to \" ['Kung Fu Kids or The Legend of the Six Dynasty, or The Shanghai Thirteen'] | ['Kung Fu Kids or The Legend of the Six Dynasty, or The Shanghai Thirteen'] | ['Kung Fu Kids or The Legend of the Six Dynasty, or The Shanghai Thirteen'] \" USER: Is there any good action movie that you can recommend? <endofhistory>",
+    "output": "( movie ) decade equal_to \" the 1980s \" , type equal_to \" action movies \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5,000 to 10,000 yuan \" , usage equal_to \" business computer \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform GPU_model equal_to \" Leadtek P2000 \" AGENT_ACTS: ( pc ) inform CPU_model equal_to \" i7-9700 \" USER: How much is it? <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5,000 to 10,000 yuan \" , usage equal_to \" business computer \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Thursday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" weak \" AGENT_ACTS: ( general ) general USER: Nothing else, bye! <endofhistory>",
+    "output": "( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Thursday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Changshu \" , name equal_to \" Shajiabang Scenic Spot \" , the_most_suitable_people equal_to \" family-friendly \" , ( hotel ) area equal_to \" Changshu \" , room_type equal_to \" standard room \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 110 yuan \" AGENT_ACTS: ( hotel ) recommend name equal_to \" Crowne Plaza Changshu Hotel \" USER: Great, what's the room rate? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Changshu \" , name equal_to \" Shajiabang Scenic Spot \" , the_most_suitable_people equal_to \" family-friendly \" ( hotel ) area equal_to \" Changshu \" , name equal_to \" Crowne Plaza Changshu Hotel \" , room_type equal_to \" standard room \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" high-speed \" , date equal_to \" next Wednesday afternoon \" , departure equal_to \" Shanghai \" , destination equal_to \" Beijing \" , seat_type equal_to \" second class \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform departure_time equal_to \" 15:00 that day \" AGENT_ACTS: ( train ) inform arrival_time equal_to \" 19:36 that day \" USER: Got it, thank you, bye. <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Wednesday afternoon \" , departure equal_to \" Shanghai \" , destination equal_to \" Beijing \" , seat_type equal_to \" second class \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" Changshu \" , name equal_to \" Atour Hotel in Changjiang Road, Changshu \" , pricerange equal_to \" mid \" , room_type equal_to \" standard room \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" Atour Hotel in Changjiang Road, Changshu \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.8 \" USER: Is there a parking lot? How much is it to park there? <endofhistory>",
+    "output": "( hotel ) area equal_to \" Changshu \" , name equal_to \" Atour Hotel in Changjiang Road, Changshu \" , pricerange equal_to \" mid \" , room_type equal_to \" standard room \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Saturday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request punctuality_rate AGENT_ACTS: ( flight ) request flight_information USER: What are the departure and arrival times of this flight? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Saturday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) 4WD equal_to \" two-wheel \" , series equal_to \" Passat \" , size equal_to \" mid-size \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) inform price equal_to \" 184,900 \" AGENT_ACTS: ( car ) inform ventilated_seats equal_to \" does not have \" USER: What about seat heating? <endofhistory>",
+    "output": "( car ) 4WD equal_to \" two-wheel \" , series equal_to \" Passat \" , size equal_to \" mid-size \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 4 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform score equal_to \" 4.6 \" AGENT_ACTS: ( hotel ) inform address equal_to \" Building 9, Ligongdi Commercial Street III, Zone E, Suzhou Industrial Park \" USER: I also need to ask if parking is convenient. Does the hotel have a free parking lot? <endofhistory>",
+    "output": "( hotel ) area equal_to \" Suzhou Industrial Park \" , name equal_to \" Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 4 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" Acer \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) general AGENT_ACTS: ( pc ) inform features equal_to \" There is no specific description \" USER: OK, what's the hard drive's storage volume? <endofhistory>",
+    "output": "( pc ) brand equal_to \" Acer \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Beijing \" , date equal_to \" next Saturday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) greeting AGENT_ACTS: ( weather ) inform tamperature equal_to \" The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be -3 degrees Celsius \" USER: OK. And what about the UV intensity and wind force and direction? <endofhistory>",
+    "output": "( weather ) city equal_to \" Beijing \" , date equal_to \" next Saturday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 1990s \" , production_country_or_area equal_to \" Chinese mainland \" , type equal_to \" action movie \" , ( tv ) production_country_or_area equal_to \" Chinese mainland \" , star equal_to \" Fenqiang Ouyang \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform release_date equal_to \" February 11, 1993, in Hong Kong \" AGENT_ACTS: ( tv ) recommend title equal_to \" A Dream in Red Mansions \" USER: How about its Douban rating? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 1990s \" , production_country_or_area equal_to \" Chinese mainland \" , type equal_to \" action movie \" ( tv ) production_country_or_area equal_to \" Chinese mainland \" , star equal_to \" Fenqiang Ouyang \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" bullet train \" , date equal_to \" next Sunday afternoon \" , departure equal_to \" Xiamen \" , destination equal_to \" Nanjing \" , seat_type equal_to \" first class \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) recommend train_number equal_to \" D2282 from Xiamenbei to Nanjing \" AGENT_ACTS: ( train ) inform ticket_price equal_to \" 826.0 yuan \" USER: I want my friend to pick me up, so could you tell me what time the train arrives? <endofhistory>",
+    "output": "( train ) classification equal_to \" bullet train \" , date equal_to \" next Sunday afternoon \" , departure equal_to \" Xiamen \" , destination equal_to \" Nanjing \" , seat_type equal_to \" first class \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I want to find a South Korean movie starring Cha Tae-hyun. Please recommend one. <endofhistory>",
+    "output": "( movie ) production_country_or_area equal_to \" Korean \" , star equal_to \" Cha Tae-hyun \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" America \" , type equal_to \" horror movie \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform director equal_to \" James Wan \" AGENT_ACTS: ( general ) general USER: No, I'm good, thank you. <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" America \" , type equal_to \" horror movie \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'll be leaving for Guangzhou next week. Can you check which flight I can take? <endofhistory>",
+    "output": "( flight ) destination equal_to \" Guangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" friends to have an outing \" , ( hotel ) name equal_to \" Shui'an Hanshe Boutique Hotel \" , room_type equal_to \" standard room \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform room_type equal_to \" standard room \" AGENT_ACTS: ( hotel ) inform room_charge equal_to \" 789 yuan \" USER: That's OK, I've got it covered. Could you tell me the hotel's address? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" friends to have an outing \" ( hotel ) area equal_to \" Wujiang \" , name equal_to \" Shui'an Hanshe Boutique Hotel \" , room_type equal_to \" standard room \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) brand equal_to \" SAIC Volkswagen \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) recommend name equal_to \" Volkswagen Touran L 280TSI 6 Seaters \" AGENT_ACTS: ( car ) inform pricerange equal_to \" 150,000 to 200,000 yuan \" USER: Does this have a reverse camera? <endofhistory>",
+    "output": "( car ) brand equal_to \" SAIC Volkswagen \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I would like to take my friend out for hot pot tomorrow. Are there any slightly more expensive hot pot restaurants? Can you recommend one? <endofhistory>",
+    "output": "( restaurant ) cuisine equal_to \" hot pot \" , pricerange equal_to \" slightly more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Thursday \" , departure equal_to \" Guangzhou \" , destination equal_to \" Shanghai \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" CZ3537 of China Southern Airlines from Terminal 2 of Baiyun International Airport to Terminal 2 of Hongqiao International Airport \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 11:00 that day \" USER: And what's the arrival time? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Thursday \" , departure equal_to \" Guangzhou \" , destination equal_to \" Shanghai \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" South Korea \" , type equal_to \" suspense drama \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) recommend title equal_to \" Signal \" AGENT_ACTS: ( tv ) inform Douban_score equal_to \" 9.2 \" USER: Thanks a lot, goodbye! <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" South Korea \" , type equal_to \" suspense drama \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , name equal_to \" Shantang Street \" , type equal_to \" water towns \" , ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" slightly more expensive \" , ( restaurant ) cuisine equal_to \" Northwestern cuisine \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) request cuisine AGENT_ACTS: ( restaurant ) recommend name equal_to \" Beijiang Restaurant \" USER: Cool, I trust your judgment, so I'll give this restaurant a try. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , name equal_to \" Shantang Street \" , type equal_to \" water towns \" ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" slightly more expensive \" ( restaurant ) cuisine equal_to \" Northwestern cuisine \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) departure equal_to \" Xiamen \" , destination equal_to \" Hangzhou \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request departure AGENT_ACTS: ( flight ) request date USER: I'll leave next Sunday. <endofhistory>",
+    "output": "( flight ) date equal_to \" next Sunday \" , departure equal_to \" Xiamen \" , destination equal_to \" Hangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" resort \" , name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" slightly more expensive \" , room_type equal_to \" standard room \" , ( restaurant ) cuisine equal_to \" Sichuan cuisine \" , name equal_to \" Miss Fu in Chengdu \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" Pan Pacific Suzhou \" AGENT_ACTS: ( hotel ) recommend room_type equal_to \" standard room \" USER: What's the address? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" resort \" , name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" slightly more expensive \" , room_type equal_to \" standard room \" ( restaurant ) cuisine equal_to \" Sichuan cuisine \" , name equal_to \" Miss Fu in Chengdu \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Shajiabang Scenic Spot \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-52500000 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" Unfortunately not! \" USER: Oh, that makes it a bit inconvenient, but thanks anyway! Goodbye! <endofhistory>",
+    "output": "( attraction ) name equal_to \" Shajiabang Scenic Spot \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" general hospital \" , key_departments equal_to \" psychological department \" , name equal_to \" The First Affiliated Hospital of Soochow University \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) inform DSA equal_to \" Yes \" AGENT_ACTS: ( hospital ) inform 3.0T_MRI equal_to \" Yes \" USER: It even has CT, then this hospital really is well-equipped. <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" general hospital \" , key_departments equal_to \" psychological department \" , name equal_to \" The First Affiliated Hospital of Soochow University \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Sunday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" the maximum temperature will be 21 degrees Celsius, and the minimum temperature will be 9 degrees Celsius \" AGENT_ACTS: ( weather ) inform weather_condition equal_to \" cloudy and later overcast \" USER: That's OK as long as it doesn't rain. How about the UV intensity? <endofhistory>",
+    "output": "( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Sunday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" business \" , pricerange equal_to \" mid \" , room_type equal_to \" king-size room \" , ( restaurant ) cuisine equal_to \" Cantonese food \" , name equal_to \" Zhen Pin Yue Teahouse \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform metro_station equal_to \" Yes \" AGENT_ACTS: ( hotel ) recommend name equal_to \" Suzhou Manxiang Theme Hotel \" USER: Right, do you have its phone number? There are a few things I'd like to ask. <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" business \" , name equal_to \" Suzhou Manxiang Theme Hotel \" , pricerange equal_to \" mid \" , room_type equal_to \" king-size room \" ( restaurant ) cuisine equal_to \" Cantonese food \" , name equal_to \" Zhen Pin Yue Teahouse \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" business class \" , destination equal_to \" Xiamen \" <endofstate> <history> AGENT_ACTS: ( flight ) request date , request departure USER: I will leave from Shanghai next Monday. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Monday \" , departure equal_to \" Shanghai \" , destination equal_to \" Xiamen \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm just planning my trip to Suzhou and now I'm looking for a 3-star resort hotel. I'd like a standard room. <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" resort \" , room_type equal_to \" a standard room \" , star equal_to \" 3 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'd like to register my child for an English tutorial class, he's in fifth grade. I'd prefer the class to be on Sunday afternoons, so I can take my child to and from the class. Could you recommend a suitable class for me? <endofhistory>",
+    "output": "( class ) day equal_to \" Sunday \" , grade equal_to \" fifth grade \" , subject equal_to \" English \" , time equal_to \" afternoon \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" general hospital \" , key_departments equal_to \" oncology department \" , name equal_to \" Suzhou Municipal Hospital (East Branch) \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) recommend name equal_to \" Suzhou Municipal Hospital (East Branch) \" AGENT_ACTS: ( hospital ) inform DSA equal_to \" does \" USER: That's good, what time can I go to register? <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" general hospital \" , key_departments equal_to \" oncology department \" , name equal_to \" Suzhou Municipal Hospital (East Branch) \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" high-speed \" , date equal_to \" next Tuesday morning \" , departure equal_to \" Guangzhou \" , destination equal_to \" Shanghai \" <endofstate> <history> AGENT_ACTS: ( train ) inform train_number equal_to \" G86 from Guangzhounan to Shanghai Hongqiao \" USER: How much is a first class seat? <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Tuesday morning \" , departure equal_to \" Guangzhou \" , destination equal_to \" Shanghai \" , seat_type equal_to \" first class \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 1990s \" , production_country_or_area equal_to \" Chinese mainland \" , type equal_to \" comedic TV show \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) request type AGENT_ACTS: ( tv ) general USER: Great, what's it called? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 1990s \" , production_country_or_area equal_to \" Chinese mainland \" , type equal_to \" comedic TV show \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I'm from Suzhou but I don't go out much. My friend is coming to Suzhou to visit me and I would like to take her to a landscape scenic spot. Can you recommend me a cheap place? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" cheap \" , type equal_to \" landscape scenic spot \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I easily get bored on weekends, so I'd like to watch a good TV show. Could you please help me to find a Hong Kong-produced romantic TV show from the 2010s? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010s \" , type equal_to \" romantic TV show \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" America \" , type equal_to \" horror movie \" <endofstate> <history> AGENT_ACTS_PREV: ( general ) general AGENT_ACTS: ( general ) general USER: Of course, goodbye! <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" America \" , type equal_to \" horror movie \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" Suzhou New district \" , pricerange equal_to \" mid \" <endofstate> <history> AGENT_ACTS: ( restaurant ) recommend name equal_to \" Spicy Memory \" USER: I forgot to tell you, find one I can get to directly by subway. <endofhistory>",
+    "output": "( restaurant ) area equal_to \" Suzhou New district \" , metro_station equal_to \" can get to directly by subway \" , pricerange equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) area equal_to \" Gusu District \" <endofstate> <history> AGENT_ACTS: ( hospital ) general USER: Which hospital has a good respiratory medicine department? <endofhistory>",
+    "output": "( hospital ) area equal_to \" Gusu District \" , key_departments equal_to \" respiratory medicine department \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" next Monday \" , departure equal_to \" Shanghai \" , destination equal_to \" Shenzhen \" , ( weather ) city equal_to \" Shenzhen \" , date equal_to \" next Monday \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" MU5335 of China Eastern Airlines, from Terminal 1 of Pudong International Airport to Terminal 3 of Bao'an International Airport \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 11:50 that day \" , inform departure_time equal_to \" 9:15 \" USER: Got it. Thanks for your help, goodbye. <endofhistory>",
+    "output": "( flight ) date equal_to \" next Monday \" , departure equal_to \" Shanghai \" , destination equal_to \" Shenzhen \" ( weather ) city equal_to \" Shenzhen \" , date equal_to \" next Monday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm traveling to Wuzhong District for business. Are there any hotels with king-size rooms in the area? Something cheaper is fine. <endofhistory>",
+    "output": "( hotel ) area equal_to \" Wuzhong district \" , pricerange equal_to \" cheaper \" , room_type equal_to \" king-size room \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" business \" , star equal_to \" 4 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) request star AGENT_ACTS: ( hotel ) request room_type USER: A king-size room. <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" business \" , room_type equal_to \" king-size room \" , star equal_to \" 4 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Thursday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" CZ3171 of China Southern Airlines from Terminal 3 of Bao'an International Airport to Terminal 2 of Beijing Capital International Airport \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 20:40 pm that day \" USER: That's quite late. Does it normally arrive on time or is there a risk it be delayed? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Thursday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" mid \" <endofstate> <history> AGENT_ACTS: ( attraction ) greeting , recommend name equal_to \" The Humble Administrator's Garden \" USER: What's its rating? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" mid \" , name equal_to \" The Humble Administrator's Garden \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" Suzhou New district \" , metro_station equal_to \" can get there by subway \" , name equal_to \" Aobanian Hot Pot \" , pricerange equal_to \" a bit more expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to \" Aobanian Hot Pot \" AGENT_ACTS: ( restaurant ) inform metro_station equal_to \" can get there by subway \" USER: Perfect. What's the exact address? <endofhistory>",
+    "output": "( restaurant ) area equal_to \" Suzhou New district \" , metro_station equal_to \" can get there by subway \" , name equal_to \" Aobanian Hot Pot \" , pricerange equal_to \" a bit more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Thursday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \" <endofstate> <history> AGENT_ACTS: ( flight ) recommend flight_information equal_to \" CZ3171 of China Southern Airlines from Terminal 3 of Bao'an International Airport to Terminal 2 of Beijing Capital International Airport \" USER: OK. I'm a regular of China Southern Airlines. Tell me the departure time. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Thursday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" next Saturday \" , departure equal_to \" Beijing \" , destination equal_to \" Guangzhou \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" MU5132 of China Eastern Airlines \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 11:10 \" , inform punctuality_rate equal_to \" 98.26% \" USER: Right, sounds good. When does it arrive in Guangzhou? <endofhistory>",
+    "output": "( flight ) date equal_to \" next Saturday \" , departure equal_to \" Beijing \" , destination equal_to \" Guangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, please help me check available flights from Guangzhou to Xiamen next Thursday. I'm traveling there with my girlfriend. <endofhistory>",
+    "output": "( flight ) date equal_to \" next Thursday \" , departure equal_to \" Guangzhou \" , destination equal_to \" Xiamen \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, my friends and I are coming to Suzhou for business. Can you tell me the phone number of Harmony Times Square? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Harmony Times Square \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" water towns \" , ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" slightly more expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) request type AGENT_ACTS: ( attraction ) recommend name equal_to \" Shantang Street \" USER: All right, what's its rating? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water towns \" ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Pan Pacific Suzhou \" , pricerange equal_to \" slightly more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Sunday \" , departure equal_to \" Guangzhou \" , destination equal_to \" Xiamen \" , ( weather ) city equal_to \" Xiamen \" , date equal_to \" next Thursday \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" CZ3741 of China Southern Airlines, from Terminal 2 of Baiyun International Airport to Terminal 3 of Gaoqi International Airport \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 13:30 on the same day \" , inform departure_time equal_to \" 12:10 \" USER: OK. I got it. Thank you very much. Bye! <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Sunday \" , departure equal_to \" Terminal 2 of Baiyun International Airport \" , destination equal_to \" Terminal 3 of Gaoqi International Airport \" ( weather ) city equal_to \" Xiamen \" , date equal_to \" next Thursday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I was wondering if there is any mid-price restaurant close to Suzhou Industrial Park where I can get directly by subway? <endofhistory>",
+    "output": "( restaurant ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" directly by subway \" , pricerange equal_to \" mid-price \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Wuhan \" , date equal_to \" next Monday \" <endofstate> <history> AGENT_ACTS: ( weather ) inform wind equal_to \" east force 2 \" USER: What will the weather be like in Wuhan on that day? <endofhistory>",
+    "output": "( weather ) city equal_to \" Wuhan \" , date equal_to \" next Monday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" mid \" , name equal_to \" The Humble Administrator's Garden \" , ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Jinling Nanlin Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 4 \" , ( restaurant ) cuisine equal_to \" Jiangsu Zhejiang Cuisine \" , name equal_to \" Songhelou Restaurant \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform score equal_to \" 4.7 \" AGENT_ACTS: ( hotel ) inform address equal_to \" No. 20, Gunxiufang, Shiquan Street, Gusu District, Suzhou \" USER: You've been of great help today, thank you! Goodbye! <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" mid \" , name equal_to \" The Humble Administrator's Garden \" ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Jinling Nanlin Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 4 \" ( restaurant ) cuisine equal_to \" Jiangsu Zhejiang Cuisine \" , name equal_to \" Songhelou Restaurant \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) name equal_to \" Jinji Lake Shilla Hotel Suzhou \" , room_type equal_to \" standard room \" , ( restaurant ) name equal_to \" Nongleyuan Charcoal Fire Barbecue \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform room_charge equal_to \" 640 yuan \" AGENT_ACTS: ( hotel ) inform address equal_to \" Modern Leisure Plaza, Wangdun Road, Suzhou Industrial Park, Suzhou \" USER: Can I use the hotel's parking lot for free? <endofhistory>",
+    "output": "( hotel ) name equal_to \" Jinji Lake Shilla Hotel Suzhou \" , room_type equal_to \" standard room \" ( restaurant ) name equal_to \" Nongleyuan Charcoal Fire Barbecue \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" bullet train \" , date equal_to \" next Friday morning \" , departure equal_to \" Xiamen \" , destination equal_to \" Shanghai \" , seat_type equal_to \" second class ticket \" , ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Friday \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform arrival_time equal_to \" 18:37 that day \" , inform departure_time equal_to \" 10:16 that day \" AGENT_ACTS: ( weather ) inform weather_condition equal_to \" light rain \" USER: Thanks, that's all I wanted to know. Thank you for your service. Goodbye! <endofhistory>",
+    "output": "( train ) classification equal_to \" bullet train \" , date equal_to \" next Friday morning \" , departure equal_to \" Xiamen \" , destination equal_to \" Shanghai \" , seat_type equal_to \" second class ticket \" ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Friday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm thinking about buying a car. I'd prefer a small- or mid-size SUV with two-wheel drive. Please recommend me a good model. <endofhistory>",
+    "output": "( car ) 4WD equal_to \" two-wheel \" , classification equal_to \" SUV \" , size equal_to \" small- or mid-size \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I'm going to Hangzhou on a business trip next week and I want to know the weather in advance. Please help me check the temperature for Hangzhou next Tuesday. <endofhistory>",
+    "output": "( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Tuesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" business \" , name equal_to \" Suzhou Yongshun Express Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 1 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" Suzhou Yongshun Express Hotel \" AGENT_ACTS: ( hotel ) inform parking equal_to \" charge \" USER: What's the address? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" business \" , name equal_to \" Suzhou Yongshun Express Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 1 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" high-speed \" , date equal_to \" next Tuesday afternoon \" , departure equal_to \" Beijing \" , ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Tuesday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius. \" , inform weather_condition equal_to \" Sunny \" AGENT_ACTS: ( train ) inform seat_type equal_to \" second class \" USER: I'd like a second class seat. <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Tuesday afternoon \" , departure equal_to \" Beijing \" , destination equal_to \" Hangzhou \" , seat_type equal_to \" second class \" ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Tuesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" Japan \" , type equal_to \" comedy \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform director equal_to \" Fukuda Yuuichi \" AGENT_ACTS: ( tv ) inform name_list equal_to \" Kento Kaku, Kentarō Itō, and Nana Seino \" USER: Is each episode one hour? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" Japan \" , type equal_to \" comedy \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" India \" , type equal_to \" science fiction movie \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform release_date equal_to \" June 23, 2006 \" AGENT_ACTS: ( movie ) inform film_length equal_to \" 185 minutes \" USER: Who are the leading casts of this movie? <endofhistory>",
+    "output": "( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" India \" , type equal_to \" science fiction movie \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" bullet train \" , date equal_to \" next Monday morning \" , departure equal_to \" Xiamen \" , destination equal_to \" Shanghai \" , seat_type equal_to \" second class ticket \" , ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Monday \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform arrival_time equal_to \" 18:37 that day \" , inform departure_time equal_to \" 10:16 that day \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius. \" , inform weather_condition equal_to \" Sunny \" USER: If I instead leave next Friday morning, which bullet train can I take? <endofhistory>",
+    "output": "( train ) classification equal_to \" bullet train \" , date equal_to \" next Friday morning \" , departure equal_to \" Xiamen \" , destination equal_to \" Shanghai \" , seat_type equal_to \" second class ticket \" ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Monday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" specialized hospital \" , key_departments equal_to \" psychological department \" , name equal_to \" Suzhou Guangji Hospital \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) inform CT equal_to \" Yes \" AGENT_ACTS: ( hospital ) inform address equal_to \" No. 11, Guangqian Road \" USER: Yes, I do, but I've never noticed that there's a hospital there. Well, thanks. <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" specialized hospital \" , key_departments equal_to \" psychological department \" , name equal_to \" Suzhou Guangji Hospital \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I plan to buy a Volkswagen Import SUV and we'll most often be 4 people in the car. Do you have anything to recommend? <endofhistory>",
+    "output": "null"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Tuesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Chengdu \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform punctuality_rate equal_to \" 98.32% \" AGENT_ACTS: ( flight ) inform flight_information equal_to \" CA4592 of Air China from Terminal 2 of Pudong International Airport to Terminal 2 of Shuangliu International Airport \" USER: Right, and what's the departure time that day? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Tuesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Chengdu \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , name equal_to \" The Humble Administrator's Garden \" , the_most_suitable_people equal_to \" family-friendly \" , ( hotel ) name equal_to \" Super 8 Hotel \" , room_type equal_to \" king-size room \" , star equal_to \" 2 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( general ) general USER: Goodbye. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , name equal_to \" The Humble Administrator's Garden \" , the_most_suitable_people equal_to \" family-friendly \" ( hotel ) name equal_to \" Super 8 Hotel \" , room_type equal_to \" king-size room \" , star equal_to \" 2 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang \" , consumption equal_to \" slightly more expensive \" , name equal_to \" Tongli Ancient Town \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Tongli Ancient Town \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 100 yuan \" USER: The price is okay. What's the address? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , consumption equal_to \" slightly more expensive \" , name equal_to \" Tongli Ancient Town \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" mid \" , name equal_to \" Huqiu Scenic Area \" , type equal_to \" historic sites in Gusu District \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" You can enjoy the beautiful scenery of mountains and Jiangnan gardens, learn more about the Spring and Autumn Period and visit the leaning Huqiu Pagoda. \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65323488 \" USER: Thank you. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" mid \" , name equal_to \" Huqiu Scenic Area \" , the_most_suitable_people equal_to \" friend \" , type equal_to \" historic sites in Gusu District \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Tuesday \" , departure equal_to \" Xiamen \" , destination equal_to \" Beijing \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform ticket_price equal_to \" 8,800 yuan \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 14:00 that day \" , inform departure_time equal_to \" 11:00 that day \" USER: I see. Will the wind be strong in Beijing next Tuesday? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Tuesday \" , departure equal_to \" Xiamen \" , destination equal_to \" Beijing \" ( weather ) city equal_to \" Beijing \" , date equal_to \" next Tuesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I always get bored at home on the weekends and I want to find a classic TV show to watch. Please help me to find a South Korean crime drama from the 2010s. <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" Korean \" , type equal_to \" crime drama \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" Wuzhong District \" , day equal_to \" Sunday \" , grade equal_to \" fourth grade \" , subject equal_to \" Chinese \" , time equal_to \" afternoon \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform campus equal_to \" Wuzhong Mansion \" , inform teacher equal_to \" Chen Mengxue \" AGENT_ACTS: ( class ) inform price equal_to \" 1,600 \" , inform start_date equal_to \" April 19, 2020 \" USER: All right, thank you. I think I'm going to look around a little bit more. Bye. <endofhistory>",
+    "output": "( class ) area equal_to \" Wuzhong District \" , day equal_to \" Sunday \" , grade equal_to \" fourth grade \" , subject equal_to \" Chinese \" , time equal_to \" afternoon \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I would like to buy a gasoline-driven SUV priced between 200,000 and 300,000. <endofhistory>",
+    "output": "( car ) classification equal_to \" SUV \" , hybrid equal_to \" gas \" , pricerange equal_to \" between 200,000 and 300,000 \" , series equal_to \" T-ROC \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Tuesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Xiamen \" , ( weather ) city equal_to \" Xiamen \" , date equal_to \" next Monday \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform departure_time equal_to \" 10:05 am \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 12:00 am \" USER: All right, thank you, bye. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Tuesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Xiamen \" ( weather ) city equal_to \" Xiamen \" , date equal_to \" next Monday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" next Saturday \" , departure equal_to \" Beijing \" , destination equal_to \" Hangzhou \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform arrival_time equal_to \" 13:30 that day \" AGENT_ACTS: ( general ) general USER: Goodbye. <endofhistory>",
+    "output": "( flight ) date equal_to \" next Saturday \" , departure equal_to \" Beijing \" , destination equal_to \" Hangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang \" , consumption equal_to \" slightly more expensive \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" friends to have an outing \" , ( hotel ) pricerange equal_to \" mid \" , room_type equal_to \" king-size room \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform name equal_to \" Tongli Yueshang Inn \" AGENT_ACTS: ( hotel ) inform room_charge equal_to \" 328 yuan \" USER: That's a decent price. Help me check the phone number. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , consumption equal_to \" slightly more expensive \" , name equal_to \" Tongli Ancient Town \" , the_most_suitable_people equal_to \" friends to have an outing \" ( hotel ) pricerange equal_to \" mid \" , room_type equal_to \" king-size room \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm going to Shenzhen for business next week. Is there any train I can take? <endofhistory>",
+    "output": "( train ) destination equal_to \" Shenzhen \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Tuesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Nanjing \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" MU2882 of China Eastern Airlines from Terminal 1 of Pudong International Airport to Terminal 2 of Lukou International Airport \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 23:05 that day \" USER: When does it arrive in Nanjing? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Tuesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Nanjing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" American TV show \" , type equal_to \" comedy \" <endofstate> <history> AGENT_ACTS: ( tv ) recommend title equal_to \" the 12th season of The Big Bang Theory \" USER: When did it premiere? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010s \" , production_country_or_area equal_to \" American TV show \" , type equal_to \" comedy \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \" , ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Super 8 Hotel \" , pricerange equal_to \" cheap \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Shantang Street \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" USER: Can we go there directly by subway? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Shantang Street \" , type equal_to \" water town \" ( hotel ) area equal_to \" Gusu District \" , name equal_to \" Super 8 Hotel \" , pricerange equal_to \" cheap \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Tuesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Guangzhou \" , ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Sunday \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" FM9309 of Shanghai Airlines, from Terminal 2 of Hongqiao International Airport to Terminal 1 of Baiyun International Airport \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 13:30 that day \" USER: And what's the arrival time? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Tuesday \" , departure equal_to \" Shanghai \" , destination equal_to \" Guangzhou \" ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Sunday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) series equal_to \" Lavida \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) inform price equal_to \" 146,900 \" AGENT_ACTS: ( car ) inform heated_seats equal_to \" has neither \" , inform ventilated_seats equal_to \" has neither \" USER: What about cruise control? <endofhistory>",
+    "output": "( car ) series equal_to \" Lavida \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" high-speed trains \" , date equal_to \" next Saturday afternoon \" , departure equal_to \" Xiamen \" , destination equal_to \" Hangzhou \" , ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Saturday \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) recommend train_number equal_to \" G1656 from Xiamenbei to Hangzhoudon \" AGENT_ACTS: ( train ) inform departure_time equal_to \" 14:10 that day \" USER: Lastly, please help me check the weather in Hangzhou for next Saturday. <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed trains \" , date equal_to \" next Saturday afternoon \" , departure equal_to \" Xiamen \" , destination equal_to \" Hangzhou \" ( weather ) city equal_to \" Hangzhou \" , date equal_to \" next Saturday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , consumption equal_to \" slightly more expensive \" , metro_station equal_to \" Yes, you can. \" , name equal_to \" Jinji Lake Scenic Area \" , the_most_suitable_people equal_to \" family \" , ( hotel ) star equal_to \" 3 \" , ( restaurant ) cuisine equal_to \" Jiangsu Zhejiang Cuisine \" , name equal_to \" Deyuelou \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform phone_number equal_to \" 0512-62656999 \" AGENT_ACTS: ( hotel ) recommend name equal_to \" Womu Boutique Hotel \" USER: Does it have standard rooms? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou Industrial Park \" , consumption equal_to \" slightly more expensive \" , metro_station equal_to \" Yes, you can. \" , name equal_to \" Jinji Lake Scenic Area \" , the_most_suitable_people equal_to \" family \" ( hotel ) name equal_to \" Womu Boutique Hotel \" , star equal_to \" 3 \" ( restaurant ) cuisine equal_to \" Jiangsu Zhejiang Cuisine \" , name equal_to \" Deyuelou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) area equal_to \" Gusu District \" , general_or_specialized equal_to \" specialized hospital \" , name equal_to \" Suzhou Hospital of Traditional Chinese Medicine \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) recommend name equal_to \" Suzhou Hospital of Traditional Chinese Medicine \" AGENT_ACTS: ( hospital ) inform address equal_to \" No. 889, West Wuzhong Road \" USER: I don't know the registration time of the hospital either. <endofhistory>",
+    "output": "( hospital ) area equal_to \" Gusu District \" , general_or_specialized equal_to \" specialized hospital \" , name equal_to \" Suzhou Hospital of Traditional Chinese Medicine \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" for friends \" , ( hotel ) name equal_to \" Dova Riverside Inn \" , pricerange equal_to \" mid \" , room_type equal_to \" king-size room \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" Dova Riverside Inn \" AGENT_ACTS: ( hotel ) inform phone_number equal_to \" 181-3619-1632 \" USER: Okay, what's its rating? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" for friends \" ( hotel ) name equal_to \" Dova Riverside Inn \" , pricerange equal_to \" mid \" , room_type equal_to \" king-size room \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm from Beijing and I'm going on a trip to Hangzhou next week. Please check what high-speed train I can take next Monday afternoon. I'd like to travel in second class. <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Monday afternoon \" , departure equal_to \" Beijing \" , destination equal_to \" Hangzhou \" , seat_type equal_to \" second class \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I'm from Shanghai and I want to travel to Beijing. Can you help me check which high-speed train can I take next Monday afternoon? I want to travel in second class. <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Monday afternoon \" , departure equal_to \" Shanghai \" , destination equal_to \" Beijing \" , seat_type equal_to \" second class \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Suzhou Amusement Land Forest Waterworld \" , type equal_to \" amusement park \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Suzhou Amusement Land Forest Waterworld \" AGENT_ACTS: ( attraction ) inform features equal_to \" forest-themed. It is like being in a vast forest close to the ocean. \" USER: Awesome. Can we get there directly by subway? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" slightly more expensive \" , name equal_to \" Suzhou Amusement Land Forest Waterworld \" , type equal_to \" amusement park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Wujiang \" , consumption equal_to \" slightly more expensive \" , the_most_suitable_people equal_to \" friend \" , ( restaurant ) pricerange equal_to \" slightly more expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" Tongli Ancient Town, Wujiang District, Suzhou City \" , inform phone_number equal_to \" 0512-63325728 \" AGENT_ACTS: ( restaurant ) recommend name equal_to \" Chongqing Dezhuang Hot Pot's directly operated restaurant \" USER: What's the average spend? And what are the recommended dishes? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Wujiang \" , consumption equal_to \" slightly more expensive \" , the_most_suitable_people equal_to \" friend \" ( restaurant ) name equal_to \" Chongqing Dezhuang Hot Pot's directly operated restaurant \" , pricerange equal_to \" slightly more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" be \" , name equal_to \" LELECHA \" , pricerange equal_to \" cheap \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform per_capita_consumption equal_to \" 44 yuan \" AGENT_ACTS: ( restaurant ) inform dishes equal_to \" Starry Custard Bun \" USER: And we can get there directly by subway? <endofhistory>",
+    "output": "( restaurant ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" Yes \" , name equal_to \" LELECHA \" , pricerange equal_to \" cheap \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" India \" , type equal_to \" science fiction movie \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform title equal_to \" Krrish \" AGENT_ACTS: ( movie ) inform release_date equal_to \" June 23, 2006 \" USER: OK, how long is it? <endofhistory>",
+    "output": "( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" India \" , type equal_to \" science fiction movie \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Friday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform weather_condition equal_to \" overcast and later light rain \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 8 degrees Celsius. \" USER: What about the UV intensity? <endofhistory>",
+    "output": "( weather ) city equal_to \" Suzhou \" , date equal_to \" next Friday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'm not feeling well and would like to go to Suzhou Guangji Hospital for medical treatment. Can you help me find which bus routes I can take to get to this hospital? <endofhistory>",
+    "output": "( hospital ) name equal_to \" Suzhou Guangji Hospital \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm thinking of buying a small or medium-sized SUV. What would you recommend? <endofhistory>",
+    "output": "null"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Shenzhen \" , date equal_to \" next Tuesday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" very strong \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 7 degrees Celsius. \" USER: And what will the weather be like? <endofhistory>",
+    "output": "( weather ) city equal_to \" Shenzhen \" , date equal_to \" next Tuesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Saturday \" , departure equal_to \" Hangzhou \" , destination equal_to \" Shenzhen \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request flight_information AGENT_ACTS: ( flight ) request departure_time USER: What about the arrival time? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Saturday \" , departure equal_to \" Hangzhou \" , destination equal_to \" Shenzhen \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Beijing \" , date equal_to \" next Sunday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" intensity \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be -2 degrees Celsius \" USER: How about the weather? <endofhistory>",
+    "output": "( weather ) city equal_to \" Beijing \" , date equal_to \" next Sunday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" Shanghai \" , date equal_to \" next Wednesday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) request UV_intensity AGENT_ACTS: ( weather ) request wind USER: OK. Thank you, bye. <endofhistory>",
+    "output": "( weather ) city equal_to \" Shanghai \" , date equal_to \" next Wednesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" first class \" , date equal_to \" next Saturday \" , departure equal_to \" Shanghai \" , destination equal_to \" Beijing \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" MU5101 of China Eastern Airlines, from Terminal 2 of Hongqiao International Airport to Terminal 2 of Beijing Capital International Airport \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 08:00 that day \" USER: What time does the flight arrive? I have to attend a meeting right after I get to Beijing. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" first class \" , date equal_to \" next Saturday \" , departure equal_to \" Shanghai \" , destination equal_to \" Beijing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" high-speed \" , date equal_to \" next Wednesday morning \" , departure equal_to \" Xiamen \" , destination equal_to \" Chengdu \" , seat_type equal_to \" first class \" , ( weather ) city equal_to \" Chengdu \" , date equal_to \" next Friday \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) recommend train_number equal_to \" G2278 \" AGENT_ACTS: ( train ) inform arrival_time equal_to \" 9:59 pm \" USER: Will it be sunny in Chengdu next Wednesday? <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Wednesday morning \" , departure equal_to \" Xiamen \" , destination equal_to \" Chengdu \" , seat_type equal_to \" first class \" ( weather ) city equal_to \" Chengdu \" , date equal_to \" next Wednesday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" resort \" , name equal_to \" Womu Boutique Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 3 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform parking equal_to \" free \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.7 \" USER: Thank you for your help, bye. <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" resort \" , name equal_to \" Womu Boutique Hotel \" , room_type equal_to \" a standard room \" , star equal_to \" 3 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) cuisine equal_to \" hot pot \" , pricerange equal_to \" slightly more expensive \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform per_capita_consumption equal_to \" 120 yuan \" AGENT_ACTS: ( restaurant ) inform metro_station equal_to \" can't get to this restaurant directly by subway \" USER: Could you also help me find a more expensive business hotel? I want a king-size room. <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" business \" , pricerange equal_to \" more expensive \" , room_type equal_to \" king-size room \" ( restaurant ) cuisine equal_to \" hot pot \" , pricerange equal_to \" more expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou Industrial Park \" , consumption equal_to \" slightly more expensive \" , name equal_to \" Jinji Lake Scenic Area \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" all day \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 400-7558558 \" USER: Okay. By the way, are there any good restaurants close by? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou Industrial Park \" , consumption equal_to \" slightly more expensive \" , name equal_to \" Jinji Lake Scenic Area \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) pricerange equal_to \" 5,000 to 10,000 \" , usage equal_to \" business computer \" <endofstate> <history> AGENT_ACTS: ( pc ) request memory_capacity USER: One with a memory capacity of 8GB will be good. <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5,000 to 10,000 \" , usage equal_to \" business computer \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Sunday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Chengdu \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" HU7393 of Hainan Airlines from Terminal 3 of Bao'an International Airport to Terminal 3 of Xiaoshan International Airport \" , inform ticket_price equal_to \" 3,300 yuan \" AGENT_ACTS: ( flight ) inform ticket_price equal_to \" 4,690 yuan \" , recommend flight_information equal_to \" HU7751 of Hainan Airlines from Terminal 3 of Bao'an International Airport to Terminal 2 of Shuangliu International Airport \" USER: OK, thank you so much for your help, bye. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Sunday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Chengdu \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Gusu District \" , name equal_to \" Suzhou Museum \" , the_most_suitable_people equal_to \" go with my friends \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 09:00–17:00 \" AGENT_ACTS: ( attraction ) inform features equal_to \" The new and exquisitely elegant museum building designed by Ieoh Ming Pei is worth visiting. \" USER: That sounds good. I would also like to find a nearby 1-star hotel. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , name equal_to \" Suzhou Museum \" , the_most_suitable_people equal_to \" go with my friends \" ( hotel ) star equal_to \" 1 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I plan to visit Beijing next week, could you help me check the flights from Shenzhen to Beijing? <endofhistory>",
+    "output": "( flight ) departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" high-speed \" , date equal_to \" next Thursday afternoon \" , departure equal_to \" Beijing \" , destination equal_to \" Chengdu \" , seat_type equal_to \" first class \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform ticket_price equal_to \" 1,246.0 yuan \" AGENT_ACTS: ( train ) inform departure_time equal_to \" 15:13 that day \" USER: When does it arrive in Chengdu? <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Thursday afternoon \" , departure equal_to \" Beijing \" , destination equal_to \" Chengdu \" , seat_type equal_to \" first class \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I'd like to find a Chinese mainland action movie from the 1990s. <endofhistory>",
+    "output": "( movie ) decade equal_to \" 1990s \" , production_country_or_area equal_to \" Chinese mainland \" , type equal_to \" action movie \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, we are coming to Suzhou for business. We were hoping to go to Suzhou Taihu Lake Wetland Park, could you help us check the ticket prices? <endofhistory>",
+    "output": "( attraction ) name equal_to \" Suzhou Taihu Lake Wetland Park \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'm traveling in Suzhou, could you please help me find a mid-priced tourist attraction in Gusu District? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Gusu District \" , consumption equal_to \" mid \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" next Thursday \" , destination equal_to \" Guangzhou \" <endofstate> <history> AGENT_ACTS: ( flight ) request departure USER: I will depart from Beijing. By the way, I want to fly business class, please recommend a flight. <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Thursday \" , departure equal_to \" Beijing \" , destination equal_to \" Guangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) computer_type equal_to \" laptop \" <endofstate> <history> AGENT_ACTS: ( pc ) request brand USER: Acer. <endofhistory>",
+    "output": "( pc ) brand equal_to \" Acer \" , computer_type equal_to \" laptop \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Monday \" , departure equal_to \" Beijing \" , destination equal_to \" Hangzhou \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform departure_time equal_to \" 11:10 that day \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 13:30 that day \" USER: How much is the ticket? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" economy \" , date equal_to \" next Monday \" , departure equal_to \" Beijing \" , destination equal_to \" Hangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hi, I'd like to find a Chinese tutorial class for my child who's in fifth grade. It would be nice if the class is on Saturdays or Sundays, in the morning or afternoon, and held in Suzhou Industrial Park or Gusu District so I can pick him up. Do you have any recommendations? <endofhistory>",
+    "output": "( class ) area equal_to \" Suzhou Industrial Park \" , day equal_to \" Saturday \" , grade equal_to \" fifth grade \" , subject equal_to \" Chinese \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello, I want to travel to Guangzhou next week. Could you help me check flights from Chengdu to Guangzhou next Sunday? <endofhistory>",
+    "output": "( flight ) date equal_to \" next Sunday \" , departure equal_to \" Chengdu \" , destination equal_to \" Guangzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" for friends \" , ( hotel ) name equal_to \" Dova Riverside Inn \" , pricerange equal_to \" mid \" , room_type equal_to \" king-size room \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform phone_number equal_to \" 181-3619-1632 \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.8 \" USER: OK, that's great. Thank you, goodbye. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" for friends \" ( hotel ) name equal_to \" Dova Riverside Inn \" , pricerange equal_to \" mid \" , room_type equal_to \" king-size room \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" business class \" , date equal_to \" next Thursday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \" , ( weather ) city equal_to \" Beijing \" , date equal_to \" next Thursday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" weak \" , inform tamperature equal_to \" The maximum temperature will be 20 degrees Celsius, and the minimum temperature will be 14 degrees Celsius. \" AGENT_ACTS: ( flight ) inform flight_information equal_to \" CZ3171 of China Southern Airlines from Terminal 3 of Bao'an International Airport to Terminal 2 of Beijing Capital International Airport \" USER: What's the fare for this flight? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" A business class \" , date equal_to \" next Thursday \" , departure equal_to \" Shenzhen \" , destination equal_to \" Beijing \" ( weather ) city equal_to \" Beijing \" , date equal_to \" next Thursday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" high-speed \" , date equal_to \" next Friday afternoon \" , departure equal_to \" Guangzhou \" , destination equal_to \" Xiamen \" , seat_type equal_to \" first class \" , ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Friday \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform departure_time equal_to \" 14:54 that day \" AGENT_ACTS: ( train ) inform duration equal_to \" 4 hours and 27 minutes \" USER: Okay. I don't have any other questions. Thanks for your service. Goodbye! <endofhistory>",
+    "output": "( train ) classification equal_to \" high-speed \" , date equal_to \" next Friday afternoon \" , departure equal_to \" Guangzhou \" , destination equal_to \" Xiamen \" , seat_type equal_to \" first class \" ( weather ) city equal_to \" Guangzhou \" , date equal_to \" next Friday \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Suzhou New district \" , name equal_to \" Suzhou Taihu Lake Wetland Park \" , the_most_suitable_people equal_to \" family-friendly \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" Suzhou Taihu Lake Wetland Park \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: What are the opening hours? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Suzhou New district \" , name equal_to \" Suzhou Taihu Lake Wetland Park \" , the_most_suitable_people equal_to \" family-friendly \""
+  }
+]

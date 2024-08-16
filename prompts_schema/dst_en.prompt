@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, retrieve all the relevant domains from the following choices: movie, tv, attraction, retaurant, car, hotel, hospital, weather, flight, pc, train, class.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hi, can you recommend some fascinating Japanese TV shows? <endofhistory>{{user_end}}
+{{assistant_start}}tv{{assistant_end}}
+
+{{user_start}}DST: <state> ( tv ) decade equal_to " 2010s " , production_country_or_area equal_to " Japanese TV show " , type equal_to " suspenseful " <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform Douban_score equal_to " 9.1 " AGENT_ACTS: ( tv ) inform director equal_to " Nobuhiro Doi " USER: Thanks, could you recommend an Indian movie? <endofhistory>{{user_end}}
+{{assistant_start}}movie, tv{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " Indian " , ( tv ) decade equal_to " 2010s " , production_country_or_area equal_to " Japanese TV show " , type equal_to " suspenseful " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 minutes " USER: Ok, thank you for your patience, bye, <endofhistory>{{user_end}}
+{{assistant_start}}movie, tv{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hi, my friends are coming to visit me. Are there any scenic areas near Gusu District that are not that expensive? <endofhistory>{{user_end}}
+{{assistant_start}}attraction{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) consumption equal_to " not that expensive " , name equal_to " The Humble Administrator's Garden " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to " No. 178, Dongbei Street, Gusu District, Suzhou City. " AGENT_ACTS: ( attraction ) inform score equal_to " 4.5 " USER: Ok, we may spend the whole day together, can you recommend some a bit more expensive restaurants near here? <endofhistory>{{user_end}}
+{{assistant_start}}attraction, restaurant{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hello, I want to buy a gas-powered SUV, can you recommend one within 150,000 yuan? <endofhistory>{{user_end}}
+{{assistant_start}}car{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " Suzhou Industrial Park " , name equal_to " Haidilao Hot Pot " , pricerange equal_to " a bit more expensive " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform phone_number equal_to " 0512-67603337 " AGENT_ACTS: ( restaurant ) inform business_hours equal_to " from Monday to Sunday, 09:00-07:00 " USER: Wow, it is open all night, then we can stay a bit longer. Could you find a not that expensive hotel with standard rooms? <endofhistory>{{user_end}}
+{{assistant_start}}hotel, restaurant{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hi, my child doesn't feel well and I want to take her to a pediatric clinic. Which general hospital has a good pediatric clinic? <endofhistory>{{user_end}}
+{{assistant_start}}hospital{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: I will come to Xiamen next week for work but am still not sure which day I will set out, it depends on the weather. Could you help me check the wind force and direction for next Sunday? <endofhistory>{{user_end}}
+{{assistant_start}}weather{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hello, I'm going on a business trip next week. Please help me check the flights from Hangzhou to Shenzhen next Friday, preferably in economy class. <endofhistory>{{user_end}}
+{{assistant_start}}flight{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hello, I want to buy a 14-inch lightweight laptop from Lenovo, preferably with a memory capacity of 8GB. <endofhistory>{{user_end}}
+{{assistant_start}}pc{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: I will go on a business trip next week. Can you help me check if there are any high-speed trains to Xiamen next week? <endofhistory>{{user_end}}
+{{assistant_start}}train{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hello, my child is in sixth grade. Could you recommend a tutorial class for me? <endofhistory>{{user_end}}
+{{assistant_start}}class{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

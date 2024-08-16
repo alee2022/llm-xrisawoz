@@ -1,0 +1,4 @@
+{{system_start}}Similar to the examples below, generate a belief state using only the slots that the user has confirmed or agreed upon. A list of possible slots for each domain is appended below. {{header}} {{system_end}}
+
+{{body}}
+{{user_start}}{{input_from_rg}}{{user_end}}

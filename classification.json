@@ -1,0 +1,15 @@
+{
+  "tv": "production country or area: \"Taiwan, China\", \"America\", \"Chinese mainland\", \"Japan\", \"Korea\", \"Hong Kong\"\ndecade: \"2010s\", \"2000s\", \"1980s\", \"1990s\", \"1970s\"\ntype: \"romantic\", \"sci-fi\", \"comedy\", \"action\", \"suspenseful\", \"feature\", \"crime\"\n",
+  "movie": "decade: \"2010s\", \"2000s\", \"1980s\", \"1990s\", \"1970s\"\nproduction country or area: \"India\", \"Taiwan, China\", \"America\", \"Chinese mainland\", \"Korea\", \"Hong Kong\"\ntype: \"romantic\", \"sci-fi\", \"comedy\", \"action\", \"horror\"\n",
+  "attraction": "area: \"Gusu District\", \"Suzhou Industrial Park\", \"Suzhou\", \"Suzhou New District\", \"Changshu\", \"Wujiang District\", \"Wuzhong District\", \"Kunshan\"\nconsumption: \"moderate\", \"slightly expensive\", \"cheap\"\nthe most suitable people: \"friends\", \"dating\", \"family-friendly\", \"kids\"\ntype: \"Suzhou-style garden\", \"landscape scenic spot\", \"amusement park\", \"water town\", \"historic site in Gusu District\", \"commercial center\", \"campus\", \"garden\"\nmetro station: \"false\", \"true\"\n",
+  "restaurant": "area: \"Gusu District\", \"Suzhou Industrial Park\", \"Suzhou New District\", \"Changshu\", \"Wujiang District\", \"Wuzhong District\", \"Kunshan\"\npricerange: \"moderate\", \"slightly expensive\", \"cheap\"\ncuisine: \"Jiangsu-Zhejiang\", \"Hotpot\", \"Korean\", \"Japanese\", \"Northwestern\", \"bread and desserts\", \"fast food\", \"Sichuan\", \"western\", \"Cantonese\", \"Sushi\", \"Northeastern Chinese cuisine\"\nmetro station: \"false\", \"true\"\n",
+  "other": "",
+  "hotel": "area: \"Gusu District\", \"Suzhou Industrial Park\", \"Suzhou\", \"Suzhou New District\", \"Changshu\", \"Wujiang District\", \"Wuzhong District\", \"Kunshan\"\npricerange: \"moderate\", \"slightly expensive\", \"cheap\"\n",
+  "hospital": "area: \"Gusu District\", \"Suzhou Industrial Park\", \"Suzhou New District\", \"Wuzhong District\", \"Xiangcheng District\"\nmetro station: \"false\", \"true\"\n",
+  "weather": "uv intensity: \"moderate\", \"strong\", \"very strong\", \"weak\", \"the weakest\"\n",
+  "class": "area: \"Gusu District\", \"Suzhou Industrial Park\", \"Suzhou New District\", \"Wuzhong District\", \"Suzhou New District or Gusu District\"\ntype: \"face-to-face\", \"face-to-face & livestreaming\"\n",
+  "car": "pricerange: \"<150,000\", \">300,000\", \"150,000-200,000\", \"200,000-300,000\", \"<300,000\"\nnumber of seats: \"4\", \"3\", \"6\", \"1\", \"5\", \"7\"\n",
+  "flight": "class cabin: \"economy class\", \"first class\", \"business class\"\n",
+  "train": "seat type: \"first class\", \"second class\", \"sleeper in first class\", \"sleeper in second class\", \"sleeper\"\n",
+  "pc": "pricerange: \"5,000-10,000\", \"<5,000\", \"10,000-15,000\", \">20,000\", \"15,000-20,000\"\n"
+}

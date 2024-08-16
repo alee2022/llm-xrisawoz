@@ -1,0 +1,62 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: मैं सूज़ौ से हूँ, लेकिन मैं ज्यादा बाहर नहीं जाता हूँ। मेरा दोस्त मुझसे मिलने सूज़ौ आ रहा है और मैं उसे पानी के शहर में ले जाने के बारे में सोच रहा हूं <endofhistory>",
+    "output": "( attraction ) type equal_to \" पानी के शहर \"",
+    "prediction": "( attraction ) area equal_to \" सूज़ौ \" , type equal_to \" पानी का शहर \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" पानी के शहर \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" झोउज़ुआंग टाउन \" USER: मैं एक ऐसी जगह की तलाश में हूँ जहां कीमतें काफी औसत हों <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" moderate \"",
+    "prediction": "( attraction ) type equal_to \" पानी के शहर \" , consumption equal_to \" moderate \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" moderate \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" झोउज़ुआंग टाउन \" AGENT_ACTS: ( attraction ) recommend name equal_to \" शांतांग स्ट्रीट \" USER: इसका फोन नंबर क्या है <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \"",
+    "prediction": "( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" शांतांग स्ट्रीट \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" USER: क्या इसकी रेटिंग ऊंची है <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \"",
+    "prediction": "( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \" , rating equal_to \" high \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: यह वास्तव में उच्च है। क्या वहां देखने के लिए कुछ खास है <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \"",
+    "prediction": "( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \" , speciality equal_to \" देखने के लिए कुछ खास \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) inform features equal_to \" पुराने सूज़ौ के दृश्यों का आनंद ले सकते हैं, पुराने गिल्ड हॉल और अन्य ऐतिहासिक स्थलों पर जा सकते हैं, नदी पर एक क्रूज ले सकते हैं और सुंदर रात के दृश्यों की तस्वीरें ले सकते हैं \" USER: धन्यवाद, अलविदा <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" काफी \" , name equal_to \" शांतांग स्ट्रीट \"",
+    "prediction": "( attraction ) consumption equal_to \" moderate \" , name equal_to \" शांतांग स्ट्रीट \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: मैं सूज़ौ से हूँ, लेकिन मैं ज्यादा बाहर नहीं जाता हूँ। मेरा दोस्त मुझसे मिलने सूज़ौ आ रहा है और मैं उसे पानी के शहर में ले जाने के बारे में सोच रहा हूं <endofhistory>",
+    "output": "( attraction ) type equal_to \" पानी के शहर \"",
+    "prediction": "( attraction ) area equal_to \" सूज़ौ \" , type equal_to \" पानी का शहर \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" पानी के शहर \" <endofstate> <history> AGENT_ACTS: ( attraction ) request consumption USER: मैं कुछ और महंगा ढूंढ रहा हूं <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" थोड़ा महंगा \" , the_most_suitable_people equal_to \" दोस्तों \"",
+    "prediction": "( attraction ) type equal_to \" पानी के शहर \" , consumption equal_to \" महंगा \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" थोड़ा महंगा \" , the_most_suitable_people equal_to \" दोस्तों \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) request consumption AGENT_ACTS: ( attraction ) recommend name equal_to \" झोउज़ुआंग टाउन \" USER: क्या मैं मेट्रो से सीधे वहां जा सकता हूं <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" थोड़ा महंगा \" , name equal_to \" झोउझुआंग टाउन \" , the_most_suitable_people equal_to \" दोस्तों \"",
+    "prediction": "( attraction ) consumption equal_to \" थोड़ा महंगा \" , the_most_suitable_people equal_to \" दोस्तों \" , accessibility equal_to \" मेट्रो से सीधे \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" थोड़ा महंगा \" , name equal_to \" झोउझुआंग टाउन \" , the_most_suitable_people equal_to \" दोस्तों \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" झोउज़ुआंग टाउन \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" नहीं \" USER: कब से कब तक खुला हैं <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" थोड़ा महंगा \" , name equal_to \" झोउझुआंग टाउन \" , the_most_suitable_people equal_to \" दोस्तों \"",
+    "prediction": "( attraction ) consumption equal_to \" थोड़ा महंगा \" , name equal_to \" झोउझुआंग टाउन \" , the_most_suitable_people equal_to \" दोस्तों \" , opening_hours equal_to \" कब से कब तक खुला हैं \""
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: I'm from Suzhou but I don't go out much. My friend is coming to Suzhou to visit me and I'm thinking about taking her to a water town. <endofhistory>",
+    "output": "( attraction ) type equal_to \" water town \"",
+    "prediction": "( attraction ) type equal_to \" water town \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" water town \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" USER: I'm looking for a place where the prices are fairly average. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" fair \" , type equal_to \" water town \"",
+    "prediction": "( attraction ) type equal_to \" water town \" , consumption equal_to \" moderate \""
+  }
+]

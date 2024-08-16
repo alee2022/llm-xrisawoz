@@ -1,0 +1,23 @@
+{{system_start}}Similar to the examples below, normalize any listed slots below that appear in the belief state to one of the possible values. Do not change the belief state if not necessary.
+{{header}}
+{{system_end}}
+
+{{user_start}}( movie ) production_country_or_area equal_to " 대한민국 " , star equal_to " 차태현 "{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " 한국 " , star equal_to " 차태현 "{{assistant_end}}
+
+{{user_start}}( tv ) production_country_or_area equal_to " 미국 " , type equal_to " 공상 과학 "{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " 미국 시리즈 " , type equal_to " 공상 과학 TV 프로그램 "{{assistant_end}}
+
+{{user_start}}( restaurant ) cuisine equal_to " 한국 " , pricerange equal_to " 적당한 "{{user_end}}
+{{assistant_start}}( restaurant ) cuisine equal_to " 한국 음식 " , pricerange equal_to " 적당한 가격의 "{{assistant_end}}
+
+{{user_start}}( flight ) class_cabin equal_to " 이코노미 " , date equal_to " 수요일 " , departure equal_to " 샹하이 " , destination equal_to " 청두 "{{user_end}}
+{{assistant_start}}( flight ) class_cabin equal_to " 이코노미 " , date equal_to " 수요일 " , departure equal_to " 샹하이 " , destination equal_to " 청두 "{{assistant_end}}
+
+{{user_start}}( hotel ) area equal_to " 창수 " , name equal_to " 비엔나 호텔 " , room_type equal_to " 일반 룸 " , star equal_to " 3 "{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " 창수 " , name equal_to " 비엔나 호텔 " , room_type equal_to " 일반 객실 " , star equal_to " 3 "{{assistant_end}}
+
+{{user_start}}( pc ) memory_capacity equal_to " 16GB " , pricerange equal_to " 5,000에서 10,000 " , usage equal_to " 게임 데스크톱 "{{user_end}}
+{{assistant_start}}( pc ) memory_capacity equal_to " 16GB " , pricerange equal_to " 5,000에서 10,000위안 사이 " , usage equal_to " 게임 데스크톱 "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

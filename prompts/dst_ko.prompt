@@ -1,0 +1,21 @@
+{{system_start}}Similar to the examples below, generate belief state based on previous state and history.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 재미있는 일본 TV 프로그램을 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " 일본 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 안녕하세요, 제 친구들이 저를 보러 올 예정입니다. 구수구 근처에 많이 비싸지 않고 경치가 아름다운 곳이 있을까요? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " 구수구 " , consumption equal_to " 적당한 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " 쑤저우 공업원구 " , name equal_to " 하이디라오 훠궈 " , pricerange equal_to " 조금 비싼 " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to " 하이디라오 훠궈 " AGENT_ACTS: ( restaurant ) inform phone_number equal_to " 0512-67603337 " USER: 알겠습니다. 영업 시간을 확인해 주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( restaurant ) area equal_to " 쑤저우 공업원구 " , name equal_to " 하이디라오 훠궈 " , pricerange equal_to " 조금 비싼 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) type equal_to " 놀이공원 " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to " 쑤저우 파라다이스 아쿠아월드 " AGENT_ACTS: ( attraction ) inform features equal_to " forest-themed. It is like being in a vast forest close to the ocean. " USER: 지하철로 바로 갈 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) type equal_to " 놀이공원 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( hotel ) area equal_to " 창수 " , star equal_to " 4 " <endofstate> <history> AGENT_ACTS: ( hotel ) recommend name equal_to " 창장로에 있는 에이투어 호텔 " USER: 킹사이즈 객실은 얼마인가요? <endofhistory>{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " 창수 " , name equal_to " 창수 창장로에 있는 에이투어 호텔 " , room_type equal_to " 킹사이즈 객실 " , star equal_to " 4 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " 인도 " , ( tv ) decade equal_to " 2010년대 " , production_country_or_area equal_to " 일본 TV 프로그램 " , type equal_to " 서스펜스가 있는 " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0점 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172분 " USER: 네, 오랜 시간 답변해주셔서 감사합니다. 안녕히 계세요. <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " 인도 " ( tv ) decade equal_to " 2010년대 " , production_country_or_area equal_to " 일본 TV 프로그램 " , type equal_to " 서스펜스가 있는 "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

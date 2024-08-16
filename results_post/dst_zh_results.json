@@ -1,0 +1,62 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 周庄古镇 \" AGENT_ACTS: ( attraction ) recommend name equal_to \" 山塘街 \" USER: 这里的电话是多少? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" moderate \" , type equal_to \" water town \" , name equal_to \" 山塘街 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: 确实挺高,这个地方有什么特点吗? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" moderate \" , name equal_to \" 山塘街 \" , type equal_to \" water town \" , score equal_to \" 4.5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我和女朋友想在工业园区找一个能地铁直达的山水景区,推荐一个呗。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , type equal_to \" 山水景区 \"",
+    "prediction": "( attraction ) area equal_to \"Suzhou Industrial Park\", metro_station equal_to \"true\", the_most_suitable_people equal_to \"dating\""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , type equal_to \" 山水景区 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 金鸡湖景区 \" USER: 行啊,地铁确实能到是吧? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 金鸡湖景区 \" , type equal_to \" 山水景区 \"",
+    "prediction": "( attraction ) area equal_to \"Suzhou Industrial Park\", metro_station equal_to \"true\", type equal_to \"landscape scenic spot\", name equal_to \"金鸡湖景区\""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 便宜 \" , name equal_to \" 千灯古镇 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 千灯古镇,距今已有 2500 多年的历史,古镇白墙黑瓦,昆韵盎然。 \" AGENT_ACTS: ( attraction ) inform address equal_to \" 苏州市昆山市千灯古镇尚书路 1 号 \" , inform phone_number equal_to \" 0512-57472155 \" USER: 谢谢你回答了我所有的问题,再见! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 便宜 \" , name equal_to \" 千灯古镇 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" cheap \" , name equal_to \" 千灯古镇 \" , type equal_to \" water town \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我和女朋友来苏州玩,我们想想去工业园区,你能推荐给我们一个能地铁直达的商务中心吗? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , the_most_suitable_people equal_to \" 情侣约会 \" , type equal_to \" 商业中心 \"",
+    "prediction": "( attraction ) area equal_to \"Suzhou Industrial Park\", metro_station equal_to \"true\", type equal_to \"commercial center\""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , the_most_suitable_people equal_to \" 情侣约会 \" , type equal_to \" 商业中心 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 诚品书店 \" USER: 这个地方的特点是什么呢? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 诚品书店 \" , the_most_suitable_people equal_to \" 情侣约会 \" , type equal_to \" 商业中心 \"",
+    "prediction": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , the_most_suitable_people equal_to \" dating \" , type equal_to \" commercial center \" , name equal_to \" 诚品书店 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴中区 \" , type equal_to \" 山水景区 \" <endofstate> <history> AGENT_ACTS: ( attraction ) request score , request ticket_price USER: 没有什么要求,只要这个景点能地铁直达就行。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , type equal_to \" 山水景区 \"",
+    "prediction": "( attraction ) area equal_to \" Wuzhong District \" , type equal_to \" landscape scenic spot \" , metro_station equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 便宜 \" , type equal_to \" 山水景区 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 西山景区 \" USER: 这个地方门票贵吗? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 便宜 \" , name equal_to \" 西山景区 \" , type equal_to \" 山水景区 \"",
+    "prediction": "( attraction ) consumption equal_to \" cheap \" , type equal_to \" landscape scenic spot \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 便宜 \" , name equal_to \" 西山景区 \" , type equal_to \" 山水景区 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 西山是太湖中的第一大岛,岛上能看烟波飘渺的太湖湖景 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.4 \" USER: 谢谢你,再见。 <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 便宜 \" , name equal_to \" 西山景区 \" , type equal_to \" 山水景区 \"",
+    "prediction": "( attraction ) consumption equal_to \" cheap \" , name equal_to \" 西山景区 \" , type equal_to \" landscape scenic spot \" , score equal_to \" 4.4 \""
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 我是苏州人,但不怎么出去玩,朋友来苏州找我,准备带她逛逛水乡古镇。 <endofhistory>",
+    "output": "( attraction ) type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) area equal_to \" 苏州 \" , type equal_to \" 水乡古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 周庄古镇 \" USER: 我希望找个消费水平是中等的地方。 <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) type equal_to \" 水乡古镇 \" , consumption equal_to \" 中等 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 周庄古镇 \" AGENT_ACTS: ( attraction ) recommend name equal_to \" 山塘街 \" USER: 这里的电话是多少? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" 中等 \" , type equal_to \" 水乡古镇 \" , name equal_to \" 山塘街 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 山塘街 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" USER: 他家评分高不? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: 确实挺高,这个地方有什么特点吗? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) inform features equal_to \" 欣赏苏州老城风貌,参观会馆等古迹,乘游船,拍摄美丽的夜景 \" USER: 谢谢你,再见。 <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 我是苏州人,但不怎么出去玩,朋友来苏州找我,准备带她逛逛水乡古镇。 <endofhistory>",
+    "output": "( attraction ) type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) area equal_to \" 苏州 \" , type equal_to \" 水乡古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS: ( attraction ) request consumption USER: 我想找个偏贵点的就行。 <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 偏贵 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) type equal_to \" 水乡古镇 \" , consumption equal_to \" 偏贵 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 偏贵 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) request consumption AGENT_ACTS: ( attraction ) recommend name equal_to \" 周庄古镇 \" USER: 这个地方是否能地铁直达呢? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" 偏贵 \" , type equal_to \" 水乡古镇 \" , name equal_to \" 周庄古镇 \" , subway_access equal_to \" 否 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , type equal_to \" 水乡古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 周庄古镇 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 否 \" USER: 那他家开放时间是多会? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , type equal_to \" 水乡古镇 \"",
+    "prediction": "( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , type equal_to \" 水乡古镇 \""
+  }
+]

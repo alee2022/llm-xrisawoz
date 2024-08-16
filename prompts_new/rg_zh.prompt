@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, generate a response to user given action and history.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: 您好,能给我推荐点好看的日剧吗? <endofhistory>{{user_end}}
+{{assistant_start}}好的,您想看哪个时期的日剧呢?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( movie ) request <endofactions> <history> USER: 好的,能再帮我推荐一部印度电影吗? <endofhistory>{{user_end}}
+{{assistant_start}}好的,您平时比较喜欢看什么样的印度电影?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢您的耐心解答,再见。 <endofhistory>{{user_end}}
+{{assistant_start}}不用客气的,希望您能喜欢我推荐的影视剧。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " 拙政园 " <endofactions> <history> USER: 你好,最近朋友想来找我玩,姑苏区附近有没有消费水平中等的景点? <endofhistory>{{user_end}}
+{{assistant_start}}好的,跟朋友一起玩,给您推荐拙政园,这个景点是苏州园林的典型代表,离您家也近。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform cuisine equal_to " 江浙菜 " , recommend name equal_to " 伴园私房菜 " <endofactions> <history> USER: 你好,估计我会游玩一整天,附近偏贵一点的餐厅有吗? <endofhistory>{{user_end}}
+{{assistant_start}}偏贵一些的给您推荐一个伴园私房菜吧,这个是江浙菜,比较有本地特色。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( car ) recommend name equal_to " 途铠 1.5L 自动风尚版 " <endofactions> <history> USER: 你好,我考虑买一辆汽油驱动的 SUV ,你能推荐给我个价格区间小于 15 万的车吗? <endofhistory>{{user_end}}
+{{assistant_start}}这边为您推荐途铠 1.5L 自动风尚版吧。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) recommend name equal_to " 沃姆精品酒店 " <endofactions> <history> USER: 哇,一宿都不关店呀,这下可以多吃一会了,吃过饭你再帮我在附近找一家中等价位,有标准间的酒店吧,可以吗? <endofhistory>{{user_end}}
+{{assistant_start}}沃姆精品酒店挺适合你的。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hospital ) recommend name equal_to " 苏州九龙医院 " <endofactions> <history> USER: 你好,我家孩子有点不舒服,我想带她去看儿科,能帮我推荐一个擅长儿科的综合医院么? <endofhistory>{{user_end}}
+{{assistant_start}}您好,看儿科推荐您去苏州九龙医院。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( weather ) inform wind equal_to " 东北风 2 级 " <endofactions> <history> USER: 我下周要去厦门办事,但还没有决定哪天出行,想根据天气情况来定,能先帮我查查下周日那边的风力风向么? <endofhistory>{{user_end}}
+{{assistant_start}}您好,您所查询的下周日厦门的风力风向是东北风 2 级。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( flight ) recommend flight_information equal_to " 海南航空 HU7394 ,萧山国际机场 T3- 宝安国际机场 T3 " <endofactions> <history> USER: 你好,我下周要去出差,请你帮我推荐个下周五杭州到深圳的航班,最好是有经济舱的。 <endofhistory>{{user_end}}
+{{assistant_start}}您可以乘坐海南航空 HU7394 ,萧山国际机场 T3- 宝安国际机场 T3 。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( pc ) greeting , recommend product_name equal_to " 联想小新潮 7000 " <endofactions> <history> USER: 你好,我想买一款联想的 14 英寸的轻薄本,内存容量最好是 8GB 的。 <endofhistory>{{user_end}}
+{{assistant_start}}你好,我给您推荐联想小新潮 7000 这款笔记本。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( train ) request departure <endofactions> <history> USER: 公司让我下周出差,你先查查有没有下周出发到厦门的高铁? <endofhistory>{{user_end}}
+{{assistant_start}}您的出发地是什么地方呢?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( class ) request subject <endofactions> <history> USER: 你好,我的孩子现在六年级,能给我推荐一个辅导班吗? <endofhistory>{{user_end}}
+{{assistant_start}}那您打算为您家孩子报哪个科目的辅导班呢?{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

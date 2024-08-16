@@ -1,0 +1,20 @@
+[
+  {
+    "instruction": "",
+    "input": "RG: <actions> <|assistant_start|>null<|assistant_end|> <endofactions> <history> USER: 안녕하세요! 저는 시외에서 여기 쑤저우를 방문하러 왔어요. 재미있는 곳을 추천해 주실 수 있나요? <endofhistory>",
+    "output": "안녕하세요! 그럼요. 어떤 지역을 가고 싶으세요?",
+    "prediction": "쑤저우에 오신 것을 환영합니다! 쑤저우는 아름다운 정원과 운하로 유명합니다. 특히 쑤저우의 고전 정원인 '쑤저우 원림'을 추천드립니다. 또한, '핑장 루' 거리에서는 전통적인 쇼핑과 음식을 즐기실 수 있습니다."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 저우좡 마을 \" <endofactions> <history> USER: 쿤산시요. 친구들과 여행하기 좋은 장소면 조금 더 비싸도 괜찮아요. <endofhistory>",
+    "output": "작은 다리와 구불구불한 수로는 쑤저우에서 꼭 봐야 해요. 그래서 저우좡 마을을 추천합니다.",
+    "prediction": "저우좡 마을을 추천해 드립니다. 쿤산시에서 멀지 않고, 아름다운 수로와 전통적인 건축물이 있는 곳입니다."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 저우좡 마을 \" <endofactions> <history> USER: 그곳의 특별한 점은 무엇인가요? <endofhistory>",
+    "output": "그곳은 많은 작은 다리, 구불구불한 수로, 쌍교와 중국 전통 강 보트로 유명합니다. 또한 심만삼의 발자취를 따라 걸을 수 있습니다.",
+    "prediction": "저우좡 마을은 고대 운하와 전통적인 건축물로 유명합니다."
+  }
+]

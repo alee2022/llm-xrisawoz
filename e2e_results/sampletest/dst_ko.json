@@ -1,0 +1,20 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요! 저는 시외에서 여기 쑤저우를 방문하러 왔어요. 재미있는 곳을 추천해 주실 수 있나요? <endofhistory>",
+    "output": "null",
+    "prediction": "It seems like you've entered \"null\" which typically indicates an absence of data or no input. If you have a question or need assistance with something else, please provide more information or context."
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> AGENT_ACTS: ( attraction ) greeting , request area USER: 쿤산시요. 친구들과 여행하기 좋은 장소면 조금 더 비싸도 괜찮아요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들 \" , consumption equal_to \" 조금 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들 \" , consumption equal_to \" 조금 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: null AGENT_ACTS: ( attraction ) recommend name equal_to \" 저우좡 마을 \" USER: 그곳의 특별한 점은 무엇인가요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쿤산시 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들 \" , consumption equal_to \" 조금 더 비싼 \""
+  }
+]

@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, generate belief state based on previous state and history.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 您好,能给我推荐点好看的日剧吗? <endofhistory>{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " 日本 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( tv ) decade equal_to " 2010 年代 " , production_country_or_area equal_to " 日本 " , type equal_to " 悬疑片 " <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform Douban_score equal_to " 9.1 " AGENT_ACTS: ( tv ) inform director equal_to " 土井裕泰 " USER: 好的,能再帮我推荐一部印度电影吗? <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " 印度 " ( tv ) decade equal_to " 2010 年代 " , production_country_or_area equal_to " 日本 " , type equal_to " 悬疑片 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " 印度 " , star equal_to " 沙特鲁汉 . 辛哈 " , ( tv ) decade equal_to " 2010 年代 " , production_country_or_area equal_to " 日本 " , type equal_to " 悬疑片 " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 分钟 " USER: 好的,谢谢您的耐心解答,再见。 <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " 印度 " , star equal_to " 沙特鲁汉 . 辛哈 " ( tv ) decade equal_to " 2010 年代 " , production_country_or_area equal_to " 日本 " , type equal_to " 悬疑片 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 你好,最近朋友想来找我玩,姑苏区附近有没有消费水平中等的景点? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " 姑苏区 " , consumption equal_to " 中等 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) area equal_to " 姑苏区 " , consumption equal_to " 中等 " , name equal_to " 拙政园 " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to " 苏州市姑苏区东北街 178 号 " AGENT_ACTS: ( attraction ) inform score equal_to " 4.5 " USER: 你好,估计我会游玩一整天,附近偏贵一点的餐厅有吗? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " 姑苏区 " , consumption equal_to " 中等 " , name equal_to " 拙政园 " ( restaurant ) pricerange equal_to " 偏贵 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 你好,我考虑买一辆汽油驱动的 SUV ,你能推荐给我个价格区间小于 15 万的车吗? <endofhistory>{{user_end}}
+{{assistant_start}}( car ) classification equal_to " SUV " , hybrid equal_to " 汽油 " , pricerange equal_to " <15 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " 工业园区 " , name equal_to " 海底捞火锅 " , pricerange equal_to " 偏贵 " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform phone_number equal_to " 0512-67603337 " AGENT_ACTS: ( restaurant ) inform business_hours equal_to " 周一至周日 09:00-07:00 " USER: 哇,一宿都不关店呀,这下可以多吃一会了,吃过饭你再帮我在附近找一家中等价位,有标准间的酒店吧,可以吗? <endofhistory>{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " 工业园区 " , pricerange equal_to " 中等 " , room_type equal_to " 标准间 " ( restaurant ) area equal_to " 工业园区 " , name equal_to " 海底捞火锅 " , pricerange equal_to " 偏贵 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 你好,我家孩子有点不舒服,我想带她去看儿科,能帮我推荐一个擅长儿科的综合医院么? <endofhistory>{{user_end}}
+{{assistant_start}}( hospital ) general_or_specialized equal_to " 综合医院 " , key_departments equal_to " 儿科 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 我下周要去厦门办事,但还没有决定哪天出行,想根据天气情况来定,能先帮我查查下周日那边的风力风向么? <endofhistory>{{user_end}}
+{{assistant_start}}( weather ) city equal_to " 厦门 " , date equal_to " 下周日 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 你好,我下周要去出差,请你帮我推荐个下周五杭州到深圳的航班,最好是有经济舱的。 <endofhistory>{{user_end}}
+{{assistant_start}}( flight ) class_cabin equal_to " 经济舱 " , date equal_to " 下周五 " , departure equal_to " 杭州 " , destination equal_to " 深圳 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 你好,我想买一款联想的 14 英寸的轻薄本,内存容量最好是 8GB 的。 <endofhistory>{{user_end}}
+{{assistant_start}}( pc ) brand equal_to " 联想 " , memory_capacity equal_to " 8GB " , screen_size equal_to " 14.0 英寸 " , usage equal_to " 轻薄本 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 公司让我下周出差,你先查查有没有下周出发到厦门的高铁? <endofhistory>{{user_end}}
+{{assistant_start}}( train ) classification equal_to " 高铁 " , destination equal_to " 厦门 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 你好,我的孩子现在六年级,能给我推荐一个辅导班吗? <endofhistory>{{user_end}}
+{{assistant_start}}( class ) grade equal_to " 六年级 "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

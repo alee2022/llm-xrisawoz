@@ -1,0 +1,14 @@
+[
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Zhouzhuang Town \" <endofactions> <history> USER: I'm from Suzhou but I don't go out much. My friend is coming to Suzhou to visit me and I'm thinking about taking her to a water town. <endofhistory>",
+    "output": "Suzhou's Zhouzhuang Town is not a bad choice.",
+    "prediction": "In that case, I recommend visiting Zhouzhuang Town. It's one of the most famous water towns in China and not far from Suzhou. It's a great place to experience the charm of ancient waterways and traditional architecture."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Shantang Street \" <endofactions> <history> USER: I'm looking for a place where the prices are fairly average. <endofhistory>",
+    "output": "Then you can go to Shantang Street.",
+    "prediction": "In that case, you might enjoy visiting Shantang Street. It's a great place with fairly average prices and a lot to offer in terms of culture and scenery."
+  }
+]

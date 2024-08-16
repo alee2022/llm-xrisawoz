@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, generate a response to user given action and history.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: Bonjour, pouvez-vous me recommander des séries télé japonaises fascinantes ? <endofhistory>{{user_end}}
+{{assistant_start}}D'accord, une série télé japonaise de quelle période ?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( movie ) request <endofactions> <history> USER: Merci, pourriez-vous me recommander un film indien ? <endofhistory>{{user_end}}
+{{assistant_start}}Ok, quel genre de films indiens aimez-vous regarder normalement ?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: Ok, merci pour votre patience, au revoir, <endofhistory>{{user_end}}
+{{assistant_start}}Je vous en prie. J'espère que vous apprécierez mes recommandations.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " Le jardin de l'humble administrateur " <endofactions> <history> USER: Bonjour, mes amis viennent me rendre visite. Y a-t-il des sites touristiques près du district de Gusu qui ne sont pas trop chers ? <endofhistory>{{user_end}}
+{{assistant_start}}Si vous voulez passer du temps avec vos amis, le Jardin de l'Humble Administrateur est un bon endroit. C'est un jardin traditionnel de style Suzhou et c'est aussi près de chez toi.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform cuisine equal_to " Cuisine du Jiangsu Zhejiang " , recommend name equal_to " Banyuan Private Home Cuisine " <endofactions> <history> USER: Ok, nous allons peut-être passer toute la journée ensemble, pouvez-vous nous recommander des restaurants un peu chers près d'ici ? <endofhistory>{{user_end}}
+{{assistant_start}}Eh bien, Banyuan Private Home Cuisine est un bon choix. Il est un peu cher et sert la cuisine du Jiangsu Zhejiang avec des caractéristiques locales.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( car ) recommend name equal_to " Volkswagen T-Cross avec un moteur à essence de 1,5 L " <endofactions> <history> USER: Bonjour, je souhaite acheter un SUV à essence, pouvez-vous m'en recommander un à moins de 150 000 yuans ? <endofhistory>{{user_end}}
+{{assistant_start}}Eh bien, la Volkswagen T-Cross avec un moteur à essence de 1,5 L répondra à vos besoins.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) recommend name equal_to " petit hôtel de luxe Womu " <endofactions> <history> USER: Wow, c'est ouvert toute la nuit, alors on peut rester un peu plus longtemps. Pourriez-vous trouver un hôtel pas trop cher avec des chambres standard ? <endofhistory>{{user_end}}
+{{assistant_start}}Le petit hôtel de luxe Womu serait un bon choix.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hospital ) recommend name equal_to " hôpital Suzhou Kowloon " <endofactions> <history> USER: Bonjour, mon enfant ne se sent pas bien et je veux l'emmener dans un service pédiatrique. Quel hôpital général possède un bon service pédiatrique ? <endofhistory>{{user_end}}
+{{assistant_start}}Bonjour, vous pouvez aller à l'hôpital Suzhou Kowloon pour un bon service pédiatrique.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( weather ) inform wind equal_to " dimanche prochain à Xiamen " <endofactions> <history> USER: Je viendrai à Xiamen la semaine prochaine pour le travail mais je ne sais toujours pas quel jour je partirai, cela dépend de la météo. Pourriez-vous m'aider à vérifier la force et la direction du vent pour dimanche prochain ? <endofhistory>{{user_end}}
+{{assistant_start}}Ok, ce sera de force 2 nord-est dimanche prochain à Xiamen./u>{{assistant_end}}
+
+{{user_start}}RG: <actions> ( flight ) recommend flight_information equal_to " HU7394 de la compagnie aérienne Hainan du Terminal 3 de l'aéroport international de Hangzhou au Terminal 3 de l'aéroport international de Shenzhen Baoan " <endofactions> <history> USER: Bonjour, je pars en voyage d'affaires la semaine prochaine. Veuillez m'aider à vérifier les vols de Hangzhou à Shenzhen vendredi prochain, de préférence en classe économique. <endofhistory>{{user_end}}
+{{assistant_start}}Vous pouvez prendre le vol HU7394 de la compagnie aérienne Hainan du Terminal 3 de l'aéroport international de Hangzhou au Terminal 3 de l'aéroport international de Shenzhen Baoan.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( pc ) greeting , recommend product_name equal_to " Lenovo 7000 Xiaoxin Chao " <endofactions> <history> USER: Bonjour, je souhaite acheter un ordinateur portable léger de 14 pouces de marque Lenovo, de préférence avec une capacité de mémoire de 8 Go. <endofhistory>{{user_end}}
+{{assistant_start}}Bonjour, je vous recommande le Lenovo 7000 Xiaoxin Chao.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( train ) request departure <endofactions> <history> USER: Je pars en voyage d'affaires la semaine prochaine. Pouvez-vous m'aider à vérifier s'il y a des trains à grande vitesse pour Xiamen la semaine prochaine ? <endofhistory>{{user_end}}
+{{assistant_start}}D'où partirez-vous ?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( class ) request subject <endofactions> <history> USER: Bonjour, mon enfant est en sixième année. Pourriez-vous me recommander un cours de soutien scolaire ? <endofhistory>{{user_end}}
+{{assistant_start}}Quelles matières voulez-vous que votre enfant étudie ?{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

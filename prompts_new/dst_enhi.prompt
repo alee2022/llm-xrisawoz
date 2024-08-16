@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, generate belief state based on previous state and history.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hi, क्या आप कुछ आकर्षक Japanese TV shows की recommendation कर सकते हैं ? <endofhistory>{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " Japan "{{assistant_end}}
+
+{{user_start}}DST: <state> ( tv ) decade equal_to " 2010s " , production_country_or_area equal_to " Japanese TV show " , type equal_to " suspenseful " <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform Douban_score equal_to " 9.1 " AGENT_ACTS: ( tv ) inform director equal_to " Nobuhiro Doi " USER: धन्यवाद , क्या आप एक indian film की recommendation कर सकते हैं ? <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " Indian " ( tv ) decade equal_to " 2010s " , production_country_or_area equal_to " Japanese TV show "{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " Indian " , ( tv ) decade equal_to " 2010s " , production_country_or_area equal_to " Japanese TV show " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 मिनट " USER: ठीक है , your patience के लिए धन्यवाद , bye. <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " Indian " ( tv ) decade equal_to " 2010s " , production_country_or_area equal_to " Japanese TV show "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hi , मेरे friends मुझसे मिलने आ रहे हैं । क्या Gusu District मैं कोई scenic areas है that are not that expensive ? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " Gusu District " , consumption equal_to " not that expensive "{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) consumption equal_to " not that expensive " , name equal_to " The Humble Administrator's Garden " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to " No. 178, Dongbei Street, Gusu District, Suzhou City. " AGENT_ACTS: ( attraction ) inform score equal_to " 4.5 " USER: Ok , हम पूरा day together बिता सकते है, can you recommend some a bit more expensive restaurants यहाँ पास में ? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) consumption equal_to " not that expensive " , name equal_to " The Humble Administrator's Garden " ( restaurant ) pricerange equal_to " slightly expensive "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hello , I एक गैस powered SUV खरीदना चाहता हूँ, can you recommend one within 150,000 yuan? <endofhistory>{{user_end}}
+{{assistant_start}}( car ) hybrid equal_to " gas " , pricerange equal_to " within 150,000 yuan "{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " Suzhou Industrial Park " , name equal_to " Haidilao Hot Pot " , pricerange equal_to " a bit more expensive " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform phone_number equal_to " 0512-67603337 " AGENT_ACTS: ( restaurant ) inform business_hours equal_to " from Monday to Sunday, 09:00 - 07:00 " USER: वाह , यह पूरी रात खुला है , फिर हम कुछ देर और रुक सकते हैं । Could you find a not that expensive hotel with standard rooms ? <endofhistory>{{user_end}}
+{{assistant_start}}( hotel ) pricerange equal_to " not that expensive " , room_type equal_to " standard rooms " ( restaurant ) area equal_to " Suzhou Industrial Park " , name equal_to " Haidilao Hot Pot " , pricerange equal_to " a bit more expensive "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: हाय , my child doesn't feel well and और मैं उसे pediatric clinic में ले जाना चाहता हूं । कौनसा general hospital has a good pediatric clinic ? <endofhistory>{{user_end}}
+{{assistant_start}}( hospital ) general_or_specialized equal_to " general hospital " , key_departments equal_to " pediatric clinic "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: मैं अगले week work के लिए ज़ियामेन आऊंगा लेकिन अभी भी sure नहीं है कि मैं किस day निकलूंगा, यह मौसम पर depend करता है । Could you help me check the wind force and direction for next Sunday ? <endofhistory>{{user_end}}
+{{assistant_start}}( weather ) date equal_to " next Sunday "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: नमस्ते , मैं अगले सप्ताह एक व्यावसायिक यात्रा पर जा रहा हूँ ।Please help me check the flights from Hangzhou to Shenzhen next Friday , preferably in economy class . <endofhistory>{{user_end}}
+{{assistant_start}}( flight ) class_cabin equal_to " economy class " , date equal_to " next Friday "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hello , I want to buy a 14-इंच lightweight लैपटॉप लेनोवो से , preferably with मेमोरी क्षमता 8GB की <endofhistory>{{user_end}}
+{{assistant_start}}( pc ) brand equal_to " Lenovo " , memory_capacity equal_to " 8GB " , screen_size equal_to " 14-inch " , usage equal_to " lightweight laptop "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: मैं next week business trip पर जाऊंग ा। क्या आप यह जांचने में मेरी help कर सकते हैं कि next week Xiamen के लिए कोई speed trains है या नहीं ? <endofhistory>{{user_end}}
+{{assistant_start}}( train ) classification equal_to " high-speed trains " , destination equal_to " Xiamen "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: नमस्ते , मेरा बच्चा छठी कक्षा में है ।Could you recommend a tutorial class for me ? <endofhistory>{{user_end}}
+{{assistant_start}}( class ) grade equal_to " sixth grade "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

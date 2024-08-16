@@ -1,0 +1,21 @@
+{{system_start}}Given the provided information, respond to the user.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: Hi, can you recommend some fascinating Japanese TV shows? <endofhistory>{{user_end}}
+{{assistant_start}}Alright, a Japanese TV show from what period?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to \" Humble Administrator's Garden \" <endofactions> <history> USER: Hi, my friends are coming to visit me. Are there any scenic areas near Gusu District that are not that expensive? <endofhistory>{{user_end}}
+{{assistant_start}}Alright, if you want to hang out with your friends, Humble Administrator's Garden is a nice place. It is a traditional Suzhou-style garden and also near to your home.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform business_hours equal_to \" from Monday to Sunday, 09:00-07:00 \" <endofactions> <history> USER: Got it. Can you help me check the opening hours?{{user_end}}
+{{assistant_start}}No problems. It is open from Monday to Sunday, 09:00-07:00.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) inform metro_station equal_to \" There are no direct subway lines to it. \" <endofactions> <history> USER: Can I get there directly by subway? <endofhistory>{{user_end}}
+{{assistant_start}}I am afraid you cannot. There are no direct subway lines to it.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) inform room_charge equal_to \" 312 yuan \" <endofactions> <history> USER: How much is a king-size room? <endofhistory>{{user_end}}
+{{assistant_start}}It is 312 yuan.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: Ok, thank you for your patience, bye, <endofhistory>{{user_end}}
+{{assistant_start}}You are welcome. Hope you enjoy my recommendations.{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

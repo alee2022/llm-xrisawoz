@@ -1,0 +1,21 @@
+{{system_start}}Similar to the examples below, generate belief state based on previous state and history.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: हाय, क्या आप कुछ आकर्षक जापानी टीवी शो की सिफारिश कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " जापान "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: नमस्ते, मेरे दोस्त मुझसे मिलने आ रहे हैं। क्या गुसु जिले के पास कोई दर्शनीय क्षेत्र हैं जो इतने महंगे नहीं हैं <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " गुसू जिला " , consumption equal_to " moderate "{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " सूज़ौ औद्योगिक पार्क " , name equal_to " हैडिलाओ हॉट पॉट " , pricerange equal_to " थोड़ा महंगा " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to " हैडिलाओ हॉट पॉट " AGENT_ACTS: ( restaurant ) inform phone_number equal_to " 0512-67603337 " USER: अब समझ में आया। क्या आप मुझे खुलने के घंटों की जांच करने में मदद कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}( restaurant ) area equal_to " सूज़ौ औद्योगिक पार्क " , name equal_to " हैडिलाओ हॉट पॉट " , pricerange equal_to " थोड़ा महंगा "{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) type equal_to " मनोरंजन पार्क " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to " सूज़ौ मनोरंजन भूमि वन और जल विश्व " AGENT_ACTS: ( attraction ) inform features equal_to " forest-themed. It is like being in a vast forest close to the ocean. " USER: क्या मैं मेट्रो द्वारा सीधे वहां पहुंच सकता हूं <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) type equal_to " मनोरंजन पार्क "{{assistant_end}}
+
+{{user_start}}DST: <state> ( hotel ) area equal_to " चांगशु " , star equal_to " 4 " <endofstate> <history> AGENT_ACTS: ( hotel ) recommend name equal_to " चांगजियांग रोड में अटौर होटल " USER: राजा के आकार का कमरा कितना है <endofhistory>{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " चांगशु " , name equal_to " चांगजियांग रोड, चांग्शू में अटौर होटल " , room_type equal_to " बड़ा आकार के कमरे " , star equal_to " 4 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " भारत " , ( tv ) decade equal_to " 2010 के दशक " , production_country_or_area equal_to " जापान " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 मिनट " USER: ठीक है, आपके धैर्य के लिए धन्यवाद, अलविदा <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " भारतीय " ( tv ) decade equal_to " 2010 के दशक " , production_country_or_area equal_to " जापान "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

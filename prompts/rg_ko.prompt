@@ -1,0 +1,21 @@
+{{system_start}}Given the provided information, respond to the user.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: 안녕하세요, 재미있는 일본 TV 프로그램을 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}네, 어떤 시기의 일본 TV 프로그램을 찾으시나요?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " 졸정원 " <endofactions> <history> USER: 안녕하세요, 제 친구들이 저를 보러 올 예정입니다. 구수구 근처에 많이 비싸지 않고 경치가 아름다운 곳이 있을까요? <endofhistory>{{user_end}}
+{{assistant_start}}네, 친구들과 시간을 보내시길 원하신다면 졸정원이 좋습니다. 전통적인 쑤저우 양식의 정원이고 당신의 집과도 가깝습니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform business_hours equal_to " 월요일부터 일요일까지 오전 9시부터 오후 7시까지 " <endofactions> <history> USER: 알겠습니다. 영업 시간을 확인해 주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}물론이죠. 월요일부터 일요일까지 오전 9시부터 오후 7시까지 영업합니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) inform metro_station equal_to " There are no direct subway lines to it. " <endofactions> <history> USER: 지하철로 바로 갈 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}안 될 것 같습니다. 그곳으로 바로 가는 지하철 노선이 없습니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) inform room_charge equal_to " 312위안 " <endofactions> <history> USER: 킹사이즈 객실은 얼마인가요? <endofhistory>{{user_end}}
+{{assistant_start}}312위안입니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: 네, 오랜 시간 답변해주셔서 감사합니다. 안녕히 계세요. <endofhistory>{{user_end}}
+{{assistant_start}}천만에요. 제 추천이 도움이 되었기를 바랍니다.{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

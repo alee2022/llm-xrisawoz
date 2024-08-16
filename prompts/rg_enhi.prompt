@@ -1,0 +1,21 @@
+{{system_start}}Given the provided information, respond to the user.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: Hi, क्या आप कुछ आकर्षक Japanese TV shows की recommendation कर सकते हैं ? <endofhistory>{{user_end}}
+{{assistant_start}}ठीक है , काैनसॆ period का जापानी TV शो ?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " Humble Administrator's Garden " <endofactions> <history> USER: Hi , मेरे friends मुझसे मिलने आ रहे हैं । क्या Gusu District मैं कोई scenic areas है that are not that expensive ? <endofhistory>{{user_end}}
+{{assistant_start}}ठीक है , अगर आप अपने दोस्तों के साथ घूमना चाहते हैं , तो Humble Administrator's Garden एक nice place है. It is a traditional Suzhou-style garden and also near to your home आपके घर के पास भी है ।{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform business_hours equal_to " from Monday to Sunday, 09:00 - 07:00 " <endofactions> <history> USER: Got it. क्या आप मुझे खुलने के hours check करने में help कर सकते हैं ? <endofhistory>{{user_end}}
+{{assistant_start}}कोई समस्या नहीं । It is open from Monday to Sunday, 09:00 - 07:00.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) inform metro_station equal_to " There are no direct subway lines to it. " <endofactions> <history> USER: क्या मैं subway से directly वहां पहुंच सकता हूं ? <endofhistory>{{user_end}}
+{{assistant_start}}I am afraid आप ऐसा नहीं कर सकते । इसके लिए कोई direct subway lines नहीं है ।{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) inform room_charge equal_to " 312 युआन " <endofactions> <history> USER: King-size room कितने का है? <endofhistory>{{user_end}}
+{{assistant_start}}It is 312 युआन{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है , your patience के लिए धन्यवाद , bye. <endofhistory>{{user_end}}
+{{assistant_start}}आपका welcome । Hope कि आप मेरी recommendations enjoy करेंगे।{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

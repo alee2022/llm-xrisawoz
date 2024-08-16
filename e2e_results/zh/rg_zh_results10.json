@@ -1,0 +1,2402 @@
+[
+  {
+    "instruction": "",
+    "input": "RG: <actions> Hello! How can I assist you today? If you have any questions or need recommendations, feel free to ask. <endofactions> <history> USER: 你好 ! 我是从外地来苏州旅游的,能推荐个好玩的地方吗? <endofhistory>",
+    "output": "你好!当然没问题的 ! 你想去哪个区域的景点呢?",
+    "prediction": "您好! 欢迎来到苏州。苏州是一个充满古典园林和现代化城市风貌的地方。我推荐您可以去拙政园或者留园游览一下，这些都是苏州非常有名的古典园林，体现了中国园林的精髓。如果您对购物感兴趣，可以去观前街或者石路尝试当地的小吃和购买一些手工艺品。希望您在苏州有一个愉快的旅行！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 周庄古镇 \" <endofactions> <history> USER: 在昆山吧,适合朋友一起玩的地方,消费贵点也是可以的。 <endofhistory>",
+    "output": "来苏州一定要去看看小桥流水,推荐周庄古镇。",
+    "prediction": "那您可以考虑去周庄古镇玩玩，是昆山非常有名的旅游景点，适合朋友一起游玩。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 小桥流水与人家,双桥水巷摇橹船,还有沈万三的足迹待你寻访 \" <endofactions> <history> USER: 有什么特色呢? <endofhistory>",
+    "output": "小桥流水与人家,双桥水巷摇橹船,还有沈万三的足迹待你寻访。",
+    "prediction": "拙政园有小桥流水与人家,双桥水巷摇橹船,还有沈万三的足迹待你寻访,非常有江南水乡的特色。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市昆山市周庄镇全福路 43 号 \" <endofactions> <history> USER: 真不错啊,地址在哪? <endofhistory>",
+    "output": "苏州市昆山市周庄镇全福路 43 号。",
+    "prediction": "拙政园的地址是苏州市姑苏区东北街178号，如果您想了解周庄的地址，那么周庄的地址是苏州市昆山市周庄镇全福路43号。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 地铁能直达吗? <endofhistory>",
+    "output": "没有地铁直达。",
+    "prediction": "不好意思，拙政园附近没有地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好吧,谢谢你的推荐!再见! <endofhistory>",
+    "output": "不客气,很高兴为您服务!再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 看东方之门等高楼,坐摩天轮,乘船夜游,感受苏州现代化的一面。 \" <endofactions> <history> USER: 你好,我和朋友一起来苏州出差,顺便想去金鸡湖景区逛一逛,你能给我介绍下这个景区的特点吗? <endofhistory>",
+    "output": "好的,这个景点的特点是看东方之门等高楼,坐摩天轮,乘船夜游,感受苏州现代化的一面。",
+    "prediction": "金鸡湖景区的特点是可以看东方之门等高楼,坐摩天轮,乘船夜游,感受苏州现代化的一面。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市工业园区星港街 158 号 \" , inform opening_hours equal_to \" 全天 \" <endofactions> <history> USER: 听着就特别美,我有些迫不及待的想去了呢。 <endofhistory>",
+    "output": "是的,这个景点确实很美,我个人也比较喜欢这个景点。",
+    "prediction": "拙政园的地址是苏州市姑苏区东北街178号，开放时间是全天，您可以根据自己的时间安排去参观。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 400-7558558 \" <endofactions> <history> USER: 这个景点的购票电话是多少呢?我想打电话预定门票。 <endofhistory>",
+    "output": "您记好,这个景点的电话是 400-7558558 。",
+    "prediction": "您可以拨打 400-7558558 这个电话来预定门票。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 全天 \" <endofactions> <history> USER: 好的,那这个景点都什么时间开放呢? <endofhistory>",
+    "output": "稍等,为您查询到这个景点是全天开放的。",
+    "prediction": "拙政园的开放时间是全天。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) acknowledge <endofactions> <history> USER: 太好了,全天都可以,那我随时都能去,太方便了。 <endofhistory>",
+    "output": "是很方便的,请问您还有其他问题吗?",
+    "prediction": "很高兴能帮到您,如果还有其他问题,随时欢迎咨询。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 没有其他问题了,谢谢你,再见。 <endofhistory>",
+    "output": "再见。",
+    "prediction": "不客气,有任何问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市吴中区木渎古镇山塘街市梢 \" <endofactions> <history> USER: 你好,我和朋友一起来苏州出差,顺便想去灵岩山景区逛一逛,能不能帮我查询下这个景点的地址呢? <endofhistory>",
+    "output": "没问题的,稍等会,地址就在苏州市吴中区木渎古镇山塘街市梢。",
+    "prediction": "您好,灵岩山景区的地址是苏州市吴中区木渎古镇山塘街市梢。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.3 \" <endofactions> <history> USER: 那这个景点的评分怎么样呢? <endofhistory>",
+    "output": "评分是 4.3 分。",
+    "prediction": "这个景点的评分是4.3分。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 爬山好去处,登山顶俯看苏州城景,在灵岩山寺拜佛祈福。 \" <endofactions> <history> USER: 才 4.3 分啊,那有点低,呵呵。 <endofhistory>",
+    "output": "有点低,不过您可以试试看,毕竟有时候评分也不是特别准的。",
+    "prediction": "如果您喜欢爬山的话，可以去灵岩山，那里是爬山的好去处，登山顶可以俯看苏州城景，在灵岩山寺还可以拜佛祈福。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 免费 \" <endofactions> <history> USER: 说的也是,我先去看看再说,帮我查询下这个景点的门票的价格好吗? <endofhistory>",
+    "output": "好的,稍等哦,这个景点是不收费的。",
+    "prediction": "这个景点的门票是免费的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) positive_response <endofactions> <history> USER: 太好了,还能免费看景点,我真是太开心了。 <endofhistory>",
+    "output": "是呀,挺不错的呢,您还有其他问题吗?",
+    "prediction": "很高兴能给您带来好消息，希望您游玩愉快！如果还有其他问题，随时欢迎咨询。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 没有了,谢谢你,再见。 <endofhistory>",
+    "output": "拜拜。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 苏州大学 \" <endofactions> <history> USER: 你好,我是苏州人,不不怎么出去玩,我朋友来苏州找我,我准备带他逛逛学校这种景点,有推荐的吗? <endofhistory>",
+    "output": "好的,您希望找个便宜点的还是贵点的校园景点呢?",
+    "prediction": "您可以带朋友去参观苏州大学，这所学校不仅有悠久的历史，而且校园环境优美，是很好的选择。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform consumption equal_to \" 便宜 \" , ticket_price equal_to \" 免费 \" <endofactions> <history> USER: 我希望是便宜点的。 <endofhistory>",
+    "output": "好的,这就为您查询啊,为您查询到苏州大学就可以。",
+    "prediction": "如果您希望找消费便宜的景点，可以考虑一些免费开放的公园或者景区。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 是 \" <endofactions> <history> USER: 好的,这所大学附近有地铁口吗?我想坐地铁去呢。 <endofhistory>",
+    "output": "有地铁能直接到这个大学的。",
+    "prediction": "是的，这所大学附近有地铁站，您可以乘坐地铁前往。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 全天 \" <endofactions> <history> USER: 那太好了,这所大学什么时候开放呢? <endofhistory>",
+    "output": "这所大学是全天开放的。随时都可以去的。",
+    "prediction": "这所大学的开放时间是全天。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 苏州大学坐落于古城苏州,是国家 211 工程重点建设高校,其前身为创建于 1900 年光绪年间的东吴大学。 \" <endofactions> <history> USER: 那挺好,我可以自由安排时间了,这所大学有啥特点呢? <endofhistory>",
+    "output": "特点是苏州大学坐落于古城苏州,是国家 211 工程重点建设高校,其前身为创建于 1900 年光绪年间的东吴大学。",
+    "prediction": "苏州大学坐落于古城苏州,是国家211工程重点建设高校,其前身为创建于1900年光绪年间的东吴大学。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,十分感谢你的耐心解答,拜拜。 <endofhistory>",
+    "output": "不客气的,拜拜。",
+    "prediction": "不客气,有其他问题随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 天平山景区 \" <endofactions> <history> USER: 您好,我是外地来苏州旅游的,现在在吴中区,能帮我推荐几个好玩的景点吗? <endofhistory>",
+    "output": "您好,吴中区景点还真不少,请问您想找什样的景点呢,是您自己去还是和朋友一起玩?",
+    "prediction": "您好,在吴中区可以去天平山景区游玩。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform name equal_to \" 天平山景区 \" , consumption equal_to \" 中等 \" <endofactions> <history> USER: 我是和几个朋友一起去玩,帮我找找适合大家一起玩的地方吧,价位别太高,中等水平的就行。 <endofhistory>",
+    "output": "帮您找到了两个价位中等的景点,天平山景区和穹窿山景区,都是山水景区,您可以了解一下。",
+    "prediction": "您可以考虑去天平山景区，这个地方适合朋友们一起游玩，消费水平也是中等。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 30 元 \" <endofactions> <history> USER: 嗯,听朋友说天平山景区不错,帮我看看这个景点的门票价格是多少。 <endofhistory>",
+    "output": "这个景点的门票价格是 30 元每位,几个朋友一起去玩的话也花不了多少钱,性价比挺高的还是。",
+    "prediction": "天平山景区的门票价格是30元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市吴中区灵天路 \" <endofactions> <history> USER: 嗯,这个价位还是可以接受的,这个景点的具体地址在哪里? <endofhistory>",
+    "output": "这个景点是在苏州市吴中区灵天路。",
+    "prediction": "拙政园的地址是苏州市吴中区灵天路。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66387422 \" <endofactions> <history> USER: 好的,再帮我查查景点的联系电话吧,我去之前提前咨询一下具体情况,好提前做个准备。 <endofhistory>",
+    "output": "嗯,对,提前咨询好这些更稳妥些。这个景点的电话是 0512-66387422 。",
+    "prediction": "拙政园的联系电话是 0512-66387422 ，您可以提前打电话咨询。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: 好的好的,了解啦,感谢您的耐心解答。 <endofhistory>",
+    "output": "客气啦,小意思,有啥不明白的您随时再问我就好。",
+    "prediction": "不客气，很高兴能帮到您。如果还有其他问题，随时欢迎咨询。祝您生活愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 同里古镇 \" <endofactions> <history> USER: 你好,我是外地来苏州旅游的,想在吴江找个适合朋友出游的地方玩,麻烦推荐一个吧,贵点的。 <endofhistory>",
+    "output": "好的,这边帮您推荐同里古镇。",
+    "prediction": "您好,在吴江可以去同里古镇游玩,那里是非常有名的水乡古镇,适合朋友们一起出游。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: 好的,这边评分怎么样? <endofhistory>",
+    "output": "评分是 4.5 分。",
+    "prediction": "拙政园的评分是 4.5 分,是一处非常受游客欢迎的景点。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 100 元 \" <endofactions> <history> USER: 好的,那门票是多少钱呢? <endofhistory>",
+    "output": "门票 100 元。",
+    "prediction": "拙政园的门票是100元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 地铁能到吗?这样能方便些。 <endofhistory>",
+    "output": "很抱歉,地铁不直达。",
+    "prediction": "拙政园附近没有地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 哦哦,好吧,还是谢谢了,再见! <endofhistory>",
+    "output": "不客气,再见!",
+    "prediction": "不客气,如果还有其他问题需要帮助,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 天平山景区 \" <endofactions> <history> USER: 你好,我想和朋友在苏州找个山水景区玩玩,你能给推荐一个消费水平中等的地方吗? <endofhistory>",
+    "output": "好的,推荐您去天平山景区,就在苏州市吴中区灵天路。",
+    "prediction": "好的，推荐您和朋友去天平山景区玩玩，那里的消费水平是中等的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 30 元 \" <endofactions> <history> USER: 这个地方门票要多少钱啊? <endofhistory>",
+    "output": "门票要 30 元,经济实惠。",
+    "prediction": "门票价格是 30 元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 范仲淹先祖归葬地,走乱石路体验爬山乐趣, 11 月中下旬赏红枫。 \" <endofactions> <history> USER: 那这个地方有什么特色吗? <endofhistory>",
+    "output": "这里是范仲淹先祖归葬地,有浓郁的人文历史气息 ； 同时,山区的乱石路可以让您更好地体验爬山乐趣。此外, 11 月中下旬还可以赏红枫。",
+    "prediction": "这个地方是范仲淹先祖归葬地，您可以走乱石路体验爬山的乐趣，特别是在11月中下旬，还能赏到美丽的红枫。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66387422 \" <endofactions> <history> USER: 最后再问一下,景区的电话是多少呢? <endofhistory>",
+    "output": "0512-66387422 。",
+    "prediction": "拙政园的电话号码是 0512-66387422。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢你了,再见。 <endofhistory>",
+    "output": "您太客气了,有问题随时联系。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市高新区镇湖绣品街 1 号 \" <endofactions> <history> USER: 嗨,你好呀,我和好姐妹一起来这里出差,周末有时间想去苏州太湖国家湿地公园去逛逛,不知道地址在哪,帮我看一下呀! <endofhistory>",
+    "output": "您好,这个公园在苏州市高新区镇湖绣品街 1 号。",
+    "prediction": "您好,苏州太湖国家湿地公园的地址是苏州市高新区镇湖绣品街 1 号。祝您和朋友周末游玩愉快!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-16:30 \" <endofactions> <history> USER: 具体都什么时间开放呢? <endofhistory>",
+    "output": "景点在 09:00 到 16:30 开放。",
+    "prediction": "拙政园的开放时间是早上 09:00 到下午 16:30。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66918088 \" <endofactions> <history> USER: 哦!再帮我查看一下电话号码吧! <endofhistory>",
+    "output": "好的,电话号码是 0512-66918088 。",
+    "prediction": "拙政园的电话号码是 0512-66918088。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: 好的,都记下了,谢谢你啊。 <endofhistory>",
+    "output": "不用客气,还有什么需要了解的吗?",
+    "prediction": "不客气，有其他问题也欢迎随时问我。祝您生活愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 啊,没有啦,拜拜! <endofhistory>",
+    "output": "好的,祝您生活愉快,再见!",
+    "prediction": "好的,如果还有其他问题,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 石湖景区 \" <endofactions> <history> USER: 你好,我和我女朋友来苏州旅行,准备先去吴中区玩玩儿,我们想找个可以地铁直达的山水景区逛逛,又不知道哪个好,请帮我们推荐一个好吗? <endofhistory>",
+    "output": "您好,欢迎来到美丽的苏州旅行,石湖景区的风景很美,推荐您二位去逛逛。",
+    "prediction": "石湖景区是个不错的选择，那里的山水景色很美，适合情侣游玩。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市吴中区友新路 333 号 \" <endofactions> <history> USER: 好呀,请问这个景点的地址在哪里呢? <endofhistory>",
+    "output": "这个景点位于苏州市吴中区友新路 333 号。",
+    "prediction": "拙政园的地址是苏州市吴中区友新路 333 号。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-65646668 \" <endofactions> <history> USER: 嗯嗯,请问景区的订票电话是多少号啊? <endofhistory>",
+    "output": "景区的电话号码是 0512-65646668 。",
+    "prediction": "景区的订票电话是 0512-65646668。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 赏石湖胜景,看山水相依、峰峦重叠,领略苏州的山水文化底蕴。 \" <endofactions> <history> USER: 我们想知道这个景区有什么特点呀? <endofhistory>",
+    "output": "你们可以在那里赏石湖胜景,看山水相依、峰峦重叠,领略苏州的山水文化底蕴。",
+    "prediction": "这个景区可以赏石湖胜景,看山水相依、峰峦重叠,领略苏州的山水文化底蕴。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 嗯,真想快点到那,感受大自然的美好。好的,谢谢你哈,客服。 <endofhistory>",
+    "output": "不客气,只要二位喜欢就好。",
+    "prediction": "不客气，希望您有一个愉快的旅行体验。如果还有其他问题，随时欢迎咨询。再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢,再见! <endofhistory>",
+    "output": "祝您二位玩的开心,再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 洞庭东山 \" <endofactions> <history> USER: 你好,我从外地来苏州,想在吴中区找个适合家庭亲子的地方玩玩,消费最好是中等的。 <endofhistory>",
+    "output": "洞庭东山就很符合你的要求。",
+    "prediction": "您好,推荐您带家人去洞庭东山游玩,那里非常适合家庭亲子活动,消费水平也是中等。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 这个地方是不是地铁直达的? <endofhistory>",
+    "output": "不是直达的。",
+    "prediction": "不是的,这个地方没有直达的地铁。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66399231 \" <endofactions> <history> USER: 电话是多少? <endofhistory>",
+    "output": "0512-66399231 。",
+    "prediction": "拙政园的电话号码是 0512-66399231。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市吴中区莫厘路附近 \" <endofactions> <history> USER: 具体位置在哪? <endofhistory>",
+    "output": "苏州市吴中区莫厘路附近。",
+    "prediction": "拙政园的具体位置在苏州市吴中区莫厘路附近。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢谢。 <endofhistory>",
+    "output": "不客气。",
+    "prediction": "不客气，如果还有其他问题，欢迎随时咨询。再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 再见。 <endofhistory>",
+    "output": "再见。",
+    "prediction": "再见，如果还有其他问题，欢迎随时咨询。祝您生活愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 苏州乐园森林水世界 \" <endofactions> <history> USER: 你好!我不太喜欢出去玩,但朋友来苏州也得陪他啊!帮我找个游乐场呗! <endofhistory>",
+    "output": "你好!您希望的消费水平呢?",
+    "prediction": "您好!既然朋友来了苏州,推荐您去苏州乐园森林水世界,那里很适合朋友聚会玩乐。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) close <endofactions> <history> USER: 中等吧! <endofhistory>",
+    "output": "去苏州海洋馆吧!",
+    "prediction": "好的，如果没有其他问题，那我们就此结束对话。祝您有个愉快的一天！如果还有需要帮助的地方，欢迎随时咨询。再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-69381000 \" <endofactions> <history> USER: 景区电话有吗? <endofhistory>",
+    "output": "0512-69381000 。",
+    "prediction": "您好,拙政园的联系电话是 0512-69381000。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" <endofactions> <history> USER: 开放时间呢? <endofhistory>",
+    "output": "09:00-17:00 。",
+    "prediction": "拙政园的开放时间是09:00-17:00。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 欣赏千姿百态的海洋生物,观看丰富多彩的表演节目,感受缤纷海洋世界。 \" <endofactions> <history> USER: 这里的特点是什么啊? <endofhistory>",
+    "output": "在景区里您能欣赏千姿百态的海洋生物,观看丰富多彩的表演节目,感受缤纷海洋世界。",
+    "prediction": "这里您可以欣赏千姿百态的海洋生物,观看丰富多彩的表演节目,感受缤纷海洋世界。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好,真不错啊!谢谢你哦!再见! <endofhistory>",
+    "output": "不客气的,再见!",
+    "prediction": "不客气,很高兴能帮到您!再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 苏州博物馆 \" <endofactions> <history> USER: 你好,能在姑苏区推荐个适合朋友出游的地方吗,便宜一点的吧。 <endofhistory>",
+    "output": "向你推荐苏州博物馆。",
+    "prediction": "您好,可以去苏州博物馆看看,那里不仅有丰富的展览,而且免费开放。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" <endofactions> <history> USER: 什么时候开放呢? <endofhistory>",
+    "output": "开放时间 09:00-17:00 。",
+    "prediction": "拙政园的开放时间是早上 09:00 到下午 17:00。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 地铁是否直达? <endofhistory>",
+    "output": "不直达。",
+    "prediction": "不好意思，这个景点附近没有地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 免费 \" <endofactions> <history> USER: 门票价格多少? <endofhistory>",
+    "output": "门票免费。",
+    "prediction": "门票是免费的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 感谢你的帮助,再见! <endofhistory>",
+    "output": "不必客气!",
+    "prediction": "不客气,很高兴能帮到您,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 石路步行街 \" <endofactions> <history> USER: 你好,我周末要和女朋友去姑苏区逛逛人气高的商业中心,你可以帮我们推荐一下吗?我们希望地铁可以直达的。 <endofhistory>",
+    "output": "那你们一定要去石路步行街走走哦。",
+    "prediction": "您好，推荐您去石路步行街逛逛，那里是姑苏区非常有人气的商业中心，而且交通便利，地铁可以直达。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 免费 \" <endofactions> <history> USER: 好,这里应该不会收门票了吧? <endofhistory>",
+    "output": "是的,这里是免费的。",
+    "prediction": "是的，这里的门票是免费的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市金阊区石路步行街 \" <endofactions> <history> USER: 哈哈,那就麻烦你把地址发过来吧。 <endofhistory>",
+    "output": "没问题,地址是苏州市金阊区石路步行街。",
+    "prediction": "好的，拙政园的地址是苏州市金阊区石路步行街。祝您游玩愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 是 \" <endofactions> <history> USER: 最后你再帮我确定一下,这里是有直达地铁的吗? <endofhistory>",
+    "output": "放心吧,有直达地铁的。",
+    "prediction": "是的,这里有直达地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) acknowledge <endofactions> <history> USER: 行,这样我们下火车就直接坐地铁过去了。 <endofhistory>",
+    "output": "是的,您还有什么问题吗?",
+    "prediction": "好的，祝您旅途愉快。如果还有其他问题，随时欢迎咨询。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 没有了,谢谢你,再见! <endofhistory>",
+    "output": "祝您愉快!再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 天平山景区 \" <endofactions> <history> USER: 你好,我是苏州人,但不怎么出去玩,我朋友来苏州找我,我准备带她逛逛山水景区,能推荐一下吗? <endofhistory>",
+    "output": "推荐您去天平山景区。",
+    "prediction": "您好，可以带您的朋友去天平山景区逛逛，那里的山水风光很不错。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 金鸡湖景区 \" <endofactions> <history> USER: 对,我希望你能给我推荐一个消费水平偏贵点儿的。 <endofhistory>",
+    "output": "推荐您去金鸡湖景区,这里挺好。",
+    "prediction": "那您可以考虑去金鸡湖景区，这是苏州的一个高端旅游景点。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: 这个景区评分是多少? <endofhistory>",
+    "output": "景区评分是 4.5 分。",
+    "prediction": "这个景区的评分是 4.5 分。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 是 \" <endofactions> <history> USER: 这个景区是否有地铁直达? <endofhistory>",
+    "output": "这里可以地铁直达。",
+    "prediction": "是的，这个景区有地铁直达。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 400-7558558 \" <endofactions> <history> USER: 这个景区电话号码是多少? <endofhistory>",
+    "output": "电话是 400-7558558 。",
+    "prediction": "这个景区的电话号码是 400-7558558。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 很感谢你的帮助,再见! <endofhistory>",
+    "output": "再见。",
+    "prediction": "不客气,很高兴能帮到您,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 苏州乐园森林水世界 \" <endofactions> <history> USER: 你好,明天我朋友来找我去游乐场玩,但我平时不怎么出去,不知道哪个偏贵一点的游乐场好玩呢? <endofhistory>",
+    "output": "我推荐你们去苏州乐园森林水世界去玩玩",
+    "prediction": "您好,推荐您去苏州乐园森林水世界,这个游乐场比较有特色,也比较适合追求高端体验的游客。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 各项水上娱乐项目皆具森林特色,被赋予森林主题,让人身处浩瀚森林又能享受到海洋般的舒爽水游乐。 \" <endofactions> <history> USER: 你跟我介绍一下这个景点都有什么特点吧? <endofhistory>",
+    "output": "好的,景点的各项水上娱乐项目皆具森林特色,被赋予森林主题,让人身处浩瀚森林又能享受到海洋般的舒爽水游乐。",
+    "prediction": "这个景点的特点是各项水上娱乐项目皆具森林特色，被赋予森林主题，让人身处浩瀚森林又能享受到海洋般的舒爽水游乐。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" <endofactions> <history> USER: 哦,听起来很好玩的样子,这里都是几点开放的呢? <endofhistory>",
+    "output": "这里每天 09:00-17:00 对外开放。",
+    "prediction": "拙政园的开放时间是早上 09:00 到下午 17:00。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.4 \" <endofactions> <history> USER: 我知道了,这里的评分一定很高吧? <endofhistory>",
+    "output": "嗯,评分是 4.4 分。",
+    "prediction": "是的，这个景点的评分是 4.4 分，相当不错。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,我都清楚了,谢谢你的帮忙。 <endofhistory>",
+    "output": "不客气,您有问题还可以再咨询我。",
+    "prediction": "不客气,有其他问题随时欢迎咨询。祝您生活愉快!再见。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 嗯,没问题了,再见! <endofhistory>",
+    "output": "再见!",
+    "prediction": "好的,如果还有其他问题,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 沙家浜风景区 \" <endofactions> <history> USER: 您好,最接近朋友想来我们苏州玩,想带他去逛逛山水景区,能帮我推荐个贵一点的高档景区吗? <endofhistory>",
+    "output": "帮您找到一个比较适合和朋友一起去玩的山水景区,沙家浜风景区,您可以了解一下。",
+    "prediction": "您好,可以带您的朋友去沙家浜风景区,那里是苏州的高档山水景区之一。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 京剧样板戏 《 沙家浜 》 的发源地,访剧中场景,坐船深入芦苇荡。 \" <endofactions> <history> USER: 这个景区大概是什么样的,有什么特点? <endofhistory>",
+    "output": "这个景点是京剧样板戏 《 沙家浜 》 的发源地,您可以在这里访剧中场景,坐船深入芦苇荡。",
+    "prediction": "这个景区是京剧样板戏《沙家浜》的发源地，您可以在这里访问剧中的场景，还可以坐船深入芦苇荡体验当地的自然风光和文化。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 08:00-16:30 \" <endofactions> <history> USER: 哦哦,那正好,我那个朋友还挺喜欢京剧的。帮我看看这个景区的营业时间。 <endofhistory>",
+    "output": "这个景区的开放时间是 08:00 至 16:30 。",
+    "prediction": "拙政园的营业时间是早上 08:00 到下午 16:30。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 坐地铁能直达吗?要是直达能方便不少。 <endofhistory>",
+    "output": "这里还真不能坐地铁直达,您可以自驾去,也很方便的。",
+    "prediction": "拙政园附近没有直达的地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 那好吧,我们开车去,谢谢您的解答,再见! <endofhistory>",
+    "output": "客气呢,祝您生活愉快,再见!",
+    "prediction": "不客气,祝您旅途愉快,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform name equal_to \" 华谊兄弟电影世界 \" <endofactions> <history> USER: 你好,我在工业园区,想找一个能地铁直达的游乐场玩。 <endofhistory>",
+    "output": "推荐您到华谊兄弟电影世界。",
+    "prediction": "您好,您可以去华谊兄弟电影世界玩,那里可以通过地铁直达。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市工业园区阳澄湖大道 188 号 \" <endofactions> <history> USER: 地址在什么地方? <endofhistory>",
+    "output": "地址在苏州市工业园区阳澄湖大道 188 号。",
+    "prediction": "地址是苏州市工业园区阳澄湖大道 188 号。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: 评分如何? <endofhistory>",
+    "output": "评分为 4.5 。",
+    "prediction": "拙政园的评分是4.5分。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 是 \" <endofactions> <history> USER: 地铁是否直达? <endofhistory>",
+    "output": "地铁可以直达。",
+    "prediction": "是的，拙政园附近有地铁站，可以直达。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢谢你的帮助。 <endofhistory>",
+    "output": "不用谢,再见。",
+    "prediction": "不客气，很高兴能帮到您。如果还有其他问题，随时欢迎咨询。再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 是 \" <endofactions> <history> USER: 您好,我们是出差来的苏州,想去诚品书店看看,不知道这儿有木有地铁可以坐过去? <endofhistory>",
+    "output": "您好,欢迎你们来苏州。这个地方是有地铁直达的。",
+    "prediction": "您好,诚品书店附近是有地铁站的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 10:00-22:00 \" <endofactions> <history> USER: 那太好了,不知他们的营业时间是怎样的? <endofhistory>",
+    "output": "上午十点开门,晚上十点关门。",
+    "prediction": "拙政园的营业时间是早上10:00到晚上22:00。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.7 \" <endofactions> <history> USER: 这里的评分怎么样? <endofhistory>",
+    "output": "评分 4.7 ,这是商业中心,这评分还行。",
+    "prediction": "这个景点的评分是4.7分，非常不错。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 免费 \" <endofactions> <history> USER: 嗯,这种地方应该是没有门票的吧? <endofhistory>",
+    "output": "是的,没有门票,商业中心嘛。",
+    "prediction": "是的，这个景点是免费开放的，您可以放心游览。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 漫心苏州天平山酒店 \" <endofactions> <history> USER: 您好!我来苏州旅游,请问吴中区有哪些好酒店? <endofhistory>",
+    "output": "你可以去漫心苏州天平山酒店。",
+    "prediction": "您好!推荐您入住漫心苏州天平山酒店。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) inform Message = No item available. <endofactions> <history> USER: 这是几星级酒店啊? <endofhistory>",
+    "output": "这家酒店是 4 星级酒店。",
+    "prediction": "很抱歉，目前没有关于酒店星级的信息。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 苏州城驿联号酒店 \" <endofactions> <history> USER: 哦哦,我想找一个 2 星级酒店,你有合适的酒店推荐吗? <endofhistory>",
+    "output": "那你就去苏州城驿联号酒店吧。",
+    "prediction": "可以的，给您推荐苏州城驿联号酒店，这是一家2星级酒店。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_type equal_to \" 大床房 \" <endofactions> <history> USER: 好的,请问这家酒店有大床房吗? <endofhistory>",
+    "output": "它家有大床房。",
+    "prediction": "是的,沃姆精品酒店有提供大床房。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform score equal_to \" 4.6 \" <endofactions> <history> USER: 嗯。那它家的评分是多少啊? <endofhistory>",
+    "output": "评分是 4.6 ,不过评分都是因人而异的。",
+    "prediction": "沃姆精品酒店的评分是4.6分。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_charge equal_to \" 148 元 \" <endofactions> <history> USER: 你说的对。这家酒店的房费是多少钱啊? <endofhistory>",
+    "output": "它家房费不贵,是 148 元。",
+    "prediction": "这家酒店的房费是148元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" 无 \" <endofactions> <history> USER: 嗯,确实不贵。我还想知道它家有没有停车场啊? <endofhistory>",
+    "output": "抱歉,这家酒店没有停车场。",
+    "prediction": "沃姆精品酒店没有停车场。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,我知道了。谢谢,再见! <endofhistory>",
+    "output": "不客气,再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 苏州慢享主题酒店 \" <endofactions> <history> USER: 你好啊,我准备去苏州旅游正在做攻略,能给我推荐一家酒店吗?要有标准间的商务出行类型的就行。 <endofhistory>",
+    "output": "这样的类型的酒店特别多,现在每家酒店都有标准间的。您对星级有要求吗?",
+    "prediction": "您好啊,给您推荐苏州慢享主题酒店,有提供标准间,适合商务出行。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 苏州黎里水岸寒舍精品酒店 \" <endofactions> <history> USER: 嗯,最好是 5 星级的。 <endofhistory>",
+    "output": "那我推荐这家叫苏州黎里水岸寒舍精品酒店,环境和服务都是很不错的。",
+    "prediction": "那给您推荐苏州黎里水岸寒舍精品酒店，这是一家五星级酒店。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform score equal_to \" 4.6 \" , inform parking equal_to \" 免费 \" <endofactions> <history> USER: 知道评分在多少吗?停车场是个什么样的情况? <endofhistory>",
+    "output": "评分在 4.6 ,停车场是免费用的,您不用担心付费问题。",
+    "prediction": "沃姆精品酒店的评分是4.6分，而且提供免费停车场。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" 苏州吴江区黎里镇南新街 5-9 号 \" <endofactions> <history> USER: 地址在哪啊?请告诉我一下。 <endofhistory>",
+    "output": "地址是在苏州吴江区黎里镇南新街 5-9 号,这个地方很好找的。",
+    "prediction": "沃姆精品酒店的地址是苏州吴江区黎里镇南新街5-9号。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 就这些了,谢谢你,再见。 <endofhistory>",
+    "output": "不用客气,欢迎您来玩啊。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 苏州吴宫泛太平洋酒店 \" <endofactions> <history> USER: 你好,我正在做旅游攻略,想要找一家 5 星级酒店,希望是休闲度假的。 <endofhistory>",
+    "output": "好哒,您想要大床房还是标准间?",
+    "prediction": "您好,推荐您考虑苏州吴宫泛太平洋酒店,这是一家5星级的休闲度假酒店。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_type equal_to \" 标准间 \" <endofactions> <history> USER: 我想要标准间。 <endofhistory>",
+    "output": "好哒,苏州吴宫泛太平洋酒店很符合您的要求。",
+    "prediction": "好的，您需要预订几晚的标准间呢？"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" 免费 \" <endofactions> <history> USER: 这家酒店的停车场是免费的吗? <endofhistory>",
+    "output": "是免费的。",
+    "prediction": "是的,这家酒店的停车场是免费的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-65103388 \" <endofactions> <history> USER: 电话是多少? <endofhistory>",
+    "output": "电话号码为 0512-65103388 。",
+    "prediction": "沃姆精品酒店的电话号码是0512-65103388。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_charge equal_to \" 592 元 \" <endofactions> <history> USER: 房费多少钱? <endofhistory>",
+    "output": "592 元。",
+    "prediction": "房费是592元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: 谢谢。 <endofhistory>",
+    "output": "不客气。",
+    "prediction": "不客气，如果还有其他问题，随时欢迎咨询。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 再见。 <endofhistory>",
+    "output": "再见。",
+    "prediction": "再见，如果还有其他问题，欢迎随时咨询。祝您生活愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 速 8 酒店 \" <endofactions> <history> USER: 你好,最近准备想去苏州旅游,在姑苏区帮我找家二星酒店,要大床房,给推荐一家呗? <endofhistory>",
+    "output": "你好,速 8 酒店还不错。",
+    "prediction": "好的,给您推荐速8酒店,他们有提供大床房。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" 苏州姑苏区娄门路 318 号 \" <endofactions> <history> USER: 酒店具体地址在哪? <endofhistory>",
+    "output": "酒店在苏州姑苏区娄门路 318 号。",
+    "prediction": "沃姆精品酒店的地址是苏州姑苏区娄门路318号。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-67729999 \" <endofactions> <history> USER: 电话有吗? <endofhistory>",
+    "output": "酒店电话 ：0512-67729999 。",
+    "prediction": "沃姆精品酒店的电话号码是0512-67729999。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" 免费 \" <endofactions> <history> USER: 有停车场吗? <endofhistory>",
+    "output": "有的,有个免费停车场。",
+    "prediction": "酒店有免费停车场供客人使用。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢你啦!再见! <endofhistory>",
+    "output": "不客气!再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 沃姆精品酒店 \" <endofactions> <history> USER: 我正在做苏州的旅游攻略,想找一家 3 星级的休闲度假酒店。 <endofhistory>",
+    "output": "帮您找到沃姆精品酒店,这家酒店不错。",
+    "prediction": "您可以考虑一下沃姆精品酒店，它是一家3星级的休闲度假酒店。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_type equal_to \" 标准间 \" <endofactions> <history> USER: 我对房型的要求是标准间。 <endofhistory>",
+    "output": "好的,帮您安排他家的标准间。",
+    "prediction": "好的，您需要的标准间已经为您准备好了。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-85883698 \" <endofactions> <history> USER: 谢谢,这家店的电话多少了? <endofhistory>",
+    "output": "他们家电话是 0512-85883698 。",
+    "prediction": "沃姆精品酒店的电话是0512-85883698。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_charge equal_to \" 463 元 \" <endofactions> <history> USER: 记住了,他家房费多钱? <endofhistory>",
+    "output": "房费是 463 元。",
+    "prediction": "沃姆精品酒店的房费是463元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" 苏州工业园区水坊路 36 号李公堤南区星尚邻里 1 号楼 \" <endofactions> <history> USER: 他家地址在哪了? <endofhistory>",
+    "output": "地址在苏州工业园区水坊路 36 号李公堤南区星尚邻里 1 号楼。",
+    "prediction": "沃姆精品酒店的地址是苏州工业园区水坊路36号李公堤南区星尚邻里1号楼。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢谢你,再见。 <endofhistory>",
+    "output": "不客气,拜拜。",
+    "prediction": "不客气，如果还有其他问题，欢迎随时咨询。再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> Hello! How can I assist you today? If you have any questions or need recommendations, feel free to ask. <endofactions> <history> USER: 嗨,想去苏州旅游,正在做攻略,酒店看的太多挑眼花了,麻烦您给推荐一家。 <endofhistory>",
+    "output": "当然可以,您想要几星级?",
+    "prediction": "您好! 您想要预订哪个价位的酒店呢? 是偏向经济型还是豪华型? 还是需要某种特定的设施或服务呢?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 苏州永顺快捷酒店 \" <endofactions> <history> USER: 一星级就好,但是希望是商务出行的酒店。 <endofhistory>",
+    "output": "好的,您住大床房还是标间?",
+    "prediction": "那给您推荐苏州永顺快捷酒店,它是一家定位于商务出行的快捷酒店。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 如家酒店 \" , room_type equal_to \" 大床房 \" <endofactions> <history> USER: 我要大床房,自己一个人去。 <endofhistory>",
+    "output": "那就推荐您住如家酒店,连锁酒店您也应该知道。",
+    "prediction": "那给您推荐如家酒店的大床房,应该会符合您的需求。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform area equal_to \" 高新区 \" <endofactions> <history> USER: 嗯嗯,这个知道的。地址是在哪个区了? <endofhistory>",
+    "output": "苏州高新区,具体在马运路 168 号,不知道您是怎么去?",
+    "prediction": "沃姆精品酒店位于高新区。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" 免费 \" <endofactions> <history> USER: 我可能会开车去,我会导航的。对了,有停车场吗?怎么收费的,还是免费? <endofhistory>",
+    "output": "有停车场,是不收费的,您要开车就放心的去吧。",
+    "prediction": "酒店的停车场是免费的,您可以放心停车。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-68019666 \" <endofactions> <history> USER: 嗯,我还想留一下电话,有什么突发情况我直接和酒店沟通。 <endofhistory>",
+    "output": "没问题的,号码是 0512-68019666 ,您留好了。",
+    "prediction": "沃姆精品酒店的电话是0512-68019666，您可以直接联系他们。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 没啥问题了。谢谢你了,再见! <endofhistory>",
+    "output": "不用客气的,来苏州玩的开心。",
+    "prediction": "不客气,有其他问题随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" 苏州金鸡湖新罗酒店 \" <endofactions> <history> USER: 你好,我最近准备去苏州旅游,可不可以帮我在工业园区找一个酒店呢? <endofhistory>",
+    "output": "好的,没问题,那您对星级有要求吗?",
+    "prediction": "当然可以,推荐您入住苏州金鸡湖新罗酒店,位于工业园区,环境优美,服务也很好。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform star equal_to \" 5 \" , room_type equal_to \" 标准间 \" <endofactions> <history> USER: 我希望是 5 星级的,要有标准间的。 <endofhistory>",
+    "output": "这就为您推荐,苏州金鸡湖新罗酒店就挺好的。",
+    "prediction": "好的，您希望预订的是5星级酒店，并且需要标准间的房型。请问您有偏好的地理位置或者其他特殊需求吗？"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-62968888 \" <endofactions> <history> USER: 好呀,这家酒店有电话吗?我预约下办理入住。 <endofhistory>",
+    "output": "电话是 0512-62968888 。",
+    "prediction": "沃姆精品酒店的电话是0512-62968888,您可以直接联系他们预约办理入住。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" 免费 \" <endofactions> <history> USER: 收到,你能再帮我看看酒店有可以停车的地方吗? <endofhistory>",
+    "output": "有呢,酒店有停车场,还是免费的。",
+    "prediction": "沃姆精品酒店提供免费停车服务。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_charge equal_to \" 640 元 \" , pricerange equal_to \" 偏贵 \" <endofactions> <history> USER: 太好了,到时候我准备租个车,这样玩着方便多了,最后一个问题哈,这个酒店的房费贵不贵? <endofhistory>",
+    "output": "房费有点贵,是 640 元。",
+    "prediction": "沃姆精品酒店的房费是640元一晚,属于偏贵的价格范围。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢谢你,我的问题问完了,再见。 <endofhistory>",
+    "output": "再见。",
+    "prediction": "不客气，如果还有其他问题，欢迎随时提问。再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 金鸡湖景区 \" <endofactions> <history> USER: 你好,我来苏州玩的,我想在工业园区找个适合和对象去的景点,能帮我找找不? <endofhistory>",
+    "output": "你好,可以的,这个金鸡湖景区比较适合情侣两个人去约会,这里交通方便,就算不是本地人也很容易找到这个景点的。",
+    "prediction": "金鸡湖景区是个不错的选择，适合情侣一起去游玩。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: 那这景点的评分高不高? <endofhistory>",
+    "output": "这里的评分也不错,有 4.5 分。",
+    "prediction": "拙政园的评分是4.5分，算是相当高的评价了。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 看东方之门等高楼,坐摩天轮,乘船夜游,感受苏州现代化的一面。 \" <endofactions> <history> USER: 这景点有哪些特点? <endofhistory>",
+    "output": "在金鸡湖景区可以看东方之门等高楼,坐摩天轮,乘船夜游,感受苏州现代化的一面。",
+    "prediction": "这个景点可以看东方之门等高楼,坐摩天轮,乘船夜游,感受苏州现代化的一面。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" 江边城外烤全鱼 \" <endofactions> <history> USER: 那这区域周围有川菜馆吗?价格中等的就行。 <endofhistory>",
+    "output": "有的,有一家川菜馆名叫江边城外烤全鱼,他家就是专业做川菜的,味道不错。",
+    "prediction": "您可以去尝尝江边城外烤全鱼，这家川菜馆价格中等。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform score equal_to \" 4.3 \" <endofactions> <history> USER: 这里的评分怎么样? <endofhistory>",
+    "output": "这家川菜馆的评分是 4.3 。",
+    "prediction": "这家餐厅的评分是4.3分。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform business_hours equal_to \" 周一至周日 10:30-22:00 \" <endofactions> <history> USER: 那这家店的营业时间是几点到几点? <endofhistory>",
+    "output": "这家店的营业时间是周一至周日早 10:30- 晚 22:00 。",
+    "prediction": "这家店的营业时间是周一至周日 10:30-22:00。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 我的问题都解决了,谢谢你啊,再见。 <endofhistory>",
+    "output": "别客气,再见。",
+    "prediction": "不客气,很高兴能帮到您,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 拙政园 \" <endofactions> <history> USER: 你好,这周末我有个朋友要来苏州玩,我想找个中等消费水平的地方陪她玩,你帮我找下哪个景点好玩,好吗? <endofhistory>",
+    "output": "这样的景点太多了,你有具体要求吗?比如想在哪个区域玩?",
+    "prediction": "您好,推荐您带朋友去拙政园玩,这是苏州非常有名的园林,中等消费水平,非常适合游玩。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 印象城 \" <endofactions> <history> USER: 有要求,最好是在工业园区的,这样离我家很近,也比较方便。 <endofhistory>",
+    "output": "印象城吧。",
+    "prediction": "既然您提到要在工业园区附近，那么推荐您去印象城看看。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.1 \" <endofactions> <history> USER: 好的,这个景点的评分是几分啊? <endofhistory>",
+    "output": "评分为 4.1 分。",
+    "prediction": "这个景点的评分是 4.1 分。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 免费 \" <endofactions> <history> USER: 这个分值还可以,不知道票价贵不贵呢? <endofhistory>",
+    "output": "景点是免费的。",
+    "prediction": "这个景点的门票是免费的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" 芳芳法餐厅 \" <endofactions> <history> USER: 我就喜欢免费的,哈哈,玩尽兴了,接下来我要在附近跟朋友找一家价格偏贵的餐厅,你帮我推荐一下吧。 <endofhistory>",
+    "output": "芳芳法餐厅就挺好。",
+    "prediction": "那您可以去芳芳法餐厅，这家餐厅的价格偏高，环境和菜品都非常不错。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform per_capita_consumption equal_to \" 412 元 \" <endofactions> <history> USER: 这家餐厅名字听起来不错,不知道他家的人均消费是多钱? <endofhistory>",
+    "output": "人均消费 412 元。",
+    "prediction": "这家餐厅的人均消费是412元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform phone_number equal_to \" 0512-69881018 \" <endofactions> <history> USER: 小贵呀,不过我能接受,你知道他家的订餐电话吗? <endofhistory>",
+    "output": "电话是 0512-69881018 。",
+    "prediction": "伴园私房菜的订餐电话是0512-69881018。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢你的帮助,再见! <endofhistory>",
+    "output": "不客气,再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 沙家浜风景区 \" <endofactions> <history> USER: 你好,朋友来苏州找我玩,我需要找个消费偏贵的地方玩,常熟附近最好了,离我家近,有什么好的建议吗? <endofhistory>",
+    "output": "这边景点不太多,沙家浜风景区挺适合你的。",
+    "prediction": "您好,可以带您的朋友去沙家浜风景区玩,这里是常熟比较有名的旅游景点。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 这样啊,那这个景点有没有地铁呀? <endofhistory>",
+    "output": "抱歉,这边没有地铁直达的。",
+    "prediction": "这个景点附近没有地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" 京剧样板戏 《 沙家浜 》 的发源地,访剧中场景,坐船深入芦苇荡。 \" <endofactions> <history> USER: 这么惨啊,看来坐不成地铁了,这个景区都有什么特点呀? <endofhistory>",
+    "output": "景点特点是京剧样板戏 《 沙家浜 》 的发源地,访剧中场景,坐船深入芦苇荡。",
+    "prediction": "这个景区是京剧样板戏《沙家浜》的发源地，您可以在这里访问剧中的场景，还可以坐船深入芦苇荡体验当地的自然风光。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" 蟹王酒楼 \" <endofactions> <history> USER: 总算有一样让我满意的了,还好特点多,玩累了,我们还想在附近找一家便宜的餐厅吃点饭,哪家好啊? <endofhistory>",
+    "output": "给你推荐个好地方吧,蟹王酒楼很值得去尝尝。",
+    "prediction": "如果您想找一家便宜的餐厅，可以去蟹王酒楼试试，那里的价格比较亲民。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform dishes equal_to \" 大闸蟹 \" <endofactions> <history> USER: 好霸气的名字啊,弄得我现在就想去了,它家有啥好吃的菜呀? <endofhistory>",
+    "output": "最有名的推荐菜当属大闸蟹了,感兴趣不?",
+    "prediction": "它家的大闸蟹非常有名，您可以尝尝。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" 芦苇荡路风景区停车场旁 \" <endofactions> <history> USER: 哇,我都馋死了,快把餐厅地址告诉我好吗?我等不及了。 <endofhistory>",
+    "output": "好的,地址在芦苇荡路风景区停车场旁。",
+    "prediction": "好的，餐厅的地址是芦苇荡路风景区停车场旁。祝您用餐愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: 嗯呐,我知道了,谢谢你的热心帮助。 <endofhistory>",
+    "output": "不客气,应该的。",
+    "prediction": "不客气，很高兴能帮到您。如果还有其他问题，随时欢迎咨询。祝您有个愉快的一天！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 那好吧,你先忙吧,下次再聊,再见。 <endofhistory>",
+    "output": "好吧,再见。",
+    "prediction": "好的,有任何问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 观前街 \" <endofactions> <history> USER: 你好,我要去苏州办事,顺便逛一逛,我想问一下有没有消费中等的商业中心推荐一下? <endofhistory>",
+    "output": "当然有,帮您查到观前街这个景点还不错。",
+    "prediction": "您好,推荐您去观前街逛逛,那里是苏州非常有名的商业中心,消费水平中等,适合购物和品尝当地美食。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 免费 \" <endofactions> <history> USER: 门票多少钱? <endofhistory>",
+    "output": "您特别幸运,票价免费哦。",
+    "prediction": "这个景点的门票是免费的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 全天 \" <endofactions> <history> USER: 几点开放的? <endofhistory>",
+    "output": "全天开放。",
+    "prediction": "拙政园是全天开放的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" 壹加回转寿司 \" <endofactions> <history> USER: 我还想麻烦你推荐一下苏州这边价格便宜的日本料理餐厅。 <endofhistory>",
+    "output": "壹加回转寿司这个符合您的要求。",
+    "prediction": "价格便宜的话，可以去试试“壹加回转寿司”，性价比还不错。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform score equal_to \" 4.4 \" <endofactions> <history> USER: 它的评分如何? <endofhistory>",
+    "output": "评分为 4.4 。",
+    "prediction": "伴园私房菜的评分是4.4分。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 那是否地铁直达呢? <endofhistory>",
+    "output": "并不是直达的。",
+    "prediction": "不好意思，伴园私房菜餐厅附近没有地铁站直达。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢谢你的帮忙。 <endofhistory>",
+    "output": "不客气。",
+    "prediction": "不客气，如果还有其他问题，随时欢迎咨询。祝您生活愉快，再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 再见。 <endofhistory>",
+    "output": "再见。",
+    "prediction": "再见，如果还有其他问题，欢迎随时咨询。祝您生活愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 观前街 \" <endofactions> <history> USER: 你好,我来苏州旅游。想在姑苏区找个适合朋友出游的景点。 <endofhistory>",
+    "output": "你好!去观前街吧,美食美景都有啦!",
+    "prediction": "您好，推荐您和朋友去观前街游玩，那里是苏州非常有名的商业街，有很多特色店铺和美食，适合朋友一起逛街和体验当地文化。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 无 \" <endofactions> <history> USER: 好的,帮查一下景点的电话。 <endofhistory>",
+    "output": "景区没有电话登记。",
+    "prediction": "很抱歉，我这里没有找到景点的电话信息。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市姑苏区观前街 \" <endofactions> <history> USER: 观前街在哪儿呢? <endofhistory>",
+    "output": "苏州市姑苏区观前街。",
+    "prediction": "观前街位于苏州市姑苏区。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" 松鹤楼 \" <endofactions> <history> USER: 好的。我比较喜欢吃江浙菜,麻烦在这附近找个价位偏贵的餐厅。 <endofhistory>",
+    "output": "推荐松鹤楼!",
+    "prediction": "那您可以去松鹤楼试试，那里的江浙菜很有名。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform phone_number equal_to \" 0512-67700688 \" <endofactions> <history> USER: 这家餐厅的电话号码? <endofhistory>",
+    "output": "电话 ：0512-67700688 。",
+    "prediction": "这家餐厅的电话号码是0512-67700688。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform business_hours equal_to \" 周一至周日 11:00-13:3017:00-20:30 \" <endofactions> <history> USER: 餐厅晚上几点闭店? <endofhistory>",
+    "output": "营业时间 ： 周一至周日 11:00-13:3017:00-20:30 。",
+    "prediction": "餐厅的营业时间是周一至周日 11:00-13:30 和 17:00-20:30。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 时间还来得及。谢谢你的帮助,再见! <endofhistory>",
+    "output": "不客气!再见!",
+    "prediction": "不客气,如果还有其他问题需要帮助,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 周庄古镇 \" <endofactions> <history> USER: 你好,我正好在苏州办事,顺道逛逛景点,有没有消费贵点的景点推荐一个呢? <endofhistory>",
+    "output": "好的,那您有特别想去的景点类型吗?",
+    "prediction": "您好,既然您在苏州,推荐您去周庄古镇看看,是江南水乡的代表,非常有特色。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 苏州乐园森林水世界 \" <endofactions> <history> USER: 我想去游乐场。 <endofhistory>",
+    "output": "给您推荐苏州乐园森林水世界吧,挺不错的。",
+    "prediction": "那您可以去苏州乐园森林水世界玩玩。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市高新区阳山东路以西,山神湾路以东 \" <endofactions> <history> USER: 好呀,这个景点的具体地址在哪呢?我好根据地址查找乘车路线。 <endofhistory>",
+    "output": "好的,地址就在苏州市高新区阳山东路以西,山神湾路以东。",
+    "prediction": "拙政园的具体地址是苏州市姑苏区东北街178号。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 那这个景点有地铁能直接到的吗? <endofhistory>",
+    "output": "抱歉哦,这个地方没地铁呢。",
+    "prediction": "这个景点附近没有地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" 苏逅咖啡 · 花园餐厅 \" <endofactions> <history> USER: 没事,那我打车也可以的,然后我想再让你帮我找个中等价位的餐厅,可以吗? <endofhistory>",
+    "output": "可以呀,您有想吃的菜系吗?",
+    "prediction": "可以的，推荐您去“苏逅咖啡 · 花园餐厅”，这家餐厅中等价位，环境也很不错。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" 四川香天下火锅 \" <endofactions> <history> USER: 最近我特别馋火锅,就找有火锅的吧。 <endofhistory>",
+    "output": "好的,为您找到四川香天下火锅。",
+    "prediction": "那就给您推荐四川香天下火锅，这家火锅口味正宗，很受欢迎。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform per_capita_consumption equal_to \" 97 元 \" <endofactions> <history> USER: 这家火锅店人均消费高不? <endofhistory>",
+    "output": "不贵的,人均消费大概在 97 元左右。",
+    "prediction": "这家火锅店的人均消费是97元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform phone_number equal_to \" 0512-66171777 \" <endofactions> <history> USER: 那还行,麻烦你把餐厅的电话给我吧,我预定一下。 <endofhistory>",
+    "output": "电话是 0512-66171777 。",
+    "prediction": "好的，伴园私房菜的电话是0512-66171777，您可以直接联系他们进行预定。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,十分感谢,拜拜。 <endofhistory>",
+    "output": "拜拜。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 苏州太湖国家湿地公园 \" <endofactions> <history> USER: 你好,帮我找个玩的地方,要便宜点的啊,最好在高新区。离家近点方便! <endofhistory>",
+    "output": "你好,苏州太湖国家湿地公园还是不错的。",
+    "prediction": "您好,推荐您去苏州太湖国家湿地公园,门票价格不贵,而且在高新区,离您家应该比较近。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: 评分高吗? <endofhistory>",
+    "output": "4.5 分。",
+    "prediction": "评分是4.5分，算是比较高的评分了。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" 苏州市高新区镇湖绣品街 1 号 \" <endofactions> <history> USER: 从评分看还不错,就去这里。地址帮我查一下。 <endofhistory>",
+    "output": "苏州市高新区镇湖绣品街 1 号。",
+    "prediction": "拙政园的地址是苏州市姑苏区东北街178号。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" 知味日本料理 \" <endofactions> <history> USER: 这附近再找一家餐厅,贵点的! <endofhistory>",
+    "output": "知味日本料理,口碑不错。",
+    "prediction": "这边为您推荐知味日本料理，是一家高档的日本料理餐厅。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform per_capita_consumption equal_to \" 215 元 \" <endofactions> <history> USER: 日本料理,还没吃过呢,正好试一下,人均消费多少? <endofhistory>",
+    "output": "人均消费 215 元。",
+    "prediction": "日本料理的人均消费大概在215元左右。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 真的很贵哈,还是可以接受滴!地铁能直达吗? <endofhistory>",
+    "output": "地铁不能直达哦!",
+    "prediction": "不好意思，那家餐厅附近没有地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 为了美食,这点还是能克服的!今天真是谢谢你啦!再见! <endofhistory>",
+    "output": "很高兴为您服务,祝您玩的愉快!再见!",
+    "prediction": "不客气,很高兴能帮到您。祝您用餐愉快,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" 狮子林 \" <endofactions> <history> USER: 你好,我来苏州出差,有点空闲时间,想找一个消费便宜点的苏州园林景点走走,求推荐。 <endofhistory>",
+    "output": "推荐您去狮子林看看哟。",
+    "prediction": "您好,推荐您去狮子林看看,这是苏州著名的园林之一,门票价格相对亲民。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" 否 \" <endofactions> <history> USER: 好啊,这个地方地铁能直达吗? <endofhistory>",
+    "output": "不能呢。您可以叫个车。",
+    "prediction": "不好意思，这个地方附近没有地铁站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform classification equal_to \" 高铁 \" , departure equal_to \" 南京 \" , destination equal_to \" 上海 \" , departure_time equal_to \" 当天 09:32 \" , arrival_time equal_to \" 当天 10:41 \" <endofactions> <history> USER: 我打算出去旅游,你帮我查查到上海的高铁吧。 <endofhistory>",
+    "output": "您打算是在什么地方出发呢?",
+    "prediction": "您好，从南京到上海的高铁，有一趟是当天早上09:32分出发，当天上午10:41分到达。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform date equal_to \" 下周一上午 \" , train_number equal_to \" G7185 ,南京南 - 上海虹桥 \" , ticket_price equal_to \" 229.5 元 \" <endofactions> <history> USER: 我在南京出发。 <endofhistory>",
+    "output": "那您的出发时间确定下来了么?我好帮您准确查询。",
+    "prediction": "您可以选择下周一上午的 G7185 次高铁，从南京南站出发到上海虹桥站，票价为 229.5 元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 当天 16:00 \" , arrival_time equal_to \" 当天 17:40 \" <endofactions> <history> USER: 我打算下周六下午出发。 <endofhistory>",
+    "output": "那您打算坐什么等级的座位呢?",
+    "prediction": "好的，有一趟高铁的出发时间是当天下午16:00，到达时间是当天下午17:40。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform seat_type equal_to \" 二等座 \" , ticket_price equal_to \" 139.5 元 \" <endofactions> <history> USER: 二等座就可以。 <endofhistory>",
+    "output": "帮你查到, G7019 ,南京 - 上海。",
+    "prediction": "好的，那我为您查到的高铁二等座票价是139.5元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 139.5 元 \" <endofactions> <history> USER: 那二等座的票价是多钱呢? <endofhistory>",
+    "output": "票价是 139.5 元,不贵。",
+    "prediction": "二等座的票价是139.5元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" D951 ,南京南 - 上海 \" <endofactions> <history> USER: 那有没有动车呢?随便告我下车次信息吧。 <endofhistory>",
+    "output": "有的,车次信息是 D951 ,南京南 - 上海。",
+    "prediction": "有的,您可以选择乘坐 D951 ,南京南 - 上海 这趟动车。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 184.0 元 \" <endofactions> <history> USER: 这趟车的一等座是多钱?我想对比下。 <endofhistory>",
+    "output": "票价是 184.0 元,没差多少。",
+    "prediction": "这趟车的一等座票价是184.0元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的呢,我一会去订票,谢谢你啊,再见喽! <endofhistory>",
+    "output": "不客气的,再见。",
+    "prediction": "不客气,祝您订票顺利,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G1604 ,深圳北 - 杭州东 \" <endofactions> <history> USER: 您好,想查一下下周四上午有没有从深圳到杭州的高铁? <endofhistory>",
+    "output": "有高铁,这里给您推荐的是 G1604 ,深圳北 - 杭州东。",
+    "prediction": "您好,下周四上午有 G1604 次高铁,是从深圳北开往杭州东的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 975.5 元 \" <endofactions> <history> USER: 请问一等座需要多少钱呢? <endofhistory>",
+    "output": "975.5 元,还是非常物有所值的,值得购买。",
+    "prediction": "一等座的票价是975.5元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 599.0 元 \" <endofactions> <history> USER: 一等座有点贵了,那二等座多少钱呢? <endofhistory>",
+    "output": "二等座 599.0 元,更加实惠,物美价廉。",
+    "prediction": "二等座的票价是599.0元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 当天 11:01 \" <endofactions> <history> USER: 好的。那请问这趟车上午几点就发车了呢? <endofhistory>",
+    "output": "当天 11:01 才发车,您可以不用着急到火车站。",
+    "prediction": "这趟车当天上午 11:01 发车。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 当天 20:57 \" <endofactions> <history> USER: 那到杭州是不是要晚上了?具体是几点呢? <endofhistory>",
+    "output": "当天 20:57 到达,是有点晚了,不知道你对这个时间是否满意。",
+    "prediction": "到杭州的高铁将在当天晚上20:57到达。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 可以的。非常感谢,你介绍的很详细。再见。 <endofhistory>",
+    "output": "希望我的回答能对你有所帮助。",
+    "prediction": "不客气,很高兴能帮到您。如果还有其他问题,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform available_options equal_to \" 2 \" <endofactions> <history> USER: 你好,我想着去南京玩一趟放松一下,请问下周日下午厦门到南京的动车还有吗? <endofhistory>",
+    "output": "推荐您乘坐 D2282 ,厦门北 - 南京。",
+    "prediction": "您好,下周日下午从厦门到南京的动车还有2个可选的班次。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 826.0 元 \" <endofactions> <history> USER: 我想坐着舒服点,请问一等座多少钱? <endofhistory>",
+    "output": "一等座 826.0 元。",
+    "prediction": "一等座的票价是826.0元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) confirm available_options equal_to \" 2 \" <endofactions> <history> USER: 那当天的高铁还有吗? <endofhistory>",
+    "output": "高铁为您推荐 G1662 ,厦门北 - 南京南。",
+    "prediction": "当天有2趟高铁可以选择。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 499.5 元 \" <endofactions> <history> USER: 那高铁的二等座多少钱啊? <endofhistory>",
+    "output": "二等座是 499.5 元。",
+    "prediction": "高铁的二等座票价是499.5元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 哦哦哦,我了解了,谢谢你哈,拜拜。 <endofhistory>",
+    "output": "拜拜。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G1659 ,上海虹桥 - 厦门 \" <endofactions> <history> USER: 你好,我下周一下午要从上海到厦门和家人玩几天,我们打算坐二等座的高铁去,看看那天有哪个车呢? <endofhistory>",
+    "output": "您可以乘坐当天的 G1659 ,上海虹桥 - 厦门。",
+    "prediction": "您可以考虑乘坐 G1659 次高铁,从上海虹桥出发到厦门。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 当天 12:57 \" <endofactions> <history> USER: 好的。什么时间从上海发车? <endofhistory>",
+    "output": "当天 12:57 发车。",
+    "prediction": "从上海发车的高铁，您可以选择当天下午 12:57 的这一班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 当天 18:42 \" <endofactions> <history> USER: 几点到厦门呢? <endofhistory>",
+    "output": "当天 18:42 到厦门站。",
+    "prediction": "您好，到达厦门的时间是当天下午18:42。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform duration equal_to \" 5 小时 45 分 \" <endofactions> <history> USER: 全程多长时间呀,是不是需要带点吃的,哈。 <endofhistory>",
+    "output": "全程行驶 5 小时 45 分,可以带点吃的哟。",
+    "prediction": "全程大概需要5小时45分，确实可以准备一些食物和水，祝您旅途愉快。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G1653 ,上海虹桥 - 厦门北 \" , departure_time equal_to \" 当天 08:15 \" , arrival_time equal_to \" 当天 13:31 \" <endofactions> <history> USER: 好的。再看看下周一上午有没有高铁到呀? <endofhistory>",
+    "output": "上午有 G1653 ,上海虹桥 - 厦门北。",
+    "prediction": "下周一上午有G1653次高铁,从上海虹桥出发,08:15发车,当天13:31到达厦门北。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 当天 08:15 \" <endofactions> <history> USER: 哦,几点发车? <endofhistory>",
+    "output": "当天 08:15 发出。",
+    "prediction": "您好，当天的高铁发车时间是早上08:15。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 当天 13:31 \" <endofactions> <history> USER: 几点到厦门? <endofhistory>",
+    "output": "当天 13:31 到呢。",
+    "prediction": "您好，您所查询的高铁将在当天下午 13:31 到达厦门。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的。没有其它问题了,感谢你的服务。再见! <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,很高兴能帮到您。如果还有其他问题,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" 东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 \" <endofactions> <history> USER: 你好,是这样的,我现在住在北京,下周想去杭州旅游,您能帮我推荐一个合适的航班吗,要下周三的。 <endofhistory>",
+    "output": "好的,我给您推荐东方航空 MU5132 ,下周三从首都国际机场直飞到萧山国际机场的。",
+    "prediction": "您可以选择东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 当天 13:30 \" <endofactions> <history> USER: 这班航班几点可以到杭州? <endofhistory>",
+    "output": "当天下午一点半到的。",
+    "prediction": "这班航班预计当天 13:30 到达杭州。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 96.61% \" <endofactions> <history> USER: 哦,会不会延误啊? <endofhistory>",
+    "output": "一般不会,这个航班准点率还是蛮高的,准点率能达到 96.61% 呢。",
+    "prediction": "这个航班的准点率是96.61%，属于较高的准点率，延误的可能性不大。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform class_cabin equal_to \" 公务舱 \" , ticket_price equal_to \" 1590 元 \" <endofactions> <history> USER: 哦,这是多少钱的呀?再帮我看下有没有公务舱,我想买公务舱,舒服一些的。 <endofhistory>",
+    "output": "有的,公务舱的话,票价是 1590 。",
+    "prediction": "公务舱的票价是1590元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 当天 13:30 \" , departure_time equal_to \" 当天 11:10 \" <endofactions> <history> USER: 哦,好。能帮我再看看下周日北京到杭州的航班吗? <endofhistory>",
+    "output": "好的,还是东航 MU5132 可以吗?",
+    "prediction": "下周日从北京到杭州的航班中，有一个航班的出发时间是当天上午 11:10，到达时间是当天下午 13:30。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 当天 11:10 \" <endofactions> <history> USER: 哦,这个航班是几点从北京起飞? <endofhistory>",
+    "output": "中午 11：10 从首都国际机场起飞。",
+    "prediction": "这个航班是当天上午 11:10 从北京起飞。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) confirm arrival_time equal_to \" 当天 13:30 \" <endofactions> <history> USER: 哦,是下午一点到杭州吗? <endofhistory>",
+    "output": "对,下午一点半到达萧山国际机场。",
+    "prediction": "是的,到达杭州的时间是当天下午 13:30。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 \" <endofactions> <history> USER: 好的,能最后帮我重复下航班信息吗,我记录一下。 <endofhistory>",
+    "output": "好的,东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 。",
+    "prediction": "当然可以，您预定的航班信息是东方航空 MU5132，从首都国际机场 T2 起飞，到达萧山国际机场 T3。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,记下了,谢谢你,再见! <endofhistory>",
+    "output": "不客气,再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform date equal_to \" 下周五 \" , flight_information equal_to \" 四川航空 3U8937 ,双流国际机场 T1- 高崎国际机场 T4 \" <endofactions> <history> USER: 成都去厦门的航班有吗?下周五的。 <endofhistory>",
+    "output": "四川航空 3U8937 吧,您需要哪一档的舱位呢?",
+    "prediction": "下周五有四川航空 3U8937 ,双流国际机场 T1- 高崎国际机场 T4 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 1450 元 \" <endofactions> <history> USER: 公务舱,票价是多少? <endofhistory>",
+    "output": "公务舱的的价格是 1450 元。",
+    "prediction": "公务舱的票价是1450元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 中国国航 CA4325 ,双流国际机场 T2- 宝安国际机场 T3 \" <endofactions> <history> USER: 那成都去深圳的航班有吗? <endofhistory>",
+    "output": "也是有的,乘坐中国国航 CA4325 次航班吧。",
+    "prediction": "有的，您可以选择中国国航 CA4325，从双流国际机场 T2起飞，到达宝安国际机场 T3。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 1950 元 \" <endofactions> <history> USER: 公务舱的票价是多少? <endofhistory>",
+    "output": "需要 1950 元。",
+    "prediction": "公务舱的票价是1950元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 多谢,再见啦。 <endofhistory>",
+    "output": "好的,再见啦。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 南方航空 CZ5036 ,高崎国际机场 T3- 首都国际机场 T2 \" <endofactions> <history> USER: 你好,我下周想去趟北京,能帮我查下下周四从厦门直飞到北京的航班吗? <endofhistory>",
+    "output": "好的,下周四从厦门直飞到北京的航班有南方航空 CZ5036 ,高崎国际机场 T3- 首都国际机场 T2 的。",
+    "prediction": "您好,下周四从厦门直飞到北京的航班，您可以选择南方航空 CZ5036 ,高崎国际机场 T3- 首都国际机场 T2 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 8800 元 \" <endofactions> <history> USER: 机票多少钱?公务舱的。 <endofhistory>",
+    "output": "公务舱票价是 8800 元。",
+    "prediction": "公务舱的机票价格是8800元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform class_cabin equal_to \" 经济舱 \" , ticket_price equal_to \" 1260 元 \" <endofactions> <history> USER: 哦,这么贵啊,那经济舱呢? <endofhistory>",
+    "output": "经济舱是 1260 。",
+    "prediction": "经济舱的票价是1260元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 当天 11:00 \" <endofactions> <history> USER: 哦,这个航班是几点的? <endofhistory>",
+    "output": "是上午十一点从高崎国际机场起飞。",
+    "prediction": "海南航空 HU7394 的航班是当天上午 11:00 的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 当天 14:00 \" <endofactions> <history> USER: 哦,时间挺好的,到北京要几点? <endofhistory>",
+    "output": "到首都国际机场的时间是当天下午两点,而且这个航班的准点率是 100% 哦!",
+    "prediction": "您好，航班预计当天到达北京的时间是14:00。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,非常感谢,再见! <endofhistory>",
+    "output": "不客气,再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 \" <endofactions> <history> USER: 你好,我想要去旅游,请帮我查一下下周一从北京出发去杭州的航班。 <endofhistory>",
+    "output": "好哒,您想要买经济舱还是公务舱?",
+    "prediction": "您好,下周一从北京出发去杭州的航班，您可以选择东方航空 MU5132，从首都国际机场 T2 起飞，到达萧山国际机场 T3。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform class_cabin equal_to \" 经济舱 \" <endofactions> <history> USER: 我想要经济舱。 <endofhistory>",
+    "output": "好哒,帮您查到本次航班信息为东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 。",
+    "prediction": "好的，您需要的是经济舱。请问您是想要预订哪个航线和日期的机票呢？"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 540 元 \" <endofactions> <history> USER: 票价是多少? <endofhistory>",
+    "output": "票价为 540 元。",
+    "prediction": "票价是 540 元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 1260 元 \" <endofactions> <history> USER: 我想请您查查厦门的航班,它的票价是多少? <endofhistory>",
+    "output": "厦门的票价为 1260 元。",
+    "prediction": "您好,厦门的航班票价是1260元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) you_are_welcome <endofactions> <history> USER: 谢谢你的帮助。 <endofhistory>",
+    "output": "不用客气。",
+    "prediction": "不客气，很高兴能帮到您。如果还有其他问题，随时欢迎咨询。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 再见。 <endofhistory>",
+    "output": "再见",
+    "prediction": "再见，如果还有其他问题，欢迎随时咨询。祝您生活愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 中国国航 CA1310 ,白云国际机场 T1- 首都国际机场 T3 \" <endofactions> <history> USER: 你好,我下周六要从广州到北京开会,想坐公务舱,请问当天有哪个航班呢? <endofhistory>",
+    "output": "当天有中国国航 CA1310 ,白云国际机场 T1- 首都国际机场 T3 。",
+    "prediction": "您可以选择中国国航 CA1310 ,白云国际机场 T1- 首都国际机场 T3 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 2640 元 \" <endofactions> <history> USER: 公务舱多少钱? <endofhistory>",
+    "output": "公务舱 2640 元。",
+    "prediction": "公务舱的票价是2640元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 当天 08:10 \" <endofactions> <history> USER: 好的。什么时间起飞呀,我早点去机场。 <endofhistory>",
+    "output": "起飞时间当天 08:10 。",
+    "prediction": "您所询问的航班起飞时间是当天早上08:10。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 当天 11:05 \" <endofactions> <history> USER: 几点能到北京呢? <endofhistory>",
+    "output": "当天 11:05 到达。",
+    "prediction": "您将会在当天的11:05到达北京。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 100% \" <endofactions> <history> USER: 平时这个航班准点不? <endofhistory>",
+    "output": "100% 准点哟,放心。",
+    "prediction": "这个航班的准点率是100%。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的。没有其它问题了,感谢你的服务。再见! <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,很高兴能帮到您。如果还有其他问题,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 四川航空 3U8993 ,双流国际机场 T1- 禄口国际机场 T2 \" <endofactions> <history> USER: 你好,下周三我要从成都到南京开会,要坐当天经济舱的航班,请帮我看看有哪个班次? <endofhistory>",
+    "output": "您可以乘坐四川航空 3U8993 ,双流国际机场 T1- 禄口国际机场 T2 。",
+    "prediction": "您可以选择四川航空 3U8993 ,双流国际机场 T1- 禄口国际机场 T2 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 790 元 \" <endofactions> <history> USER: 经济舱多少钱? <endofhistory>",
+    "output": "经济舱 790 元。",
+    "prediction": "经济舱的票价是790元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 当天 15:35 \" <endofactions> <history> USER: 具体几点起飞呢? <endofhistory>",
+    "output": "当天 15:35 双流国际机场 T1 起飞。",
+    "prediction": "海南航空 HU7394 的起飞时间是当天下午 15:35。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 98.32% \" <endofactions> <history> USER: 准点情况如何呀,怕晚点呢。 <endofhistory>",
+    "output": "准点率是 98.32% ,您可以放心。",
+    "prediction": "这个航班的准点率是 98.32%，非常准时，您可以放心。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢你了,再见。 <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" 四川航空 3U8963 ,双流国际机场 T1- 浦东国际机场 T2 \" <endofactions> <history> USER: 你好,下周一我想从成都出发去上海旅游,公务舱的航班帮我推荐一个吧! <endofhistory>",
+    "output": "四川航空 3U8963 ,双流国际机场 T1- 浦东国际机场 T2 ,这班飞机很符合您的要求。",
+    "prediction": "您可以选择四川航空 3U8963 ,双流国际机场 T1- 浦东国际机场 T2 的航班,它提供公务舱服务。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 1730 元 \" <endofactions> <history> USER: 票价是多少呢? <endofhistory>",
+    "output": "1730 元。",
+    "prediction": "海南航空 HU7394 航班的票价是 1730 元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 四川航空 3U8993 ,双流国际机场 T1- 禄口国际机场 T2 \" <endofactions> <history> USER: 同一时间帮我再看下去南京的航班有不有? <endofhistory>",
+    "output": "有的,四川航空 3U8993 ,双流国际机场 T1- 禄口国际机场 T2 。",
+    "prediction": "您可以选择四川航空 3U8993 ,双流国际机场 T1- 禄口国际机场 T2 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 1170 元 \" <endofactions> <history> USER: 那这班的票价是多钱啊? <endofhistory>",
+    "output": "这班是 1170 元。",
+    "prediction": "这班航班的票价是1170元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢啦,再见! <endofhistory>",
+    "output": "再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 东方航空 MU2881 ,禄口国际机场 T2- 浦东国际机场 T1 \" <endofactions> <history> USER: 你好,我想下周五从南京到上海,想坐经济舱,请问当天有哪个航班呀? <endofhistory>",
+    "output": "当天有东方航空 MU2881 ,禄口国际机场 T2- 浦东国际机场 T1 。",
+    "prediction": "您可以选择东方航空 MU2881 ,禄口国际机场 T2- 浦东国际机场 T1 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 当天 07:25 \" <endofactions> <history> USER: 好的,具体什么时间起飞呀?我早点到机场。 <endofhistory>",
+    "output": "起飞时间当天 07:25 。",
+    "prediction": "您所询问的航班起飞时间是当天早上07:25。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 当天 08:25 \" <endofactions> <history> USER: 好的,几点到上海呢? <endofhistory>",
+    "output": "当天 08:25 到上海呢。",
+    "prediction": "您好，到达上海的时间是当天早上08:25。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 97% \" <endofactions> <history> USER: 能不能准点呀,我可最怕晚点呀。 <endofhistory>",
+    "output": "准点率 97% 哦,不要担心。",
+    "prediction": "这个航班的准点率是97%，算是相当高的了。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的。没有其它问题了,感谢你的服务。再见! <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,很高兴能帮到您。如果还有其他问题,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 中国国航 CA1310 ,白云国际机场 T1- 首都国际机场 T3 \" <endofactions> <history> USER: 你好,我下周二要从广州到北京出差,要坐公务舱的飞机,请问有哪个航班? <endofhistory>",
+    "output": "您可以乘坐中国国航 CA1310 ,白云国际机场 T1- 首都国际机场 T3 。",
+    "prediction": "您可以选择中国国航 CA1310 ,白云国际机场 T1- 首都国际机场 T3 的航班,它提供公务舱服务。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 2640 元 \" <endofactions> <history> USER: 公务舱多少钱? <endofhistory>",
+    "output": "公务舱 2640 元。",
+    "prediction": "公务舱的票价是2640元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 当天 08:10 \" , arrival_time equal_to \" 当天 11:05 \" <endofactions> <history> USER: 我想知道这个航班具体起飞和到达的时间,我要提前约车来接送我。 <endofhistory>",
+    "output": "白云国际机场 T1 当天 08:10 起飞 - 首都国际机场 T3 当天 11:05 到达。",
+    "prediction": "这个航班的起飞时间是当天早上08:10,到达时间是当天上午11:05。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 100% \" <endofactions> <history> USER: 这个航班以往准点率怎么样呀? <endofhistory>",
+    "output": "100% 呢,很高喽。",
+    "prediction": "这个航班的准点率是100%。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,太谢谢你了,再见吧。 <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 东方航空 MU5101 ,虹桥国际机场 T2- 首都国际机场 T2 \" <endofactions> <history> USER: 下周二上海飞北京的航班有吗? <endofhistory>",
+    "output": "那就乘坐东方航空 MU5101 吧,这架航班有三种舱位。",
+    "prediction": "有的,您可以选择东方航空 MU5101 ,虹桥国际机场 T2- 首都国际机场 T2 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 2360 元 \" <endofactions> <history> USER: 我要公务舱,它的价格是? <endofhistory>",
+    "output": "它的价格是 2360 元。",
+    "prediction": "公务舱的票价是2360元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 当天 10:15 \" <endofactions> <history> USER: 到北京是饭点吗? <endofhistory>",
+    "output": "上午 10 点 15 到达北京,过一会就可以吃午饭了。",
+    "prediction": "您到北京的航班预计到达时间是当天上午10:15，不算正饭点，但是可以考虑到达后用早餐或者稍作休息后用午餐。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 东方航空 MU5101 ,虹桥国际机场 T2- 首都国际机场 T2 \" <endofactions> <history> USER: 好滴,航班信息是什么? <endofhistory>",
+    "output": "东方航空 MU5101 ,虹桥国际机场 T2 起飞,首都国际机场 T2 降落。",
+    "prediction": "东方航空 MU5101 ,虹桥国际机场 T2- 首都国际机场 T2。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 100% \" <endofactions> <history> USER: 准点率怎么样? <endofhistory>",
+    "output": "目前准时率是百分百。",
+    "prediction": "海南航空 HU7394 的准点率是 100%。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 多谢,有缘再见。 <endofhistory>",
+    "output": "客气,再会。",
+    "prediction": "不客气，祝您一切顺利，再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" 四川航空 3U8885 ,双流国际机场 T1- 首都国际机场 T3 \" <endofactions> <history> USER: 公司要我下周一出差,请帮我推荐一下航班吧,成都到北京的,票要经济舱的。 <endofhistory>",
+    "output": "您好,推荐您的是四川航空 3U8885 ,双流国际机场 T1- 首都国际机场 T3 。",
+    "prediction": "您可以选择四川航空 3U8885 ,双流国际机场 T1- 首都国际机场 T3 的航班。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 当天 11:30 \" <endofactions> <history> USER: 我们四川的航班可以,它什么时候起飞? <endofhistory>",
+    "output": "起飞时间在当天的 11:30 。",
+    "prediction": "您所询问的四川航班起飞时间是当天上午 11:30。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 820 元 \" <endofactions> <history> USER: 时间也不错,我的经济舱票价要好多钱? <endofhistory>",
+    "output": "经济舱的票价是 820 元。",
+    "prediction": "经济舱的票价是820元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 96.61% \" <endofactions> <history> USER: 这个舱班的飞机准时么? <endofhistory>",
+    "output": "很准时的,准点率有 96.61% 。",
+    "prediction": "这个航班的准点率是96.61%，算是相当准时的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,都清楚了,谢谢你了,再见。 <endofhistory>",
+    "output": "不用这么客气的,再见。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,祝您生活愉快,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 南方航空 CZ5836 ,高崎国际机场 T3- 虹桥国际机场 T1 \" <endofactions> <history> USER: 你好,我下周三要去上海出差,请你帮我查一下从厦门出发的航班。 <endofhistory>",
+    "output": "好哒,请问您想要经济舱还是公务舱?",
+    "prediction": "您好,下周三从厦门出发到上海的航班，您可以选择南方航空 CZ5836 ,高崎国际机场 T3- 虹桥国际机场 T1。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform class_cabin equal_to \" 经济舱 \" <endofactions> <history> USER: 我想要经济舱。 <endofhistory>",
+    "output": "好哒,帮您查到航班信息为南方航空 CZ5836 ,高崎国际机场 T3- 虹桥国际机场 T1 。",
+    "prediction": "好的，您需要的是经济舱。请问您是想要预订哪个航线和日期的机票呢？"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 当天 15:00 \" <endofactions> <history> USER: 几点到? <endofhistory>",
+    "output": "当天 15:00 到达。",
+    "prediction": "您好，您所询问的航班预计当天到达的时间是15:00。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 当天 13:00 \" <endofactions> <history> USER: 几点起飞? <endofhistory>",
+    "output": "当天 13:00 起飞。",
+    "prediction": "当天 13:00 起飞。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 100% \" <endofactions> <history> USER: 时间准确吗? <endofhistory>",
+    "output": "非常准点,准点率到达 100% 。",
+    "prediction": "这个航班的准点率是100%。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢谢你的帮助。 <endofhistory>",
+    "output": "不用客气。",
+    "prediction": "不客气，很高兴能帮到您。如果还有其他问题，随时欢迎咨询。再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 再见。 <endofhistory>",
+    "output": "拜拜。",
+    "prediction": "再见，如果还有其他问题，欢迎随时咨询。祝您生活愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 1800 元 \" <endofactions> <history> USER: 最近有时间想出去旅游,但还没想好去哪,想先看看机票的价格,能帮我看看有没有下周四从北京到广州的航班么,要公务舱。 <endofhistory>",
+    "output": "您好,按照您的要求我给您推荐东方航空 MU5132 ,首都国际机场 T2- 白云国际机场 T1 。",
+    "prediction": "下周四从北京到广州的公务舱机票价格大概在1800元左右。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 1800 元 \" <endofactions> <history> USER: 这个航班我知道,但不知道它公务舱的票价要多少钱? <endofhistory>",
+    "output": "公务舱的票价正好 1800 元。",
+    "prediction": "海南航空 HU7394 航班的公务舱票价是 1800 元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" 东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 \" , ticket_price equal_to \" 1590 元 \" <endofactions> <history> USER: 知道了,再帮我看看那天去杭州的航班吧,一直想去杭州但没机会,舱位也要公务舱。 <endofhistory>",
+    "output": "去杭州的话建议您乘坐东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 。",
+    "prediction": "您可以选择东方航空 MU5132 ,首都国际机场 T2- 萧山国际机场 T3 的航班，公务舱的票价是1590元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周四 \" , city equal_to \" 深圳 \" , weather_condition equal_to \" 多云 \" , tamperature equal_to \" 最高温度 20 摄氏度,最低温度 14 摄氏度 \" , wind equal_to \" 东风 3-4 级 \" , UV_intensity equal_to \" 弱 \" <endofactions> <history> USER: 你好,我想知道下周四深圳的天气情况。 <endofhistory>",
+    "output": "是多云的天气哟。",
+    "prediction": "您好,下周四深圳的天气预报是多云,最高温度 20 摄氏度,最低温度 14 摄氏度。风向是东风,风力 3-4 级。紫外线强度弱。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 20 摄氏度,最低温度 14 摄氏度 \" <endofactions> <history> USER: 温度多少呢? <endofhistory>",
+    "output": "最高温度 20 摄氏度,最低温度 14 摄氏度。",
+    "prediction": "明天的最高温度是20摄氏度,最低温度是14摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 东风 3-4 级 \" <endofactions> <history> USER: 天气不错呀,风大不? <endofhistory>",
+    "output": "东风 3-4 级。",
+    "prediction": "今天的风力是东风 3-4 级。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 弱 \" <endofactions> <history> USER: 紫外线会不会很强呀? <endofhistory>",
+    "output": "当天是比较弱呢。",
+    "prediction": "紫外线强度是弱的,不过出门还是建议涂抹防晒霜。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的。没有其它问题了,感谢你的服务。再见! <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,很高兴能帮到您。如果还有其他问题,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" 晴 \" <endofactions> <history> USER: 北京下周二会下雨吗? <endofhistory>",
+    "output": "晴天,不会下雨的。",
+    "prediction": "下周二北京的天气是晴。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 强 \" <endofactions> <history> USER: 那需要防晒吗? <endofhistory>",
+    "output": "有强的紫外线强度。",
+    "prediction": "紫外线强度强的话，是需要做好防晒措施的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 10 摄氏度,最低温度 -5 摄氏度 \" <endofactions> <history> USER: 温度高吗? <endofhistory>",
+    "output": "最高温度 10 摄氏度,最低温度 -5 摄氏度,不高。",
+    "prediction": "最高温度 10 摄氏度,最低温度 -5 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 西南风 2 级 \" <endofactions> <history> USER: 好的,有大风吗? <endofhistory>",
+    "output": "只有 2 级的西南风,不是很大。",
+    "prediction": "不会有大风,是西南风 2 级。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢了,再见了。 <endofhistory>",
+    "output": "好嘞,再见啦。",
+    "prediction": "不客气，如果还有其他问题，欢迎随时咨询。再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 深圳 \" , date equal_to \" 下周日 \" , weather_condition equal_to \" 多云 \" , tamperature equal_to \" 最高温度 22 摄氏度,最低温度 16 摄氏度 \" , wind equal_to \" 东北风 1 级 \" , UV_intensity equal_to \" 弱 \" <endofactions> <history> USER: 你好,我想知道下周日深圳的天气情况 . <endofhistory>",
+    "output": "是多云的天气哟。",
+    "prediction": "您好,下周日深圳的天气预报是多云,最高温度 22 摄氏度,最低温度 16 摄氏度,风力是东北风 1 级,紫外线强度弱。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 22 摄氏度,最低温度 16 摄氏度 \" <endofactions> <history> USER: 温度多少呢? <endofhistory>",
+    "output": "最高温度 22 摄氏度,最低温度 16 摄氏度。",
+    "prediction": "明天的天气预报显示，最高温度 22 摄氏度，最低温度 16 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 武汉 \" , date equal_to \" 下周日 \" , weather_condition equal_to \" 多云转晴 \" , tamperature equal_to \" 最高温度 19 摄氏度,最低温度 8 摄氏度 \" , wind equal_to \" 东南风 2 级 \" , UV_intensity equal_to \" 中等 \" <endofactions> <history> USER: 再看看武汉那天什么天气呀? <endofhistory>",
+    "output": "武汉是多云转晴的天气。",
+    "prediction": "您好,下周日武汉的天气预报是多云转晴,最高温度 19 摄氏度,最低温度 8 摄氏度,风向是东南风 2 级,紫外线强度中等。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 19 摄氏度,最低温度 8 摄氏度 \" <endofactions> <history> USER: 气温多少呀? <endofhistory>",
+    "output": "最高温度 19 摄氏度,最低温度 8 摄氏度。",
+    "prediction": "今天的气温是最高温度 19 摄氏度,最低温度 8 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的。没有其它问题了,感谢你的服务。再见! <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,很高兴能帮到您。如果还有其他问题,随时欢迎咨询。再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周一 \" , weather_condition equal_to \" 晴 \" , tamperature equal_to \" 最高温度 14 摄氏度,最低温度 8 摄氏度 \" , wind equal_to \" 东北风 3-4 级 \" , UV_intensity equal_to \" 很强 \" <endofactions> <history> USER: 我打算下周去趟厦门玩,你帮我查查天气吧。 <endofhistory>",
+    "output": "您打算什么时候去厦门玩呢?",
+    "prediction": "下周一厦门的天气预报是晴,最高温度 14 摄氏度,最低温度 8 摄氏度,东北风 3-4 级,紫外线强度很强,出行请注意防晒。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周二 \" , weather_condition equal_to \" 晴 \" , tamperature equal_to \" 最高温度 14 摄氏度,最低温度 7 摄氏度 \" , wind equal_to \" 东北风 4-5 级 \" , UV_intensity equal_to \" 很强 \" <endofactions> <history> USER: 打算下周二去,查查下周二那天吧。 <endofhistory>",
+    "output": "下周二的天气是晴。天气很好的。",
+    "prediction": "下周二的天气预报是晴,最高温度 14 摄氏度,最低温度 7 摄氏度,东北风 4-5 级,紫外线强度很强。请注意防晒和保暖。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 14 摄氏度,最低温度 7 摄氏度 \" <endofactions> <history> USER: 那温度怎么样呢?热不热? <endofhistory>",
+    "output": "温度是最高温度 14 摄氏度,最低温度 7 摄氏度,不算热的。",
+    "prediction": "温度方面,最高温度是 14 摄氏度,最低温度是 7 摄氏度,所以不算热,比较凉爽。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 东北风 4-5 级 \" <endofactions> <history> USER: 那风力风向怎么样呢? <endofhistory>",
+    "output": "风力风向是东北风 4-5 级。",
+    "prediction": "下周日厦门的风力风向预计是东北风 4-5 级。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 很强 \" <endofactions> <history> USER: 那紫外线强度怎么样呢? <endofhistory>",
+    "output": "紫外线强度是很强,做好防晒。",
+    "prediction": "紫外线强度是很强的，请注意防晒。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢你啊,再见。 <endofhistory>",
+    "output": "不客气的,再见。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 南京 \" , date equal_to \" 下周一 \" , weather_condition equal_to \" 晴 \" , wind equal_to \" 西北风 4-5 级 \" , tamperature equal_to \" 最高温度 9 摄氏度,最低温度 -2 摄氏度 \" , UV_intensity equal_to \" 强 \" <endofactions> <history> USER: 我和我的小伙伴打算出去玩,你先帮我查查南京的天气吧。 <endofhistory>",
+    "output": "您想查的是哪天的天气情况呢?",
+    "prediction": "您好,根据您的要求,南京下周一的天气预报是晴,西北风4-5级,最高温度9摄氏度,最低温度-2摄氏度,紫外线强度强。出行请注意防晒和保暖。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周四 \" , weather_condition equal_to \" 多云 \" , wind equal_to \" 东南风 2 级 \" , tamperature equal_to \" 最高温度 14 摄氏度,最低温度 5 摄氏度 \" , UV_intensity equal_to \" 中等 \" <endofactions> <history> USER: 下周四的吧。 <endofhistory>",
+    "output": "下周四的天气是多云。",
+    "prediction": "下周四的天气预报是多云,风向是东南风 2 级,气温方面最高温度 14 摄氏度,最低温度 5 摄氏度,紫外线强度中等。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 14 摄氏度,最低温度 5 摄氏度 \" <endofactions> <history> USER: 温度怎么样呢? <endofhistory>",
+    "output": "温度是最高温度 14 摄氏度,最低温度 5 摄氏度,温度挺好的。",
+    "prediction": "明天的天气预报显示最高温度 14 摄氏度,最低温度 5 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周四 \" , city equal_to \" 广州 \" , weather_condition equal_to \" 多云 \" , wind equal_to \" 无持续风向微风 \" , tamperature equal_to \" 最高温度 20 摄氏度,最低温度 10 摄氏度 \" , UV_intensity equal_to \" 弱 \" <endofactions> <history> USER: 还可以呢,你帮我看下下周四广州的天气吧,我做下对比。 <endofhistory>",
+    "output": "下周四的天气是多云。",
+    "prediction": "下周四广州的天气预报是多云,风力是无持续风向微风,最高温度 20 摄氏度,最低温度 10 摄氏度,紫外线强度弱。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 20 摄氏度,最低温度 10 摄氏度 \" <endofactions> <history> USER: 多云呀,那温度怎么样? <endofhistory>",
+    "output": "温度是最高温度 20 摄氏度,最低温度 10 摄氏度,温度挺热的。",
+    "prediction": "明天的最高温度是20摄氏度,最低温度是10摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢你啦,拜拜。 <endofhistory>",
+    "output": "好的,再见呢。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 杭州 \" , date equal_to \" 下周四 \" , weather_condition equal_to \" 晴转多云 \" , wind equal_to \" 东风 3-4 级 \" , tamperature equal_to \" 最高温度 16 摄氏度,最低温度 5 摄氏度 \" , UV_intensity equal_to \" 强 \" <endofactions> <history> USER: 你好,我和我朋友准备出去走走,我俩还没想好去哪个城市呢,这样啊,你先帮我们看看,下周四杭州的天气咋样? <endofhistory>",
+    "output": "杭州当天的天气是晴转多云。",
+    "prediction": "您好,下周四杭州的天气预报是晴转多云,东风3-4级,最高温度16摄氏度,最低温度5摄氏度,紫外线强度强。请注意防晒和适当增减衣物。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 16 摄氏度,最低温度 5 摄氏度 \" , UV_intensity equal_to \" 强 \" <endofactions> <history> USER: 还行,那当天的温度怎么样,我想看看需要带防晒霜吗? <endofhistory>",
+    "output": "当天的温度是最高温度 16 摄氏度,最低温度 5 摄氏度。",
+    "prediction": "当天的最高温度是16摄氏度，最低温度是5摄氏度，紫外线强度是强。建议您出行时涂抹防晒霜保护皮肤。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 武汉 \" , date equal_to \" 下周四 \" , tamperature equal_to \" 最高温度 15 摄氏度,最低温度 1 摄氏度 \" <endofactions> <history> USER: 知道了,温度还是不错的,我想对比一下,下周四武汉那边的温度怎么样? <endofhistory>",
+    "output": "武汉当天的温度是最高温度 15 摄氏度,最低温度 1 摄氏度。",
+    "prediction": "下周四武汉的天气预报显示最高温度 15 摄氏度,最低温度 1 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" 晴转多云 \" <endofactions> <history> USER: 差不多啊,那当天的天气呢 ? <endofhistory>",
+    "output": "当天的天气也是晴转多云。",
+    "prediction": "当天的天气预报是晴转多云。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 我大概知道我去哪个城市了,谢谢你了,再见! <endofhistory>",
+    "output": "能帮到您,我很开心。",
+    "prediction": "不客气,祝您出行顺利,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周日 \" , weather_condition equal_to \" 多云 \" , tamperature equal_to \" 最高温度 24 摄氏度,最低温度 14 摄氏度 \" , UV_intensity equal_to \" 中等 \" , wind equal_to \" 无持续风向微风 \" <endofactions> <history> USER: 下周日广州的天气怎么样? <endofhistory>",
+    "output": "是多云的天气。",
+    "prediction": "下周日广州的天气预报是多云,最高温度 24 摄氏度,最低温度 14 摄氏度,紫外线强度中等,风力情况是无持续风向微风。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 24 摄氏度,最低温度 14 摄氏度 \" <endofactions> <history> USER: 温差大吗? <endofhistory>",
+    "output": "温差是 10 度,但最高是 24 度,最低是 14 度,温度还是舒服的。",
+    "prediction": "最高温度 24 摄氏度,最低温度 14 摄氏度,温差有 10 摄氏度,所以温差还是比较大的。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 无持续风向微风 \" <endofactions> <history> USER: 刮什么风啊? <endofhistory>",
+    "output": "只有无持续风向的微风。",
+    "prediction": "现在是无持续风向微风。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 中等 \" <endofactions> <history> USER: 需要防晒吗? <endofhistory>",
+    "output": "中等的紫外线强度。",
+    "prediction": "紫外线强度是中等，建议涂抹防晒霜，出门时可以戴帽子和太阳镜进行防护。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 非常感谢,有缘再见。 <endofhistory>",
+    "output": "嗯嗯,再见了。",
+    "prediction": "不客气,祝您一切顺利,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周二 \" , city equal_to \" 南京 \" , tamperature equal_to \" 最高温度 9 摄氏度,最低温度 0 摄氏度 \" , weather_condition equal_to \" 晴转多云 \" <endofactions> <history> USER: 你好,我想了解一下下周二南京是什么天气,多少度? <endofhistory>",
+    "output": "是晴转多云的天气哟,最高温度 9 摄氏度,最低温度 0 摄氏度。",
+    "prediction": "您好,下周二南京的天气预报是晴转多云,最高温度 9 摄氏度,最低温度 0 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 南风 3-4 级 \" <endofactions> <history> USER: 风大不 ? <endofhistory>",
+    "output": "南风 3-4 级哦。",
+    "prediction": "目前的风力是南风 3-4 级，属于微风到和风，不算特别大。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周三 \" , city equal_to \" 上海 \" , tamperature equal_to \" 最高温度 11 摄氏度,最低温度 5 摄氏度 \" , weather_condition equal_to \" 多云转晴 \" <endofactions> <history> USER: 好的。再看看下周三上海什么天气呢?多少度? <endofhistory>",
+    "output": "上海是多云转晴的天气,最高温度 11 摄氏度,最低温度 5 摄氏度。",
+    "prediction": "下周三上海的天气预报是多云转晴,最高温度 11 摄氏度,最低温度 5 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 弱 \" <endofactions> <history> USER: 上海紫外线是不是很强呀? <endofhistory>",
+    "output": "当天是比较弱呢,放心哦。",
+    "prediction": "目前上海的紫外线强度是弱。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢谢,没有其它问题了,感谢你的服务。再见! <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,有任何问题随时欢迎咨询。祝您生活愉快,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 17 摄氏度,最低温度 9 摄氏度 \" <endofactions> <history> USER: 厦门下周三温度怎么样? <endofhistory>",
+    "output": "最高 17 度,最低 9 度。",
+    "prediction": "下周三厦门的天气预报显示，最高温度 17 摄氏度，最低温度 9 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" 晴 \" <endofactions> <history> USER: 会下雨吗? <endofhistory>",
+    "output": "是晴天,不会下雨的。",
+    "prediction": "天气预报显示是晴天。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 东风 2 级 \" <endofactions> <history> USER: 是什么风向的风呢? <endofhistory>",
+    "output": "是东风,风力有二级吧。",
+    "prediction": "是东风,风力是2级。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" 晴转多云 \" <endofactions> <history> USER: 下周日上海是晴天吗? <endofhistory>",
+    "output": "是晴转多云的天气。",
+    "prediction": "下周日上海的天气预报是晴转多云。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 18 摄氏度,最低温度 11 摄氏度 \" <endofactions> <history> USER: 温度高吗? <endofhistory>",
+    "output": "18 度到 11 度,还是很好的。",
+    "prediction": "最高温度 18 摄氏度,最低温度 11 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 强 \" <endofactions> <history> USER: 需要防晒吗? <endofhistory>",
+    "output": "强等级的紫外线,防晒霜准备一个。",
+    "prediction": "紫外线强度是强的,建议您出门时做好防晒措施。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,多谢帮忙,拜拜。 <endofhistory>",
+    "output": "好的,祝您生活愉快,再见。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 武汉 \" , date equal_to \" 下周一 \" , weather_condition equal_to \" 多云 \" , tamperature equal_to \" 最高温度 13 摄氏度,最低温度 -1 摄氏度 \" , wind equal_to \" 东风 2 级 \" , UV_intensity equal_to \" 中等 \" <endofactions> <history> USER: 我下周要去武汉那边玩,你能帮我查查下周武汉的天气么? <endofhistory>",
+    "output": "您要查询下周几的天气状况呀?",
+    "prediction": "您好,下周一武汉的天气预报是多云,最高温度 13 摄氏度,最低温度 -1 摄氏度,风向是东风,风力 2 级,紫外线强度中等。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周日 \" , weather_condition equal_to \" 多云转晴 \" , tamperature equal_to \" 最高温度 19 摄氏度,最低温度 8 摄氏度 \" , wind equal_to \" 东南风 2 级 \" , UV_intensity equal_to \" 中等 \" <endofactions> <history> USER: 下周日去。帮我查下周日吧。 <endofhistory>",
+    "output": "下周日是多云转晴哦。",
+    "prediction": "下周日的天气预报显示，那天将会是多云转晴，最高温度 19 摄氏度，最低温度 8 摄氏度。风力是东南风 2 级，紫外线强度为中等。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 东南风 2 级 \" <endofactions> <history> USER: 风力风向怎么样呢,现在天气这么好要是刮风我就多穿一点衣服。 <endofhistory>",
+    "output": "东南风 2 级呢,还可以哦。",
+    "prediction": "现在是东南风 2 级，风力不大，您可以根据自己的感觉适当增减衣物。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 中等 \" <endofactions> <history> USER: 那紫外线强度如何呢?天气晴紫外线是不是强啊。 <endofhistory>",
+    "output": "中度紫外线哦。",
+    "prediction": "紫外线强度是中等，出门请注意涂抹防晒霜。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 19 摄氏度,最低温度 8 摄氏度 \" <endofactions> <history> USER: 那还好,温度是几度啊?会热么? <endofhistory>",
+    "output": "最高温度 19 摄氏度,最低温度 8 摄氏度,温度可以呢,可以在室外玩哦。",
+    "prediction": "明天的天气预报显示最高温度 19 摄氏度,最低温度 8 摄氏度,不会太热,穿着春秋装就可以了。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 那真是太好了,谢谢你啊,再见。 <endofhistory>",
+    "output": "不客气呦,祝您生活愉快,再见!",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 北风 1 级 \" <endofactions> <history> USER: 你好,我下周要去杭州办事,但还没有决定哪天去,想根据天气情况来定,能不能帮我查查下周二那边是什么风?大不大? <endofhistory>",
+    "output": "您好,下周二杭州的风不大,是北风 1 级。",
+    "prediction": "您好,下周二杭州的风预计是北风 1 级,风力较小。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" 晴 \" <endofactions> <history> USER: 那就好,那天杭州是个什么天气? <endofhistory>",
+    "output": "下周二杭州是晴天。",
+    "prediction": "那天杭州的天气是晴。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 强 \" <endofactions> <history> USER: 晴天好,但是紫外线是不是就会很强? <endofhistory>",
+    "output": "您说对了,紫外线强度是强。",
+    "prediction": "是的,晴天的时候紫外线强度通常会比较高。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周四 \" , weather_condition equal_to \" 晴转多云 \" , wind equal_to \" 东风 3-4 级 \" , tamperature equal_to \" 最高温度 16 摄氏度,最低温度 5 摄氏度 \" <endofactions> <history> USER: 那我还是换一天吧,再帮我看看下周四是什么天气吧 ! <endofhistory>",
+    "output": "下周四杭州的天气是晴转多云。",
+    "prediction": "下周四的天气预报是晴转多云,风向是东风,风力在3-4级,气温方面最高温度预计为16摄氏度,最低温度为5摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 16 摄氏度,最低温度 5 摄氏度 \" <endofactions> <history> USER: 多云也行,那温度呢? <endofhistory>",
+    "output": "下周四杭州最高温度 16 摄氏度,最低温度 5 摄氏度。",
+    "prediction": "明天的最高温度是16摄氏度,最低温度是5摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,没有想问的了,谢谢,再见。 <endofhistory>",
+    "output": "能帮到您就好,再见。",
+    "prediction": "不客气,有其他问题随时欢迎咨询,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 广州 \" , date equal_to \" 下周二 \" , weather_condition equal_to \" 晴转多云 \" , tamperature equal_to \" 最高温度 18 摄氏度,最低温度 5 摄氏度 \" , wind equal_to \" 无持续风向微风 \" <endofactions> <history> USER: 你好,我想查一下最近的天气情况,能帮我看看下周二广州那边是什么天气么? <endofhistory>",
+    "output": "您好,广州下周二天气是晴转多云。",
+    "prediction": "您好,下周二广州的天气预报是晴转多云,最高温度 18 摄氏度,最低温度 5 摄氏度,风力是无持续风向微风。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 18 摄氏度,最低温度 5 摄氏度 \" <endofactions> <history> USER: 是个好天气,温度如何? <endofhistory>",
+    "output": "温度也很适中,最高温度 18 摄氏度,最低温度 5 摄氏度。",
+    "prediction": "今天的天气确实不错，最高温度 18 摄氏度,最低温度 5 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" 无持续风向微风 \" <endofactions> <history> USER: 是不错,那天吹什么风,大不大? <endofhistory>",
+    "output": "那天广州是无持续风向微风。",
+    "prediction": "那天是无持续风向微风，风力不大。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周六 \" , tamperature equal_to \" 最高温度 17 摄氏度,最低温度 9 摄氏度 \" , weather_condition equal_to \" 晴转多云 \" , wind equal_to \" 南风 1 级 \" <endofactions> <history> USER: 好的,了解了,但还得麻烦你帮我看看下周六上海的天气,我可能要去那一趟。 <endofhistory>",
+    "output": "好的,很幸运,下周六上海也是晴转多云。",
+    "prediction": "下周六上海的天气预报是最高温度 17 摄氏度,最低温度 9 摄氏度,天气状况是晴转多云,风力是南风 1 级。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 17 摄氏度,最低温度 9 摄氏度 \" <endofactions> <history> USER: 是挺幸运的,那天上海气温有多高? <endofhistory>",
+    "output": "和广州差不多,最高温度 17 摄氏度,最低温度 9 摄氏度。",
+    "prediction": "那天上海的最高温度是17摄氏度,最低温度是9摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" 强 \" <endofactions> <history> USER: 太好了,那光照呢?强不? <endofhistory>",
+    "output": "那天上海紫外线强度是强。",
+    "prediction": "紫外线强度是强的，请注意防晒。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好吧,没有其它的想问的了,谢谢你的帮助,再见。 <endofhistory>",
+    "output": "您不用这么客气,这是我应该做的,再见。",
+    "prediction": "不客气,有任何问题随时欢迎咨询,祝您生活愉快,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" D3111 ,杭州东 - 深圳北 \" <endofactions> <history> USER: 你好,我准备从杭州出发去深圳旅游。请帮我查一下下周一上午出发的动车。 <endofhistory>",
+    "output": "好哒,您想要一等座还是二等座。",
+    "prediction": "您好，下周一上午从杭州东开往深圳北的动车有D3111次。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform seat_type equal_to \" 一等座 \" , ticket_price equal_to \" 867.0 元 \" <endofactions> <history> USER: 我想要一等座。 <endofhistory>",
+    "output": "好哒,帮您查到车次信息为 D3111 ,杭州东 - 深圳北。",
+    "prediction": "好的，一等座的票价是867.0元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 当天 07:33 \" <endofactions> <history> USER: 几点出发? <endofhistory>",
+    "output": "当天 07:33 出发。",
+    "prediction": "当天早上07:33有高铁出发。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 867.0 元 \" <endofactions> <history> USER: 票价是多少? <endofhistory>",
+    "output": "票价为 867.0 元。",
+    "prediction": "您好，票价是867.0元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 17 摄氏度,最低温度 7 摄氏度 \" <endofactions> <history> USER: 我还想问一下下周一那天深圳的温度如何? <endofhistory>",
+    "output": "最高温度 17 摄氏度,最低温度 7 摄氏度。",
+    "prediction": "下周一深圳的天气预报显示，最高温度 17 摄氏度,最低温度 7 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" 晴 \" <endofactions> <history> USER: 天气怎么样? <endofhistory>",
+    "output": "天气晴。",
+    "prediction": "今天天气是晴。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform classification equal_to \" 动车 \" , departure_time equal_to \" 当天 07:33 \" , train_number equal_to \" D3111 ,杭州东 - 深圳北 \" <endofactions> <history> USER: 我再问一下有没有下周三上午出发的动车? <endofhistory>",
+    "output": "有的,帮您查到的车次信息为 D3111 ,杭州东 - 深圳北。",
+    "prediction": "下周三上午有一趟动车,是D3111次,从杭州东站出发,到深圳北站,出发时间是当天上午07:33。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 当天 07:33 \" <endofactions> <history> USER: 几点出发? <endofhistory>",
+    "output": "当天 07:33 出发。",
+    "prediction": "当天早上07:33有高铁出发。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 深圳 \" , date equal_to \" 下周三 \" , weather_condition equal_to \" 晴转多云 \" , wind equal_to \" 东风 3-4 级 \" , tamperature equal_to \" 最高温度 18 摄氏度,最低温度 11 摄氏度 \" <endofactions> <history> USER: 那下周三那天深圳的天气如何? <endofhistory>",
+    "output": "下周三深圳那边的天气为晴转多云。",
+    "prediction": "下周三深圳的天气预报是晴转多云,风向是东风,风力在3-4级,最高温度大约18摄氏度,最低温度大约11摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 谢谢你的帮忙。 <endofhistory>",
+    "output": "不用客气。",
+    "prediction": "不客气，如果还有其他问题，随时欢迎咨询。祝您生活愉快，再见！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 再见。 <endofhistory>",
+    "output": "再见。",
+    "prediction": "再见，如果还有其他问题，欢迎随时咨询。祝您生活愉快！"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G1652 ,厦门 - 杭州东 \" <endofactions> <history> USER: 你好,下周放年假了,想全家人一起从厦门到杭州玩玩,请问下周一上午的高铁有哪个? <endofhistory>",
+    "output": "您可以乘坐 G1652 ,厦门 - 杭州东。",
+    "prediction": "您好，下周一上午从厦门到杭州东的高铁，您可以选择乘坐 G1652 次列车。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 403.0 元 \" <endofactions> <history> USER: 这车二等座多少钱? <endofhistory>",
+    "output": "二等座是 403.0 元。",
+    "prediction": "这趟车的二等座票价是403.0元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 杭州 \" , date equal_to \" 下周一 \" , tamperature equal_to \" 最高温度 11 摄氏度,最低温度 -1 摄氏度 \" <endofactions> <history> USER: 好。那下周一杭州天气怎么样呀?气温多少度呀? <endofhistory>",
+    "output": "下周一杭州是晴天,最高温度 11 摄氏度,最低温度 -1 摄氏度,可以户外活动哟。",
+    "prediction": "下周一杭州的天气预报显示最高温度 11 摄氏度,最低温度 -1 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G1656 ,厦门北 - 杭州东 \" , departure_time equal_to \" 当天 14:10 \" , arrival_time equal_to \" 当天 19:40 \" <endofactions> <history> USER: 那还挺好。就是有点冷。那下周三下午的高铁有吗? <endofhistory>",
+    "output": "有啊,有 G1656 ,厦门北 - 杭州东。",
+    "prediction": "下周三下午有一趟高铁，是G1656次，从厦门北站14:10发车，当天19:40到达杭州东站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 当天 19:40 \" <endofactions> <history> USER: 这个车几点到杭州? <endofhistory>",
+    "output": "当天 19:40 到杭州呢。",
+    "prediction": "这趟车当天到达杭州的时间是19:40。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 杭州 \" , date equal_to \" 下周三 \" , weather_condition equal_to \" 多云 \" , tamperature equal_to \" 最高温度 14 摄氏度,最低温度 1 摄氏度 \" <endofactions> <history> USER: 好,下周三杭州什么天气,不知道能暖和点不? <endofhistory>",
+    "output": "下周三也是多云,下周的杭州温度相差不大呢,您可以考虑一下出行时间,哈。",
+    "prediction": "下周三杭州的天气预报是多云,最高温度 14 摄氏度,最低温度 1 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,太谢谢了,没有其它问题了,拜。 <endofhistory>",
+    "output": "别客气,祝您生活愉快!",
+    "prediction": "不客气,有任何问题随时欢迎咨询,祝您生活愉快,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G90 ,成都东 - 北京西 \" , ticket_price equal_to \" 778.5 元 \" <endofactions> <history> USER: 你好,下周我想去北京旅游,帮我看一下下周三下午有没有从成都到北京的高铁,我想要二等座。 <endofhistory>",
+    "output": "你好,建议您选乘 G90 ,成都东 - 北京西。",
+    "prediction": "您好,下周三下午您可以乘坐 G90 次高铁,从成都东站出发到北京西站,二等座的票价是 778.5 元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 当天 22:52 \" <endofactions> <history> USER: 好的,这列车什么时候到首都北京啊? <endofhistory>",
+    "output": "到达时刻有些晚,是当天 22:52 。",
+    "prediction": "这列车预计当天晚上22:52到达首都北京。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 当天 15:02 \" <endofactions> <history> USER: 是有点晚,那出发时间呢? <endofhistory>",
+    "output": "出发在下午,当天 15:02 。",
+    "prediction": "您好，有一趟高铁的出发时间是当天下午 15:02。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 778.5 元 \" <endofactions> <history> USER: 出发的时间还可以,那再帮我查一下票价吧,我再做决定。 <endofhistory>",
+    "output": "车票是 778.5 元。",
+    "prediction": "好的，到厦门的高铁票价是778.5元。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 8 摄氏度,最低温度 -5 摄氏度 \" <endofactions> <history> USER: 那下周三北京的温度怎么样?我想提前了解一下,看带多少衣服合适。 <endofhistory>",
+    "output": "下周三北京最高温度 8 摄氏度,最低温度 -5 摄氏度。",
+    "prediction": "下周三北京的天气预报显示最高温度 8 摄氏度,最低温度 -5 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" 晴转多云 \" <endofactions> <history> USER: 比我们这边冷很多,天气又如何呢? <endofhistory>",
+    "output": "天气是晴转多云。",
+    "prediction": "天气预报显示是晴转多云，请您根据天气变化适当增减衣物。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G90 ,成都东 - 北京西 \" , departure_time equal_to \" 当天 15:02 \" , arrival_time equal_to \" 当天 22:52 \" <endofactions> <history> USER: 好的,麻烦再帮我看看有没有下周六下午从成都到北京的高铁好吧! <endofhistory>",
+    "output": "还是推荐您乘坐 G90 ,成都东 - 北京西。",
+    "prediction": "您可以选择乘坐 G90 次高铁,从成都东站出发,当天 15:02 发车,当天 22:52 到达北京西站。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) confirm arrival_time equal_to \" 当天 22:52 \" <endofactions> <history> USER: 那它到北京的时间还是一样的么? <endofhistory>",
+    "output": "还是当天 22:52 到北京。",
+    "prediction": "是的,到北京的时间还是当天的22:52。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) confirm departure_time equal_to \" 当天 15:02 \" <endofactions> <history> USER: 那我再确认一下出发时间也没变吧? <endofhistory>",
+    "output": "对,出发时间还是当天 15:02 。",
+    "prediction": "是的,出发时间是当天 15:02 。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 北京 \" , date equal_to \" 下周六 \" , weather_condition equal_to \" 晴 \" , wind equal_to \" 北风 3 级 \" , tamperature equal_to \" 最高温度 9 摄氏度,最低温度 -3 摄氏度 \" <endofactions> <history> USER: 那最后再帮我看看下周六北京的天气吧! <endofhistory>",
+    "output": "下周六北京是晴天。",
+    "prediction": "下周六北京的天气预报是晴,风向是北风,风力 3 级,最高温度 9 摄氏度,最低温度 -3 摄氏度。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: 好,没有别的问题了,谢谢你这么耐心的回复,再见。 <endofhistory>",
+    "output": "信息对你有用才是最重要的。别那么客气,再见。",
+    "prediction": "不客气,有任何问题随时欢迎咨询。祝您生活愉快,再见!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform city equal_to \" 南京 \" , date equal_to \" 下周一 \" , weather_condition equal_to \" 晴 \" , tamperature equal_to \" 最高温度 9 摄氏度,最低温度 -2 摄氏度 \" , wind equal_to \" 西北风 4-5 级 \" , UV_intensity equal_to \" 强 \" <endofactions> <history> USER: 公司让我下周去南京出差,能帮我看一下那边的天气情况吗? <endofhistory>",
+    "output": "您要查询下周几的天气状况呀?",
+    "prediction": "您好,下周一南京的天气预报是晴,最高温度 9 摄氏度,最低温度 -2 摄氏度,风力是西北风 4-5 级,紫外线强度强。请注意适时增减衣物并做好防晒措施。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform date equal_to \" 下周日 \" , weather_condition equal_to \" 多云 \" , tamperature equal_to \" 最高温度 18 摄氏度,最低温度 7 摄氏度 \" , wind equal_to \" 东南风 2 级 \" , UV_intensity equal_to \" 中等 \" <endofactions> <history> USER: 下周日的天气情况。 <endofhistory>",
+    "output": "下周日南京是多云哦。",
+    "prediction": "下周日的天气预报显示，那天将是多云天气，最高温度 18 摄氏度，最低温度 7 摄氏度。风力是东南风 2 级，紫外线强度为中等。"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" 最高温度 18 摄氏度,最低温度 7 摄氏度 \" <endofactions> <history> USER: 那温度怎么样呢?会冷吗? <endofhistory>",
+    "output": "最高温度 18 摄氏度,最低温度 7 摄氏度,温度适宜呢,不错呢。",
+    "prediction": "下周日厦门的天气预报显示最高温度 18 摄氏度,最低温度 7 摄氏度,早晚可能会有些凉,建议穿着保暖一些。"
+  }
+]

@@ -1,0 +1,23 @@
+{{system_start}}Similar to the examples below, normalize the given belief state so that values for the following slots contain only among the following. Do not change the belief state if not necessary.
+{{header}}
+{{system_end}}
+
+{{user_start}}( movie ) production_country_or_area equal_to " कोरिया " , star equal_to " Cha Tae-hyun "{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " Korean " , star equal_to " Cha Tae-hyun "{{assistant_end}}
+
+{{user_start}}( tv ) production_country_or_area equal_to " America " , type equal_to " Sci-fi शो "{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " America " , type equal_to " Sci-fi shows "{{assistant_end}}
+
+{{user_start}}( restaurant ) cuisine equal_to " दक्षिण कोरियाई " , pricerange equal_to " मध्यम "{{user_end}}
+{{assistant_start}}( restaurant ) cuisine equal_to " South Korean " , pricerange equal_to " moderately priced "{{assistant_end}}
+
+{{user_start}}( flight ) class_cabin equal_to " इकोनॉमी क्लास " , date equal_to " अगले बुधवार को " , departure equal_to " Shanghai " , destination equal_to " Chengdu "{{user_end}}
+{{assistant_start}}( flight ) class_cabin equal_to " economy class " , date equal_to " next Wednesday " , departure equal_to " Shanghai " , destination equal_to " Chengdu "{{assistant_end}}
+
+{{user_start}}( hotel ) area equal_to " Changshu " , name equal_to " Vienna Hotel " , room_type equal_to " standard कमरे हैं " , star equal_to " 3 "{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " Changshu " , name equal_to " Vienna Hotel " , room_type equal_to " standard rooms " , star equal_to " 3 "{{assistant_end}}
+
+{{user_start}}( pc ) memory_capacity equal_to " 16 जीबी " , pricerange equal_to " 5,000 to 10,000 yuan " , usage equal_to " gaming laptop"{{user_end}}
+{{assistant_start}}( pc ) memory_capacity equal_to " 16GB " , pricerange equal_to " 5,000-10,000 " , usage equal_to " gaming laptop "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

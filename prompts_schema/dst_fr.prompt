@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, retrieve all the relevant domains from the following choices: movie, tv, attraction, retaurant, car, hotel, hospital, weather, flight, pc, train, class.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, pouvez-vous me recommander des séries télé japonaises fascinantes ? <endofhistory>{{user_end}}
+{{assistant_start}}tv{{assistant_end}}
+
+{{user_start}}DST: <state> ( tv ) decade equal_to " années 2010 " , production_country_or_area equal_to " Japon " , type equal_to " polar " <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform Douban_score equal_to " 9,1 " AGENT_ACTS: ( tv ) inform director equal_to " Nobuhiro Doi " USER: Merci, pourriez-vous me recommander un film indien ? <endofhistory>{{user_end}}
+{{assistant_start}}movie, tv{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " Indien " , ( tv ) decade equal_to " années 2010 " , production_country_or_area equal_to " Japon " , type equal_to " polar " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8,0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 minutes " USER: Ok, merci pour votre patience, au revoir, <endofhistory>{{user_end}}
+{{assistant_start}}movie, tv{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, mes amis viennent me rendre visite. Y a-t-il des sites touristiques près du district de Gusu qui ne sont pas trop chers ? <endofhistory>{{user_end}}
+{{assistant_start}}attraction{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) consumption equal_to " pas trop chers " , name equal_to " Le jardin de l'humble administrateur " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to " No. 178, Dongbei Street, Gusu District, Suzhou City. " AGENT_ACTS: ( attraction ) inform score equal_to " 4,5 " USER: Ok, nous allons peut-être passer toute la journée ensemble, pouvez-vous nous recommander des restaurants un peu chers près d'ici ? <endofhistory>{{user_end}}
+{{assistant_start}}attraction, restaurant{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, je souhaite acheter un SUV à essence, pouvez-vous m'en recommander un à moins de 150 000 yuans ? <endofhistory>{{user_end}}
+{{assistant_start}}car{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " Parc industriel de Suzhou " , name equal_to " fondue chinoise Haidilao " , pricerange equal_to " un peu cher " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform phone_number equal_to " 0512-67603337 " AGENT_ACTS: ( restaurant ) inform business_hours equal_to " du lundi au dimanche, de 09 h 00 à 07 h 00 " USER: Wow, c'est ouvert toute la nuit, alors on peut rester un peu plus longtemps. Pourriez-vous trouver un hôtel pas trop cher avec des chambres standard ? <endofhistory>{{user_end}}
+{{assistant_start}}hotel, restaurant{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, mon enfant ne se sent pas bien et je veux l'emmener dans un service pédiatrique. Quel hôpital général possède un bon service pédiatrique ? <endofhistory>{{user_end}}
+{{assistant_start}}hospital{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Je viendrai à Xiamen la semaine prochaine pour le travail mais je ne sais toujours pas quel jour je partirai, cela dépend de la météo. Pourriez-vous m'aider à vérifier la force et la direction du vent pour dimanche prochain ? <endofhistory>{{user_end}}
+{{assistant_start}}weather{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, je pars en voyage d'affaires la semaine prochaine. Veuillez m'aider à vérifier les vols de Hangzhou à Shenzhen vendredi prochain, de préférence en classe économique. <endofhistory>{{user_end}}
+{{assistant_start}}flight{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, je souhaite acheter un ordinateur portable léger de 14 pouces de marque Lenovo, de préférence avec une capacité de mémoire de 8 Go. <endofhistory>{{user_end}}
+{{assistant_start}}pc{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Je pars en voyage d'affaires la semaine prochaine. Pouvez-vous m'aider à vérifier s'il y a des trains à grande vitesse pour Xiamen la semaine prochaine ? <endofhistory>{{user_end}}
+{{assistant_start}}train{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, mon enfant est en sixième année. Pourriez-vous me recommander un cours de soutien scolaire ? <endofhistory>{{user_end}}
+{{assistant_start}}class{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

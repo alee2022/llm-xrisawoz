@@ -1,0 +1,1502 @@
+[
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform Douban_score equal_to \" 7.3 \" <endofactions> <history> USER: Well, that seems like a good choice, but can you tell me its Douban rating? <endofhistory>",
+    "output": "Its Douban rating is 7.3.",
+    "prediction": "Sure, the Douban rating for this show is 7.3."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform CPU_model equal_to \" i5-8250U \" <endofactions> <history> USER: What's the CPU type of the desktop? <endofhistory>",
+    "output": "The CPU type is Intel Core i5-8250U.",
+    "prediction": "The CPU model of the desktop is i5-8250U."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) request pricerange , request star <endofactions> <history> USER: Hi, I'm just about to plan a trip to Suzhou. Could you help me find a hotel? I'd like a king-size room at a resort hotel. <endofhistory>",
+    "output": "There are plenty of choices and they all have king-size rooms. Do you have any requirements on the star rating or the price?",
+    "prediction": "Sure, I can help with that. Could you please tell me your budget for the hotel room? And do you have a preference for the star rating of the hotel?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_type equal_to \" standard room \" <endofactions> <history> USER: I forgot to tell you, I'd prefer it if the hotel has standard rooms. <endofhistory>",
+    "output": "It does. This hotel has everything you need.",
+    "prediction": "Yes, the hotel does have standard rooms available."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) inform price equal_to \" 1,600 \" <endofactions> <history> USER: How much is the tuition fee? <endofhistory>",
+    "output": "It is 1,600 yuan.",
+    "prediction": "The tuition fee is 1,600."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thank you very much! <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! If you have any other questions in the future, don't hesitate to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" There will be a breeze without continuous direction. \" <endofactions> <history> USER: Will it be windy in Guangzhou next Sunday? We're planning to spend a lot of time outside the first day. <endofhistory>",
+    "output": "There will be a breeze without continuous direction.",
+    "prediction": "There will be a breeze without a continuous direction in Guangzhou next Sunday."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" all day \" <endofactions> <history> USER: Could you also tell me its opening hours? <endofhistory>",
+    "output": "This place is open all day.",
+    "prediction": "Sure, it is open all day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_charge equal_to \" 340 yuan \" <endofactions> <history> USER: How much is a standard room? <endofhistory>",
+    "output": "A standard room is 340 yuan.",
+    "prediction": "The standard room is 340 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform dishes equal_to \" the stone pot rice \" <endofactions> <history> USER: Are there any good dishes? <endofhistory>",
+    "output": "The stone pot rice is really tasty.",
+    "prediction": "Yes, the stone pot rice is a popular dish at the restaurant."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) recommend name equal_to \" Lamando 230TSI DSG Fashion Edition \" <endofactions> <history> USER: Hi, I'd like to buy a gas-powered notchback and my budget is between 150,000 and 200,000 yuan. Can you recommend a suitable model? <endofhistory>",
+    "output": "I recommend you to buy Lamando 230TSI DSG Fashion Edition.",
+    "prediction": "Sure, I recommend the Lamando 230TSI DSG Fashion Edition. It fits your budget and requirements."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thank you for your help, bye. <endofhistory>",
+    "output": "Goodbye.",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) request pricerange <endofactions> <history> USER: Fantastic, that's great. I also want to look for a restaurant nearby, help me find one. <endofhistory>",
+    "output": "Sure, in what price range?",
+    "prediction": "Sure, what is your budget for the restaurant?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.4 \" , inform ticket_price equal_to \" 45 yuan \" <endofactions> <history> USER: Do you know its rating? How much are the tickets? <endofhistory>",
+    "output": "The tickets are 45 yuan and its rating is 4.4. If you are interested you should go and check it out.",
+    "prediction": "The rating is 4.4 out of 5. The ticket price is 45 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" can't get there directly by subway \" <endofactions> <history> USER: Sounds great, can we get there directly by subway? <endofhistory>",
+    "output": "I'm sorry, no, you can't get there directly by subway.",
+    "prediction": "I'm sorry, but you can't get there directly by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 7 degrees Celsius \" <endofactions> <history> USER: How about the temperature? <endofhistory>",
+    "output": "The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+    "prediction": "The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 7 degrees Celsius."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" <endofactions> <history> USER: What's the exact address? <endofhistory>",
+    "output": "The address is No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City.",
+    "prediction": "The exact address is No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) request type <endofactions> <history> USER: Hello, I like watching TV shows and movies. Do you know any popular American TV shows from the 2000s that you would like to recommend? <endofhistory>",
+    "output": "Yes, there are quite a lot of popular American TV shows, what kind do you prefer?",
+    "prediction": "Sure, I can help with that. But first, could you please tell me what type of TV shows you prefer? Comedy, drama, reality, or something else?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-85883698 \" <endofactions> <history> USER: What's the phone number of the hotel? <endofhistory>",
+    "output": "The phone number is 0512-85883698.",
+    "prediction": "The phone number of the hotel is 0512-85883698."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" HP Zhan 66 pro G1 MT \" <endofactions> <history> USER: I'd like to compare it with one from the HP Zhan series in the same price range. Can you recommend me another one? <endofhistory>",
+    "output": "Then you can have a look at HP Zhan 66 pro G1 MT, which may suit you.",
+    "prediction": "Sure, you can consider the \"HP Zhan 66 pro G1 MT\". It's in the same price range as the HP Zhan series."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 98.32% \" <endofactions> <history> USER: Is there a risk it might be delayed? <endofhistory>",
+    "output": "The punctuality rate of this flight is 98.32%, which is pretty high.",
+    "prediction": "The punctuality rate of this flight is 98.32%, so the chances of a delay are quite low."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 91.29% \" <endofactions> <history> USER: How's the punctuality rate of this flight? <endofhistory>",
+    "output": "It has a punctuality rate of 91.29%, make of it what you will.",
+    "prediction": "The punctuality rate of this flight is 91.29%."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform episode_length equal_to \" 90 minutes \" <endofactions> <history> USER: How long is each episode? <endofhistory>",
+    "output": "One episode is 90 minutes.",
+    "prediction": "Each episode is 90 minutes long."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform episode_length equal_to \" 45 minutes \" <endofactions> <history> USER: How long does each episode last? <endofhistory>",
+    "output": "Each episode is only 45 minutes.",
+    "prediction": "Each episode lasts for 45 minutes."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 18:37 that day \" , inform departure_time equal_to \" 10:16 that day \" <endofactions> <history> USER: Can you tell me the specific departure and arrival times? Because I want to arrange a cab. <endofhistory>",
+    "output": "The train will leave from Xiamenbei at 10:16 that day and arrive at Shanghai Hongqiao at 18:37 that day.",
+    "prediction": "Sure, the train departs at 10:16 that day and is expected to arrive at 18:37 the same day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" No. 6 Yinzibang, Zhouzhang Town, Kunshan \" , recommend name equal_to \" Yinjiangnan Xujia Hostel \" <endofactions> <history> USER: All right, I'm also looking for a resort hotel with king-size rooms. Are there any cheaper options here in Suzhou? <endofhistory>",
+    "output": "Sure, I recommend Yinjiangnan Xujia Hostel at No. 6 Yinzibang, Zhouzhang Town, Kunshan.",
+    "prediction": "Sure, I recommend the Yinjiangnan Xujia Hostel. It's located at No. 6 Yinzibang, Zhouzhang Town, Kunshan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform dishes equal_to \" meat and egg yolk dumpling \" <endofactions> <history> USER: Hello! I've heard that Suzhou's Wufangzhai is absolutely delicious. Do you know what its recommended dish is? <endofhistory>",
+    "output": "Its recommended dish is meat and egg yolk dumpling, it's really delicious.",
+    "prediction": "Yes, Wufangzhai is well-known for its \"meat and egg yolk dumpling\". It's a must-try dish!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: And what's its rating? <endofhistory>",
+    "output": "Its rating is 4.5.",
+    "prediction": "It has a rating of 4.5."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" No. 72, Taijian Lane (near Xuanmiao Temple) \" <endofactions> <history> USER: And what's the address? <endofhistory>",
+    "output": "The restaurant is at No. 72, Taijian Lane (near Xuanmiao Temple).",
+    "prediction": "The address is No. 72, Taijian Lane, near Xuanmiao Temple."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-65113180 \" , inform score equal_to \" 4.2 \" <endofactions> <history> USER: What's the university's phone number? How's its rating? <endofhistory>",
+    "output": "I've helped you check and its rating is 4.2. The phone number is 0512-65113180.",
+    "prediction": "The phone number for the university is 0512-65113180. It has a rating of 4.2."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) general <endofactions> <history> USER: Okay. I'll think about it. Thank you! Goodbye! <endofhistory>",
+    "output": "You're welcome! Hope the class leads to great results!",
+    "prediction": "You're welcome! Don't hesitate to ask if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 98.32% \" <endofactions> <history> USER: What's the punctuality rate of this flight? <endofhistory>",
+    "output": "The punctuality rate is about 98.32%, quite high.",
+    "prediction": "The punctuality rate of this flight is 98.32%."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" City Comfort Inn \" <endofactions> <history> USER: I would also like to ask if you could recommend any cheap hotels nearby. <endofhistory>",
+    "output": "I recommend you to stay at City Comfort Inn.",
+    "prediction": "Sure, I recommend the City Comfort Inn. It's a budget-friendly option nearby."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 910 yuan \" <endofactions> <history> USER: How much is the ticket? <endofhistory>",
+    "output": "An economy class ticket is 910 yuan.",
+    "prediction": "The ticket price is 910 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: OK, thank you very much. I've got what I came for, goodbye. <endofhistory>",
+    "output": "You're welcome, bye.",
+    "prediction": "You're welcome! Don't hesitate to return if you have more questions. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Bye-bye! <endofhistory>",
+    "output": "Bye-bye.",
+    "prediction": "Goodbye! Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) general <endofactions> <history> USER: Okay. I'll think about it. Thank you! Goodbye! <endofhistory>",
+    "output": "You're welcome! Hope the class leads to great results!",
+    "prediction": "You're welcome! Don't hesitate to ask if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) recommend title equal_to \" Saw \" <endofactions> <history> USER: Let's say the 2000s. <endofhistory>",
+    "output": "Then you can watch Saw, it will definitely terrify you.",
+    "prediction": "Sure, how about the movie \"Saw\"? It's a thrilling horror film from the 2000s."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" Warmly Hotel \" <endofactions> <history> USER: Okay. We also need to find a 3-star hotel in Suzhou New District. We'll need a standard room, are there any suitable options? <endofhistory>",
+    "output": "You could stay at Warmly Hotel, it's quite good.",
+    "prediction": "Sure, I recommend the Warmly Hotel. It's a 3-star hotel in Suzhou New District and should have standard rooms available."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: All right, got it. Thank you. I'll go and pack my bag. Goodbye! <endofhistory>",
+    "output": "You're welcome. Have a good trip, goodbye.",
+    "prediction": "You're welcome! Have a great trip. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: Sounds great. Thank you for your recommendation. <endofhistory>",
+    "output": "You're welcome, any other questions?",
+    "prediction": "You're welcome! If you have any other questions, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 02:25 pm that day \" <endofactions> <history> USER: It's pretty reliable then. What time does it take off? <endofhistory>",
+    "output": "It takes off at 02:25 pm that day.",
+    "prediction": "The flight departs at 02:25 pm that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Awesome. Thank you. I'll book the ticket later, bye. <endofhistory>",
+    "output": "You're welcome, bye.",
+    "prediction": "You're welcome! If you have any other questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: Thank you. I'm going to get ready to go, goodbye. <endofhistory>",
+    "output": "Goodbye, have a nice trip.",
+    "prediction": "You're welcome! Have a great time. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" The wetland park integrates tourism, entertainment, leisure, and education all in one. You could say it's a paradise on earth. \" <endofactions> <history> USER: Is there anything special to see there? <endofhistory>",
+    "output": "The wetland park integrates tourism, entertainment, leisure, and education all in one. You could say it's a paradise on earth.",
+    "prediction": "The wetland park integrates tourism, entertainment, leisure, and education all in one. You could say it's a paradise on earth."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform features equal_to \" PCIe SSD, and double hard drives \" <endofactions> <history> USER: What are its special features? <endofhistory>",
+    "output": "PCIe SSD, and double hard drives.",
+    "prediction": "The special features of this PC include a PCIe SSD, and double hard drives."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform director equal_to \" Wen Muye \" , inform release_date equal_to \" July 5, 2018 \" <endofactions> <history> USER: Who is the director of the movie? When did it premiere? <endofhistory>",
+    "output": "The director is Wen Muye, a young director. It was released in Chinese mainland on July 5, 2018.",
+    "prediction": "The movie was directed by Wen Muye and it premiered on July 5, 2018."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" MU2882 of China Eastern Airlines from Terminal 1 of Pudong International Airport to Terminal 2 of Lukou International Airport \" <endofactions> <history> USER: That's OK, should be fine. Please recommend a flight with business class seats from Shanghai to Nanjing next Saturday. <endofhistory>",
+    "output": "Sure. I recommend MU2882 of China Eastern Airlines from Terminal 1 of Pudong International Airport to Terminal 2 of Lukou International Airport.",
+    "prediction": "Sure, I recommend flight MU2882 of China Eastern Airlines. It departs from Terminal 1 of Pudong International Airport and arrives at Terminal 2 of Lukou International Airport."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) inform end_time equal_to \" 10:00 \" , inform times equal_to \" 10 \" <endofactions> <history> USER: The price is acceptable. What time does the class dismiss? How many sessions are there? <endofhistory>",
+    "output": "The class dismisses at 10:00. There are 10 sessions, which is a reasonable arrangement.",
+    "prediction": "The class ends at 10:00 and there are a total of 10 sessions."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) recommend title equal_to \" Lives of Omission \" <endofactions> <history> USER: Of course, what do you have? <endofhistory>",
+    "output": "I recommend Lives of Omission.",
+    "prediction": "I recommend the show \"Lives of Omission\". It's a great watch!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 7:55 am \" <endofactions> <history> USER: I know the arrival time, but what's the departure time? <endofhistory>",
+    "output": "It leaves at 7:55 am.",
+    "prediction": "The departure time is 7:55 am."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform Douban_score equal_to \" 7.2 \" <endofactions> <history> USER: Right, what's its Douban rating? <endofhistory>",
+    "output": "Its Douban rating is 7.2.",
+    "prediction": "The movie has a Douban score of 7.2."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: All right, got it. That's all I wanted to ask. Thanks! Goodbye <endofhistory>",
+    "output": "My pleasure, goodbye!",
+    "prediction": "You're welcome! Don't hesitate to return if you have more questions. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 18:40 that day \" <endofactions> <history> USER: All right. What time will the train leave from Nanjing? <endofhistory>",
+    "output": "It leaves in the evening at 18:40 that day.",
+    "prediction": "The train will depart from Nanjing at 18:40 that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform CPU_model equal_to \" i7-9750H \" <endofactions> <history> USER: Can you check the CPU model? <endofhistory>",
+    "output": "It's Intel Core i7-9750H.",
+    "prediction": "The CPU model is i7-9750H."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Got it. Thanks, bye. <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" You can enjoy the beautiful scenery of mountains and Jiangnan gardens, learn more about the Spring and Autumn Period and visit the leaning Huqiu Pagoda. \" <endofactions> <history> USER: Is there anything special to see there? <endofhistory>",
+    "output": "You can enjoy the beautiful scenery of mountains and Jiangnan gardens, learn more about the Spring and Autumn Period and visit the leaning Huqiu Pagoda.",
+    "prediction": "Yes, there are several special features. You can enjoy the beautiful scenery of mountains and Jiangnan gardens, learn more about the Spring and Autumn Period, and visit the leaning Huqiu Pagoda."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform phone_number equal_to \" 0512-62568777 \" <endofactions> <history> USER: That's awesome. Do you have the restaurant's phone number? <endofhistory>",
+    "output": "The phone number is 0512-62568777.",
+    "prediction": "Yes, the phone number of the restaurant is 0512-62568777."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: Okay, thank you. <endofhistory>",
+    "output": "My pleasure.",
+    "prediction": "You're welcome! If you have any other questions, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform standby_time equal_to \" 5 to 7 hours \" <endofactions> <history> USER: What's its standby time? <endofhistory>",
+    "output": "The standby time of this laptop is 5 to 7 hours.",
+    "prediction": "The standby time is 5 to 7 hours."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform CT equal_to \" Yes \" , inform key_departments equal_to \" neurosurgery department \" <endofactions> <history> USER: Well, does the hospital provide CT scans? <endofhistory>",
+    "output": "Yes, it is a general hospital with comprehensive equipment and its neurosurgery department is good.",
+    "prediction": "Yes, the hospital does provide CT scans. They are typically conducted in the neurosurgery department."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 4:50 pm that day \" <endofactions> <history> USER: What time will the flight arrive in Guangzhou? <endofhistory>",
+    "output": "It will arrive at 4:50 pm that day.",
+    "prediction": "The flight will arrive in Guangzhou at 4:50 pm that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Bye-bye. <endofhistory>",
+    "output": "Bye.",
+    "prediction": "Goodbye! Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) recommend name equal_to \" The First Affiliated Hospital of Soochow University \" <endofactions> <history> USER: Hello, can you help me find a general hospital with a psychological department? A member of my family has not felt well the past few days. <endofhistory>",
+    "output": "Yes, you can go to The First Affiliated Hospital of Soochow University. They have top doctors in the psychological department.",
+    "prediction": "I'm sorry to hear that. I recommend The First Affiliated Hospital of Soochow University. They have a comprehensive range of departments including a psychological one."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" A502, 5F of Xicheng Yongjie Building, No. 19, Guangji South Road \" <endofactions> <history> USER: What;s there restaurant's exact location? <endofhistory>",
+    "output": "A502, 5F of Xicheng Yongjie Building, No. 19, Guangji South Road.",
+    "prediction": "The restaurant is located at A502, 5F of Xicheng Yongjie Building, No. 19, Guangji South Road."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" CA1729 of Air China, from Terminal 1 of Xiaoshan International Airport to Terminal 1 of Baiyun International Airport \" <endofactions> <history> USER: That's great then. Please help me recommend a flight from Hangzhou to Guangzhou. I'd like to fly economy class. <endofhistory>",
+    "output": "OK. I recommend you to take CA1729 of Air China, from Terminal 1 of Xiaoshan International Airport to Terminal 1 of Baiyun International Airport.",
+    "prediction": "Sure, I recommend flight CA1729 of Air China. It departs from Terminal 1 of Xiaoshan International Airport and arrives at Terminal 1 of Baiyun International Airport."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform heated_seats equal_to \" does not have \" <endofactions> <history> USER: What about seat heating? <endofhistory>",
+    "output": "It does not have this function at present.",
+    "prediction": "I'm sorry, but this car does not have heated seats."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" Lenovo Tianyi 510Pro \" <endofactions> <history> USER: Hello! I've thought about a batch of desktop computers recently, but I don't know what brand. Can you recommend some? <endofhistory>",
+    "output": "Yes, I think you can take a look at Lenovo Tianyi 510Pro.",
+    "prediction": "Sure, I recommend the Lenovo Tianyi 510Pro. It's a great desktop computer."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Okay, thank you for your help, bye! <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have more questions. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform price equal_to \" 5,989.0 \" <endofactions> <history> USER: Ok, I'm happy with it so far, how much is it? <endofhistory>",
+    "output": "The price is 5,989.0 yuan.",
+    "prediction": "The price is 5,989.0."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" free \" <endofactions> <history> USER: Does it have a parking lot? Do you need to pay for parking? <endofhistory>",
+    "output": "The parking lot is free of charge.",
+    "prediction": "Yes, it does have a parking lot and the parking is free."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" L'Arôme \" <endofactions> <history> USER: It doesn't really matter, but I would like if we could go to the restaurant directly by subway. <endofhistory>",
+    "output": "All right, I would recommend L'Arôme. I have heard good things about this restaurant.",
+    "prediction": "Sure, I recommend you try \"L'Arôme\". It's a great restaurant."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform business_hours equal_to \" 10:30 to 21:00, Monday to Sunday \" , inform score equal_to \" 4.7 \" <endofactions> <history> USER: Great, then I guess its rating is high, is it? What are the opening hours? <endofhistory>",
+    "output": "Yes, its rating is high, 4.7. The opening hours are 10:30 to 21:00, Monday to Sunday.",
+    "prediction": "Yes, the restaurant has a high rating of 4.7. It is open from 10:30 to 21:00, Monday to Sunday."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" The Humble Administrator's Garden \" <endofactions> <history> USER: Hi, my friend is coming to Suzhou to visit me. Could you recommend a fun place in Gusu District in the mid-price range? <endofhistory>",
+    "output": "I recommend you go to the Humble Administrator's Garden.",
+    "prediction": "Sure, I recommend visiting The Humble Administrator's Garden. It's a beautiful place in Gusu District."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) request type <endofactions> <history> USER: Hello, can you recommend any popular Japanese TV shows from the 2010s? <endofhistory>",
+    "output": "What genre do you like?",
+    "prediction": "Sure, what type of TV shows are you interested in? Drama, comedy, reality, or something else?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou \" <endofactions> <history> USER: What's the hotel's address? <endofhistory>",
+    "output": "The address is No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou.",
+    "prediction": "The hotel's address is No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" 3U8548 of Sichuan Airlines \" <endofactions> <history> USER: Economy class. <endofhistory>",
+    "output": "I recommend you to take 3U8548 of Sichuan Airlines.",
+    "prediction": "I recommend you to take the 3U8548 flight of Sichuan Airlines."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 7:30 am to 6:50 pm \" <endofactions> <history> USER: Okay. And what are the opening hours? <endofhistory>",
+    "output": "Its opening hours are 7:30 am to 6:50 pm.",
+    "prediction": "The opening hours are from 7:30 am to 6:50 pm."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Got it. Thank you! Goodbye! <endofhistory>",
+    "output": "Great. You're welcome, bye.",
+    "prediction": "You're welcome! Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" no direct subway \" , inform ticket_price equal_to \" 198 yuan \" <endofactions> <history> USER: How much do they charge? Can we get there directly by subway? <endofhistory>",
+    "output": "The tickets are 198 yuan, but there is no direct subway there.",
+    "prediction": "The ticket price is 198 yuan. Unfortunately, there is no direct subway to get there."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" HP Star 14 Youth \" , recommend series equal_to \" HP Star Series \" <endofactions> <history> USER: Has HP released any new laptops lately? If it has, please recommend a lightweight laptop. <endofhistory>",
+    "output": "HP Star 14 Youth from the HP Star Series is a really great deal.",
+    "prediction": "Yes, HP has released a new lightweight laptop called \"HP Star 14 Youth\" which is part of the \"HP Star Series\"."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: All right. I'll think about it and discuss it with my friends. Thank you, bye. <endofhistory>",
+    "output": "You're welcome, bye.",
+    "prediction": "You're welcome! Don't hesitate to return if you have more questions. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" Spicy Memory \" <endofactions> <history> USER: Hello, I want to go to a mid-priced restaurant in Suzhou New District. It would be best if I could get there directly by subway, please recommend me one. <endofhistory>",
+    "output": "I recommend Spicy Memory.",
+    "prediction": "Sure, I recommend you try \"Spicy Memory\". It's a great restaurant in Suzhou New District."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" Lenovo Tianyi 510Pro \" <endofactions> <history> USER: Hello! I want to buy a business computer, do you know which one to choose? <endofhistory>",
+    "output": "Lenovo Tianyi 510Pro is pretty good.",
+    "prediction": "Sure, I recommend the Lenovo Tianyi 510Pro. It's a great choice for business use."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" No. 178, Dongbei Street, Gusu District, Suzhou City \" <endofactions> <history> USER: It sure has a well-known reputation. What's the exact address? <endofhistory>",
+    "output": "No. 178, Dongbei Street, Gusu District, Suzhou City.",
+    "prediction": "The exact address is No. 178, Dongbei Street, Gusu District, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform ventilated_seats equal_to \" is \" <endofactions> <history> USER: Does it have ventilated seats? <endofhistory>",
+    "output": "This car does have seat ventilation.",
+    "prediction": "Yes, it does have ventilated seats."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: Well, thank you for your patience. I've got all I came for. <endofhistory>",
+    "output": "You're welcome. Come back if there's anything more you need.",
+    "prediction": "You're welcome! If you have any other questions in the future, don't hesitate to ask. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform film_length equal_to \" 112 minutes \" <endofactions> <history> USER: How long will it take me to watch this movie? <endofhistory>",
+    "output": "It takes 112 minutes.",
+    "prediction": "The movie is 112 minutes long."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou \" <endofactions> <history> USER: What's the address of the hotel? <endofhistory>",
+    "output": "The address is No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou.",
+    "prediction": "The hotel is located at No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: No, that's all. I'll let you get back to your business, bye. <endofhistory>",
+    "output": "Goodbye, enjoy your meal!",
+    "prediction": "Goodbye! Feel free to reach out if you have more questions."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thanks, goodbye! <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" There will be a breeze without continuous direction. \" <endofactions> <history> USER: Please help me check whether it will be windy in Guangzhou next Sunday. <endofhistory>",
+    "output": "There will be a breeze without continuous direction.",
+    "prediction": "There will be a breeze in Guangzhou next Sunday, but it won't have a continuous direction."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" It's famous for Stone Lake's wonderful scenery and the endless rows of mountains and ridges. It's a great place to appreciate the mountain and water culture of Suzhou. \" <endofactions> <history> USER: What's there to see there? <endofhistory>",
+    "output": "Its name pretty much says it all. It's famous for Stone Lake's wonderful scenery and the endless rows of mountains and ridges. It's a great place to appreciate the mountain and water culture of Suzhou.",
+    "prediction": "It's famous for Stone Lake's wonderful scenery and the endless rows of mountains and ridges. It's a great place to appreciate the mountain and water culture of Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" Lenovo Tianyi 510Pro \" <endofactions> <history> USER: Hello! I've wanted to buy a new computer recently, preferably a desktop. Can you help me to recommend a good model? <endofhistory>",
+    "output": "You can have a look at Lenovo Tianyi 510Pro.",
+    "prediction": "Sure, I recommend the Lenovo Tianyi 510Pro. It's a great desktop model."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) request star <endofactions> <history> USER: I've been looking for a good Hong Kong TV show recently. Can you help me find one? <endofhistory>",
+    "output": "Sure, do you have a favorite actor?",
+    "prediction": "Sure, do you have any favorite actors or actresses?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" Sunny \" <endofactions> <history> USER: I also want to know what the weather in Beijing will be like next Saturday. <endofhistory>",
+    "output": "It will be sunny in Beijing next Saturday.",
+    "prediction": "The weather in Beijing next Saturday will be sunny."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform Douban_score equal_to \" 9.5 \" , inform name_list equal_to \" Alyssa Chia, James Wen, Wu Kang-Ren, and Tracy Chou \" <endofactions> <history> USER: What's its Douban rating? How about the main actors? <endofhistory>",
+    "output": "Its Douban rating is as high as 9.5 and it stars Alyssa Chia, James Wen, Wu Kang-Ren, and Tracy Chou.",
+    "prediction": "The Douban rating of the show is 9.5. The main actors are Alyssa Chia, James Wen, Wu Kang-Ren, and Tracy Chou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform price equal_to \" 336,900 \" <endofactions> <history> USER: How much does this model cost? <endofhistory>",
+    "output": "This model costs 336,900 yuan.",
+    "prediction": "This model costs 336,900."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform CT equal_to \" have \" <endofactions> <history> USER: Well, how about CT scan services? <endofhistory>",
+    "output": "Fortunately, this hospital does have CT scan services.",
+    "prediction": "Yes, the hospital does have CT scan services."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) recommend name equal_to \" Teramont 330TSI Comfort Edition with two-wheel drive \" <endofactions> <history> USER: I'm willing to spend more than 300,000 yuan. <endofhistory>",
+    "output": "I recommend Teramont 330TSI Comfort Edition with two-wheel drive.",
+    "prediction": "Based on your budget, I recommend the Teramont 330TSI Comfort Edition with two-wheel drive."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform Douban_score equal_to \" 7.6 \" <endofactions> <history> USER: What's its Douban rating? <endofhistory>",
+    "output": "Its Douban rating is 7.6.",
+    "prediction": "The movie has a Douban score of 7.6."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform cruise_control_system equal_to \" available \" , inform ventilated_seats equal_to \" no \" <endofactions> <history> USER: Does this car have seat ventilation and cruise control? <endofhistory>",
+    "output": "Cruise control is available, but unfortunately, it is not equipped with seat ventilation.",
+    "prediction": "This car does have a cruise control system, but it does not have ventilated seats."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) inform area equal_to \" Suzhou New District \" , inform class_number equal_to \" PM5J44004A \" <endofactions> <history> USER: We live between Gusu District and Suzhou New District, so any place in either of the two areas is OK. Both are close to where we live. <endofhistory>",
+    "output": "I recommend you PM5J44004A, which is taught in Suzhou New District.",
+    "prediction": "Alright, I found a class in Suzhou New District. The class number is PM5J44004A."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) recommend name equal_to \" Suzhou Integrated Traditional Chinese And Western Medicine Hospital \" <endofactions> <history> USER: I'd prefer a public hospital. <endofhistory>",
+    "output": "Suzhou Integrated Traditional Chinese And Western Medicine Hospital meets the above criteria.",
+    "prediction": "Sure, I recommend the Suzhou Integrated Traditional Chinese And Western Medicine Hospital. It's a public hospital."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request class_cabin <endofactions> <history> USER: Please check the flights for next Saturday. <endofhistory>",
+    "output": "Which class do you prefer to travel in?",
+    "prediction": "Sure, I can help with that. What class would you like to fly in?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou \" <endofactions> <history> USER: What's the address of the hotel? <endofhistory>",
+    "output": "The address is No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou.",
+    "prediction": "The hotel is located at No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) request star <endofactions> <history> USER: Hi, I'm preparing a trip to Suzhou, could you help me find a clean hotel in Suzhou Industrial Park? <endofhistory>",
+    "output": "Sure, just a moment. There are many hotels that suit your requirements, what star rating would you like?",
+    "prediction": "Sure, could you please tell me how many stars you prefer for the hotel?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Canglang Pavilion \" <endofactions> <history> USER: Hello, I'm coming to Suzhou to visit a friend and I'd like to explore the city when I'm there. What scenic area would be a good place for friends to have an outing in Gusu District? <endofhistory>",
+    "output": "I think Canglang Pavilion would be great for you.",
+    "prediction": "Sure, I recommend you visit the Canglang Pavilion. It's a beautiful scenic area in Gusu District."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 404.0 yuan \" <endofactions> <history> USER: OK, what's the price of a sleeper in second class on this train? <endofhistory>",
+    "output": "A sleeper in second class is 404.0 yuan.",
+    "prediction": "The price of a second class sleeper on this train is 404.0 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) general <endofactions> <history> USER: Great, my budget is under 5,000 yuan and this price is just perfect for me. <endofhistory>",
+    "output": "Yes, with the model I recommended you get great value for your money.",
+    "prediction": "That's great to hear! If you have any other questions or need further assistance, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) recommend name equal_to \" Suzhou Hospital of Traditional Chinese Medicine \" <endofactions> <history> USER: Hello, I would like to find a public hospital, preferably a specialized hospital in Gusu district. Can you help me select one? <endofhistory>",
+    "output": "Sure, I recommend Suzhou Hospital of Traditional Chinese Medicine.",
+    "prediction": "Sure, I recommend the Suzhou Hospital of Traditional Chinese Medicine. It's a public hospital located in the Gusu district."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" Lenovo Xiaoxin Air \" <endofactions> <history> USER: 8GB. <endofhistory>",
+    "output": "My suggestion is to get Lenovo Xiaoxin Air.",
+    "prediction": "Based on your preference, I recommend the Lenovo Xiaoxin Air. It's a great choice."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: Okay. That's great! Thank you for your service. Goodbye! <endofhistory>",
+    "output": "You're welcome. Have a good day!",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: OK, thank you very much. <endofhistory>",
+    "output": "No problem at all, let me know if you have any other questions.",
+    "prediction": "You're welcome! If you have any other questions, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" Sunny \" <endofactions> <history> USER: Hello! Could you help check the weather in Beijing for next Saturday? <endofhistory>",
+    "output": "Hello! It will be sunny in Beijing next Saturday.",
+    "prediction": "Sure, the weather in Beijing for next Saturday is expected to be sunny."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) inform classroom equal_to \" Xinghai Square Leaning Center \" <endofactions> <history> USER: Where is the class held? <endofhistory>",
+    "output": "The class is held in Room 221 of Xinghai Square Leaning Center.",
+    "prediction": "The class is held at Xinghai Square Learning Center."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform address equal_to \" No. 188, Shizi Street \" <endofactions> <history> USER: I don't know where it is. <endofhistory>",
+    "output": "It is at No. 188, Shizi Street, Gusu District.",
+    "prediction": "The hospital is located at No. 188, Shizi Street."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) request type <endofactions> <history> USER: Wow! Barbie Hsu is in it. That's just what I was looking for, a Taiwanese TV show with her starring in it. <endofhistory>",
+    "output": "Could you also help me find a romantic TV show?",
+    "prediction": "Great! Could you please specify the type of TV show you are interested in? For example, are you looking for a drama, comedy, reality show, etc.?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: OK, could you help me check this restaurant's rating? <endofhistory>",
+    "output": "Just a moment. The restaurant's rating is 4.5.",
+    "prediction": "Sure, the restaurant has a rating of 4.5."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) request pricerange <endofactions> <history> USER: I'd like to buy an SUV for off-road use. It just needs to fit three people. What do you suggest? <endofhistory>",
+    "output": "There are many such cars, I don't know which one should be recommended to you. What's your budget?",
+    "prediction": "Sure, I can help with that. Could you please tell me your budget range for the SUV?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-62726222 \" <endofactions> <history> USER: What's the hotel's reservation phone number? <endofhistory>",
+    "output": "The hotel's phone number is 0512-62726222.",
+    "prediction": "The hotel's reservation phone number is 0512-62726222."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" No. 6 Yinzibang, Zhouzhang Town, Kunshan \" <endofactions> <history> USER: OK, then please give me the address and I'll drive there. <endofhistory>",
+    "output": "The address is No. 6 Yinzibang, Zhouzhang Town, Kunshan.",
+    "prediction": "Sure, the address is No. 6 Yinzibang, Zhouzhang Town, Kunshan. Drive safely!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform phone_number equal_to \" 0512-67299832 \" <endofactions> <history> USER: Hi, I've heard that Miss Fu in Chengdu is supposed to be really good and I wanted to ask for its phone number. <endofhistory>",
+    "output": "Its phone number is 0512-67299832.",
+    "prediction": "Sure, the phone number for Miss Fu in Chengdu is 0512-67299832."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thank you for your help, bye. <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) request series <endofactions> <history> USER: Hello, I'd like to buy a desktop that costs less than 5,000 yuan. <endofhistory>",
+    "output": "Sure. From what series?",
+    "prediction": "Sure, could you please specify the series you are interested in?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" Lenovo Xiaoxin Air \" <endofactions> <history> USER: OK. Is there a lightweight laptop with the same specification? <endofhistory>",
+    "output": "Of course, you can take a look at the Lenovo Xiaoxin Air.",
+    "prediction": "Yes, the Lenovo Xiaoxin Air is a lightweight laptop with similar specifications."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) request ticket_price <endofactions> <history> USER: How much is the ticket? <endofhistory>",
+    "output": "It's 601.0 yuan. Not too expensive.",
+    "prediction": "Could you please specify which train ticket you are asking about?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform episode_length equal_to \" 46 minutes \" <endofactions> <history> USER: How long are the episodes of this TV show? <endofhistory>",
+    "output": "Each episode lasts about 46 minutes, which is OK for a TV show.",
+    "prediction": "Each episode of this TV show is 46 minutes long."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G1659 from Shanghai Hongqiao to Xiamen \" <endofactions> <history> USER: Okay. I'm planning to buy a first class ticket for high-speed trains from Shanghai to Xiamen next Wednesday afternoon. Which train is available? <endofhistory>",
+    "output": "You can take G1659 from Shanghai Hongqiao to Xiamen.",
+    "prediction": "The G1659 train from Shanghai Hongqiao to Xiamen is available for your journey."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) recommend title equal_to \" The Shanghai Thirteen \" <endofactions> <history> USER: Is there any good action movie that you can recommend? <endofhistory>",
+    "output": "If you prefer action movies, you must watch The Shanghai Thirteen, it's great.",
+    "prediction": "Sure, I recommend \"The Shanghai Thirteen\". It's a great action movie."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform price equal_to \" 6,399 yuan \" <endofactions> <history> USER: How much is it? <endofhistory>",
+    "output": "It's 6,399 yuan.",
+    "prediction": "The price is 6,399 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Nothing else, bye! <endofhistory>",
+    "output": "OK, goodbye!",
+    "prediction": "Goodbye! Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_charge equal_to \" 568 yuan \" <endofactions> <history> USER: Great, what's the room rate? <endofhistory>",
+    "output": "The room rate is 568 yuan.",
+    "prediction": "The room rate is 568 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Got it, thank you, bye. <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" free \" <endofactions> <history> USER: Is there a parking lot? How much is it to park there? <endofhistory>",
+    "output": "The hotel has a parking lot and it's free.",
+    "prediction": "Yes, there is a parking lot and it's free to park there."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request arrival_time , request departure_time <endofactions> <history> USER: What are the departure and arrival times of this flight? <endofhistory>",
+    "output": "The departure time is 20:40 that day, and the arrival time is 00:05 the next day. Remember to get to the airport in time.",
+    "prediction": "Could you please provide the flight number so I can check the departure and arrival times for you?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform heated_seats equal_to \" does not have \" <endofactions> <history> USER: What about seat heating? <endofhistory>",
+    "output": "It does not have this function either.",
+    "prediction": "I'm sorry, but this car does not have heated seats."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" free \" <endofactions> <history> USER: I also need to ask if parking is convenient. Does the hotel have a free parking lot? <endofhistory>",
+    "output": "Yes, it has a free parking lot.",
+    "prediction": "Yes, the hotel does offer free parking for guests."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform hard_disk_capacity equal_to \" 1TB HDD \" <endofactions> <history> USER: OK, what's the hard drive's storage volume? <endofhistory>",
+    "output": "The hard drive's storage volume is 1TB HDD.",
+    "prediction": "The hard drive's storage volume is 1TB HDD."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" intensity \" , inform wind equal_to \" north force 3 \" <endofactions> <history> USER: OK. And what about the UV intensity and wind force and direction? <endofhistory>",
+    "output": "The UV intensity will be strong, and it will be north force 3. Make sure to protect your skin for the sun.",
+    "prediction": "The UV intensity is moderate and the wind is coming from the north at force 3."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform Douban_score equal_to \" 9.6 \" <endofactions> <history> USER: How about its Douban rating? <endofhistory>",
+    "output": "Its rating is 9.6.",
+    "prediction": "The Douban rating for this show is 9.6."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 23:12 that day \" <endofactions> <history> USER: I want my friend to pick me up, so could you tell me what time the train arrives? <endofhistory>",
+    "output": "It arrives at 23:12 that day.",
+    "prediction": "The train is expected to arrive at 23:12 that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) recommend title equal_to \" My Sassy Girl \" <endofactions> <history> USER: Hello, I want to find a South Korean movie starring Cha Tae-hyun. Please recommend one. <endofhistory>",
+    "output": "I recommend you watch My Sassy Girl.",
+    "prediction": "Sure, I recommend \"My Sassy Girl\". It's a South Korean movie starring Cha Tae-hyun."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: No, I'm good, thank you. <endofhistory>",
+    "output": "You're welcome. Feel free to reach out to me if you need.",
+    "prediction": "Alright, if you have any other questions in the future, don't hesitate to ask. Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request departure <endofactions> <history> USER: Hi, I'll be leaving for Guangzhou next week. Can you check which flight I can take? <endofhistory>",
+    "output": "Sure. From where will you depart?",
+    "prediction": "Sure, could you please provide me with your departure city?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou \" <endofactions> <history> USER: That's OK, I've got it covered. Could you tell me the hotel's address? <endofhistory>",
+    "output": "The hotel is at No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou.",
+    "prediction": "Sure, the hotel's address is No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform parking_assist_system equal_to \" Sure, it does. \" <endofactions> <history> USER: Does this have a reverse camera? <endofhistory>",
+    "output": "Sure, it does.",
+    "prediction": "Sure, it does have a reverse camera."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" Laotianqiao Frog Hot Pot \" <endofactions> <history> USER: Hello, I would like to take my friend out for hot pot tomorrow. Are there any slightly more expensive hot pot restaurants? Can you recommend one? <endofhistory>",
+    "output": "OK, I recommend you and your friend to go to Laotianqiao Frog Hot Pot.",
+    "prediction": "Sure, I recommend \"Laotianqiao Frog Hot Pot\". It's a bit more upscale and should provide a great dining experience."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 13:10 that day \" <endofactions> <history> USER: And what's the arrival time? <endofhistory>",
+    "output": "The arrival time is 13:10 that day.",
+    "prediction": "The flight will arrive at 13:10 that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thanks a lot, goodbye! <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) general <endofactions> <history> USER: Cool, I trust your judgment, so I'll give this restaurant a try. <endofhistory>",
+    "output": "Great. Is there anything else you need help with?",
+    "prediction": "That's great! I hope you enjoy your meal."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request class_cabin <endofactions> <history> USER: I'll leave next Sunday. <endofhistory>",
+    "output": "What class would you like to fly in?",
+    "prediction": "Sure, what class cabin would you prefer for your flight?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" No. 259, Xinshi Road, Gusu District, Suzhou \" <endofactions> <history> USER: What's the address? <endofhistory>",
+    "output": "The hotel's address is No. 259, Xinshi Road, Gusu District, Suzhou.",
+    "prediction": "The address is No. 259, Xinshi Road, Gusu District, Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Oh, that makes it a bit inconvenient, but thanks anyway! Goodbye! <endofhistory>",
+    "output": "Goodbye",
+    "prediction": "You're welcome! If you have any other questions in the future, feel free to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform CT equal_to \" Yes, and CT \" <endofactions> <history> USER: It even has CT, then this hospital really is well-equipped. <endofhistory>",
+    "output": "Yes, the hospital has a very good reputation.",
+    "prediction": "Yes, it is indeed well-equipped and does offer CT scans."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" intensity \" <endofactions> <history> USER: That's OK as long as it doesn't rain. How about the UV intensity? <endofhistory>",
+    "output": "The UV intensity will be strong.",
+    "prediction": "The UV intensity is moderate. Please make sure to wear sunscreen if you plan to be outside for a long time."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-67570999 \" <endofactions> <history> USER: Right, do you have its phone number? There are a few things I'd like to ask. <endofhistory>",
+    "output": "Just a second. The phone number is 0512-67570999.",
+    "prediction": "Sure, the phone number is 0512-67570999. You can call them for more details."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" MF8502 \" <endofactions> <history> USER: I will leave from Shanghai next Monday. <endofhistory>",
+    "output": "OK, I recommend MF8502 of Xiamen Airlines. It has a punctuality rate of 100%.",
+    "prediction": "I recommend you to take flight MF8502."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) greeting , recommend name equal_to \" Tongli Yueshang Inn \" <endofactions> <history> USER: Hello, I'm just planning my trip to Suzhou and now I'm looking for a 3-star resort hotel. I'd like a standard room. <endofhistory>",
+    "output": "Hello, Tongli Yueshang Inn is a good option.",
+    "prediction": "Hello! I recommend you consider Tongli Yueshang Inn. It's a great 3-star resort hotel in Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) recommend class_number equal_to \" PE5T05027A \" <endofactions> <history> USER: Hi, I'd like to register my child for an English tutorial class, he's in fifth grade. I'd prefer the class to be on Sunday afternoons, so I can take my child to and from the class. Could you recommend a suitable class for me? <endofhistory>",
+    "output": "The class PE5T05027A is suitable for your child.",
+    "prediction": "Sure, I recommend the class with the number PE5T05027A. It should be suitable for your child."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform registration_time equal_to \" 7:30-11:30 and 12:30-16:30 \" <endofactions> <history> USER: That's good, what time can I go to register? <endofhistory>",
+    "output": "The registration hours are 7:30-11:30 and 12:30-16:30.",
+    "prediction": "You can register between 7:30-11:30 and 12:30-16:30."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 1,302.5 yuan \" <endofactions> <history> USER: How much is a first class seat? <endofhistory>",
+    "output": "A first class seat is 1,302.5 yuan.",
+    "prediction": "A first class seat costs 1,302.5 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) recommend title equal_to \" I Love My Family \" <endofactions> <history> USER: Great, what's it called? <endofhistory>",
+    "output": "It is called I Love My Family.",
+    "prediction": "The show is called \"I Love My Family\"."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" Xishan Island Scenic Area \" <endofactions> <history> USER: I'm from Suzhou but I don't go out much. My friend is coming to Suzhou to visit me and I would like to take her to a landscape scenic spot. Can you recommend me a cheap place? <endofhistory>",
+    "output": "I would recommend you to go to Xishan Island Scenic Area.",
+    "prediction": "Sure, I recommend the Xishan Island Scenic Area. It's a beautiful place to visit and it's not too expensive."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) recommend title equal_to \" Lives of Omission \" <endofactions> <history> USER: Hi, I easily get bored on weekends, so I'd like to watch a good TV show. Could you please help me to find a Hong Kong-produced romantic TV show from the 2010s? <endofhistory>",
+    "output": "OK. I recommend Lives of Omission.",
+    "prediction": "Sure, I recommend \"Lives of Omission\". It's a Hong Kong-produced romantic TV show from the 2010s."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Of course, goodbye! <endofhistory>",
+    "output": "OK, bye.",
+    "prediction": "Goodbye! Have a great day!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform metro_station equal_to \" can get to directly by subway \" <endofactions> <history> USER: I forgot to tell you, find one I can get to directly by subway. <endofhistory>",
+    "output": "You can get to Spicy Memory directly by subway.",
+    "prediction": "Sure, you can get to the restaurant directly by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) recommend name equal_to \" Suzhou Hospital of Traditional Chinese Medicine \" <endofactions> <history> USER: Which hospital has a good respiratory medicine department? <endofhistory>",
+    "output": "Suzhou Hospital of Traditional Chinese Medicine should be the best.",
+    "prediction": "I recommend the Suzhou Hospital of Traditional Chinese Medicine. They have a good respiratory medicine department."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Got it. Thanks for your help, goodbye. <endofhistory>",
+    "output": "You're welcome. Have a nice day. Goodbye!",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" Pod Inn \" <endofactions> <history> USER: Hi, I'm traveling to Wuzhong District for business. Are there any hotels with king-size rooms in the area? Something cheaper is fine. <endofhistory>",
+    "output": "OK, I recommend Pod Inn.",
+    "prediction": "Sure, I recommend the Pod Inn. It offers king-size rooms and is quite affordable."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel \" <endofactions> <history> USER: A king-size room. <endofhistory>",
+    "output": "I would recommend Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel.",
+    "prediction": "I recommend the Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel for a king-size room."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 89.44% \" <endofactions> <history> USER: That's quite late. Does it normally arrive on time or is there a risk it be delayed? <endofhistory>",
+    "output": "Hard to say. Its punctuality rate is only 89.44%.",
+    "prediction": "The punctuality rate of this flight is 89.44%, which means it usually arrives on time."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: What's its rating? <endofhistory>",
+    "output": "4.5.",
+    "prediction": "It has a rating of 4.5."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" the 6F of Golden Eagle International Shopping Center, No. 298, Shishan Road \" <endofactions> <history> USER: Perfect. What's the exact address? <endofhistory>",
+    "output": "It's on the 6F of Golden Eagle International Shopping Center, No. 298, Shishan Road.",
+    "prediction": "The exact address is the 6F of Golden Eagle International Shopping Center, No. 298, Shishan Road."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" 20:40 pm that day \" <endofactions> <history> USER: OK. I'm a regular of China Southern Airlines. Tell me the departure time. <endofhistory>",
+    "output": "The departure time is 20:40 pm that day.",
+    "prediction": "The departure time is 20:40 pm that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 4:50 pm that day \" <endofactions> <history> USER: Right, sounds good. When does it arrive in Guangzhou? <endofhistory>",
+    "output": "It arrives at Guangzhou Baiyun International Airport at 4:50 pm that day.",
+    "prediction": "The flight arrives in Guangzhou at 4:50 pm that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" CZ3741 of China Southern Airlines, from Terminal 2 of Baiyun International Airport to Terminal 3 of Gaoqi International Airport \" <endofactions> <history> USER: Hello, please help me check available flights from Guangzhou to Xiamen next Thursday. I'm traveling there with my girlfriend. <endofhistory>",
+    "output": "You can take CZ3741 of China Southern Airlines, from Terminal 2 of Baiyun International Airport to Terminal 3 of Gaoqi International Airport.",
+    "prediction": "Sure, I found a flight for you. It's CZ3741 of China Southern Airlines, departing from Terminal 2 of Baiyun International Airport and arriving at Terminal 3 of Gaoqi International Airport."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66966666 \" <endofactions> <history> USER: Hello, my friends and I are coming to Suzhou for business. Can you tell me the phone number of Harmony Times Square? <endofhistory>",
+    "output": "0512-66966666.",
+    "prediction": "Sure, the phone number for Harmony Times Square is 0512-66966666."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: All right, what's its rating? <endofhistory>",
+    "output": "Its rating is not bad, it's 4.5.",
+    "prediction": "It has a rating of 4.5."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: OK. I got it. Thank you very much. Bye! <endofhistory>",
+    "output": "You're welcome. Have a good day!",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" 4F, Harmony City, No. 269, Wang Dun Road \" , recommend name equal_to \" Xibei Restaurant \" <endofactions> <history> USER: I was wondering if there is any mid-price restaurant close to Suzhou Industrial Park where I can get directly by subway? <endofhistory>",
+    "output": "I recommend Xibei Restaurant on 4F, Harmony City, No. 269, Wang Dun Road.",
+    "prediction": "Sure, I recommend Xibei Restaurant. It's located at 4F, Harmony City, No. 269, Wang Dun Road, which is close to Suzhou Industrial Park."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" cloudy \" <endofactions> <history> USER: What will the weather be like in Wuhan on that day? <endofhistory>",
+    "output": "It will be cloudy in Wuhan.",
+    "prediction": "The weather in Wuhan on that day will be cloudy."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: You've been of great help today, thank you! Goodbye! <endofhistory>",
+    "output": "You're welcome. Have a good trip! Goodbye!",
+    "prediction": "You're welcome! I'm glad I could help. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" free \" <endofactions> <history> USER: Can I use the hotel's parking lot for free? <endofhistory>",
+    "output": "Yes, you can use it for free.",
+    "prediction": "Yes, the hotel offers free parking."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: Thanks, that's all I wanted to know. Thank you for your service. Goodbye! <endofhistory>",
+    "output": "You're welcome. Have a good day!",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have any more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform 4WD equal_to \" two-wheel \" , recommend name equal_to \" T-ROC 230TSI DSG Aggressive Edition with two-wheel drive \" <endofactions> <history> USER: Hi, I'm thinking about buying a car. I'd prefer a small- or mid-size SUV with two-wheel drive. Please recommend me a good model. <endofhistory>",
+    "output": "OK. I recommend T-ROC 230TSI DSG Aggressive Edition with two-wheel drive.",
+    "prediction": "Sure, I recommend the T-ROC 230TSI DSG Aggressive Edition. It's a small to mid-size SUV with two-wheel drive."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius \" <endofactions> <history> USER: I'm going to Hangzhou on a business trip next week and I want to know the weather in advance. Please help me check the temperature for Hangzhou next Tuesday. <endofhistory>",
+    "output": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius next Tuesday in Hangzhou.",
+    "prediction": "The weather in Hangzhou next Tuesday is expected to have a maximum temperature of 11 degrees Celsius and a minimum temperature of 0 degrees Celsius."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" No. 246, Fenghuang Street, Gusu District, Suzhou \" <endofactions> <history> USER: What's the address? <endofhistory>",
+    "output": "No. 246, Fenghuang Street, Gusu District, Suzhou.",
+    "prediction": "The address is No. 246, Fenghuang Street, Gusu District, Suzhou."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" G59 from Beijingnan to Hangzhoudong \" <endofactions> <history> USER: I'd like a second class seat. <endofhistory>",
+    "output": "All right. G59 from Beijingnan to Hangzhoudong is available.",
+    "prediction": "Sure, I have found a train for you. It's G59 from Beijingnan to Hangzhoudong."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform episode_length equal_to \" 46 minutes \" <endofactions> <history> USER: Is each episode one hour? <endofhistory>",
+    "output": "No, not that long. Each episode runs for 46 minutes.",
+    "prediction": "No, each episode is approximately 46 minutes long."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform name_list equal_to \" Priyanka Chopra, Hrithik Roshan, and Naseeruddin Shah \" <endofactions> <history> USER: Who are the leading casts of this movie? <endofhistory>",
+    "output": "It stars Priyanka Chopra, Hrithik Roshan, and Naseeruddin Shah.",
+    "prediction": "The leading cast of this movie includes Priyanka Chopra, Hrithik Roshan, and Naseeruddin Shah."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" D3292 \" <endofactions> <history> USER: If I instead leave next Friday morning, which bullet train can I take? <endofhistory>",
+    "output": "I still recommend D3292 from Xiamenbei to Shanghai Hongqiao.",
+    "prediction": "You can take the bullet train D3292 next Friday morning."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) general <endofactions> <history> USER: Yes, I do, but I've never noticed that there's a hospital there. Well, thanks. <endofhistory>",
+    "output": "You are welcome, I wish you good health, bye.",
+    "prediction": "You're welcome! If you have any other questions, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) recommend name equal_to \" Touareg 2.0TSI Ruiyi Version \" <endofactions> <history> USER: Hi, I plan to buy a Volkswagen Import SUV and we'll most often be 4 people in the car. Do you have anything to recommend? <endofhistory>",
+    "output": "Then I recommend Touareg 2.0TSI Ruiyi Version.",
+    "prediction": "Sure, I recommend the Volkswagen Touareg 2.0TSI Ruiyi Version. It's a great SUV that should suit your needs."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" time is 09:20 that day \" <endofactions> <history> USER: Right, and what's the departure time that day? <endofhistory>",
+    "output": "Its departure time is 09:20 that day.",
+    "prediction": "The departure time is 09:20 that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Goodbye. <endofhistory>",
+    "output": "Goodbye.",
+    "prediction": "Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" Tongli Ancient Town, Wujiang District, Suzhou City \" <endofactions> <history> USER: The price is okay. What's the address? <endofhistory>",
+    "output": "The address is Tongli Ancient Town, Wujiang District, Suzhou City.",
+    "prediction": "The address is Tongli Ancient Town, Wujiang District, Suzhou City."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: Thank you. <endofhistory>",
+    "output": "My pleasure.",
+    "prediction": "You're welcome! If you have any other questions, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" southwest force 2 \" <endofactions> <history> USER: I see. Will the wind be strong in Beijing next Tuesday? <endofhistory>",
+    "output": "It will be southwest force 2, not strong.",
+    "prediction": "The wind in Beijing next Tuesday will be a southwest force 2, which is considered light."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) recommend title equal_to \" Hell Is Other People \" <endofactions> <history> USER: Hi, I always get bored at home on the weekends and I want to find a classic TV show to watch. Please help me to find a South Korean crime drama from the 2010s. <endofhistory>",
+    "output": "Sure, I recommend Hell Is Other People.",
+    "prediction": "Sure, I recommend you watch \"Hell Is Other People\". It's a South Korean crime drama from the 2010s."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) bye <endofactions> <history> USER: All right, thank you. I think I'm going to look around a little bit more. Bye. <endofhistory>",
+    "output": "OK, thanks a lot. I'll talk to my child, bye!",
+    "prediction": "You're welcome! Don't hesitate to return if you have more questions. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) recommend name equal_to \" 280TSI \" , recommend series equal_to \" T-ROC \" <endofactions> <history> USER: I would like to buy a gasoline-driven SUV priced between 200,000 and 300,000. <endofhistory>",
+    "output": "Then I'd like to recommend T-ROC 280TSI DSG Luxury with all-wheel drive.",
+    "prediction": "I recommend the 280TSI model from the T-ROC series. It's a gasoline-driven SUV that fits your budget."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: All right, thank you, bye. <endofhistory>",
+    "output": "You're welcome. Is there anything else I can do for you?",
+    "prediction": "You're welcome! If you have any other questions in the future, don't hesitate to ask. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Goodbye. <endofhistory>",
+    "output": "Goodbye.",
+    "prediction": "Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-63052900 \" <endofactions> <history> USER: That's a decent price. Help me check the phone number. <endofhistory>",
+    "output": "Sure, the hotel's phone number is 0512-63052900.",
+    "prediction": "Sure, the phone number is 0512-63052900."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) request departure <endofactions> <history> USER: Hi, I'm going to Shenzhen for business next week. Is there any train I can take? <endofhistory>",
+    "output": "From where do you want to travel?",
+    "prediction": "Sure, I can help with that. Could you please tell me your departure city?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 00:15 the next day \" <endofactions> <history> USER: When does it arrive in Nanjing? <endofhistory>",
+    "output": "It arrives at 00:15 the next day.",
+    "prediction": "The flight arrives in Nanjing at 00:15 the next day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform premiere_time equal_to \" September 24, 2018 \" <endofactions> <history> USER: When did it premiere? <endofhistory>",
+    "output": "It premiered on September 24, 2018.",
+    "prediction": "It premiered on September 24, 2018."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" go there directly by subway \" <endofactions> <history> USER: Can we go there directly by subway? <endofhistory>",
+    "output": "Yes, you can go there directly by subway.",
+    "prediction": "Yes, you can go there directly by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 16:05 that day \" <endofactions> <history> USER: And what's the arrival time? <endofhistory>",
+    "output": "The arrival time is 16:05 that day.",
+    "prediction": "The flight will arrive at 16:05 that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform cruise_control_system equal_to \" does not have \" <endofactions> <history> USER: What about cruise control? <endofhistory>",
+    "output": "Sorry to let you down again, but it does not have that either.",
+    "prediction": "I'm sorry, but this car does not have a cruise control system."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" Sunny \" <endofactions> <history> USER: Lastly, please help me check the weather in Hangzhou for next Saturday. <endofhistory>",
+    "output": "It will be sunny in Hangzhou next Saturday.",
+    "prediction": "The weather in Hangzhou for next Saturday is expected to be sunny."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) inform room_type equal_to \" standard room \" <endofactions> <history> USER: Does it have standard rooms? <endofhistory>",
+    "output": "Yes, it has standard rooms.",
+    "prediction": "Yes, it does have standard rooms."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform registration_time equal_to \" It's from 7:00 to 11:00, and from 12:00 to 16:30 \" <endofactions> <history> USER: I don't know the registration time of the hospital either. <endofhistory>",
+    "output": "It's from 7:00 to 11:00, and from 12:00 to 16:30.",
+    "prediction": "The registration time at the hospital is from 7:00 to 11:00, and from 12:00 to 16:30."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform score equal_to \" 4.8 \" <endofactions> <history> USER: Okay, what's its rating? <endofhistory>",
+    "output": "The hotel's rating is really high, it's 4.8.",
+    "prediction": "The hotel has a high rating of 4.8."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) recommend train_number equal_to \" G59 from Beijingnan to Hangzhoudong \" <endofactions> <history> USER: Hi, I'm from Beijing and I'm going on a trip to Hangzhou next week. Please check what high-speed train I can take next Monday afternoon. I'd like to travel in second class. <endofhistory>",
+    "output": "It's my pleasure to help you. I recommend G59 from Beijingnan to Hangzhoudong.",
+    "prediction": "Sure, you can take the G59 train from Beijingnan to Hangzhoudong."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) recommend train_number equal_to \" G14 from Shanghai Hongqiao to Beijingnan \" <endofactions> <history> USER: I'm from Shanghai and I want to travel to Beijing. Can you help me check which high-speed train can I take next Monday afternoon? I want to travel in second class. <endofhistory>",
+    "output": "OK, I recommend G14 from Shanghai Hongqiao to Beijingnan.",
+    "prediction": "Sure, you can take the G14 train from Shanghai Hongqiao to Beijingnan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" No \" <endofactions> <history> USER: Awesome. Can we get there directly by subway? <endofhistory>",
+    "output": "Unfortunately not, but you can take a taxi there.",
+    "prediction": "I'm sorry, but there is no direct subway access to this location."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform per_capita_consumption equal_to \" 130 yuan \" , recommend dishes equal_to \" the shrimp balls \" <endofactions> <history> USER: What's the average spend? And what are the recommended dishes? <endofhistory>",
+    "output": "The average spend per person is not that high, 130 yuan. The shrimp balls are good, suggest you give them a try!",
+    "prediction": "The average spend per person is 130 yuan. I would recommend trying the shrimp balls, they are quite popular."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform metro_station equal_to \" Yes \" <endofactions> <history> USER: And we can get there directly by subway? <endofhistory>",
+    "output": "Yes, you can.",
+    "prediction": "Yes, you can get there directly by subway."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform film_length equal_to \" 185 minutes \" <endofactions> <history> USER: OK, how long is it? <endofhistory>",
+    "output": "The movie's runtime is 185 minutes.",
+    "prediction": "The movie is 185 minutes long."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" weakest \" <endofactions> <history> USER: What about the UV intensity? <endofhistory>",
+    "output": "The UV intensity in Suzhou next Friday will be at the weakest level, no need to bring sun protection, haha.",
+    "prediction": "The UV intensity is at its weakest."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform bus_routes equal_to \" No. 801 and No. 807 \" <endofactions> <history> USER: Hello, I'm not feeling well and would like to go to Suzhou Guangji Hospital for medical treatment. Can you help me find which bus routes I can take to get to this hospital? <endofhistory>",
+    "output": "Hello, you can take buses No. 801 and No. 807 to Suzhou Guangji Hospital.",
+    "prediction": "Sure, you can take bus No. 801 or No. 807 to reach Suzhou Guangji Hospital."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) request 4WD <endofactions> <history> USER: Hi, I'm thinking of buying a small or medium-sized SUV. What would you recommend? <endofhistory>",
+    "output": "There are loads to choose from. Do you have any requirements for the driving mode?",
+    "prediction": "Sure, would you prefer a 4WD SUV?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" Sunny \" <endofactions> <history> USER: And what will the weather be like? <endofhistory>",
+    "output": "It will be sunny in Shenzhen on that day.",
+    "prediction": "The weather will be sunny."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request arrival_time <endofactions> <history> USER: What about the arrival time? <endofhistory>",
+    "output": "The arrival time is 13:30 that day.",
+    "prediction": "Could you please provide me with the flight number so I can check the arrival time for you?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" Sunny \" <endofactions> <history> USER: How about the weather? <endofhistory>",
+    "output": "It will be sunny.",
+    "prediction": "The weather is sunny."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: OK. Thank you, bye. <endofhistory>",
+    "output": "No problem. Goodbye.",
+    "prediction": "You're welcome! Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 10:15 that day \" <endofactions> <history> USER: What time does the flight arrive? I have to attend a meeting right after I get to Beijing. <endofhistory>",
+    "output": "The fight takes off early, so it will arrive early. It arrives at 10:15 that day.",
+    "prediction": "The flight will arrive at 10:15 that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" cloudy and later overcast \" <endofactions> <history> USER: Will it be sunny in Chengdu next Wednesday? <endofhistory>",
+    "output": "No, it will be cloudy and later overcast.",
+    "prediction": "No, it will be cloudy and later overcast in Chengdu next Wednesday."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: Thank you for your help, bye. <endofhistory>",
+    "output": "No worries, goodbye.",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" Shui'an Hanshe Boutique Hotel \" <endofactions> <history> USER: Could you also help me find a more expensive business hotel? I want a king-size room. <endofhistory>",
+    "output": "I recommend Suzhou Shui'an Hanshe Boutique Hotel.",
+    "prediction": "Sure, I recommend the Shui'an Hanshe Boutique Hotel. It's a great choice for a more upscale stay."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" Wanyuting·hejiariben Cuisine Teppanyaki \" <endofactions> <history> USER: Okay. By the way, are there any good restaurants close by? <endofhistory>",
+    "output": "Wanyuting·hejiariben Cuisine Teppanyaki is close by and serves some great food.",
+    "prediction": "Yes, there is a good restaurant nearby called Wanyuting·hejiariben Cuisine Teppanyaki. You might want to try it."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend series equal_to \" Lenovo Yangtian \" <endofactions> <history> USER: One with a memory capacity of 8GB will be good. <endofhistory>",
+    "output": "All right, then a computer from the Lenovo Yangtian series would suit your needs.",
+    "prediction": "I recommend the Lenovo Yangtian series. It has a memory capacity of 8GB."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: OK, thank you so much for your help, bye. <endofhistory>",
+    "output": "I hope my services were of help to you, bye.",
+    "prediction": "You're welcome! Don't hesitate to reach out if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" Suzhou Yongshun Express Hotel \" <endofactions> <history> USER: That sounds good. I would also like to find a nearby 1-star hotel. <endofhistory>",
+    "output": "Then I would recommend Suzhou Yongshun Express Hotel.",
+    "prediction": "Sure, I recommend the Suzhou Yongshun Express Hotel. It's a 1-star hotel located nearby."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request date <endofactions> <history> USER: I plan to visit Beijing next week, could you help me check the flights from Shenzhen to Beijing? <endofhistory>",
+    "output": "Can you tell me the exact day of your departure? When do you plan to leave?",
+    "prediction": "Sure, could you please provide me with the exact date you plan to fly?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 22:58 that day \" <endofactions> <history> USER: When does it arrive in Chengdu? <endofhistory>",
+    "output": "The arrival time is quite late, it's 22:58 that day.",
+    "prediction": "The train arrives in Chengdu at 22:58 that day."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) recommend title equal_to \" Once Upon a Time in China 3 \" <endofactions> <history> USER: Hello, I'd like to find a Chinese mainland action movie from the 1990s. <endofhistory>",
+    "output": "OK, I recommend Once Upon a Time in China 3.",
+    "prediction": "Sure, I recommend \"Once Upon a Time in China 3\". It's a great action movie from the 1990s."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 60 yuan \" <endofactions> <history> USER: Hi, we are coming to Suzhou for business. We were hoping to go to Suzhou Taihu Lake Wetland Park, could you help us check the ticket prices? <endofhistory>",
+    "output": "OK, just a second. The tickets are 60 yuan per person. That's quite cheap for Suzhou.",
+    "prediction": "Sure, the ticket price for Suzhou Taihu Lake Wetland Park is 60 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" The Humble Administrator's Garden \" <endofactions> <history> USER: Hi, I'm traveling in Suzhou, could you please help me find a mid-priced tourist attraction in Gusu District? <endofhistory>",
+    "output": "I recommend you go to the Humble Administrator's Garden.",
+    "prediction": "Sure, I recommend you visit The Humble Administrator's Garden. It's a beautiful place in Gusu District."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" MU5132 of China Eastern Airlines \" <endofactions> <history> USER: I will depart from Beijing. By the way, I want to fly business class, please recommend a flight. <endofhistory>",
+    "output": "I recommend MU5132 of China Eastern Airlines, it has a high punctuality rate.",
+    "prediction": "Sure, you can consider taking the MU5132 flight of China Eastern Airlines."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) request screen_size <endofactions> <history> USER: Acer. <endofhistory>",
+    "output": "What size do you want?",
+    "prediction": "Sure, could you please provide the screen size of the Acer PC?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 540 yuan \" <endofactions> <history> USER: How much is the ticket? <endofhistory>",
+    "output": "The ticket price is 540 yuan.",
+    "prediction": "The ticket price is 540 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) recommend class_number equal_to \" PC5P28056 \" <endofactions> <history> USER: Hi, I'd like to find a Chinese tutorial class for my child who's in fifth grade. It would be nice if the class is on Saturdays or Sundays, in the morning or afternoon, and held in Suzhou Industrial Park or Gusu District so I can pick him up. Do you have any recommendations? <endofhistory>",
+    "output": "The class PC5P28056 is suitable for your child.",
+    "prediction": "Sure, I recommend the class with the number PC5P28056. It should meet all your requirements."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" CA4303 of Air China, from Terminal 2 of Shuangliu International Airport to Terminal 1 of Baiyun International Airport \" <endofactions> <history> USER: Hello, I want to travel to Guangzhou next week. Could you help me check flights from Chengdu to Guangzhou next Sunday? <endofhistory>",
+    "output": "I recommend you to take Flight CA4303 of Air China, from Terminal 2 of Shuangliu International Airport to Terminal 1 of Baiyun International Airport.",
+    "prediction": "Sure, I found a flight for you. It's CA4303 of Air China, departing from Terminal 2 of Shuangliu International Airport and arriving at Terminal 1 of Baiyun International Airport."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: OK, that's great. Thank you, goodbye. <endofhistory>",
+    "output": "My pleasure, goodbye.",
+    "prediction": "You're welcome! Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 2,600 yuan \" <endofactions> <history> USER: What's the fare for this flight? <endofhistory>",
+    "output": "A business class ticket is 2,600 yuan.",
+    "prediction": "The fare for this flight is 2,600 yuan."
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: Okay. I don't have any other questions. Thanks for your service. Goodbye! <endofhistory>",
+    "output": "You're welcome. Have a good day!",
+    "prediction": "You're welcome! Don't hesitate to ask if you have more questions in the future. Goodbye!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00–16:30 \" <endofactions> <history> USER: What are the opening hours? <endofhistory>",
+    "output": "The opening hours are 09:00–16:30.",
+    "prediction": "The opening hours are from 09:00 to 16:30."
+  }
+]

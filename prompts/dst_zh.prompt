@@ -1,0 +1,21 @@
+{{system_start}}Similar to the examples below, generate belief state based on previous state and history.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 您好,能给我推荐点好看的日剧吗? <endofhistory>{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " 日本 "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: 你好,最近朋友想来找我玩,姑苏区附近有没有消费水平中等的景点? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " 姑苏区 " , consumption equal_to " 中等 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " 工业园区 " , name equal_to " 海底捞火锅 " , pricerange equal_to " 偏贵 " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to " 海底捞火锅 " AGENT_ACTS: ( restaurant ) inform phone_number equal_to " 0512-67603337 " USER: 好的,我记下了,能帮我查一下餐馆的营业时间吗? <endofhistory>{{user_end}}
+{{assistant_start}}( restaurant ) area equal_to " 工业园区 " , name equal_to " 海底捞火锅 " , pricerange equal_to " 偏贵 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) type equal_to " 游乐场 " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to " 苏州乐园森林水世界 " AGENT_ACTS: ( attraction ) inform features equal_to " 各项水上娱乐项目皆具森林特色,被赋予森林主题,让人身处浩瀚森林又能享受到海洋般的舒爽水游乐 " USER: 是不是地铁直达的呢? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) type equal_to " 游乐场 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( hotel ) area equal_to " 常熟 " , star equal_to " 4 " <endofstate> <history> AGENT_ACTS: ( hotel ) recommend name equal_to " 常熟长江路亚朵酒店 " USER: 他家的大床房多钱? <endofhistory>{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " 常熟 " , name equal_to " 常熟长江路亚朵酒店 " , room_type equal_to " 大床房 " , star equal_to " 4 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " 印度 " , star equal_to " 沙特鲁汉 . 辛哈 " , ( tv ) decade equal_to " 2010 年代 " , production_country_or_area equal_to " 日本 " , type equal_to " 悬疑片 " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 分钟 " USER: 好的,谢谢您的耐心解答,再见。 <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " 印度 " , star equal_to " 沙特鲁汉 . 辛哈 " ( tv ) decade equal_to " 2010 年代 " , production_country_or_area equal_to " 日本 " , type equal_to " 悬疑片 "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

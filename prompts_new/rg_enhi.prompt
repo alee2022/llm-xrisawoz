@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, generate a response to user given action and history.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: Hi, क्या आप कुछ आकर्षक Japanese TV shows की recommendation कर सकते हैं ? <endofhistory>{{user_end}}
+{{assistant_start}}ठीक है , काैनसॆ period का जापानी TV शो ?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( movie ) request <endofactions> <history> USER: धन्यवाद , क्या आप एक indian film की recommendation कर सकते हैं ? <endofhistory>{{user_end}}
+{{assistant_start}}Ok , आप आमतौर पर what kind of Indian movies देखना पसंद करते हैं ?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है , your patience के लिए धन्यवाद , bye. <endofhistory>{{user_end}}
+{{assistant_start}}आपका welcome । Hope कि आप मेरी recommendations enjoy करेंगे।{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " Humble Administrator's Garden " <endofactions> <history> USER: Hi , मेरे friends मुझसे मिलने आ रहे हैं । क्या Gusu District मैं कोई scenic areas है that are not that expensive ? <endofhistory>{{user_end}}
+{{assistant_start}}ठीक है , अगर आप अपने दोस्तों के साथ घूमना चाहते हैं , तो Humble Administrator's Garden एक nice place है. It is a traditional Suzhou-style garden and also near to your home आपके घर के पास भी है ।{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform cuisine equal_to " Banyuan Private Home Cuisine " , recommend name equal_to " Banyuan Private Home Cuisine " <endofactions> <history> USER: Ok , हम पूरा day together बिता सकते है, can you recommend some a bit more expensive restaurants यहाँ पास में ? <endofhistory>{{user_end}}
+{{assistant_start}}Well , Banyuan Private Home Cuisine एक good choice है । यह थोड़ा अधिक expensive है और Jiangsu Zhejiang Cuisine with local features परोसता है ।{{assistant_end}}
+
+{{user_start}}RG: <actions> ( car ) recommend name equal_to " 1.5 लीटर पेट्रोल इंजन के साथ Volkswagen T-Cross " <endofactions> <history> USER: Hello , I एक गैस powered SUV खरीदना चाहता हूँ, can you recommend one within 150,000 yuan? <endofhistory>{{user_end}}
+{{assistant_start}}Well, 1.5 लीटर पेट्रोल इंजन के साथ Volkswagen T-Cross आपकी जरूरतों को suit होगी।{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) recommend name equal_to " Womu Boutique Hotel " <endofactions> <history> USER: वाह , यह पूरी रात खुला है , फिर हम कुछ देर और रुक सकते हैं । Could you find a not that expensive hotel with standard rooms ? <endofhistory>{{user_end}}
+{{assistant_start}}Womu Boutique Hotel अच्छा choice होगा.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hospital ) recommend name equal_to " Suzhou Kowloon Hospital " <endofactions> <history> USER: हाय , my child doesn't feel well and और मैं उसे pediatric clinic में ले जाना चाहता हूं । कौनसा general hospital has a good pediatric clinic ? <endofhistory>{{user_end}}
+{{assistant_start}}Hello, अच्छे pediatric clinic के लिए Suzhou Kowloon Hospital जा सकते हैं।{{assistant_end}}
+
+{{user_start}}RG: <actions> ( weather ) inform wind equal_to " अगले Sunday ज़ियामेन में " <endofactions> <history> USER: मैं अगले week work के लिए ज़ियामेन आऊंगा लेकिन अभी भी sure नहीं है कि मैं किस day निकलूंगा, यह मौसम पर depend करता है । Could you help me check the wind force and direction for next Sunday ? <endofhistory>{{user_end}}
+{{assistant_start}}Ok , अगले Sunday ज़ियामेन में it will be northeast force 2.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( flight ) recommend flight_information equal_to " हांग्जो अंतरराष्ट्रीय Airport अड्डे के Terminal 3 से हैनान अंतरराष्ट्रीय Airport तक हैनान Airlines के flight HU7394 " <endofactions> <history> USER: नमस्ते , मैं अगले सप्ताह एक व्यावसायिक यात्रा पर जा रहा हूँ ।Please help me check the flights from Hangzhou to Shenzhen next Friday , preferably in economy class . <endofhistory>{{user_end}}
+{{assistant_start}}आप हांग्जो अंतरराष्ट्रीय Airport अड्डे के Terminal 3 से हैनान अंतरराष्ट्रीय Airport तक हैनान Airlines के flight HU7394 ले सकते हैं{{assistant_end}}
+
+{{user_start}}RG: <actions> ( pc ) greeting , recommend product_name equal_to " Lenovo 7000 ज़ियाओक्सिन चाओ " <endofactions> <history> USER: Hello , I want to buy a 14-इंच lightweight लैपटॉप लेनोवो से , preferably with मेमोरी क्षमता 8GB की <endofhistory>{{user_end}}
+{{assistant_start}}Hi , I recommend Lenovo 7000 ज़ियाओक्सिन चाओ{{assistant_end}}
+
+{{user_start}}RG: <actions> ( train ) request departure <endofactions> <history> USER: मैं next week business trip पर जाऊंग ा। क्या आप यह जांचने में मेरी help कर सकते हैं कि next week Xiamen के लिए कोई speed trains है या नहीं ? <endofhistory>{{user_end}}
+{{assistant_start}}आप कहां से प्रस्थान करेंगे ?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( class ) request subject <endofactions> <history> USER: नमस्ते , मेरा बच्चा छठी कक्षा में है ।Could you recommend a tutorial class for me ? <endofhistory>{{user_end}}
+{{assistant_start}}आप अपने your child किस विषय पढ़ना चाहते हैं ?{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

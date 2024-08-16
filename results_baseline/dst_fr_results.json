@@ -1,0 +1,62 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Je suis de Suzhou mais je ne sors pas beaucoup. Mon amie vient me rendre visite à Suzhou et je pense l'emmener dans une ville d'eau. <endofhistory>",
+    "output": "( attraction ) type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) type equal_to \" ville d'eau \" , area equal_to \" Suzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" ville d'eau \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" village de Zhouzhuang \" USER: Je cherche un endroit où les prix sont assez moyens. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" juste \" , type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) type equal_to \" ville d'eau \", consumption equal_to \" moyens \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" juste \" , type equal_to \" ville d'eau \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" village de Zhouzhuang \" AGENT_ACTS: ( attraction ) recommend name equal_to \" rue Shantang \" USER: Quel est son numéro de téléphone ? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) consumption equal_to \" juste \" , type equal_to \" ville d'eau \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" rue Shantang \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" USER: Sa note est-elle élevée ? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4,5 \" USER: C'est élevé en effet. Y a-t-il quelque chose de spécial à voir là-bas ? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \" , special_equal_to \" quelque chose de spécial à voir \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4,5 \" AGENT_ACTS: ( attraction ) inform features equal_to \" profiter du paysage du vieux Suzhou, visiter le hall ancien de la guilde et d'autres sites historiques, faire une croisière sur la rivière et prendre des photos du magnifique paysage nocturne \" USER: Merci, au revoir. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) consumption equal_to \" juste \" , name equal_to \" rue Shantang \" , type equal_to \" ville d'eau \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Je suis de Suzhou mais je ne sors pas beaucoup. Mon amie vient me rendre visite à Suzhou et je pense l'emmener dans une ville d'eau. <endofhistory>",
+    "output": "( attraction ) type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) type equal_to \" ville d'eau \" , area equal_to \" Suzhou \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" ville d'eau \" <endofstate> <history> AGENT_ACTS: ( attraction ) request consumption USER: Je cherche quelque chose de un peu cher. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" un peu cher \" , the_most_suitable_people equal_to \" amie \" , type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) type equal_to \" ville d'eau \", consumption equal_to \" un peu cher \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" un peu cher \" , the_most_suitable_people equal_to \" amie \" , type equal_to \" ville d'eau \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) request consumption AGENT_ACTS: ( attraction ) recommend name equal_to \" village de Zhouzhuang \" USER: Puis-je m'y rendre directement en métro ? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" un peu cher \" , name equal_to \" village de Zhouzhuang \" , the_most_suitable_people equal_to \" amie \" , type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) consumption equal_to \" un peu cher \" , the_most_suitable_people equal_to \" amie \" , type equal_to \" ville d'eau \" , transport equal_to \" métro \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" un peu cher \" , name equal_to \" village de Zhouzhuang \" , the_most_suitable_people equal_to \" amie \" , type equal_to \" ville d'eau \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" village de Zhouzhuang \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" Non \" USER: Quelles sont les heures d'ouverture ? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" un peu cher \" , name equal_to \" village de Zhouzhuang \" , the_most_suitable_people equal_to \" amie \" , type equal_to \" ville d'eau \"",
+    "prediction": "( attraction ) consumption equal_to \" un peu cher \" , name equal_to \" village de Zhouzhuang \" , the_most_suitable_people equal_to \" amie \" , type equal_to \" ville d'eau \""
+  }
+]

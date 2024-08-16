@@ -1,0 +1,62 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 저는 쑤저우 출신이지만 외출을 잘 하지는 않습니다. 제 친구가 저를 보러 쑤저우로 오기로해서 수향마을로 데려갈 생각입니다. <endofhistory>",
+    "output": "( attraction ) type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) name equal_to \" 수향마을 \" , area equal_to \" 쑤저우 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 저우좡 마을 \" USER: 저는 가격대가 꽤 보통인 곳을 찾고 있습니다. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) type equal_to \" 수향마을 \" , consumption equal_to \" 적당한 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 적당한 \" , type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 저우좡 마을 \" AGENT_ACTS: ( attraction ) recommend name equal_to \" 산탕제 \" USER: 전화번호가 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) consumption equal_to \" 적당한 \" , type equal_to \" 수향마을 \" , name equal_to \" 산탕제 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 산탕제 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" USER: 평점이 높은가요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5점 \" USER: 확실히 높네요. 그곳에서 특별하게 볼 것이 있나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \" , speciality equal_to \" 있음 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5점 \" AGENT_ACTS: ( attraction ) inform features equal_to \" 옛 쑤저우의 풍경을 감상할 수 있고, 옛 길드 홀을 비롯한 다른 유적지를 방문할 수 있으며, 강을 따라 유람선을 타고 아름다운 야경 사진을 찍을 수 있습니다 \" USER: 감사합니다, 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 꽤 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 산탕제 \" , type equal_to \" 수향마을 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 저는 쑤저우 출신이지만 외출을 잘 하지는 않습니다. 제 친구가 저를 보러 쑤저우로 오기로해서 수향마을로 데려갈 거예요. <endofhistory>",
+    "output": "( attraction ) type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) name equal_to \" 수향마을 \" , area equal_to \" 쑤저우 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS: ( attraction ) request consumption USER: 저는 조금 더 비싼 것을 찾고 있습니다. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) type equal_to \" 수향마을 \" , consumption equal_to \" 조금 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 조금 비싼 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) request consumption AGENT_ACTS: ( attraction ) recommend name equal_to \" 저우좡 마을 \" USER: 그곳에 지하철로 바로 갈 수 있나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) consumption equal_to \" 조금 비싼 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 수향마을 \", public_transportation equal_to \" 지하철 가능 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 수향마을 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 저우좡 마을 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 안됩니다 \" USER: 운영 시간이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 수향마을 \"",
+    "prediction": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 수향마을 \""
+  }
+]

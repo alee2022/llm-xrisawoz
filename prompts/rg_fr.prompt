@@ -1,0 +1,21 @@
+{{system_start}}Given the provided information, respond to the user.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: Bonjour, pouvez-vous me recommander des séries télé japonaises fascinantes ? <endofhistory>{{user_end}}
+{{assistant_start}}D'accord, une série télé japonaise de quelle période ?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " Le jardin de l'humble administrateur " <endofactions> <history> USER: Bonjour, mes amis viennent me rendre visite. Y a-t-il des sites touristiques près du district de Gusu qui ne sont pas trop chers ? <endofhistory>{{user_end}}
+{{assistant_start}}Si vous voulez passer du temps avec vos amis, le Jardin de l'Humble Administrateur est un bon endroit. C'est un jardin traditionnel de style Suzhou et c'est aussi près de chez toi.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform business_hours equal_to " du lundi au dimanche, de 09 h 00 à 07 h 00 " <endofactions> <history> USER: D'accord. Pouvez-vous m'aider à vérifier les heures d'ouverture ? <endofhistory>{{user_end}}
+{{assistant_start}}Aucun problème. Il est ouvert du lundi au dimanche, de 09 h 00 à 07 h 00.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) inform metro_station equal_to " There are no direct subway lines to it. " <endofactions> <history> USER: Puis-je m'y rendre directement en métro ? <endofhistory>{{user_end}}
+{{assistant_start}}J'ai bien peur que non. Il n'y a pas de lignes de métro directes vers elle.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) inform room_charge equal_to " 312 yuans " <endofactions> <history> USER: Combien coûte une grande chambre ? <endofhistory>{{user_end}}
+{{assistant_start}}C'est 312 yuans.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: Ok, merci pour votre patience, au revoir, <endofhistory>{{user_end}}
+{{assistant_start}}Je vous en prie. J'espère que vous apprécierez mes recommandations.{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

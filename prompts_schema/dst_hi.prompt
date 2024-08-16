@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, retrieve all the relevant domains from the following choices: movie, tv, attraction, retaurant, car, hotel, hospital, weather, flight, pc, train, class.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: हाय, क्या आप कुछ आकर्षक जापानी टीवी शो की सिफारिश कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}tv{{assistant_end}}
+
+{{user_start}}DST: <state> ( tv ) decade equal_to " 2010 के दशक " , production_country_or_area equal_to " जापान " , type equal_to " सस्पेंस " <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform Douban_score equal_to " 9.1 " AGENT_ACTS: ( tv ) inform director equal_to " नोबुहिरो दोई " USER: धन्यवाद, क्या आप एक भारतीय फिल्म की सिफारिश कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}movie, tv{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " भारत " , ( tv ) decade equal_to " 2010 के दशक " , production_country_or_area equal_to " जापान " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 मिनट " USER: ठीक है, आपके धैर्य के लिए धन्यवाद, अलविदा <endofhistory>{{user_end}}
+{{assistant_start}}movie, tv{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: नमस्ते, मेरे दोस्त मुझसे मिलने आ रहे हैं। क्या गुसु जिले के पास कोई दर्शनीय क्षेत्र हैं जो इतने महंगे नहीं हैं <endofhistory>{{user_end}}
+{{assistant_start}}attraction{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) consumption equal_to " moderate " , name equal_to " हम्बल एडमिनिस्ट्रेटर्स गार्डन " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to " No. 178, Dongbei Street, Gusu District, Suzhou City. " AGENT_ACTS: ( attraction ) inform score equal_to " 4.5 " USER: ठीक है, हम पूरा दिन एक साथ बिता सकते हैं, क्या आप यहाँ के आस-पास कुछ और महंगे रेस्तरां सुझा सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}attraction, restaurant{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: नमस्ते, मैं एक गैस संचालित एसयूवी खरीदना चाहता हूं, क्या आप 150,000 युआन के भीतर एक की सिफारिश कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}car{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " सूज़ौ औद्योगिक पार्क " , name equal_to " हैडिलाओ हॉट पॉट " , pricerange equal_to " थोड़ा महंगा " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform phone_number equal_to " 0512-67603337 " AGENT_ACTS: ( restaurant ) inform business_hours equal_to " सोमवार से रविवार, 09: 00-07: 00 " USER: वाह, यह पूरी रात खुला है, फिर हम कुछ देर और रुक सकते हैं। क्या आपको मानक कमरों वाला इतना महंगा होटल नहीं मिला <endofhistory>{{user_end}}
+{{assistant_start}}hotel, restaurant{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: हाय, मेरा बच्चा ठीक महसूस नहीं करता है और मैं उसे बाल चिकित्सा क्लिनिक में ले जाना चाहता हूं। किस सामान्य अस्पताल में एक अच्छा बाल चिकित्सा क्लिनिक है <endofhistory>{{user_end}}
+{{assistant_start}}hospital{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: मैं अगले हफ्ते काम के लिए ज़ियामेन आऊंगा लेकिन अभी भी निश्चित नहीं है कि मैं किस दिन निकलूंगा, यह मौसम पर निर्भर करता है। क्या आप अगले रविवार के लिए हवा और दिशा की जांच करने में मेरी मदद कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}weather{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: नमस्ते, मैं अगले सप्ताह एक व्यावसायिक यात्रा पर जा रहा हूँ। कृपया अगले शुक्रवार को हांग्जो से शेनझेन के लिए उड़ानों की जांच करने में मेरी मदद करें, अधिमानतः इकोनॉमी क्लास में <endofhistory>{{user_end}}
+{{assistant_start}}flight{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: हैलो, मैं लेनोवो से एक 14-इंच हल्का लैपटॉप खरीदना चाहता हूं, अधिमानतः 8GB की मेमोरी क्षमता के साथ <endofhistory>{{user_end}}
+{{assistant_start}}pc{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: मैं अगले सप्ताह व्यापार यात्रा पर जाऊंगा। क्या आप यह जांचने में मेरी सहायता कर सकते हैं कि अगले सप्ताह ज़ियामेन के लिए कोई हाई-स्पीड ट्रेन है या नहीं <endofhistory>{{user_end}}
+{{assistant_start}}train{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: नमस्ते, मेरा बच्चा छठी कक्षा में है। क्या आप मेरे लिए एक ट्यूटोरियल कक्षा की सिफारिश कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}class{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

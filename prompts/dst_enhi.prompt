@@ -1,0 +1,21 @@
+{{system_start}}Similar to the examples below, generate belief state based on previous state and history.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hi, क्या आप कुछ आकर्षक Japanese TV shows की recommendation कर सकते हैं ? <endofhistory>{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " Japan "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Hi , मेरे friends मुझसे मिलने आ रहे हैं । क्या Gusu District मैं कोई scenic areas है that are not that expensive ? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " Gusu District " , consumption equal_to " not that expensive "{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " Suzhou Industrial Park " , name equal_to " Haidilao Hot Pot " , pricerange equal_to " a bit more expensive " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to " Haidilao Hot Pot " AGENT_ACTS: ( restaurant ) inform phone_number equal_to " 0512-67603337 " USER: Got it. क्या आप मुझे खुलने के hours check करने में help कर सकते हैं ? <endofhistory>{{user_end}}
+{{assistant_start}}( restaurant ) area equal_to " Suzhou Industrial Park " , name equal_to " Haidilao Hot Pot " , pricerange equal_to " a bit more expensive "{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) type equal_to " amusement park " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to " Suzhou Amusement Land Forest and Water World " AGENT_ACTS: ( attraction ) inform features equal_to " forest-themed. It is like being in a vast forest close to the ocean. " USER: क्या मैं subway से directly वहां पहुंच सकता हूं ? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) type equal_to " amusement park "{{assistant_end}}
+
+{{user_start}}DST: <state> ( hotel ) area equal_to " Changshu " , star equal_to " 4 " <endofstate> <history> AGENT_ACTS: ( hotel ) recommend name equal_to " चांगजियांग रोड में Atour होटल " USER: King-size room कितने का है? <endofhistory>{{user_end}}
+{{assistant_start}}( hotel ) name equal_to " Atour Hotel in Changjiang Road, Changshu " , room_type equal_to " king-size room " , star equal_to " 4 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " Indian " , ( tv ) decade equal_to " 2010s " , production_country_or_area equal_to " Japanese TV show " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8.0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 मिनट " USER: ठीक है , your patience के लिए धन्यवाद , bye. <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " Indian " ( tv ) decade equal_to " 2010s " , production_country_or_area equal_to " Japanese TV show "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

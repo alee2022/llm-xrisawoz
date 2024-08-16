@@ -1,0 +1,1502 @@
+[
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform Douban_score equal_to \" 7.3 \" <endofactions> <history> USER: खैर, यह एक अच्छा विकल्प लगता है, लेकिन क्या आप मुझे इसकी डौबन रेटिंग बता सकते हैं <endofhistory>",
+    "output": "इसकी डौबन रेटिंग 7.3 है",
+    "prediction": "इस टीवी शो की डौबन रेटिंग 7.3 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform CPU_model equal_to \" i5-8250 यू \" <endofactions> <history> USER: डेस्कटॉप का सीपीयू प्रकार क्या है <endofhistory>",
+    "output": "सीपीयू का प्रकार इंटेल कोर i5-8250 यू है",
+    "prediction": "इस डेस्कटॉप का सीपीयू मॉडल i5-8250 यू है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) request pricerange , request star <endofactions> <history> USER: हाय, मैं सूज़ौ की यात्रा की योजना बना रहा हूँ। क्या आप मुझे एक होटल खोजने में मदद कर सकते हैं? मुझे एक रिज़ॉर्ट होटल में एक बड़ा आकार आकार का कमरा चाहिए <endofhistory>",
+    "output": "बहुत सारे विकल्प हैं और उन सभी में राजा के आकार के कमरे हैं। क्या आपके पास स्टार रेटिंग या कीमत पर कोई आवश्यकता है",
+    "prediction": "ठीक है, आपकी बजट और होटल के सितारों की संख्या क्या हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_type equal_to \" मानक कमरे \" <endofactions> <history> USER: मैं आपको बताना भूल गया, अगर होटल में मानक कमरे हैं तो मैं इसे पसंद करूंगा <endofhistory>",
+    "output": "करता है। इस होटल में आपकी ज़रूरत की हर चीज़ है",
+    "prediction": "ठीक है, हमारे पास मानक कमरे उपलब्ध हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) inform price equal_to \" 1,600 \" <endofactions> <history> USER: ट्यूशन फीस कितनी है <endofhistory>",
+    "output": "यह 1,600 युआन है",
+    "prediction": "ट्यूशन फीस 1,600 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: बहुत-बहुत धन्यवाद! <endofhistory>",
+    "output": "मेरी खुशी, अलविदा",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" There will be a breeze without continuous direction. \" <endofactions> <history> USER: क्या अगले रविवार को गुआंगज़ौ में हवा चलेगी? हम पहले दिन बाहर बहुत समय बिताने की योजना बना रहे हैं <endofhistory>",
+    "output": "निरंतर दिशा के बिना एक हवा होगी",
+    "prediction": "हां, अगले रविवार को गुआंगज़ौ में हल्की हवा चलेगी और इसकी दिशा निरंतर बदलेगी। यह आपके बाहर बिताए जाने वाले समय के लिए अच्छा होगा।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" दिनभर \" <endofactions> <history> USER: क्या आप मुझे इसके खुलने के घंटे भी बता सकते हैं <endofhistory>",
+    "output": "यह जगह दिनभर खुली रहती है",
+    "prediction": "यह दिनभर खुला रहता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_charge equal_to \" 340 युआन \" <endofactions> <history> USER: एक मानक कमरा कितना है <endofhistory>",
+    "output": "एक मानक कमरा 340 युआन है",
+    "prediction": "मानक कमरा 340 युआन का है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform dishes equal_to \" स्टोन पॉट राइस \" <endofactions> <history> USER: क्या कोई अच्छा व्यंजन है <endofhistory>",
+    "output": "स्टोन पॉट राइस वास्तव में स्वादिष्ट होता है",
+    "prediction": "हां, स्टोन पॉट राइस एक अच्छा विकल्प हो सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) recommend name equal_to \" लैमांडो 230TSI DSG फैशन संस्करण \" <endofactions> <history> USER: हाय, मैं एक गैस संचालित नॉचबैक खरीदना चाहता हूं और मेरा बजट 150,000 और 200,000 युआन के बीच है। क्या आप एक उपयुक्त मॉडल की सिफारिश कर सकते हैं <endofhistory>",
+    "output": "मैं आपको लैमांडो 230TSI DSG फैशन संस्करण खरीदने की सलाह देता हूं",
+    "prediction": "आपके बजट के अनुसार, लैमांडो 230TSI DSG फैशन संस्करण एक अच्छा विकल्प हो सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: आपकी मदद के लिए धन्यवाद, अलविदा <endofhistory>",
+    "output": "अलविदा",
+    "prediction": "आपका स्वागत है। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) request pricerange <endofactions> <history> USER: बढ़िया, यह बहुत अच्छा है। मैं पास में एक रेस्तरां भी देखना चाहता हूं, मुझे एक खोजने में मदद करें <endofhistory>",
+    "output": "ज़रूर, किस मूल्य सीमा में",
+    "prediction": "आपकी प्राथमिकता क्या है? आप एक सस्ते, मध्यम, या महंगे रेस्तरां की तलाश में हैं?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.4 \" , inform ticket_price equal_to \" 45 युआन \" <endofactions> <history> USER: क्या आप इसकी रेटिंग जानते हैं? टिकट कितने हैं <endofhistory>",
+    "output": "टिकट 45 युआन हैं और इसकी रेटिंग 4.4 है। यदि आप रुचि रखते हैं तो आपको जाना चाहिए और इसे देखना चाहिए",
+    "prediction": "इसकी रेटिंग 4.4 है और टिकट की कीमत 45 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" सीधे मेट्रो से वहां नहीं पहुंच सकते \" <endofactions> <history> USER: बहुत अच्छा, क्या हम मेट्रो द्वारा सीधे वहां पहुंच सकते हैं <endofhistory>",
+    "output": "मुझे खेद है, नहीं, आप सीधे मेट्रो से वहां नहीं पहुंच सकते",
+    "prediction": "मुझे खेद है, लेकिन आप सीधे मेट्रो से वहां नहीं पहुंच सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा \" <endofactions> <history> USER: तापमान के बारे में क्या <endofhistory>",
+    "output": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा",
+    "prediction": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" नंबर 43, क्वानफू रोड, झोउझुआंग टाउन, कुनशान सिटी, सूज़ौ सिटी \" <endofactions> <history> USER: सही पता क्या है <endofhistory>",
+    "output": "पता नंबर 43, क्वानफू रोड, झोउझुआंग टाउन, कुनशान सिटी, सूज़ौ सिटी है",
+    "prediction": "यह पता है: नंबर 43, क्वानफू रोड, झोउझुआंग टाउन, कुनशान सिटी, सूज़ौ सिटी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) request type <endofactions> <history> USER: नमस्ते, मुझे टीवी शो और फिल्में देखना पसंद है। क्या आप 2000 के दशक के किसी भी लोकप्रिय अमेरिकी टीवी शो को जानते हैं जिसे आप सुझाना चाहते हैं <endofhistory>",
+    "output": "हां, काफी लोकप्रिय अमेरिकी टीवी शो हैं, आप किस तरह पसंद करते हैं",
+    "prediction": "आप किस प्रकार के टीवी शो देखना पसंद करते हैं? जैसे कि ड्रामा, कॉमेडी, रियलिटी शो, या कुछ और?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-85883698 \" <endofactions> <history> USER: होटल का फ़ोन नंबर क्या है <endofhistory>",
+    "output": "फोन नंबर 0512-85883698 है",
+    "prediction": "होटल का फ़ोन नंबर 0512-85883698 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" HP Zhan 66 pro G1 MT \" <endofactions> <history> USER: मैं एक ही मूल्य सीमा में एचपी झान श्रृंखला से एक के साथ इसकी तुलना करना चाहता हूँ। क्या आप मुझे एक और सलाह दे सकते हैं <endofhistory>",
+    "output": "फिर आप HP Zhan 66 pro G1 MT को देख सकते हैं, जो आपके लिए उपयुक्त हो सकता है",
+    "prediction": "आप HP Zhan 66 pro G1 MT का विचार कर सकते हैं। यह आपकी आवश्यकताओं को पूरा करने के लिए एक अच्छा विकल्प हो सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 98.32% \" <endofactions> <history> USER: क्या कोई जोखिम है कि इसमें देरी हो सकती है <endofhistory>",
+    "output": "इस उड़ान की समय की पाबंदी दर 98.32% है, जो बहुत अधिक है",
+    "prediction": "इस उड़ान की पंक्तिशीलता दर 98.32% है, जो यात्रियों के लिए अच्छी खबर है। इसका मतलब है कि यह उड़ान समय पर चलती है और देरी की संभावना कम होती है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 91.29% \" <endofactions> <history> USER: इस उड़ान की समय की पाबंदी दर कैसी है <endofhistory>",
+    "output": "इसकी समय की पाबंदी दर 91.29% है, इससे जो समझना चाहे समझ लीजिए",
+    "prediction": "इस उड़ान की समय की पाबंदी दर 91.29% है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform episode_length equal_to \" 90 मिनट \" <endofactions> <history> USER: प्रत्येक एपिसोड कितना लंबा है <endofhistory>",
+    "output": "एक एपिसोड 90 मिनट का है",
+    "prediction": "प्रत्येक एपिसोड 90 मिनट का होता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform episode_length equal_to \" 45 मिनट \" <endofactions> <history> USER: प्रत्येक एपिसोड कब तक रहता है <endofhistory>",
+    "output": "प्रत्येक एपिसोड केवल 45 मिनट का है",
+    "prediction": "प्रत्येक एपिसोड की अवधि 45 मिनट होती है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" 18:37 \" , inform departure_time equal_to \" 10:16 \" <endofactions> <history> USER: क्या आप मुझे विशिष्ट प्रस्थान और आगमन समय बता सकते हैं? क्योंकि मैं एक कैब का इंतजाम करना चाहता हूं <endofhistory>",
+    "output": "ट्रेन उस दिन ज़ियामेनबेई से 10:16 रवाना होगी और उस दिन 18:37 शंघाई होंगकियाओ पहुंचेगी",
+    "prediction": "आपकी ट्रेन 10:16 बजे प्रस्थान करेगी और 18:37 बजे पहुंचेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" नंबर 6 यिनज़िबांग, झोउझांग टाउन, कुनशान \" , recommend name equal_to \" यिनजियांगनान ज़ुजिया हॉस्टल \" <endofactions> <history> USER: ठीक है, मैं बड़ा आकार के कमरों के साथ एक रिसॉर्ट होटल की तलाश में हूं। क्या सूज़ौ में यहां कोई सस्ता विकल्प है <endofhistory>",
+    "output": "जरूर , मैं नंबर 6 यिनज़िबांग, झोउझांग टाउन, कुनशान में यिनजियांगनान ज़ुजिया हॉस्टल की सिफारिश करता हूं",
+    "prediction": "यिनजियांगनान ज़ुजिया हॉस्टल एक अच्छा विकल्प हो सकता है। इसका पता है: नंबर 6 यिनज़िबांग, झोउझांग टाउन, कुनशान।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform dishes equal_to \" मांस और अंडे की जर्दी पकौड़ी \" <endofactions> <history> USER: नमस्कार! मैंने सुना है कि सूज़ौ का वुफांगज़ाई बिल्कुल स्वादिष्ट है। क्या आप जानते हैं कि इसकी अनुशंसित व्यंजन क्या है <endofhistory>",
+    "output": "इसकी अनुशंसित व्यंजन मांस और अंडे की जर्दी पकौड़ी है, यह वास्तव में स्वादिष्ट है",
+    "prediction": "हां, वुफांगज़ाई की एक प्रमुख व्यंजन मांस और अंडे की जर्दी पकौड़ी है। यह बहुत स्वादिष्ट होती है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: और इसकी रेटिंग क्या है <endofhistory>",
+    "output": "इसकी रेटिंग 4.5 है",
+    "prediction": "इसकी रेटिंग 4.5 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" नंबर 72, ताइजियन लेन (जुआनमियाओ मंदिर के पास) \" <endofactions> <history> USER: और पता क्या है <endofhistory>",
+    "output": "रेस्टोरेंट नंबर 72, ताइजियन लेन (जुआनमियाओ मंदिर के पास) पर है",
+    "prediction": "यह नंबर 72, ताइजियन लेन (जुआनमियाओ मंदिर के पास) पर स्थित है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-65113180 \" , inform score equal_to \" 4.2 \" <endofactions> <history> USER: विश्वविद्यालय का फोन नंबर क्या है? कैसी है इसकी रेटिंग <endofhistory>",
+    "output": "मैंने आपको जांचने में मदद की है और इसकी रेटिंग 4.2 है। फोन नंबर 0512-65113180 है",
+    "prediction": "विश्वविद्यालय का फोन नंबर 0512-65113180 है और इसकी रेटिंग 4.2 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) general <endofactions> <history> USER: ठीक। मैं इसके बारे में सोचूंगा। धन्यवाद! गुड बाय! <endofhistory>",
+    "output": "आपका स्वागत है! आशा है कि कक्षा महान परिणाम की ओर ले जाती है!",
+    "prediction": "आपका स्वागत है! आपके लिए सही ट्यूटोरियल कक्षा खोजने में मेरी मदद करने के लिए यदि आपको और कुछ चाहिए, तो कृपया मुझसे संपर्क करें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 98.32% \" <endofactions> <history> USER: इस उड़ान की समय की पाबंदी दर क्या है <endofhistory>",
+    "output": "समय की पाबंदी दर लगभग 98.32% है, जो काफी अधिक है",
+    "prediction": "इस उड़ान की समय की पाबंदी दर 98.32% है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" सिटी कम्फर्ट इन \" <endofactions> <history> USER: मैं यह भी पूछना चाहूंगा कि क्या आप आस-पास के किसी सस्ते होटल की सिफारिश कर सकते हैं <endofhistory>",
+    "output": "मैं आपको सिटी कम्फर्ट इन में रहने की सलाह देता हूं",
+    "prediction": "ठीक है, सिटी कम्फर्ट इन एक अच्छा विकल्प हो सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 910 युआन \" <endofactions> <history> USER: टिकट कितना है <endofhistory>",
+    "output": "एक इकोनॉमी क्लास की टिकट 910 युआन की है",
+    "prediction": "टिकट की कीमत 910 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है, बहुत बहुत धन्यवाद। मुझे वह मिल गया है जिसके लिए मैं आया था, अलविदा <endofhistory>",
+    "output": "आपका स्वागत है, अलविदा",
+    "prediction": "आपका स्वागत है। आपकी मदद करने में मुझे खुशी हुई। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: अलविदा! <endofhistory>",
+    "output": "अलविदा",
+    "prediction": "अलविदा! आपका दिन शुभ हो।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) general <endofactions> <history> USER: ठीक। मैं इसके बारे में सोचूंगा। धन्यवाद! गुड बाय! <endofhistory>",
+    "output": "आपका स्वागत है! आशा है कि कक्षा महान परिणाम की ओर ले जाती है!",
+    "prediction": "आपका स्वागत है! आपके लिए सही ट्यूटोरियल कक्षा खोजने में मेरी मदद करने के लिए यदि आपको और कुछ चाहिए, तो कृपया मुझसे संपर्क करें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) recommend title equal_to \" सॉ \" <endofactions> <history> USER: मान लीजिए 2000 के दशक में <endofhistory>",
+    "output": "फिर आप सॉ देख सकते हैं, यह निश्चित रूप से आपको डरा देगा",
+    "prediction": "ठीक है, 2000 के दशक में एक लोकप्रिय फिल्म \"सॉ\" थी। आप इसे देख सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" वार्मली होटल \" <endofactions> <history> USER: ठीक। हमें सूज़ौ न्यू डिस्ट्रिक्ट में एक 3-सितारा होटल खोजने की भी आवश्यकता है। हमें एक मानक कमरे की आवश्यकता होगी, क्या कोई उपयुक्त विकल्प हैं <endofhistory>",
+    "output": "आप वार्मली होटल में रुक सकते हैं, यह काफी अच्छा है",
+    "prediction": "वार्मली होटल आपकी आवश्यकताओं के लिए एक अच्छा विकल्प हो सकता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है, मिल गया। धन्यवाद। मैं जाऊंगा और अपना बैग पैक करूंगा। गुड बाय! <endofhistory>",
+    "output": "आपका स्वागत है। एक अच्छी यात्रा है, अलविदा",
+    "prediction": "आपका स्वागत है! यात्रा सुरक्षित रहे। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: बहुत अच्छा लगता है। आपकी सिफारिश के लिए धन्यवाद <endofhistory>",
+    "output": "आपका स्वागत है, कोई अन्य प्रश्न",
+    "prediction": "आपका स्वागत है! आपको और किसी बात की आवश्यकता हो तो कृपया मुझे बताएं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" उस दिन दोपहर 02:25 बजे \" <endofactions> <history> USER: यह तब बहुत विश्वसनीय है। यह कितने बजे बंद हो जाता है <endofhistory>",
+    "output": "यह उस दिन दोपहर 02:25 बजे उड़ान भरती है",
+    "prediction": "उस दिन दोपहर 02:25 बजे उड़ान निर्धारित है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: बहुत बढ़िया। धन्यवाद। मैं बाद में टिकट बुक करूंगा, अलविदा <endofhistory>",
+    "output": "आपका स्वागत है, अलविदा",
+    "prediction": "आपका स्वागत है। आपकी यात्रा शुभ हो। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: धन्यवाद। मैं जाने के लिए तैयार हो जाऊंगा, अलविदा <endofhistory>",
+    "output": "अलविदा, एक अच्छी यात्रा है",
+    "prediction": "आपका स्वागत है। आपकी यात्रा शुभ हो। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" The wetland park integrates tourism, entertainment, leisure, and education all in one. You could say it's a paradise on earth. \" <endofactions> <history> USER: क्या वहाँ देखने के लिए कुछ खास है <endofhistory>",
+    "output": "आर्द्रभूमि पार्क पर्यटन, मनोरंजन, अवकाश और शिक्षा सभी को एक में एकीकृत करता है। आप कह सकते हैं कि यह पृथ्वी पर स्वर्ग है",
+    "prediction": "जी हां, यह आद्रश्य एक वेटलैंड पार्क है जो पर्यटन, मनोरंजन, आराम और शिक्षा को एक साथ जोड़ता है। आप कह सकते हैं कि यह पृथ्वी पर स्वर्ग है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform features equal_to \" पीसीआई एसएसडी, और डबल हार्ड ड्राइव \" <endofactions> <history> USER: क्या हैं इसकी खासियतें <endofhistory>",
+    "output": "पीसीआई एसएसडी, और डबल हार्ड ड्राइव",
+    "prediction": "इसकी खासियतें में पीसीआई एसएसडी और डबल हार्ड ड्राइव शामिल हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform director equal_to \" वेन मुये \" , inform release_date equal_to \" 5 जुलाई, 2018 \" <endofactions> <history> USER: फिल्म का निर्देशन कौन कर रहा है? इसका प्रीमियर कब हुआ <endofhistory>",
+    "output": "निर्देशक वेन मुये हैं, जो एक युवा निर्देशक हैं। यह 5 जुलाई, 2018 को चीनी मुख्य भूमि में जारी किया गया था",
+    "prediction": "इस फिल्म का निर्देशन वेन मुये ने किया है और इसका प्रीमियर 5 जुलाई, 2018 को हुआ था"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" पुडोंग अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 से लुकौ अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 तक चाइना ईस्टर्न एयरलाइंस के MU2882 \" <endofactions> <history> USER: यह ठीक है, ठीक होना चाहिए। कृपया अगले शनिवार को शंघाई से नानजिंग के लिए बिजनेस क्लास सीटों के साथ एक उड़ान की सिफारिश करें <endofhistory>",
+    "output": "पक्का। मैं पुडोंग अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 से लुकौ अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 तक चाइना ईस्टर्न एयरलाइंस के MU2882 का सुझाव देता हूं",
+    "prediction": "आप पुडोंग अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 से लुकौ अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 तक चाइना ईस्टर्न एयरलाइंस के MU2882 उड़ान का उपयोग कर सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) inform end_time equal_to \" 10:00 \" , inform times equal_to \" 10:00 \" <endofactions> <history> USER: कीमत स्वीकार्य है। कक्षा कितने बजे खारिज करती है? कितने सत्र हैं <endofhistory>",
+    "output": "कक्षा 10:00 बजे समाप्त हो जाती है। 10 सत्र हैं, जो एक उचित व्यवस्था है",
+    "prediction": "कक्षा 10:00 बजे समाप्त होती है और कुल 10 सत्र होते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) recommend title equal_to \" लिव्स ऑफ़ ओमिशन \" <endofactions> <history> USER: बेशक, आपके पास क्या है <endofhistory>",
+    "output": "मैं लिव्स ऑफ़ ओमिशन की सलाह देता हूं",
+    "prediction": "मैं \"लिव्स ऑफ़ ओमिशन\" टीवी शो की सिफारिश करता हूँ। यह एक बहुत ही रोमांचक और मनोरंजक शो है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" सुबह 7:55 बजे \" <endofactions> <history> USER: मुझे आगमन का समय पता है, लेकिन प्रस्थान का समय क्या है <endofhistory>",
+    "output": "यह सुबह 7:55 बजे निकलती है",
+    "prediction": "आपकी उड़ान सुबह 7:55 बजे प्रस्थान करेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform Douban_score equal_to \" 7.2 \" <endofactions> <history> USER: ठीक है, इसकी डौबन रेटिंग क्या है <endofhistory>",
+    "output": "इसकी डौबन रेटिंग 7.2 है",
+    "prediction": "इसकी डौबन रेटिंग 7.2 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है, मिल गया। मैं बस इतना ही पूछना चाहता था। धन्यवाद! गुड बाय <endofhistory>",
+    "output": "मेरी खुशी, अलविदा!",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform departure_time equal_to \" 18:40 \" <endofactions> <history> USER: बिलकुल ठीक। नानजिंग जंक्शन से ट्रेन कितने बजे निकलेगी <endofhistory>",
+    "output": "यह उस दिन शाम 18:40 निकलती है",
+    "prediction": "ट्रेन 18:40 बजे नानजिंग जंक्शन से निकलेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform CPU_model equal_to \" i7-9750H \" <endofactions> <history> USER: क्या आप सीपीयू मॉडल की जांच कर सकते हैं <endofhistory>",
+    "output": "यह इंटेल कोर i7-9750H है",
+    "prediction": "ठीक है, सीपीयू मॉडल i7-9750H है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: अब समझ में आया। धन्यवाद, अलविदा <endofhistory>",
+    "output": "मेरी खुशी, अलविदा",
+    "prediction": "आपका स्वागत है। अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" You can enjoy the beautiful scenery of mountains and Jiangnan gardens, learn more about the Spring and Autumn Period and visit the leaning Huqiu Pagoda. \" <endofactions> <history> USER: क्या वहाँ देखने के लिए कुछ खास है <endofhistory>",
+    "output": "आप पहाड़ों और जियांगनान उद्यानों के सुंदर दृश्यों का आनंद ले सकते हैं, वसंत और शरद ऋतु की अवधि के बारे में अधिक जान सकते हैं और झुकाव हुकिउ पगोडा पर जा सकते हैं",
+    "prediction": "आप वहाँ पहाड़ों और जियांगनान बगीचों की सुंदर दृश्य का आनंद ले सकते हैं, वसंत और शरद ऋतु के बारे में अधिक जान सकते हैं और झुके हुए हुकियू पगोडा का दर्शन कर सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform phone_number equal_to \" 0512-62568777 \" <endofactions> <history> USER: यह कमाल की बात है। क्या आपके पास रेस्तरां का फोन नंबर है <endofhistory>",
+    "output": "फोन नंबर 0512-62568777 है",
+    "prediction": "हां, रेस्तरां का फोन नंबर 0512-62568777 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: ठीक है, धन्यवाद <endofhistory>",
+    "output": "अहोभाग्य",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझे बताएं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform standby_time equal_to \" 5 से 7 घंटे \" <endofactions> <history> USER: इसका स्टैंडबाय टाइम क्या है <endofhistory>",
+    "output": "इस लैपटॉप का स्टैंडबाय टाइम 5 से 7 घंटे का है",
+    "prediction": "इसका स्टैंडबाय टाइम 5 से 7 घंटे है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform CT equal_to \" हां \" , inform key_departments equal_to \" न्यूरोसर्जरी विभाग \" <endofactions> <history> USER: क्या अस्पताल सीटी स्कैन प्रदान करता है <endofhistory>",
+    "output": "हां, यह व्यापक उपकरणों वाला एक सामान्य अस्पताल है और इसका न्यूरोसर्जरी विभाग अच्छा है",
+    "prediction": "हां, यह अस्पताल सीटी स्कैन सुविधा प्रदान करता है और इसमें न्यूरोसर्जरी विभाग भी है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" उस दिन शाम 4:50 बजे \" <endofactions> <history> USER: गुआंगज़ौ में उड़ान कितने बजे पहुंचेगी <endofhistory>",
+    "output": "यह उस दिन शाम 4:50 बजे पहुंचेगा",
+    "prediction": "उस दिन शाम 4:50 बजे पहुंचेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: अलविदा <endofhistory>",
+    "output": "अलविदा",
+    "prediction": "अलविदा, आपका दिन शुभ हो!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) recommend name equal_to \" सूचो विश्वविद्यालय के पहले संबद्ध अस्पताल \" <endofactions> <history> USER: नमस्ते, क्या आप मुझे मनोवैज्ञानिक विभाग के साथ एक सामान्य अस्पताल खोजने में मदद कर सकते हैं? मेरे परिवार के एक सदस्य की तबीयत पिछले कुछ दिनों से ठीक नहीं है <endofhistory>",
+    "output": "हां, आप सूचो विश्वविद्यालय के पहले संबद्ध अस्पताल में जा सकते हैं। उनके पास मनोवैज्ञानिक विभाग में शीर्ष डॉक्टर हैं",
+    "prediction": "मैं सूचो विश्वविद्यालय के पहले संबद्ध अस्पताल की सिफारिश करता हूं, वहां एक अच्छा मनोवैज्ञानिक विभाग है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" ए 502, शिचेंग योंगजी बिल्डिंग का 5 एफ, नंबर 19, गुआंगजी साउथ रोड \" <endofactions> <history> USER: रेस्तरां का सटीक स्थान क्या है <endofhistory>",
+    "output": "ए 502, शिचेंग योंगजी बिल्डिंग का 5 एफ, नंबर 19, गुआंगजी साउथ रोड",
+    "prediction": "रेस्तरां का पता है: ए 502, शिचेंग योंगजी बिल्डिंग का 5 एफ, नंबर 19, गुआंजी साउथ रोड"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" जिओशान अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 से बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 तक एयर चाइना के C1729 \" <endofactions> <history> USER: यह तो बहुत अच्छा है। कृपया हांग्जो से गुआंगज़ौ के लिए उड़ान की सिफारिश करने में मेरी मदद करें। मैं इकोनॉमी क्लास में उड़ान भरना चाहुंगा <endofhistory>",
+    "output": "ठीक है। मैं आपको जिओशान अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 से बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 तक एयर चाइना के C1729 लेने की सलाह देता हूं",
+    "prediction": "आप जिओशान अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 से बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 तक एयर चाइना के C1729 उड़ान ले सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform heated_seats equal_to \" नहीं है \" <endofactions> <history> USER: सीट हीटिंग के बारे में क्या <endofhistory>",
+    "output": "फिलहाल उसका यह फंक्शन नहीं है",
+    "prediction": "मुझे खेद है, लेकिन इस कार में सीट हीटिंग की सुविधा नहीं है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" लेनोवो तियान्यी 510प्रो \" <endofactions> <history> USER: नमस्कार! मैंने हाल ही में डेस्कटॉप कंप्यूटर के एक बैच के बारे में सोचा है, लेकिन मुझे नहीं पता कि कौन सा ब्रांड है। क्या आप कुछ सुझाव दे सकते हैं <endofhistory>",
+    "output": "जी हां, मुझे लगता है कि आप लेनोवो तियान्यी 510प्रो को देख सकते हो",
+    "prediction": "ठीक है, आप लेनोवो तियान्यी 510प्रो को देख सकते हैं। यह एक अच्छा विकल्प हो सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है, आपकी मदद के लिए धन्यवाद, अलविदा! <endofhistory>",
+    "output": "मेरी खुशी, अलविदा",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform price equal_to \" 5,989.0 \" <endofactions> <history> USER: ठीक है, मैं अब तक इसके साथ खुश हूं, यह कितना है <endofhistory>",
+    "output": "इसकी कीमत 5,989.0 युआन है",
+    "prediction": "यह लैपटॉप 5,989.0 युआन का है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" मुफ्त \" <endofactions> <history> USER: क्या इसमें पार्किंग स्थल है? क्या आपको पार्किंग के लिए भुगतान करने की आवश्यकता है <endofhistory>",
+    "output": "पार्किंग स्थल मुफ्त है",
+    "prediction": "हां, इस होटल में पार्किंग सुविधा है और यह मुफ्त है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" L'Arôme \" <endofactions> <history> USER: वास्तव में कोई फर्क नहीं पड़ता, लेकिन मैं चाहूंगा कि हम मेट्रो द्वारा सीधे रेस्तरां में जा सकें <endofhistory>",
+    "output": "ठीक है, मैं L'Arôme की सिफारिश करता हूं। मैंने इस रेस्तरां के बारे में अच्छी बातें सुनी हैं",
+    "prediction": "ठीक है, आप L'Arôme जाना चाह सकते हैं। यह एक अच्छा विकल्प हो सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform business_hours equal_to \" 10:30 से 21:00, सोमवार से रविवार \" , inform score equal_to \" 4.7 \" <endofactions> <history> USER: बढ़िया, तो मुझे लगता है कि इसकी रेटिंग अधिक है, है ना? खुलने का समय क्या है <endofhistory>",
+    "output": "हाँ, इसकी रेटिंग ऊंची है, 4.7। खुलने का समय 10:30 से 21:00, सोमवार से रविवार है",
+    "prediction": "हां, इसकी रेटिंग 4.7 है, जो बहुत अच्छी है। यह रेस्तरां सोमवार से रविवार तक, सुबह 10:30 से रात 9:00 तक खुला होता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" विनम्र प्रशासक के उद्यान \" <endofactions> <history> USER: नमस्ते,मेरा दोस्त मुझसे मिलने सूज़ौ आ रहा है। क्या आप मध्य-मूल्य सीमा में गुसु जिले में एक मजेदार जगह की सिफारिश कर सकते हैं <endofhistory>",
+    "output": "मैं आपको विनम्र प्रशासक के उद्यान में जाने की सलाह देता हूं",
+    "prediction": "ठीक है, आप और आपके दोस्त विनम्र प्रशासक के उद्यान का आनंद ले सकते हैं। यह एक खूबसूरत और शांत स्थल है जहां आप विश्राम कर सकते हैं और समय बिता सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) request type <endofactions> <history> USER: नमस्ते, क्या आप 2010 के दशक से किसी भी लोकप्रिय जापानी टीवी शो की सिफारिश कर सकते हैं <endofhistory>",
+    "output": "आपको कौन सी शैली पसंद है",
+    "prediction": "आप आमतौर पर किस प्रकार के टीवी शो देखना पसंद करते हैं? जैसे कि ड्रामा, कॉमेडी, एनिमे, या कुछ और?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ \" <endofactions> <history> USER: होटल का पता क्या है <endofhistory>",
+    "output": "पता नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ है",
+    "prediction": "होटल का पता है: नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" सिचुआन एयरलाइंस के 3U8548 \" <endofactions> <history> USER: इकोनॉमी क्लास <endofhistory>",
+    "output": "मैं आपको सिचुआन एयरलाइंस के 3U8548 लेने की सलाह देता हूं",
+    "prediction": "आप सिचुआन एयरलाइंस के 3U8548 उड़ान का उपयोग कर सकते हैं। यह इकोनॉमी क्लास में उपलब्ध है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" सुबह 7:30 बजे से शाम 6:50 बजे तक \" <endofactions> <history> USER: ठीक। और खुलने का समय क्या है <endofhistory>",
+    "output": "इसके खुलने का समय सुबह 7:30 बजे से शाम 6:50 बजे तक है",
+    "prediction": "यह सुबह 7:30 बजे से शाम 6:50 बजे तक खुला होता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: अब समझ में आया। धन्यवाद! गुड बाय! <endofhistory>",
+    "output": "बढ़िया। धन्यवाद, अलविदा",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" कोई सीधा भूमिगत रास्ता \" , inform ticket_price equal_to \" 198 युआन \" <endofactions> <history> USER: वे कितना शुल्क लेते हैं? क्या हम मेट्रो द्वारा सीधे वहां पहुंच सकते हैं <endofhistory>",
+    "output": "टिकट 198 युआन का हैं, लेकिन वहां कोई सीधा भूमिगत रास्ता नहीं है",
+    "prediction": "टिकट की कीमत 198 युआन है और हां, आप मेट्रो के माध्यम से सीधे वहां पहुंच सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" एचपी स्टार 14 यूथ \" , recommend series equal_to \" एचपी स्टार सीरीज \" <endofactions> <history> USER: क्या एचपी ने कोई नया लैपटॉप जारी किया है? यदि ऐसा है, तो कृपया हल्के लैपटॉप की सिफारिश करें <endofhistory>",
+    "output": "एचपी स्टार सीरीज़ का एचपी स्टार 14 यूथ वास्तव में एक बड़ा सौदा है",
+    "prediction": "एचपी स्टार 14 यूथ एक अच्छा विकल्प हो सकता है, यह एचपी स्टार सीरीज़ का हिस्सा है और यह बहुत हल्का है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: बिलकुल ठीक। मैं इसके बारे में सोचूंगा और अपने दोस्तों के साथ इस पर चर्चा करूंगा। धन्यवाद अलविदा <endofhistory>",
+    "output": "आपका स्वागत है, अलविदा",
+    "prediction": "आपका स्वागत है। आपके पास कोई और प्रश्न हो तो कृपया पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" मसालेदार मेमोरी \" <endofactions> <history> USER: नमस्ते, मैं सूज़ौ न्यू डिस्ट्रिक्ट में एक मध्य-मूल्य वाले रेस्तरां में जाना चाहता हूं। यह सबसे अच्छा होगा अगर मैं मेट्रो द्वारा सीधे वहां पहुंच सकूं, तो कृपया मुझे एक की सिफारिश करें <endofhistory>",
+    "output": "मैं मसालेदार मेमोरी की सलाह देता हूं",
+    "prediction": "मैं \"मसालेदार मेमोरी\" रेस्तरां की सिफारिश करता हूं। यह सूज़ौ न्यू डिस्ट्रिक्ट में है और आप मेट्रो द्वारा आसानी से पहुंच सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" लेनोवो तियान्यी 510प्रो \" <endofactions> <history> USER: नमस्कार! मैं एक व्यवसाय कंप्यूटर खरीदना चाहता हूं, क्या आप जानते हैं कि कौन सा चुनना है <endofhistory>",
+    "output": "लेनोवो तियान्यी 510प्रो काफी अच्छा है",
+    "prediction": "मैं लेनोवो तियान्यी 510प्रो की सिफारिश करता हूं, यह एक अच्छा व्यवसाय कंप्यूटर है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" नंबर 178, डोंगबेई स्ट्रीट, गुसू जिला, सूज़ौ सिटी \" <endofactions> <history> USER: यह निश्चित रूप से एक प्रसिद्ध प्रतिष्ठा है। सटीक पता क्या है <endofhistory>",
+    "output": "नंबर 178, डोंगबेई स्ट्रीट, गुसू जिला, सूज़ौ सिटी",
+    "prediction": "यह पता है: नंबर 178, डोंगबेई स्ट्रीट, गुसू जिला, सूज़ौ सिटी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform ventilated_seats equal_to \" इस \" <endofactions> <history> USER: क्या इसमें हवादार सीटें हैं <endofhistory>",
+    "output": "इस कार में सीट वेंटिलेशन है",
+    "prediction": "हां, इसमें हवादार सीटें हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: खैर, आपके धैर्य के लिए धन्यवाद। मुझे वह सब मिल गया है जिसके लिए मैं आया था <endofhistory>",
+    "output": "आपका स्वागत है। अगर आपको कुछ और चाहिए तो वापस ज़रूर आना",
+    "prediction": "आपका स्वागत है। आपकी मदद करने में मुझे खुशी हुई। अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform film_length equal_to \" 112 मिनट \" <endofactions> <history> USER: मुझे यह फिल्म देखने में कितना समय लगेगा <endofhistory>",
+    "output": "इसमें 112 मिनट लगते हैं",
+    "prediction": "यह फिल्म 112 मिनट लंबी है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ \" <endofactions> <history> USER: होटल का पता क्या है <endofhistory>",
+    "output": "पता नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ है",
+    "prediction": "होटल का पता है: नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: नहीं, बस इतना ही। मैं आपको अपने व्यवसाय में वापस आने दूंगा, अलविदा <endofhistory>",
+    "output": "अलविदा, अपने भोजन का आनंद लें!",
+    "prediction": "आपका स्वागत है। अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: धन्यवाद, अलविदा! <endofhistory>",
+    "output": "मेरी खुशी, अलविदा",
+    "prediction": "आपका स्वागत है। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" There will be a breeze without continuous direction. \" <endofactions> <history> USER: कृपया यह जांचने में मेरी सहायता करें कि अगले रविवार को ग्वांगझू में हवा चलेगी या नहीं <endofhistory>",
+    "output": "निरंतर दिशा के बिना एक हवा होगी",
+    "prediction": "अगले रविवार को ग्वांगझू में हल्की हवा चलेगी, लेकिन इसकी दिशा निरंतर नहीं रहेगी।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform features equal_to \" It's famous for Stone Lake's wonderful scenery and the endless rows of mountains and ridges. It's a great place to appreciate the mountain and water culture of Suzhou. \" <endofactions> <history> USER: वहाँ देखने के लिए क्या है <endofhistory>",
+    "output": "इसका नाम काफी हद तक यह सब कहता है। यह स्टोन लेक के अद्भुत दृश्यों और पहाड़ों और लकीरों की अंतहीन पंक्तियों के लिए प्रसिद्ध है। यह सूज़ौ के पहाड़ और जल संस्कृति की सराहना करने के लिए एक शानदार जगह है",
+    "prediction": "यह स्थल प्रसिद्ध है अपनी अद्भुत दृश्य और पहाड़ों और श्रृंखलाओं की अनंत पंक्तियों के लिए। यह सूज़ौ की पहाड़ी और जल संस्कृति की सराहना करने के लिए एक शानदार स्थान है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" Lenovo Tianyi 510Pro \" <endofactions> <history> USER: नमस्कार! मैं हाल ही में एक नया कंप्यूटर खरीदना चाहता हूं, अधिमानतः एक डेस्कटॉप। क्या आप मुझे एक अच्छे मॉडल की सिफारिश करने में मदद कर सकते हैं <endofhistory>",
+    "output": "आप Lenovo Tianyi 510Pro को देख सकते हैं",
+    "prediction": "ठीक है, मैं Lenovo Tianyi 510Pro की सिफारिश करता हूं। यह एक अच्छा डेस्कटॉप कंप्यूटर है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) request star <endofactions> <history> USER: मैं हाल ही में एक अच्छा हांगकांग टीवी शो की तलाश में हूं। क्या आप मुझे एक खोजने में मदद कर सकते हैं <endofhistory>",
+    "output": "निश्चित रूप से, क्या आपके पास एक पसंदीदा अभिनेता है",
+    "prediction": "आप किसी विशेष अभिनेता या अभिनेत्री के फैन हैं क्या"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" धूप खिलेगी \" <endofactions> <history> USER: मैं यह भी जानना चाहता हूं कि अगले शनिवार को बीजिंग का मौसम कैसा रहेगा <endofhistory>",
+    "output": "अगले शनिवार को बीजिंग में धूप खिलेगी",
+    "prediction": "अगले शनिवार को बीजिंग में धूप खिलेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform Douban_score equal_to \" 9.5 \" , inform name_list equal_to \" एलिसा चिया, जेम्स वेन, वू कांग-रेन और ट्रेसी चाउ \" <endofactions> <history> USER: इसकी डौबन रेटिंग क्या है? मुख्य कलाकारों के बारे में क्या <endofhistory>",
+    "output": "इसकी डौबन रेटिंग 9.5 जितनी अधिक है और इसमें एलिसा चिया, जेम्स वेन, वू कांग-रेन और ट्रेसी चाउ हैं",
+    "prediction": "इस शो की डौबन रेटिंग 9.5 है और मुख्य कलाकारों में एलिसा चिया, जेम्स वेन, वू कांग-रेन और ट्रेसी चाउ शामिल हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform price equal_to \" 336,900 \" <endofactions> <history> USER: इस मॉडल की कीमत कितनी है <endofhistory>",
+    "output": "इस मॉडल की कीमत 336,900 युआन है",
+    "prediction": "इस मॉडल की कीमत 336,900 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform CT equal_to \" हैं \" <endofactions> <history> USER: अच्छा, सीटी स्कैन सेवाओं के बारे में क्या <endofhistory>",
+    "output": "सौभाग्य से, इस अस्पताल में सीटी स्कैन सेवाएं हैं",
+    "prediction": "हां, इस अस्पताल में सीटी स्कैन सुविधाएं उपलब्ध हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) recommend name equal_to \" टेरामोंट 330TSI कम्फर्ट एडिशन \" <endofactions> <history> USER: मैं 300,000 युआन से अधिक खर्च करने के लिए तैयार हूं <endofhistory>",
+    "output": "मैं टू-व्हील ड्राइव के साथ टेरामोंट 330TSI कम्फर्ट एडिशन की सलाह देता हूं",
+    "prediction": "आपके बजट के अनुसार, आप टेरामोंट 330TSI कम्फर्ट एडिशन खरीद सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform Douban_score equal_to \" 7.6 \" <endofactions> <history> USER: इसकी डौबन रेटिंग क्या है <endofhistory>",
+    "output": "इसकी डूबन रेटिंग 7.6 है",
+    "prediction": "इसकी डौबन रेटिंग 7.6 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform cruise_control_system equal_to \" उपलब्ध \" , inform ventilated_seats equal_to \" नहीं \" <endofactions> <history> USER: क्या इस कार में सीट वेंटिलेशन और क्रूज कंट्रोल है <endofhistory>",
+    "output": "क्रूज कंट्रोल उपलब्ध है, लेकिन दुर्भाग्य से, यह सीट वेंटिलेशन से लैस नहीं है",
+    "prediction": "इस कार में क्रूज कंट्रोल सिस्टम उपलब्ध है, लेकिन वेंटिलेटेड सीटें नहीं हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) inform area equal_to \" सूज़ौ न्यू डिस्ट्रिक्ट \" , inform class_number equal_to \" PM5J44004A \" <endofactions> <history> USER: हम गुसु जिले और सूज़ौ न्यू जिले के बीच रहते हैं, इसलिए दोनों क्षेत्रों में से कोई भी स्थान ठीक है। हम जहां रहते हैं, दोनों उसके करीब हैं <endofhistory>",
+    "output": "मैं आपको PM5J44004A की सलाह देता हूं, जो सूज़ौ न्यू डिस्ट्रिक्ट में पढ़ाया जाता है",
+    "prediction": "ठीक है, आपके लिए सूज़ौ न्यू डिस्ट्रिक्ट में PM5J44004A कक्षा की सिफारिश करता हूँ"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) recommend name equal_to \" सूज़ौ एकीकृत पारंपरिक चीनी और पश्चिमी चिकित्सा अस्पताल \" <endofactions> <history> USER: मैं एक सार्वजनिक अस्पताल पसंद करूंगा <endofhistory>",
+    "output": "सूज़ौ एकीकृत पारंपरिक चीनी और पश्चिमी चिकित्सा अस्पताल उपरोक्त मानदंडों को पूरा करता है",
+    "prediction": "सूज़ौ एकीकृत पारंपरिक चीनी और पश्चिमी चिकित्सा अस्पताल एक अच्छा विकल्प हो सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request class_cabin <endofactions> <history> USER: कृपया अगले शनिवार के लिए उड़ानों की जाँच करें <endofhistory>",
+    "output": "आप किस क्लास में यात्रा करना पसंद करते हैं",
+    "prediction": "आप किस कक्षा में उड़ान लेना चाहते हैं? उदाहरण के लिए, इकोनॉमी, प्रीमियम इकोनॉमी, बिजनेस, या पहली कक्षा?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ \" <endofactions> <history> USER: होटल का पता क्या है <endofhistory>",
+    "output": "पता नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ है",
+    "prediction": "होटल का पता है: नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) request star <endofactions> <history> USER: हाय, मैं सूज़ौ की यात्रा की तैयारी कर रहा हूं, क्या आप सूज़ौ औद्योगिक पार्क में एक साफ़ सुथरा होटल खोजने में मेरी मदद कर सकते हैं <endofhistory>",
+    "output": "ज़रूर, बस एक पल। ऐसे कई होटल हैं जो आपकी आवश्यकताओं के अनुरूप हैं, आप क्या स्टार रेटिंग चाहते हैं",
+    "prediction": "आपको कितने सितारों वाला होटल चाहिए"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" कैंगलांग मंडप \" <endofactions> <history> USER: नमस्ते, मैं एक दोस्त से मिलने के लिए सूज़ौ आ रहा हूं और जब मैं वहां हूं तो मैं शहर का पता लगाना चाहता हूं। दोस्तों के लिए गुसु जिले में घूमने के लिए कौन सा दर्शनीय क्षेत्र अच्छा होगा <endofhistory>",
+    "output": "मुझे लगता है कि कैंगलांग मंडप आपके लिए बहुत अच्छा होगा",
+    "prediction": "आप और आपके दोस्त कैंगलांग मंडप जा सकते हैं। यह एक बहुत ही सुंदर और शांत स्थल है जहां आप अपने दोस्तों के साथ समय बिता सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 404.0 युआन \" <endofactions> <history> USER: ठीक है, इस ट्रेन में द्वितीय श्रेणी में स्लीपर की कीमत क्या है <endofhistory>",
+    "output": "द्वितीय श्रेणी में एक स्लीपर 404.0 युआन की है",
+    "prediction": "द्वितीय श्रेणी का स्लीपर टिकट 404.0 युआन का होगा"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) general <endofactions> <history> USER: बढ़िया, मेरा बजट 5,000 युआन से कम है और यह कीमत मेरे लिए एकदम सही है <endofhistory>",
+    "output": "हां, मॉडल के साथ मैंने सिफारिश की कि आप अपने पैसे के लिए महान मूल्य प्राप्त करें",
+    "prediction": "बहुत अच्छा, आपको आपके बजट के अनुसार एक अच्छा विकल्प मिल गया है। आपको इसे खरीदने में कोई और सहायता चाहिए?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) recommend name equal_to \" पारम्परिकचीनी चिकित्सा के सूज़ौ अस्पताल \" <endofactions> <history> USER: नमस्ते, मैं एक सार्वजनिक अस्पताल ढूंढना चाहता हूं, अधिमानतः गुसू जिले में एक विशेष अस्पताल। क्या आप मुझे एक का चयन करने में मदद कर सकते हैं <endofhistory>",
+    "output": "निश्चित रूप से, मैं पारम्परिकचीनी चिकित्सा के सूज़ौ अस्पताल की सलाह देता हूं",
+    "prediction": "आप पारम्परिक चीनी चिकित्सा के सूज़ौ अस्पताल का विचार कर सकते हैं। यह गुसू जिले में स्थित है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" लेनोवो ज़ियाओक्सिन एयर \" <endofactions> <history> USER: 8 जीबी <endofhistory>",
+    "output": "मेरा सुझाव है कि लेनोवो ज़ियाओक्सिन एयर प्राप्त करें",
+    "prediction": "आपके लिए लेनोवो ज़ियाओक्सिन एयर एक अच्छा विकल्प हो सकता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: ठीक। यह बढ़िया है! आपकी सेवा के लिए धन्यवाद। गुड बाय! <endofhistory>",
+    "output": "आपका स्वागत है। आपका दिन अच्छा हो!",
+    "prediction": "आपका स्वागत है! आपकी मदद करने में मुझे खुशी हुई। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: ठीक है, बहुत बहुत धन्यवाद <endofhistory>",
+    "output": "कोई समस्या नहीं है, अगर आपके कोई अन्य प्रश्न हैं तो मुझे बताएं",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझे बताएं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" धूप खिलेगी \" <endofactions> <history> USER: नमस्कार! क्या आप अगले शनिवार के लिए बीजिंग में मौसम की जांच करने में मदद कर सकते हैं <endofhistory>",
+    "output": "नमस्कार! अगले शनिवार को बीजिंग में धूप खिलेगी",
+    "prediction": "अगले शनिवार को बीजिंग में धूप खिलेगी।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) inform classroom equal_to \" शिंगहाई स्क्वायर लीनिंग सेंटर \" <endofactions> <history> USER: क्लास कहाँ आयोजित की जाती है <endofhistory>",
+    "output": "कक्षा शिंगहाई स्क्वायर लीनिंग सेंटर के कक्ष 221 में आयोजित की जाती है",
+    "prediction": "क्लास शिंगहाई स्क्वायर लीनिंग सेंटर में आयोजित की जाती हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform address equal_to \" नंबर 188, शिज़ी स्ट्रीट \" <endofactions> <history> USER: मुझे नहीं पता कि यह कहां है <endofhistory>",
+    "output": "यह नंबर 188, शिज़ी स्ट्रीट, गुसू जिले में है",
+    "prediction": "यह पता नंबर 188, शिज़ी स्ट्रीट है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) request type <endofactions> <history> USER: वाह! बार्बी सू इसमें है। बस यही मैं ढूंढ रहा था, एक ताइवानी टीवी शो जिसमें वह अभिनय कर रही थी <endofhistory>",
+    "output": "क्या आप मुझे एक रोमांटिक टीवी शो खोजने में भी मदद कर सकते हैं",
+    "prediction": "आप बार्बी सू की कौन सी प्रकार की टीवी शो देखना चाहते हैं? उदाहरण के लिए, ड्रामा, कॉमेडी, या रोमांटिक?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: ठीक है, क्या आप मुझे इस रेस्तरां की रेटिंग की जांच करने में मदद कर सकते हैं <endofhistory>",
+    "output": "बस एक पल। रेस्तरां की रेटिंग 4.5 है",
+    "prediction": "यह रेस्तरां की रेटिंग 4.5 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) request pricerange <endofactions> <history> USER: मैं ऑफ-रोड उपयोग के लिए एक एसयूवी खरीदना चाहता हूँ। इसमें सिर्फ तीन लोगों को फिट करने की जरूरत है। आपका क्या सुझाव है <endofhistory>",
+    "output": "ऐसी कई कारें हैं, मुझे नहीं पता कि आपके लिए कौन सी सिफारिश करनी चाहिए। आपका बजट क्या है",
+    "prediction": "आपकी बजट सीमा क्या है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-62726222 \" <endofactions> <history> USER: होटल का आरक्षण फोन नंबर क्या है <endofhistory>",
+    "output": "होटल का फोन नंबर 0512-62726222 है",
+    "prediction": "होटल का आरक्षण फोन नंबर 0512-62726222 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" नंबर 6 यिनज़िबांग, झोउझांग टाउन, कुनशान \" <endofactions> <history> USER: ठीक है, तो कृपया मुझे पता दें और मैं वहाँ ड्राइव करके जाऊँगा <endofhistory>",
+    "output": "पता नंबर 6 यिनज़िबांग, झोउझांग टाउन, कुनशान है",
+    "prediction": "ठीक है, यह होटल का पता है: नंबर 6 यिनज़िबांग, झोउझांग टाउन, कुनशान"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform phone_number equal_to \" 0512-67299832 \" <endofactions> <history> USER: हाय, मैंने सुना है कि चेंगदू में मिस फू वास्तव में अच्छा माना जाता है और मैं इसके फोन नंबर के लिए पूछना चाहता था <endofhistory>",
+    "output": "इसका फोन नंबर 0512-67299832 है",
+    "prediction": "ठीक है, मिस फू का फोन नंबर 0512-67299832 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: आपकी मदद के लिए धन्यवाद, अलविदा <endofhistory>",
+    "output": "मेरी खुशी, अलविदा",
+    "prediction": "आपका स्वागत है। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) request series <endofactions> <history> USER: नमस्ते, मैं एक डेस्कटॉप खरीदना चाहता हूं जिसकी कीमत 5,000 युआन से कम है <endofhistory>",
+    "output": "ज़रूर। किस श्रृंखला से",
+    "prediction": "आप किस श्रृंखला का डेस्कटॉप खरीदना चाहते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend product_name equal_to \" लेनोवो ज़ियाओक्सिन एयर \" <endofactions> <history> USER: ठीक है। क्या समान स्पेसिफिकेशन वाला हल्का लैपटॉप है <endofhistory>",
+    "output": "बेशक, आप लेनोवो ज़ियाओक्सिन एयर पर एक नज़र डाल सकते हैं",
+    "prediction": "आप लेनोवो ज़ियाओक्सिन एयर को देख सकते हैं। यह भी एक हल्का लैपटॉप है और इसके स्पेसिफिकेशन भी अच्छे हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) request ticket_price <endofactions> <history> USER: टिकट कितना है <endofhistory>",
+    "output": "यह 601.0 युआन है। बहुत महंगा नहीं है",
+    "prediction": "आप किस ट्रेन के लिए टिकट की कीमत जानना चाहते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform episode_length equal_to \" 46 मिनट \" <endofactions> <history> USER: इस टीवी शो के एपिसोड कितने लम्बे हैं <endofhistory>",
+    "output": "प्रत्येक एपिसोड लगभग 46 मिनट तक रहता है, जो एक टीवी शो के लिए ठीक है",
+    "prediction": "हर एपिसोड की लंबाई 46 मिनट है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" शंघाई होंगकियाओ से जियामेन तक G659 \" <endofactions> <history> USER: ठीक। मैं अगले बुधवार दोपहर शंघाई से ज़ियामेन तक हाई-स्पीड ट्रेनों के लिए प्रथम श्रेणी का टिकट खरीदने की योजना बना रहा हूं। कौनसी ट्रेन उपलब्ध है <endofhistory>",
+    "output": "आप शंघाई होंगकियाओ से जियामेन तक G659 ले सकते हैं",
+    "prediction": "आप शंघाई होंगकियाओ से जियामेन तक G659 ट्रेन ले सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) recommend title equal_to \" शंघाई तेरह \" <endofactions> <history> USER: क्या कोई अच्छी एक्शन फिल्म है जिसे आप सुझा सकते हैं <endofhistory>",
+    "output": "यदि आप एक्शन फिल्में पसंद करते हैं, तो आपको द शंघाई तेरह देखना चाहिए, यह बहुत अच्छा है",
+    "prediction": "ठीक है, मैं \"शंघाई तेरह\" की सिफारिश करता हूं। यह एक रोमांचक एक्शन फिल्म है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform price equal_to \" 6,399 युआन \" <endofactions> <history> USER: यह कितना है <endofhistory>",
+    "output": "यह 6,399 युआन है",
+    "prediction": "यह 6,399 युआन का है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: और कुछ नहीं, अलविदा! <endofhistory>",
+    "output": "ठीक है, अलविदा!",
+    "prediction": "अलविदा! आपका दिन शुभ हो।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform room_charge equal_to \" 568 युआन \" <endofactions> <history> USER: बढ़िया, कमरे की दर क्या है <endofhistory>",
+    "output": "कमरे की दर 568 युआन है",
+    "prediction": "कमरे की दर 568 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: मिल गया, धन्यवाद, अलविदा <endofhistory>",
+    "output": "मेरी खुशी, अलविदा",
+    "prediction": "आपका स्वागत है। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" मुफ़्त \" <endofactions> <history> USER: वहाँ एक पार्किंग स्थल है? वहाँ पार्क करने के लिए कितना है <endofhistory>",
+    "output": "होटल में एक पार्किंग स्थल है और यह मुफ़्त है",
+    "prediction": "हां, होटल में पार्किंग सुविधा मुफ्त है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request arrival_time , request departure_time <endofactions> <history> USER: इस उड़ान के प्रस्थान और आगमन का समय क्या है <endofhistory>",
+    "output": "प्रस्थान का समय उस दिन 20:40 है, और आगमन का समय अगले दिन 00:05 है। समय पर हवाई अड्डे पर पहुंचना याद रखें",
+    "prediction": "आपकी उड़ान का प्रस्थान और आगमन का समय क्या है, कृपया उड़ान की जानकारी प्रदान करें।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform heated_seats equal_to \" नहीं है \" <endofactions> <history> USER: सीट हीटिंग के बारे में क्या <endofhistory>",
+    "output": "इसमें यह फ़ंक्शन भी नहीं है",
+    "prediction": "मुझे खेद है, लेकिन इस कार में सीट हीटिंग की सुविधा नहीं है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" मुफ्त \" <endofactions> <history> USER: मुझे यह भी पूछने की ज़रूरत है कि क्या पार्किंग सुविधाजनक है। क्या होटल में मुफ्त पार्किंग स्थल है <endofhistory>",
+    "output": "हां, इसमें मुफ्त पार्किंग है",
+    "prediction": "हां, होटल में मुफ्त पार्किंग सुविधा उपलब्ध है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) inform hard_disk_capacity equal_to \" 1TB HDD \" <endofactions> <history> USER: ठीक है, हार्ड ड्राइव की भंडारण मात्रा क्या है <endofhistory>",
+    "output": "हार्ड ड्राइव की स्टोरेज वॉल्यूम 1TB HDD है",
+    "prediction": "हार्ड ड्राइव की भंडारण मात्रा 1TB HDD है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" तीव्रता \" , inform wind equal_to \" उत्तर बल 3 \" <endofactions> <history> USER: ठीक है। और यूवी तीव्रता और पवन बल और दिशा के बारे में क्या <endofhistory>",
+    "output": "यूवी तीव्रता मजबूत होगी, और यह उत्तर बल 3 होगा। सुनिश्चित करें कि आप अपनी त्वचा को धूप से बचाएं",
+    "prediction": "यूवी तीव्रता और पवन की दिशा उत्तर बल 3 होगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform Douban_score equal_to \" 9.6 \" <endofactions> <history> USER: इसकी डौबन रेटिंग के बारे में क्या <endofhistory>",
+    "output": "इसकी रेटिंग 9.6 है",
+    "prediction": "इसकी डौबन स्कोर 9.6 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" उस दिन 23:12 \" <endofactions> <history> USER: मैं चाहता हूँ कि मेरा दोस्त मुझे लेने आए, तो क्या आप मुझे बता सकते हैं कि ट्रेन कितने बजे आती है <endofhistory>",
+    "output": "यह उस दिन 23:12 बजे आता है",
+    "prediction": "ट्रेन उस दिन 23:12 बजे पहुंचेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) recommend title equal_to \" मेरी सैसी गर्ल \" <endofactions> <history> USER: नमस्ते, मैं चा ताए-ह्यून अभिनीत एक दक्षिण कोरियाई फिल्म ढूंढना चाहता हूं। कृपया एक की सिफारिश करें <endofhistory>",
+    "output": "मैं आपको मेरी सैसी गर्ल देखने की सलाह देता हूं",
+    "prediction": "मैं \"मेरी सैसी गर्ल\" की सिफारिश करता हूं, जिसमें चा ताए-ह्यून ने अभिनय किया है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: नहीं, मैं ठीक हूँ, धन्यवाद <endofhistory>",
+    "output": "आपका स्वागत है। जरूरत पड़ने पर बेझिझक मुझ तक पहुंचें",
+    "prediction": "ठीक है, अगर आपको कुछ और चाहिए, तो कृपया मुझे बताएं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request departure <endofactions> <history> USER: हाय, मैं अगले हफ्ते गुआंगज़ौ के लिए रवाना हो जाएगा. क्या आप जांच सकते हैं कि मैं कौन सी उड़ान ले सकता हूं <endofhistory>",
+    "output": "पक्का। आप कहां से प्रस्थान करेंगे",
+    "prediction": "आप कहां से प्रस्थान करेंगे"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ \" <endofactions> <history> USER: यह ठीक है, मैंने इसे कवर किया है। क्या आप मुझे होटल का पता बता सकते हैं <endofhistory>",
+    "output": "होटल नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ में है",
+    "prediction": "होटल का पता है: नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform parking_assist_system equal_to \" Sure, it does. \" <endofactions> <history> USER: क्या इसमें रिवर्स कैमरा है <endofhistory>",
+    "output": "ज़रूर, इसमें है",
+    "prediction": "हां, इसमें पार्किंग सहायता प्रणाली है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" लाओटियनकियाओ मेंढक हॉट पॉट \" <endofactions> <history> USER: नमस्ते, मैं कल अपने दोस्त को गर्म बर्तन के लिए बाहर ले जाना चाहता हूं। क्या कोई थोड़ा अधिक महंगा गर्म पॉट रेस्तरां है? क्या आप एक की सिफारिश कर सकते हैं <endofhistory>",
+    "output": "ठीक है, मैं आपको और आपके दोस्त को लाओटियनकियाओ मेंढक हॉट पॉट में जाने की सलाह देता हूं",
+    "prediction": "आप लाओटियनकियाओ मेंढक हॉट पॉट जा सकते हैं, यह एक अच्छा विकल्प हो सकता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" 13:10 \" <endofactions> <history> USER: और आगमन का समय क्या है <endofhistory>",
+    "output": "उस दिन आगमन का समय 13:10 है",
+    "prediction": "आपकी उड़ान 13:10 बजे पहुंचेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: बहुत बहुत धन्यवाद, अलविदा! <endofhistory>",
+    "output": "मेरी खुशी, अलविदा",
+    "prediction": "आपका स्वागत है! फिर मिलेंगे।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) general <endofactions> <history> USER: कूल, मुझे आपके फैसले पर भरोसा है, इसलिए मैं इस रेस्तरां को आज़माऊंगा <endofhistory>",
+    "output": "शानदार। क्या आपको कुछ और मदद की ज़रूरत है",
+    "prediction": "आपका अनुभव उम्मीद से बेहतर होगा। आपका भोजन आनंदित हो!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request class_cabin <endofactions> <history> USER: मैं अगले रविवार को जाऊंगा <endofhistory>",
+    "output": "आप किस वर्ग में उड़ना चाहेंगे",
+    "prediction": "आप किस कक्षा में उड़ान भरना चाहते हैं? इकोनॉमी, प्रीमियम इकोनॉमी, बिजनेस या पहली कक्षा?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" नंबर 259, शिन्शी रोड, गुसू जिला, सूज़ौ \" <endofactions> <history> USER: पता क्या है <endofhistory>",
+    "output": "होटल का पता नंबर 259, शिन्शी रोड, गुसू जिला, सूज़ौ है",
+    "prediction": "होटल का पता है: नंबर 259, शिन्शी रोड, गुसू जिला, सूज़ौ"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: ओह, यह थोड़ा असुविधाजनक बनाता है, लेकिन वैसे भी धन्यवाद! गुड बाय! <endofhistory>",
+    "output": "अलविदा",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform CT equal_to \" Yes, and CT \" <endofactions> <history> USER: इसमें सीटी भी है, तो यह अस्पताल वास्तव में अच्छी तरह से सुसज्जित है <endofhistory>",
+    "output": "हाँ, अस्पताल की बहुत अच्छी प्रतिष्ठा है",
+    "prediction": "हां, यह अस्पताल सीटी स्कैन की सुविधा प्रदान करता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" तीव्रता \" <endofactions> <history> USER: यह तब तक ठीक है जब तक बारिश नहीं होती है। यूवी तीव्रता के बारे में कैसे <endofhistory>",
+    "output": "यूवी तीव्रता मजबूत होगी",
+    "prediction": "यूवी तीव्रता उच्च होगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-67570999 \" <endofactions> <history> USER: क्या आपके पास इसका फोन नंबर है? कुछ चीजें हैं जो मैं पूछना चाहता हूं <endofhistory>",
+    "output": "बस एक पल। फोन नंबर 0512-67570999 है",
+    "prediction": "हां, आप इस नंबर पर संपर्क कर सकते हैं: 0512-67570999"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) recommend flight_information equal_to \" एमएफ 8502 \" <endofactions> <history> USER: मैं अगले सोमवार को शंघाई से रवाना हो जाऊंगा <endofhistory>",
+    "output": "ठीक है, मैं ज़ियामेन एयरलाइंस के एमएफ 8502 की सिफारिश करता हूं। इसकी समय की पाबंदी दर 100% है",
+    "prediction": "आप एमएफ 8502 उड़ान ले सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) greeting , recommend name equal_to \" तोंगली यूशांग इन \" <endofactions> <history> USER: नमस्ते, मैं सिर्फ सूज़ौ की अपनी यात्रा की योजना बना रहा हूं और अब मैं 3 सितारा रिसॉर्ट होटल की तलाश में हूं। मुझे एक मानक कमरा चाहिए | <endofhistory>",
+    "output": "हैलो, तोंगली यूशांग इन एक अच्छा विकल्प है",
+    "prediction": "नमस्ते, मैं तोंगली यूशांग इन की सिफारिश करता हूं। यह एक अच्छा 3-सितारा होटल है और आपको वहां मानक कमरे मिलेंगे।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) recommend class_number equal_to \" पीई 5 टी 05027 ए \" <endofactions> <history> USER: नमस्ते, मैं अपने बच्चे को एक अंग्रेजी ट्यूटोरियल कक्षा के लिए पंजीकृत करना चाहता हूँ, वह पाँचवीं कक्षा में है। मैं पसंद करूंगा कि कक्षा रविवार दोपहर को हो, ताकि मैं अपने बच्चे को कक्षा में ले जा सकूं। क्या आप मेरे लिए उपयुक्त कक्षा सुझा सकते हैं <endofhistory>",
+    "output": "कक्षा पीई 5 टी 05027 ए आपके बच्चे के लिए उपयुक्त है",
+    "prediction": "ठीक है, मैं पीई 5 टी 05027 ए कक्षा की सिफारिश करता हूँ। यह एक अंग्रेजी ट्यूटोरियल कक्षा है जो रविवार को दोपहर में होती है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform registration_time equal_to \" 7:30-11:30 और 12:30-16:30 \" <endofactions> <history> USER: यह अच्छा है, मैं पंजीकरण करने के लिए कितने बजे जा सकता हूँ <endofhistory>",
+    "output": "पंजीकरण का समय 7:30-11:30 और 12:30-16:30 है",
+    "prediction": "आप 7:30-11:30 और 12:30-16:30 के बीच पंजीकरण कर सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform ticket_price equal_to \" 1,302.5 युआन \" <endofactions> <history> USER: फर्स्ट क्लास की सीट कितने की है <endofhistory>",
+    "output": "एक फर्स्ट क्लास की सीट 1,302.5 युआन है",
+    "prediction": "फर्स्ट क्लास की सीट की कीमत 1,302.5 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) recommend title equal_to \" I Love My Family \" <endofactions> <history> USER: बढ़िया, इसे क्या कहा जाता है <endofhistory>",
+    "output": "इसे I Love My Family कहा जाता है",
+    "prediction": "इस शो का नाम \"I Love My Family\" है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" शिशान द्वीप दर्शनीय क्षेत्र \" <endofactions> <history> USER: मैं सूज़ौ से हूँ, लेकिन मैं ज्यादा बाहर नहीं जाता हूँ। मेरा दोस्त मुझसे मिलने सूज़ौ आ रहा है और मैं उसे एक परिदृश्य सुंदर स्थान पर ले जाना चाहता हूं। क्या आप मुझे एक सस्ती जगह की सिफारिश कर सकते हैं <endofhistory>",
+    "output": "मैं आपको शिशान द्वीप दर्शनीय क्षेत्र में जाने की सलाह दूंगा",
+    "prediction": "ठीक है, आप अपने दोस्त को शिशान द्वीप दर्शनीय क्षेत्र ले जा सकते हैं। यह एक बहुत ही सुंदर और आरामदायक स्थान है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) recommend title equal_to \" लिव्स ऑफ़ ओमिशन \" <endofactions> <history> USER: हाय, मैं सप्ताहांत पर आसानी से ऊब जाता हूं, इसलिए मैं एक अच्छा टीवी शो देखना चाहता हूं। क्या आप कृपया मुझे 2010 के दशक से हांगकांग-निर्मित रोमांटिक टीवी शो खोजने में मदद कर सकते हैं <endofhistory>",
+    "output": "ठीक है। मैं लिव्स ऑफ़ ओमिशन की सलाह देता हूं",
+    "prediction": "ठीक है, मैं \"लिव्स ऑफ़ ओमिशन\" की सिफारिश करता हूं। यह एक रोमांटिक टीवी शो है जो 2010 के दशक में हांगकांग में निर्मित हुआ था।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: बेशक, अलविदा! <endofhistory>",
+    "output": "अच्छा अलविदा",
+    "prediction": "अलविदा! आपका दिन शुभ हो।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform metro_station equal_to \" सीधे मेट्रो द्वारा पहुंच सकूं \" <endofactions> <history> USER: मैं आपको बताना भूल गया, कोई ऐसा ढूंढ़ो जिससे मैं सीधे मेट्रो द्वारा पहुंच सकूं <endofhistory>",
+    "output": "आप मेट्रो से सीधे मसालेदार मेमोरी से जा सकते हो",
+    "prediction": "ठीक है, मैं आपके लिए ऐसे रेस्तरां की खोज कर रहा हूं जिसे आप सीधे मेट्रो द्वारा पहुंच सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) recommend name equal_to \" पारंपरिक चीनी चिकित्सा के सूज़ौ अस्पताल \" <endofactions> <history> USER: किस अस्पताल में एक अच्छा श्वसन चिकित्सा विभाग है <endofhistory>",
+    "output": "पारंपरिक चीनी चिकित्सा के सूज़ौ अस्पताल सबसे अच्छा होना चाहिए",
+    "prediction": "पारंपरिक चीनी चिकित्सा के सूज़ौ अस्पताल में एक अच्छा श्वसन चिकित्सा विभाग है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: अब समझ में आया। आपकी मदद के लिए धन्यवाद, अलविदा <endofhistory>",
+    "output": "आपका स्वागत है। आपका दिन शुभ हो। गुड बाय!",
+    "prediction": "आपका स्वागत है। आपकी मदद करने में मुझे खुशी हुई। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" Pod Inn \" <endofactions> <history> USER: नमस्ते, मैं व्यापार के लिए वुझोंग जिले की यात्रा कर रहा हूँ. क्या उस क्षेत्र में बड़ा आकार के कमरों के साथ कोई होटल है? कुछ सस्ता अच्छा रहेगा <endofhistory>",
+    "output": "ठीक है, मैं Pod Inn की सलाह देता हूं",
+    "prediction": "Pod Inn एक अच्छा विकल्प हो सकता है, यह वुझोंग जिले में स्थित है और बड़े आकार के कमरे प्रदान करता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" सूज़ौ जिंजी झील सुइस प्लेस लिगोंगडी अपार्टमेंट होटल \" <endofactions> <history> USER: एक राजा के आकार का कमरा <endofhistory>",
+    "output": "मैं सूज़ौ जिंजी झील सुइस प्लेस लिगोंगडी अपार्टमेंट होटल की सिफारिश करता हूँ",
+    "prediction": "सूज़ौ जिंजी झील सुइस प्लेस लिगोंगडी अपार्टमेंट होटल एक अच्छा विकल्प हो सकता है। यहाँ आपको राजा के आकार के कमरे मिलेंगे।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform punctuality_rate equal_to \" 89.44% \" <endofactions> <history> USER: यह काफी देर हो चुकी है। क्या यह सामान्य रूप से समय पर आता है या इसमें देरी होने का खतरा है <endofhistory>",
+    "output": "कहना मुश्किल है। इसकी समय की पाबंदी दर केवल 89.44% है",
+    "prediction": "इस उड़ान की समय पर पहुंचने की दर 89.44% है, जो कि बहुत अच्छी है। इसलिए, आपको देरी की चिंता करने की आवश्यकता नहीं है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: इसकी रेटिंग क्या है <endofhistory>",
+    "output": "4.5",
+    "prediction": "इसकी रेटिंग 4.5 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" गोल्डन ईगल इंटरनेशनल शॉपिंग सेंटर, नंबर 298, शीशन रोड के 6F \" <endofactions> <history> USER: बिल्कुल सही। सटीक पता क्या है <endofhistory>",
+    "output": "यह गोल्डन ईगल इंटरनेशनल शॉपिंग सेंटर, नंबर 298, शीशन रोड के 6F पर है",
+    "prediction": "यह गोल्डन ईगल इंटरनेशनल शॉपिंग सेंटर, नंबर 298, शीशन रोड के 6F पर स्थित है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" उस दिन रात 20:40 बजे \" <endofactions> <history> USER: ठीक है। मैं चाइना सदर्न एयरलाइंस का नियमित सदस्य हूं। मुझे प्रस्थान का समय बताएं <endofhistory>",
+    "output": "प्रस्थान का समय उस दिन रात 20:40 बजे है",
+    "prediction": "उस दिन आपकी उड़ान रात 20:40 बजे प्रस्थान करेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" उस दिन शाम 4:50 बजे \" <endofactions> <history> USER: ठीक है, अच्छा लगता है। यह गुआंगज़ौ में कब आता है <endofhistory>",
+    "output": "यह उस दिन शाम 4:50 बजे गुआंगज़ौ बैयुन अंतर्राष्ट्रीय हवाई अड्डे पर पहुंचता है",
+    "prediction": "यह उस दिन शाम 4:50 बजे गुआंगज़ौ में पहुंचता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" चाइना सदर्न एयरलाइंस कितने की CZ3741 को बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 से गाओकी अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 3 \" <endofactions> <history> USER: नमस्ते, कृपया मुझे अगले गुरुवार को गुआंगज़ौ से ज़ियामेन तक उपलब्ध उड़ानों की जांच करने में मदद करें। मैं अपनी प्रेमिका के साथ वहां यात्रा कर रहा हूँ <endofhistory>",
+    "output": "आप चाइना सदर्न एयरलाइंस कितने की CZ3741 को बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 से गाओकी अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 3 तक ले सकते हैं",
+    "prediction": "आप चाइना सदर्न एयरलाइंस की उड़ान CZ3741 ले सकते हैं, जो बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 से गाओकी अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 3 तक जाती है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform phone_number equal_to \" 0512-66966666 \" <endofactions> <history> USER: नमस्ते, मेरे दोस्तों और मैं व्यापार के लिए सूज़ौ आ रहे हैं। क्या आप मुझे हार्मनी टाइम्स स्क्वायर का फोन नंबर बता सकते हैं <endofhistory>",
+    "output": "0512-66966666",
+    "prediction": "हार्मनी टाइम्स स्क्वायर का फोन नंबर 0512-66966666 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform score equal_to \" 4.5 \" <endofactions> <history> USER: ठीक है, इसकी रेटिंग क्या है <endofhistory>",
+    "output": "इसकी रेटिंग खराब नहीं है, यह 4.5 है",
+    "prediction": "इसकी रेटिंग 4.5 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: ठीक है। मुझे समझ में आ गया। बहुत-बहुत धन्यवाद। अलविदा! <endofhistory>",
+    "output": "आपका स्वागत है। आपका दिन अच्छा हो!",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform address equal_to \" 4 एफ, हार्मनी सिटी, नंबर 269, वांग डन रोड \" , recommend name equal_to \" ज़िबेई रेस्तरां \" <endofactions> <history> USER: मैं सोच रहा था कि सूज़ौ इंडस्ट्रियल पार्क के पास कोई मध्य-मूल्य रेस्तरां है जहां मैं सीधे मेट्रो द्वारा प्राप्त कर सकता हूं <endofhistory>",
+    "output": "मैं 4 एफ, हार्मनी सिटी, नंबर 269, वांग डन रोड पर ज़िबेई रेस्तरां की सिफारिश करता हूं",
+    "prediction": "ज़िबेई रेस्तरां एक अच्छा विकल्प हो सकता है, यह 4 एफ, हार्मनी सिटी, नंबर 269, वांग डन रोड पर स्थित है। आप मेट्रो से आसानी से पहुंच सकते हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" बादल छाए रहेंगे \" <endofactions> <history> USER: उस दिन वुहान में कैसा रहेगा मौसम <endofhistory>",
+    "output": "वुहान में बादल छाए रहेंगे",
+    "prediction": "वुहान में बादल छाए रहेंगे"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: आज आपने बहुत मदद की, धन्यवाद! गुड बाय! <endofhistory>",
+    "output": "आपका स्वागत है। एक अच्छी यात्रा हो! गुड बाय!",
+    "prediction": "आपका स्वागत है! आपसे मिलकर खुशी हुई। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform parking equal_to \" फ्री \" <endofactions> <history> USER: क्या मैं होटल की पार्किंग का मुफ्त में उपयोग कर सकता हूं <endofhistory>",
+    "output": "जी हां, आप इसे फ्री में इस्तेमाल कर सकते हैं",
+    "prediction": "हां, होटल की पार्किंग मुफ्त है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: धन्यवाद, मैं बस इतना ही जानना चाहता था। आपकी सेवा के लिए धन्यवाद। गुड बाय! <endofhistory>",
+    "output": "आपका स्वागत है। आपका दिन अच्छा हो!",
+    "prediction": "आपका स्वागत है। आपके सवालों का उत्तर देने में मुझे खुशी हुई। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform 4WD equal_to \" टू-व्हील \" , recommend name equal_to \" टू-व्हील ड्राइव के साथ T-ROC 230TSI DSG एग्रेसिव एडिशन \" <endofactions> <history> USER: हाय, मैं एक कार खरीदने के बारे में सोच रहा हूँ। मैं टू-व्हील ड्राइव के साथ एक छोटी या मध्यम आकार की एसयूवी पसंद करूंगा। कृपया मुझे एक अच्छा मॉडल सुझाएं <endofhistory>",
+    "output": "ठीक है। मैं टू-व्हील ड्राइव के साथ T-ROC 230TSI DSG एग्रेसिव एडिशन की सलाह देता हूं",
+    "prediction": "ठीक है, आप टू-व्हील ड्राइव के साथ T-ROC 230TSI DSG एग्रेसिव एडिशन को देख सकते हैं। यह एक छोटी और मध्यम आकार की एसयूवी है और यह आपकी आवश्यकताओं को पूरा कर सकता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform tamperature equal_to \" अधिकतम तापमान 11 डिग्री सेल्सियस और न्यूनतम तापमान 0 डिग्री सेल्सियस रहेगा \" <endofactions> <history> USER: मैं अगले हफ्ते एक व्यावसायिक यात्रा पर हांग्जो जा रहा हूं और मैं पहले से मौसम जानना चाहता हूं। कृपया मुझे अगले मंगलवार को हांग्जो के लिए तापमान की जांच करने में मदद करें <endofhistory>",
+    "output": "हांग्जो में अगले मंगलवार को अधिकतम तापमान 11 डिग्री सेल्सियस और न्यूनतम तापमान 0 डिग्री सेल्सियस रहेगा",
+    "prediction": "अगले मंगलवार को हांग्जो में अधिकतम तापमान 11 डिग्री सेल्सियस और न्यूनतम तापमान 0 डिग्री सेल्सियस रहेगा"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform address equal_to \" नंबर 246, फेंगहुआंग स्ट्रीट, गुसू जिला, सूज़ौ \" <endofactions> <history> USER: पता क्या है <endofhistory>",
+    "output": "नंबर 246, फेंगहुआंग स्ट्रीट, गुसू जिला, सूज़ौ",
+    "prediction": "यह होटल नंबर 246, फेंगहुआंग स्ट्रीट, गुसू जिला, सूज़ौ में स्थित है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" बीजिंगनन से हांग्जोडोंग तक G59 उपलब्ध \" <endofactions> <history> USER: मुझे सेकंड क्लास की सीट चाहिए <endofhistory>",
+    "output": "बिलकुल ठीक। बीजिंगनन से हांग्जोडोंग तक G59 उपलब्ध है",
+    "prediction": "ठीक है, बीजिंगनन से हांग्जोडोंग तक G59 उपलब्ध है। आप इसे बुक कर सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform episode_length equal_to \" 46 मिनट \" <endofactions> <history> USER: क्या प्रत्येक एपिसोड एक घंटा है <endofhistory>",
+    "output": "नहीं, इतनी देर नहीं। प्रत्येक एपिसोड 46 मिनट तक चलता है",
+    "prediction": "नहीं, प्रत्येक एपिसोड की अवधि 46 मिनट है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform name_list equal_to \" प्रियंका चोपड़ा, ऋतिक रोशन और नसीरुद्दीन शाह \" <endofactions> <history> USER: इस फिल्म के लीड कास्ट कौन हैं <endofhistory>",
+    "output": "इसमें प्रियंका चोपड़ा, ऋतिक रोशन और नसीरुद्दीन शाह हैं",
+    "prediction": "इस फिल्म के मुख्य कलाकार प्रियंका चोपड़ा, ऋतिक रोशन और नसीरुद्दीन शाह हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform train_number equal_to \" D3292 \" <endofactions> <history> USER: अगर मैं अगले शुक्रवार की सुबह निकलता हूं, तो मैं कौन सी बुलेट ट्रेन ले सकता हूं <endofhistory>",
+    "output": "मैं अभी भी ज़ियामेनबेई से शंघाई होंगकियाओ तक D3292 का सुझाव देता हूं",
+    "prediction": "आप ट्रेन नंबर D3292 का उपयोग कर सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) general <endofactions> <history> USER: हां, मैं करता हूं, लेकिन मैंने कभी ध्यान नहीं दिया कि वहां एक अस्पताल है। खैर, धन्यवाद <endofhistory>",
+    "output": "आपका स्वागत है, मैं आपके अच्छे स्वास्थ्य की कामना करता हूं, अलविदा",
+    "prediction": "आपका स्वागत है। अगर आपको और कुछ चाहिए, तो कृपया मुझे बताएं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) recommend name equal_to \" टौरेग 2.0 टीएसआई रुईयी संस्करण \" <endofactions> <history> USER: हाय, मैं एक वोक्सवैगन आयात एसयूवी खरीदने की योजना बना रहा हूं और हम अक्सर कार में 4 लोग होंगे। क्या आपके पास सिफारिश करने के लिए कुछ है <endofhistory>",
+    "output": "फिर मैं टौरेग 2.0 टीएसआई रुईयी संस्करण की सिफारिश करता हूं",
+    "prediction": "ठीक है, आप वोक्सवैगन टौरेग 2.0 टीएसआई रुईयी संस्करण को देख सकते हैं। यह एक बड़ी और आरामदायक एसयूवी है जो आपकी जरूरतों को पूरा कर सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform departure_time equal_to \" समय 09:20 \" <endofactions> <history> USER: ठीक है, और उस दिन प्रस्थान का समय क्या है <endofhistory>",
+    "output": "उस दिन इसके प्रस्थान का समय 09:20 है",
+    "prediction": "उस दिन प्रस्थान का समय 09:20 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: अलविदा <endofhistory>",
+    "output": "अलविदा",
+    "prediction": "अलविदा, आपका दिन शुभ हो!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform address equal_to \" टोंगली प्राचीन शहर, वुजियांग जिला, सूज़ौ शहर \" <endofactions> <history> USER: कीमत ठीक है। पता क्या है <endofhistory>",
+    "output": "पता टोंगली प्राचीन शहर, वुजियांग जिला, सूज़ौ शहर है",
+    "prediction": "टोंगली प्राचीन शहर का पता है: वुजियांग जिला, सूज़ौ शहर"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: धन्यवाद <endofhistory>",
+    "output": "अहोभाग्य",
+    "prediction": "आपका स्वागत है! अगर आपको और कुछ चाहिए, तो कृपया मुझे बताएं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform wind equal_to \" दक्षिण-पश्चिम बल 2 \" <endofactions> <history> USER: समझा। क्या अगले मंगलवार को बीजिंग में तेज हवा चलेगी <endofhistory>",
+    "output": "यह दक्षिण-पश्चिम बल 2 होगा, मजबूत नहीं",
+    "prediction": "अगले मंगलवार को बीजिंग में दक्षिण-पश्चिम बल 2 की हवा चलेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) recommend title equal_to \" हेलल इस इतर पीपल \" <endofactions> <history> USER: नमस्ते, मैं हमेशा सप्ताहांत में घर पर ऊब जाता हूं और मैं देखने के लिए एक क्लासिक टीवी शो खोजना चाहता हूं। कृपया मुझे 2010 के दक्षिण कोरियाई अपराध नाटक को खोजने में मदद करें <endofhistory>",
+    "output": "निश्चित रूप से, मैं हेलल इस इतर पीपल की सलाह देता हूं",
+    "prediction": "मैं \"हेलल इस इतर पीपल\" नामक एक दक्षिण कोरियाई अपराध नाटक की सिफारिश करता हूं। यह एक बहुत ही रोमांचक और रोचक शो है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) bye <endofactions> <history> USER: ठीक है, धन्यवाद। मुझे लगता है कि मैं थोड़ा और देखने जा रहा हूँ। अलविदा <endofhistory>",
+    "output": "ठीक है, बहुत बहुत धन्यवाद। मैं अपने बच्चे से बात करूँगा, अलविदा!",
+    "prediction": "आपका स्वागत है। आपके बच्चे के लिए सबसे अच्छा ट्यूटोरियल कक्षा मिलने की शुभकामनाएं। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) recommend name equal_to \" 280TSI \" , recommend series equal_to \" टी-आरओसी \" <endofactions> <history> USER: मैं 200,000 और 300,000 के बीच की कीमत वाली गैसोलीन से चलने वाली SUV खरीदना चाहूंगा <endofhistory>",
+    "output": "फिर मैं ऑल-व्हील ड्राइव के साथ टी-आरओसी 280 टीएसआई डीएसजी लक्जरी की सिफारिश करना चाहता हूं",
+    "prediction": "आपके लिए टी-आरओसी सीरीज की 280TSI एक अच्छा विकल्प हो सकता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: सब ठीक, धन्यवाद, अलविदा <endofhistory>",
+    "output": "आपका स्वागत है। क्या मैं तुम्हारे लिए कुछ और कर सकता हूं",
+    "prediction": "आपका स्वागत है। अगर आपको और कुछ चाहिए, तो कृपया मुझसे पूछें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: अलविदा <endofhistory>",
+    "output": "अलविदा",
+    "prediction": "अलविदा, आपका दिन शुभ हो!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform phone_number equal_to \" 0512-63052900 \" <endofactions> <history> USER: यह एक सभ्य कीमत है। फ़ोन नंबर चेक करने में मेरी मदद करें <endofhistory>",
+    "output": "निश्चित रूप से, होटल का फोन नंबर 0512-63052900 है",
+    "prediction": "ठीक है, आप इस नंबर पर संपर्क कर सकते हैं: 0512-63052900"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) request departure <endofactions> <history> USER: हाय, मैं अगले हफ्ते व्यापार के लिए शेन्ज़ेन जा रहा हूँ। क्या कोई ट्रेन है जिसे मैं ले सकता हूँ <endofhistory>",
+    "output": "आप कहाँ से यात्रा करना चाहते हैं",
+    "prediction": "आप कहां से प्रस्थान करेंगे"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" अगले दिन 00:15 \" <endofactions> <history> USER: यह नानजिंग में कब आता है <endofhistory>",
+    "output": "यह अगले दिन 00:15 बजे आता है",
+    "prediction": "यह उड़ान अगले दिन 00:15 पर नानजिंग पहुंचेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( tv ) inform premiere_time equal_to \" 24 सितंबर, 2018 \" <endofactions> <history> USER: इसका प्रीमियर कब हुआ <endofhistory>",
+    "output": "इसका प्रीमियर 24 सितंबर, 2018 को हुआ था",
+    "prediction": "इसका प्रीमियर 24 सितंबर, 2018 को हुआ था"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" सीधे मेट्रो से \" <endofactions> <history> USER: क्या हम सीधे मेट्रो से वहाँ जा सकते हैं <endofhistory>",
+    "output": "हाँ, आप सीधे मेट्रो से वहा जा सकते हैं",
+    "prediction": "हां, आप सीधे मेट्रो से वहाँ जा सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" उस दिन 16:05 \" <endofactions> <history> USER: और आगमन का समय क्या है <endofhistory>",
+    "output": "आगमन का समय उस दिन 16:05 है",
+    "prediction": "उस दिन 16:05 पर पहुंचने की उम्मीद है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) inform cruise_control_system equal_to \" नहीं है \" <endofactions> <history> USER: क्रूज कंट्रोल के बारे में क्या <endofhistory>",
+    "output": "आपको फिर से निराश करने के लिए खेद है, लेकिन इसमें वह भी नहीं है",
+    "prediction": "मुझे खेद है, लेकिन इस कार में क्रूज कंट्रोल सिस्टम नहीं है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" धूप खिलेगी \" <endofactions> <history> USER: अंत में, कृपया मुझे अगले शनिवार के लिए हांग्जो में मौसम की जांच करने में मदद करें <endofhistory>",
+    "output": "अगले शनिवार को हांगझोउ में धूप खिलेगी",
+    "prediction": "अगले शनिवार को हांग्जो में धूप खिलेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) inform room_type equal_to \" मानक कमरे \" <endofactions> <history> USER: क्या इसमें मानक कमरे हैं <endofhistory>",
+    "output": "हाँ, इसमें मानक कमरे हैं",
+    "prediction": "हां, इसमें मानक कमरे हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform registration_time equal_to \" यह 7:00 से 11:00 तक है, और 12:00 से 16:30 तक है \" <endofactions> <history> USER: मुझे अस्पताल के रजिस्ट्रेशन का समय भी नहीं पता है <endofhistory>",
+    "output": "यह 7:00 से 11:00 तक है, और 12:00 से 16:30 तक है",
+    "prediction": "ठीक है, अस्पताल का रजिस्ट्रेशन समय 7:00 से 11:00 तक और 12:00 से 16:30 तक है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) inform score equal_to \" 4.8 \" <endofactions> <history> USER: ठीक है, इसकी रेटिंग क्या है <endofhistory>",
+    "output": "होटल की रेटिंग वास्तव में उच्च है, यह 4.8 है",
+    "prediction": "इस होटल की रेटिंग 4.8 है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) recommend train_number equal_to \" बीजिंगन से हांग्जोडोंग तक जी 59 \" <endofactions> <history> USER: हाय, मैं बीजिंग से हूँ और मैं अगले हफ्ते हांग्जो की यात्रा पर जा रहा हूँ. कृपया जांचें कि मैं अगले सोमवार दोपहर कौन सी हाई-स्पीड ट्रेन ले सकता हूं। मैं द्वितीय श्रेणी में यात्रा करना पसंद करूंगा <endofhistory>",
+    "output": "आपकी मदद करने में मुझे खुशी हो रही है। मैं बीजिंगन से हांग्जोडोंग तक जी 59 की सिफारिश करता हूं",
+    "prediction": "आप बीजिंगन से हांग्जोडोंग तक जी 59 ट्रेन ले सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) recommend train_number equal_to \" शंघाई होंगकियाओ से बीजिंगनन तक G14 \" <endofactions> <history> USER: मैं शंघाई से हूं और बीजिंग की यात्रा करना चाहता हूं। क्या आप मुझे यह जांचने में मदद कर सकते हैं कि मैं अगले सोमवार दोपहर कौन सी हाई-स्पीड ट्रेन ले सकता हूं? मैं सेकंड क्लास में सफर करना चाहता हूं <endofhistory>",
+    "output": "ठीक है, मैं शंघाई होंगकियाओ से बीजिंगनन तक G14 का सुझाव देता हु",
+    "prediction": "आप शंघाई होंगकियाओ से बीजिंगनन तक G14 ट्रेन ले सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform metro_station equal_to \" नहीं \" <endofactions> <history> USER: ग़जब का। क्या हम मेट्रो द्वारा सीधे वहाँ पहुँच सकते हैं <endofhistory>",
+    "output": "दुर्भाग्य से नहीं, लेकिन आप वहां टैक्सी ले सकते हैं",
+    "prediction": "माफ़ कीजिए, लेकिन आप मेट्रो से सीधे वहाँ नहीं पहुँच सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform per_capita_consumption equal_to \" 130 युआन \" , recommend dishes equal_to \" झींगा गेंदों \" <endofactions> <history> USER: औसत खर्च कितना है? अनुशंसित व्यंजन क्या हैं <endofhistory>",
+    "output": "प्रति व्यक्ति औसत खर्च इतना अधिक नहीं है, 130 युआन। झींगा गेंदों अच्छा कर रहे हैं, सुझाव है कि आप उन्हें एक कोशिश दे!",
+    "prediction": "औसत खर्च प्रति व्यक्ति 130 युआन है। मैं झींगा गेंदों की सिफारिश करता हूं, यह बहुत स्वादिष्ट होता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) inform metro_station equal_to \" हाँ \" <endofactions> <history> USER: और हम मेट्रो द्वारा सीधे वहां पहुंच सकते हैं <endofhistory>",
+    "output": "हाँ, तुम कर सकते हो",
+    "prediction": "हां, आप मेट्रो स्टेशन के माध्यम से वहां पहुंच सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) inform film_length equal_to \" 185 मिनट \" <endofactions> <history> USER: ठीक है, यह कब तक है <endofhistory>",
+    "output": "फिल्म का रनटाइम 185 मिनट है",
+    "prediction": "यह फिल्म 185 मिनट लंबी है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform UV_intensity equal_to \" कमजोर \" <endofactions> <history> USER: यूवी तीव्रता के बारे में क्या <endofhistory>",
+    "output": "अगले शुक्रवार को सूज़ौ में यूवी तीव्रता सबसे कमजोर स्तर पर होगी, सूरज की सुरक्षा लाने की कोई आवश्यकता नहीं है, हाहा",
+    "prediction": "यूवी तीव्रता कमजोर होगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hospital ) inform bus_routes equal_to \" नंबर 801 और नंबर 807 \" <endofactions> <history> USER: नमस्ते, मैं ठीक महसूस नहीं कर रहा हूँ और चिकित्सा उपचार के लिए सूज़ौ गुआंगजी अस्पताल जाना चाहता हूँ। क्या आप मुझे यह पता लगाने में मदद कर सकते हैं कि मैं इस अस्पताल तक पहुंचने के लिए किन बस मार्गों का उपयोग कर सकता हूँ <endofhistory>",
+    "output": "नमस्ते, आप सूज़ौ गुआंगजी अस्पताल के लिए बस नंबर 801 और नंबर 807 ले सकते हैं",
+    "prediction": "आप नंबर 801 और नंबर 807 बस मार्गों का उपयोग करके सूज़ौ गुआंगजी अस्पताल तक पहुंच सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( car ) request 4WD <endofactions> <history> USER: हाय, मैं एक छोटी या मध्यम आकार की एसयूवी खरीदने की सोच रहा हूँ। आप क्या सुझाव देंगे <endofhistory>",
+    "output": "चुनने के लिए लोड हैं। क्या आपके पास ड्राइविंग मोड के लिए कोई आवश्यकता है",
+    "prediction": "आपको 4WD वाली एसयूवी चाहिए क्या?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" धूप खिली \" <endofactions> <history> USER: और मौसम कैसा रहेगा <endofhistory>",
+    "output": "उस दिन शेन्ज़ेन में धूप खिली रहेगी",
+    "prediction": "मौसम अच्छा होगा, धूप खिली रहेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request arrival_time <endofactions> <history> USER: आगमन के समय के बारे में क्या <endofhistory>",
+    "output": "उस दिन आगमन का समय 13:30 है",
+    "prediction": "आप किस उड़ान के बारे में जानना चाहते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" धूप खिलेगी \" <endofactions> <history> USER: मौसम के बारे में क्या <endofhistory>",
+    "output": "धूप खिलेगी",
+    "prediction": "धूप खिलेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है। धन्यवाद, अलविदा <endofhistory>",
+    "output": "कोई बात नहीं। धन्यवाद",
+    "prediction": "आपका स्वागत है। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform arrival_time equal_to \" उस दिन 10:15 \" <endofactions> <history> USER: उड़ान कितने बजे आती है? मुझे बीजिंग पहुंचने के ठीक बाद एक बैठक में भाग लेना है <endofhistory>",
+    "output": "उड़ान जल्दी उड़ान भरती है, इसलिए यह जल्दी पहुंच जाएगी। उस दिन 10:15 बजे आता है",
+    "prediction": "उस दिन उड़ान 10:15 बजे पहुंचेगी"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( weather ) inform weather_condition equal_to \" बादल छाए रहेंगे और बाद में बादल छाए रहेंगे \" <endofactions> <history> USER: क्या अगले बुधवार को चेंगदू में धूप खिलेगी <endofhistory>",
+    "output": "नहीं, बादल छाए रहेंगे और बाद में बादल छाए रहेंगे",
+    "prediction": "अगले बुधवार को चेंगदू में बादल छाए रहेंगे और बाद में बादल छाए रहेंगे"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: आपकी मदद के लिए धन्यवाद, अलविदा <endofhistory>",
+    "output": "कोई चिंता नहीं, अलविदा",
+    "prediction": "आपका स्वागत है। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" शुआन हंसे बुटीक होटल \" <endofactions> <history> USER: क्या आप मुझे एक अधिक महंगा व्यावसायिक होटल खोजने में भी मदद कर सकते हैं? मुझे एक किंग साइज कमरा चाहिए <endofhistory>",
+    "output": "मैं सूज़ौ शुआन हंसे बुटीक होटल की सलाह देता हूं",
+    "prediction": "ठीक है, आप शुआन हंसे बुटीक होटल का विचार कर सकते हैं। यह एक अधिक महंगा व्यावसायिक होटल है और उनके पास किंग साइज कमरे भी हैं।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( restaurant ) recommend name equal_to \" वानयुतिंग हेजियारीबेन व्यंजन टेपपानाकी \" <endofactions> <history> USER: ठीक। वैसे, क्या पास में कोई अच्छा रेस्तरां है <endofhistory>",
+    "output": "वानयुतिंग हेजियारीबेन व्यंजन टेपपानाकी निकट है और कुछ बेहतरीन भोजन परोसता है",
+    "prediction": "वानयुतिंग हेजियारीबेन व्यंजन टेपपानाकी एक अच्छा विकल्प हो सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) recommend series equal_to \" लेनोवो यांग्टियन \" <endofactions> <history> USER: 8 जीबी की मेमोरी क्षमता वाला एक अच्छा होगा <endofhistory>",
+    "output": "ठीक है, तो लेनोवो यांग्टियन श्रृंखला का एक कंप्यूटर आपकी आवश्यकताओं के अनुरूप होगा",
+    "prediction": "आप लेनोवो यांग्टियन सीरीज़ का विचार कर सकते हैं, यह आपकी आवश्यकताओं को पूरा करेगा"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है, आपकी मदद के लिए बहुत बहुत धन्यवाद, अलविदा <endofhistory>",
+    "output": "मुझे आशा है कि मेरी सेवाएं आपके लिए मददगार थीं, अलविदा",
+    "prediction": "आपका स्वागत है। आपकी मदद करने में मुझे खुशी हुई। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( hotel ) recommend name equal_to \" सूज़ौ योंगशुन एक्सप्रेस होटल \" <endofactions> <history> USER: यह अच्छा लगता है। मैं पास का एक 1 सितारा होटल भी ढूंढना चाहूँगा <endofhistory>",
+    "output": "फिर मैं सूज़ौ योंगशुन एक्सप्रेस होटल की सिफारिश करूंगा",
+    "prediction": "सूज़ौ योंगशुन एक्सप्रेस होटल एक अच्छा विकल्प हो सकता है। यह एक 1-सितारा होटल है और आपकी आवश्यकताओं को पूरा कर सकता है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) request date <endofactions> <history> USER: मैं अगले हफ्ते बीजिंग जाने की योजना बना रहा हूं, क्या आप शेन्ज़ेन से बीजिंग तक की उड़ानों की जांच करने में मेरी मदद कर सकते हैं <endofhistory>",
+    "output": "क्या आप मुझे अपने प्रस्थान का सही दिन बता सकते हैं? आप कब जाने की योजना बना रहे हैं",
+    "prediction": "आप किस दिन उड़ान लेना चाहते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( train ) inform arrival_time equal_to \" उस दिन 22:58 \" <endofactions> <history> USER: यह चेंगदू में कब आता है <endofhistory>",
+    "output": "आगमन का समय काफी देर का है, उस दिन 22:58 है",
+    "prediction": "यह उस दिन 22:58 पर चेंगदू पहुंचता है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( movie ) recommend title equal_to \" वन्स अपॉन ए टाइम इन चाइना 3 \" <endofactions> <history> USER: नमस्ते, मैं 1990 के दशक से एक चीनी मुख्य भूमि एक्शन फिल्म ढूंढना चाहता हूं <endofhistory>",
+    "output": "ठीक है, मैं वन्स अपॉन ए टाइम इन चाइना 3 की सलाह देता हूं",
+    "prediction": "मैं \"वन्स अपॉन ए टाइम इन चाइना 3\" की सिफारिश करता हूं, यह 1990 के दशक की एक चीनी एक्शन फिल्म है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform ticket_price equal_to \" 60 युआन \" <endofactions> <history> USER: नमस्ते, हम व्यापार के लिए सूज़ौ आ रहे हैं। हम सूज़ौ ताइहू झील वेटलैंड पार्क जाने की उम्मीद कर रहे थे, क्या आप टिकट की कीमतों की जांच करने में हमारी मदद कर सकते हैं <endofhistory>",
+    "output": "ठीक है, बस एक सेकंड। टिकट प्रति व्यक्ति 60 युआन हैं। यह सूज़ौ के लिए काफी सस्ता है",
+    "prediction": "सूज़ौ ताइहू झील वेटलैंड पार्क की टिकट की कीमत 60 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) recommend name equal_to \" हम्बल एडमिनिस्ट्रेटरस गार्डन \" <endofactions> <history> USER: नमस्ते, मैं सूज़ौ में यात्रा कर रहा हूँ, क्या आप कृपया मुझे गुसु जिले में एक मध्य-मूल्य वाले पर्यटक आकर्षण खोजने में मदद कर सकते हैं <endofhistory>",
+    "output": "मैं आपको हम्बल एडमिनिस्ट्रेटरस गार्डन में जाने की सलाह देता हूं",
+    "prediction": "हां, आप हम्बल एडमिनिस्ट्रेटरस गार्डन जा सकते हैं। यह एक बहुत ही सुंदर और शांत स्थल है।"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" चाइना ईस्टर्न एयरलाइंस के MU5132 \" <endofactions> <history> USER: मैं बीजिंग से रवाना हो जाऊंगा। वैसे, मैं बिजनेस क्लास उड़ाना चाहता हूं, कृपया एक उड़ान का सुझाव दे सकते हैं <endofhistory>",
+    "output": "मैं चाइना ईस्टर्न एयरलाइंस के MU5132 का सुझाव देता हूं, इसमें उच्च समय की पाबंदी दर है",
+    "prediction": "आप चाइना ईस्टर्न एयरलाइंस के MU5132 उड़ान का उपयोग कर सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( pc ) request screen_size <endofactions> <history> USER: एसर <endofhistory>",
+    "output": "आप किस आकार को चाहते हैं",
+    "prediction": "आप किस स्क्रीन साइज़ की तलाश में हैं?"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 540 युआन \" <endofactions> <history> USER: टिकट कितना है <endofhistory>",
+    "output": "टिकट की कीमत 540 युआन है",
+    "prediction": "टिकट की कीमत 540 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( class ) recommend class_number equal_to \" पीसी 5 पी 28056 \" <endofactions> <history> USER: नमस्ते, मैं अपने बच्चे के लिए एक चीनी ट्यूटोरियल क्लास ढूँढना चाहता हूँ जो पाँचवीं कक्षा में है। यह अच्छा होगा यदि कक्षा शनिवार या रविवार को, सुबह या दोपहर में हो, और सूज़ौ औद्योगिक पार्क या गुसू जिले में आयोजित हो ताकि मैं उसे उठा सकूं। क्या आपके पास कोई सिफारिश है <endofhistory>",
+    "output": "कक्षा पीसी 5 पी 28056 आपके बच्चे के लिए उपयुक्त है",
+    "prediction": "ठीक है, मैं पीसी 5 पी 28056 कक्षा की सिफारिश करता हूँ"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform flight_information equal_to \" शुआंगलियू अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 से बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 तक एयर चाइना की उड़ान CA4303 \" <endofactions> <history> USER: नमस्ते, मैं अगले हफ्ते गुआंगज़ौ की यात्रा करना चाहता हूं। क्या आप अगले रविवार को चेंगदू से गुआंगज़ौ तक की उड़ानों की जांच करने में मेरी मदद कर सकते हैं <endofhistory>",
+    "output": "मैं आपको शुआंगलियू अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 से बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 तक एयर चाइना की उड़ान CA4303 लेने की सलाह देता हूं",
+    "prediction": "आप शुआंगलियू अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 2 से बैयुन अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1 तक एयर चाइना की उड़ान CA4303 ले सकते हैं"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है, यह बहुत अच्छा है। धन्यवाद, अलविदा <endofhistory>",
+    "output": "मेरी खुशी, अलविदा",
+    "prediction": "आपका स्वागत है। फिर मिलेंगे!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( flight ) inform ticket_price equal_to \" 2,600 युआन \" <endofactions> <history> USER: इस फ्लाइट का किराया क्या है <endofhistory>",
+    "output": "बिजनेस क्लास की टिकट 2,600 युआन की है",
+    "prediction": "इस उड़ान का किराया 2,600 युआन है"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( general ) general <endofactions> <history> USER: ठीक। मेरे पास कोई अन्य प्रश्न नहीं है। आपकी सेवा के लिए धन्यवाद। गुड बाय! <endofhistory>",
+    "output": "आपका स्वागत है। आपका दिन अच्छा हो!",
+    "prediction": "आपका स्वागत है! अगर आपको फिर से कुछ चाहिए, तो कृपया मुझसे संपर्क करें। अलविदा!"
+  },
+  {
+    "instruction": "",
+    "input": "RG: <actions> ( attraction ) inform opening_hours equal_to \" 09:00-16:30 \" <endofactions> <history> USER: कब से कब तक खुला हैं <endofhistory>",
+    "output": "खुलने का समय 09:00-16:30 है",
+    "prediction": "यह 09:00 से 16:30 तक खुला होता है"
+  }
+]

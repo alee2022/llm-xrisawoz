@@ -1,0 +1,21 @@
+{{system_start}}Given the provided information, respond to the user.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: हाय, क्या आप कुछ आकर्षक जापानी टीवी शो की सिफारिश कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}ठीक है, किस अवधि से एक जापानी टीवी शो{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " विनम्र प्रशासक उद्यान " <endofactions> <history> USER: नमस्ते, मेरे दोस्त मुझसे मिलने आ रहे हैं। क्या गुसु जिले के पास कोई दर्शनीय क्षेत्र हैं जो इतने महंगे नहीं हैं <endofhistory>{{user_end}}
+{{assistant_start}}ठीक है, अगर आप अपने दोस्तों के साथ घूमना चाहते हैं, तो विनम्र प्रशासक उद्यान एक अच्छी जगह है। यह एक पारंपरिक सूज़ौ शैली का बगीचा है और आपके घर के पास भी है{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform business_hours equal_to " सोमवार से रविवार, 09: 00-07: 00 " <endofactions> <history> USER: अब समझ में आया। क्या आप मुझे खुलने के घंटों की जांच करने में मदद कर सकते हैं <endofhistory>{{user_end}}
+{{assistant_start}}कोई समस्या नहीं। यह सोमवार से रविवार, 09: 00-07: 00 तक खुला रहता है{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) inform metro_station equal_to " There are no direct subway lines to it. " <endofactions> <history> USER: क्या मैं मेट्रो द्वारा सीधे वहां पहुंच सकता हूं <endofhistory>{{user_end}}
+{{assistant_start}}मुझे डर है कि आप ऐसा नहीं कर सकते। इसके लिए कोई सीधी मेट्रो लाइन नहीं है{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) inform room_charge equal_to " 312 युआन " <endofactions> <history> USER: राजा के आकार का कमरा कितना है <endofhistory>{{user_end}}
+{{assistant_start}}यह 312 युआन है{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: ठीक है, आपके धैर्य के लिए धन्यवाद, अलविदा <endofhistory>{{user_end}}
+{{assistant_start}}आपका स्वागत है। आशा है कि आप मेरी सिफारिशों का आनंद लेंगे{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

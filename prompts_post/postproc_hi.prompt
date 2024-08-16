@@ -1,0 +1,23 @@
+{{system_start}}Similar to the examples below, normalize the given belief state so that values for the following slots contain only among the following. Do not change the belief state if not necessary.
+{{header}}
+{{system_end}}
+
+{{user_start}}( movie ) production_country_or_area equal_to " कोरिया " , star equal_to " Cha Tae-hyun "{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " कोरियाई " , star equal_to " Cha Tae-hyun "{{assistant_end}}
+
+{{user_start}}( tv ) production_country_or_area equal_to " अमेरिका " , type equal_to " विज्ञान कथा टीवी शो "{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " अमेरिका " , type equal_to " sci-fi "{{assistant_end}}
+
+{{user_start}}( restaurant ) cuisine equal_to " सियोल कोरियाई व्यंजन " , pricerange equal_to " मध्यम "{{user_end}}
+{{assistant_start}}( restaurant ) cuisine equal_to " सियोल कोरियन क्यूज़ीन " , pricerange equal_to " moderate "{{assistant_end}}
+
+{{user_start}}( flight ) class_cabin equal_to " बिजनेस क्लास के टिकट " , date equal_to " अगले बुधवार सुबह " , departure equal_to " शंघाई तेरह " , destination equal_to " चेंगदू "{{user_end}}
+{{assistant_start}}( flight ) class_cabin equal_to " बिजनेस क्लास " , date equal_to " अगले बुधवार सुबह " , departure equal_to " शंघाई तेरह " , destination equal_to " चेंगदू "{{assistant_end}}
+
+{{user_start}}( hotel ) area equal_to " चेंगदू " , name equal_to " वियना होटल " , room_type equal_to " एक मानक कमरे " , star equal_to " 3 "{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " चेंगदू " , name equal_to " वियना होटल " , room_type equal_to " मानक कमरा " , star equal_to " 3 "{{assistant_end}}
+
+{{user_start}}( pc ) memory_capacity equal_to " 16 जीबी " , pricerange equal_to " 5,000 to 10,000 yuan " , usage equal_to " गेमिंग लैपटॉप"{{user_end}}
+{{assistant_start}}( pc ) memory_capacity equal_to " 16GB " , pricerange equal_to " 5,000-10,000 " , usage equal_to " गेमिंग लैपटॉप "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

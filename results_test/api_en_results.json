@@ -1,0 +1,20 @@
+[
+  {
+    "instruction": "",
+    "input": "API: <knowledge> ( pc ) available_options \" 3 \" , brand \" Lenovo \" , colour \" N/A \" , computer_type \" desktop \" , cpu \" Intel Core i5 \" , cpu_model \" Intel Core i5-9400F \" , features \" N/A \" , game_performance \" entry-level \" , gpu_category \" discrete graphics card \" , gpu_model \" GT730 \" , hard_disk_capacity \" 256GB SSD + 1TB HDD \" , memory_capacity \" 8GB \" , operating_system \" Windows 10 \" , price \" 4,889 yuan \" , pricerange \" 5,000-10,000 \" , product_name \" Lenovo Tianyi 510Pro \" , screen_size \" 23-25 inches \" , series \" Lenovo Tianyi \" , standby_time \" N/A \" , usage \" business \" , weight \" 7.48kg \" <endofknowledge> <state> ( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5,000-10,000 \" , usage equal_to \" business computer \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform hard_disk_capacity equal_to \" 256GB SSD + 1TB HDD \" , inform price equal_to \" 4,889 yuan \" AGENT_ACTS: ( pc ) inform game_performance equal_to \" entry-level \" USER: OK. Thank you so much for the recommendation. I'll consider it. Bye! <endofhistory>",
+    "output": "no",
+    "prediction": "invalid domain"
+  },
+  {
+    "instruction": "",
+    "input": "API: <knowledge> ( pc ) available_options \" 7 \" , brand \" Lenovo \" , colour \" N/A \" , computer_type \" desktop \" , cpu \" Intel Core i3 \" , cpu_model \" Intel Core i3-9100 \" , features \" N/A \" , game_performance \" entry-level \" , gpu_category \" integrated graphics card \" , gpu_model \" other \" , hard_disk_capacity \" 1TB HDD \" , memory_capacity \" 8GB \" , operating_system \" Windows 10 \" , price \" 2,889 yuan \" , pricerange \" <5,000 \" , product_name \" Lenovo Tianyi 510S \" , screen_size \" 20-21.5 inches \" , series \" Lenovo Tianyi \" , standby_time \" N/A \" , usage \" business \" , weight \" 5.875kg \" <endofknowledge> <state> ( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" less than 5,000 \" , usage equal_to \" business computer \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform operating_system equal_to \" Windows 10 \" AGENT_ACTS: ( pc ) inform colour equal_to \" no specific description \" USER: Is the desktop's performance suitable for gaming? <endofhistory>",
+    "output": "yes",
+    "prediction": "invalid domain"
+  },
+  {
+    "instruction": "",
+    "input": "API: <knowledge> ( weather ) available_options \" 1 \" , city \" Chengdu \" , date \" next Friday \" , tamperature \" The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius. \" , uv_intensity \" moderate \" , weather_condition \" cloudy \" , wind \" a breeze without continuous direction \" <endofknowledge> <state> ( weather ) city equal_to \" Chengdu \" , date equal_to \" next Friday \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform weather_condition equal_to \" cloudy \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 4 degrees Celsius \" USER: So cloudy and 15 degrees, I won't need any sun protection, right? Can you help me check the UV intensity? <endofhistory>",
+    "output": "yes",
+    "prediction": "invalid domain"
+  }
+]

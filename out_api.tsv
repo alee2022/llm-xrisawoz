@@ -1,0 +1,2 @@
+attraction_goal_4-10_v2###2130	{'type': 'water town', 'consumption': 'moderate'}	{'type': 'water town', 'consumption': 'moderate', 'name': 'shantang street'}	[('add', '', [('name', 'shantang street')])]
+attraction_goal_4-35_v2###2036	{'type': 'water town', 'consumption': 'slightly expensive'}	{'type': 'water town', 'consumption': 'slightly expensive', 'name': 'zhouzhuang town', 'the_most_suitable_people': 'friends'}	[('add', '', [('name', 'zhouzhuang town'), ('the_most_suitable_people', 'friends')])]

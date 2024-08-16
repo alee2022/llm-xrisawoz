@@ -1,0 +1,602 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요! 저는 시외에서 여기 쑤저우를 방문하러 왔어요. 재미있는 곳을 추천해 주실 수 있나요? <endofhistory>",
+    "output": "null",
+    "prediction": "null"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> AGENT_ACTS: ( attraction ) greeting , request area USER: 쿤산시요. 친구들과 여행하기 좋은 장소면 조금 더 비싸도 괜찮아요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: null AGENT_ACTS: ( attraction ) recommend name equal_to \" 저우좡 마을 \" USER: 그곳의 특별한 점은 무엇인가요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쿤산시 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 저우좡 마을 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 저우좡 마을 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 저우좡 마을 \" AGENT_ACTS: <|assistant_start|>( attraction ) inform features equal_to \" 저우좡 마을 \"<|assistant_end|> USER: 좋네요. 주소가 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쿤산시 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 저우좡 마을 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 저우좡 마을 \" <endofstate> <history> AGENT_ACTS_PREV: <|assistant_start|>( attraction ) inform features equal_to \" 저우좡 마을 \"<|assistant_end|> AGENT_ACTS: (attraction) inform address equal_to \"쑤저우시 쿤산시 저우좡 마을 촨푸로 43호\" USER: 지하철로 바로 갈 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쿤산시 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 저우좡 마을 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 저우좡 마을 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform address equal_to \"쑤저우시 쿤산시 저우좡 마을 촨푸로 43호\" AGENT_ACTS: (attraction) inform metro_station equal_to \"없음\" USER: 음, 추천해 주셔서 감사해요. 안녕히 계세요! <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쿤산시 \" , name equal_to \" 저우좡 마을 \" , the_most_suitable_people equal_to \" 친구들과 여행 \"",
+    "prediction": "( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들과 여행 \" , consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 저우좡 마을 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 사업차 친구들과 쑤저우에 가는데 진지 호수 풍경구를 방문하고 싶어요. 그곳의 특별한 점이 무엇인지 조금 더 설명해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , opening_hours equal_to \" 하루 종일 \"",
+    "prediction": "( attraction ) name equal_to \" 진지 호수 풍경구 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 진지 호수 풍경구 \" <endofstate> <history> AGENT_ACTS: <|assistant_start|>( attraction ) inform features equal_to \" 동방지문과 같은 높은 건물들의 아름다운 전경을 보거나, 관람차나 야간 유람선을 타면서 쑤저우의 현대적인 면을 느낄 수 있습니다. \"<|assistant_end|> USER: 아름답겠네요. 거기 너무 가고 싶어요. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , opening_hours equal_to \" 하루 종일 \"",
+    "prediction": "( attraction ) name equal_to \" 진지 호수 풍경구 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 진지 호수 풍경구 \" <endofstate> <history> AGENT_ACTS_PREV: <|assistant_start|>( attraction ) inform features equal_to \" 동방지문과 같은 높은 건물들의 아름다운 전경을 보거나, 관람차나 야간 유람선을 타면서 쑤저우의 현대적인 면을 느낄 수 있습니다. \"<|assistant_end|> AGENT_ACTS: <|assistant_start|>( attraction ) inform type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \" <|assistant_end|> USER: 전화번호가 어떻게 되나요? 전화해서 입장권을 사고 싶어요. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , opening_hours equal_to \" 하루 종일 \"",
+    "prediction": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \" <endofstate> <history> AGENT_ACTS_PREV: <|assistant_start|>( attraction ) inform type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \" <|assistant_end|> AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 400-7558558 \" USER: 네. 그 명소의 개장 시간은 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , opening_hours equal_to \" 하루 종일 \"",
+    "prediction": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 400-7558558 \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 하루 종일 \" USER: 하루 종일 문을 연다니 잘됐네요. 그러면 아무때나 가면 되겠어요. 편리하네요. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , opening_hours equal_to \" 하루 종일 \"",
+    "prediction": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 하루 종일 \" AGENT_ACTS: ( attraction ) inform address equal_to \" 쑤저우시 쑤저우 공업원구 신강가 158호 \" , features equal_to \" 동방지문과 같은 높은 건물들의 아름다운 전경을 보거나, 관람차나 야간 유람선을 타면서 쑤저우의 현대적인 면을 느낄 수 있습니다. \" , score equal_to \" 4.5점 \" , the_most_suitable_people equal_to \" 데이트 \" USER: 아니요, 없습니다. 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , opening_hours equal_to \" 하루 종일 \"",
+    "prediction": "( attraction ) name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \" , ticket_price equal_to \" 무료 \" , opening_hours equal_to \" 하루 종일 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 사업차 친구들과 쑤저우에 가는데 영암산 풍경구에 가고 싶어요. 이곳의 주소를 찾아주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 영암산 풍경구 \" , score equal_to \" 4.3점 \" , ticket_price equal_to \" 무료 \"",
+    "prediction": "( attraction ) name equal_to \" 영암산 풍경구 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 영암산 풍경구 \" <endofstate> <history> AGENT_ACTS: ( attraction ) inform address equal_to \" 쑤저우시 우중구 무두구전 산탕제 끝에 \" USER: 평점이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 영암산 풍경구 \" , score equal_to \" 4.3점 \" , ticket_price equal_to \" 무료 \"",
+    "prediction": "( attraction ) name equal_to \" 영암산 풍경구 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 영암산 풍경구 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" 쑤저우시 우중구 무두구전 산탕제 끝에 \" AGENT_ACTS: (attraction) inform score equal_to \" 4.3점 \" USER: 4.3점이면 좀 낮네요, 하하. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 영암산 풍경구 \" , score equal_to \" 4.3점 \" , ticket_price equal_to \" 무료 \"",
+    "prediction": "( attraction ) name equal_to \" 영암산 풍경구 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 영암산 풍경구 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform score equal_to \" 4.3점 \" AGENT_ACTS: ( attraction ) inform features equal_to \" 영암산 풍경구 \" USER: 맞아요. 한번 가봐야겠어요. 입장료가 얼마인지 말씀해 주시겠어요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 영암산 풍경구 \" , score equal_to \" 4.3점 \" , ticket_price equal_to \" 무료 \"",
+    "prediction": "( attraction ) name equal_to \" 영암산 풍경구 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 영암산 풍경구 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 영암산 풍경구 \" AGENT_ACTS: (attraction) inform ticket_price equal_to \" 무료 \"<|assistant_end|> USER: 완벽해요. 무료라니 더 기쁘네요. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 영암산 풍경구 \" , score equal_to \" 4.3점 \" , ticket_price equal_to \" 무료 \"",
+    "prediction": "( attraction ) name equal_to \" 영암산 풍경구 \" , ticket_price equal_to \" 무료 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 영암산 풍경구 \" , ticket_price equal_to \" 무료 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform ticket_price equal_to \" 무료 \"<|assistant_end|> AGENT_ACTS: (attraction) inform address equal_to \" 쑤저우시 우중구 무두구전 산탕제 끝에 \", opening_hours equal_to \" 오전 6시부터 오후 5시반까지 \", phone_number equal_to \" 0512-66261310 \" USER: 아니요, 감사합니다. 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 영암산 풍경구 \" , score equal_to \" 4.3점 \" , the_most_suitable_people equal_to \" 친구들 \" , ticket_price equal_to \" 무료 \"",
+    "prediction": "( attraction ) name equal_to \" 영암산 풍경구 \" , ticket_price equal_to \" 무료 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 쑤저우에 살고 있지만 외출을 잘 하지는 않습니다. 친구가 저를 보러 쑤저우에 오는데 대학교 캠퍼스에 데려갈 생각입니다. 추천하시는 곳이 있나요? <endofhistory>",
+    "output": "( attraction ) the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 캠퍼스 \"",
+    "prediction": "( attraction ) type equal_to \" 대학교 캠퍼스 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 대학교 캠퍼스 \" <endofstate> <history> AGENT_ACTS: <|assistant_start|>( attraction ) recommend name equal_to \" 쑤저우 대학교 \"<|assistant_end|> USER: 저렴한 곳이 좋겠어요. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 저렴한 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 캠퍼스 \"",
+    "prediction": "( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \" <endofstate> <history> AGENT_ACTS_PREV: <|assistant_start|>( attraction ) recommend name equal_to \" 쑤저우 대학교 \"<|assistant_end|> AGENT_ACTS: ( attraction ) inform features equal_to \" 쑤저우 대학교 \" USER: 네, 그 대학교 근처에 지하철역이 있나요? 거기에 지하철을 타고 가려고 합니다. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 저렴한 \" , name equal_to \" 쑤저우 대학교 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 캠퍼스 \"",
+    "prediction": "( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 쑤저우 대학교 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 있음 \" USER: 잘됐네요. 대학교 개방 시간이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 저렴한 \" , name equal_to \" 쑤저우 대학교 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 캠퍼스 \"",
+    "prediction": "( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" 있음 \" AGENT_ACTS: (attraction ) inform opening_hours equal_to \" 하루 종일 \"<|assistant_end|> USER: 좋네요, 계획을 짜는게 더 쉬워지겠어요. 그 대학교의 특별한 점이 있나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 저렴한 \" , name equal_to \" 쑤저우 대학교 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 캠퍼스 \"",
+    "prediction": "( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction ) inform opening_hours equal_to \" 하루 종일 \"<|assistant_end|> AGENT_ACTS: (attraction ) inform features equal_to \" 쑤저우 대학교는 쑤저우의 구시가지에 위치해 있고 국내 '211프로젝트'의 일부분입니다. 쑤저우 대학교의 전신은 1900년에 설립되었습니다. \"<|assistant_finish|> USER: 그렇군요. 오랫동안 정말 감사합니다. 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 저렴한 \" , name equal_to \" 쑤저우 대학교 \" , the_most_suitable_people equal_to \" 친구 \" , type equal_to \" 캠퍼스 \"",
+    "prediction": "( attraction ) type equal_to \" 대학교 캠퍼스 \" , consumption equal_to \" 저렴한 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 쑤저우 여행 중인데 현재 우중구에 있습니다. 흥미로운 명소를 추천해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 천평산 풍경구 \" USER: 친구들 몇 명과 같이 갑니다. 적당한 명소 찾는 걸 도와주세요. 가격이 너무 높지는 않았으면 좋겠는데, 중간 가격대 정도가 괜찮겠어요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 천평산 풍경구 \" AGENT_ACTS: ( attraction ) recommend name equal_to \" 천평산 풍경구 \" USER: 음, 친구들이 천평산 풍경구가 좋다고 하는 걸 들었어요. 입장료는 얼마인가요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 천평산 풍경구 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \" , name equal_to \" 천평산 풍경구 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \" , name equal_to \" 천평산 풍경구 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 천평산 풍경구 \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 30위안 \" USER: 네, 가격은 적당하네요. 그 명소의 주소가 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 천평산 풍경구 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \" , name equal_to \" 천평산 풍경구 \" , ticket_price equal_to \" 30위안 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \" , name equal_to \" 천평산 풍경구 \" , ticket_price equal_to \" 30위안 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 30위안 \" AGENT_ACTS: (attraction) inform address equal_to \"쑤저우시 우중구 링티안로\"<|assistant_end|> USER: 알겠습니다. 그곳의 전화번호는 어떻게 되나요? 가기 전에 몇 가지 질문할 게 있어요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 천평산 풍경구 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \" , name equal_to \" 천평산 풍경구 \" , ticket_price equal_to \" 30위안 \" , address equal_to \" 쑤저우시 우중구 링티안로 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \" , name equal_to \" 천평산 풍경구 \" , ticket_price equal_to \" 30위안 \" , address equal_to \" 쑤저우시 우중구 링티안로 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform address equal_to \"쑤저우시 우중구 링티안로\"<|assistant_end|> AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-66387422 \" USER: 네, 알겠습니다. 친절한 설명 감사드립니다. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 천평산 풍경구 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 함께 \" , name equal_to \" 천평산 풍경구 \" , ticket_price equal_to \" 30위안 \" , address equal_to \" 쑤저우시 우중구 링티안로 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 저는 시외 출신인데 여기 쑤저우에 놀러 왔습니다. 우장구에서 친구들과 갈 만한 장소를 추천해 주실 수 있나요? 더 비싼 가격대로요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우장구 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS: (class) recommend name equal_to \"통리 마을\" USER: 네, 평점이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우장구 \" , name equal_to \" 통리 마을 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS_PREV: (class) recommend name equal_to \"통리 마을\" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5점 \" USER: 좋네요, 입장료는 얼마인가요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우장구 \" , name equal_to \" 통리 마을 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5점 \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 100 위안 \" USER: 지하철로 갈 수 있나요? 그러면 더 편리할텐데요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우장구 \" , name equal_to \" 통리 마을 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 100 위안 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 없음 \" USER: 음, 알겠습니다. 감사해요, 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우장 \" , name equal_to \" 통리마을 \" , the_most_suitable_people equal_to \" 친구들과 갈 \"",
+    "prediction": "( attraction ) area equal_to \" 우장구 \" , consumption equal_to \" 더 비싼 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 친구들과 쑤저우에 있는 풍경이 좋은 곳에 놀러 가고 싶습니다. 중간 가격대의 명소를 추천해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 천평산 풍경구 \" USER: 입장료는 얼마인가요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 천평산 풍경구 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 천평산 풍경구 \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 30위안 \" USER: 이 명소의 특별한 점은 무엇인가요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 천평산 풍경구 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \" , ticket_price equal_to \" 30위안 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \" , ticket_price equal_to \" 30위안 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 30위안 \" AGENT_ACTS: ( attraction ) inform features equal_to \" 천평산 풍경구 \" USER: 그리고 마지막으로 이 명소의 전화번호는 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 천평산 풍경구 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \" , ticket_price equal_to \" 30위안 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \" , ticket_price equal_to \" 30위안 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 천평산 풍경구 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-66387422 \" USER: 알겠습니다. 감사해요, 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 천평산 풍경구 \" , the_most_suitable_people equal_to \" 친구들 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 중간 가격대 \" , the_most_suitable_people equal_to \" 친구들과 \" , ticket_price equal_to \" 30위안 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 친한 친구들과 사업차 쑤저우에 있습니다. 주말에 타이후 호수 습지 공원에 가려고 해요. 주소를 말씀해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 쑤저우 타이후 호수 습지 공원 \"",
+    "prediction": "( attraction ) name equal_to \" 타이후 호수 습지 공원 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 타이후 호수 습지 공원 \" <endofstate> <history> AGENT_ACTS: (attraction) inform address equal_to \" 쑤저우시 쑤저우 신구 타운 레이크 자수거리 1호 \" USER: 개방 시간은 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 쑤저우 타이후 호수 습지 공원 \"",
+    "prediction": "( attraction ) name equal_to \" 타이후 호수 습지 공원 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 타이후 호수 습지 공원 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform address equal_to \" 쑤저우시 쑤저우 신구 타운 레이크 자수거리 1호 \" AGENT_ACTS: (attraction) inform opening_hours equal_to \" 오전 9시부터 오후 4시 반까지 \"<|assistant_end|> USER: 그렇군요. 그리고 그곳의 전화번호도 말씀해 주시겠어요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 쑤저우 타이후 호수 습지 공원 \"",
+    "prediction": "( attraction ) name equal_to \" 타이후 호수 습지 공원 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 타이후 호수 습지 공원 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform opening_hours equal_to \" 오전 9시부터 오후 4시 반까지 \"<|assistant_end|> AGENT_ACTS: (attraction) inform phone_number equal_to \" 0512-66918088 \"<|assistant_end|> USER: 네, 알겠습니다. 감사합니다. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 타이후 호수 습지 공원 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) name equal_to \" 타이후 호수 습지 공원 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 타이후 호수 습지 공원 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform phone_number equal_to \" 0512-66918088 \"<|assistant_end|> AGENT_ACTS: <|assistant_start|>( attraction ) inform features equal_to \" 습지 공원에서는 관광, 오락, 레저와 교육이 모두 하나로 통합됩니다. '지상 낙원'이라고 말할 수 있어요. \" <|assistant_end|> USER: 아니요, 없습니다. 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) name equal_to \" 타이후 호수 습지 공원 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) name equal_to \" 타이후 호수 습지 공원 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 제 여자친구와 쑤저우로 여행을 가려고 하는데 우중구에 먼저 가고 싶어요. 근처에 지하철 역이 있는 풍경이 좋은 곳을 추천해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 석호 \"<|assistant_end|> USER: 좋네요, 주소를 말씀해 주시겠어요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , name equal_to \" 석호 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 석호 \"<|assistant_end|> AGENT_ACTS: ( attraction ) inform address equal_to \" 쑤저우시 우중구 유씬로 333호 \" USER: 네, 그 명소의 전화번호는 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , name equal_to \" 석호 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" 쑤저우시 우중구 유씬로 333호 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65646668 \" USER: 그 명소의 특별한 점이 무엇인지도 알고 싶어요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , name equal_to \" 석호 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-65646668 \" AGENT_ACTS: (attraction) inform features equal_to \" 석호의 멋진 경치와 끝없이 이어진 산과 능선으로 유명합니다. 산과 물에 대한 쑤저우의 문화를 감상할 수 있는 좋은 장소에요. \"<|assistant_end|> USER: 알겠습니다. 멋진 자연 풍경을 보는 게 너무 기대됩니다. 감사합니다. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 근처에 지하철 역이 있는 \" , name equal_to \" 석호 \" , the_most_suitable_people equal_to \" 여자친구 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform features equal_to \" 석호의 멋진 경치와 끝없이 이어진 산과 능선으로 유명합니다. 산과 물에 대한 쑤저우의 문화를 감상할 수 있는 좋은 장소에요. \"<|assistant_end|> AGENT_ACTS: <|assistant_start|>( attraction ) inform address equal_to \" 쑤저우시 우중구 유씬로 333호 \" , opening_hours equal_to \" 하루 종일 \" , ticket_price equal_to \" 무료 \" <|assistant_end|> USER: 감사합니다, 안녕히 계세요! <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 근처에 지하철 역이 있는 \" , name equal_to \" 석호 \" , the_most_suitable_people equal_to \" 여자친구 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , metro_station equal_to \" 있음 \" , features equal_to \" 풍경이 좋은 \" , name equal_to \" 석호 \" , address equal_to \" 쑤저우시 우중구 유씬로 333호 \" , opening_hours equal_to \" 하루 종일 \" , ticket_price equal_to \" 무료 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 시외에서 쑤저우를 방문하려고 합니다. 우중구에 있는 가족 친화적인 장소를 추천해 주실 수 있나요? 중간 가격대의 장소면 좋겠습니다. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , the_most_suitable_people equal_to \" 가족 친화적인 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 둥팅둥산 \" USER: 지하철로 바로 갈 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 둥팅둥산 \" , the_most_suitable_people equal_to \" 가족 친화적인 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 둥팅둥산 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 없음 \" USER: 전화번호가 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 둥팅둥산 \" , the_most_suitable_people equal_to \" 가족 친화적인 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" 없음 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-66399231 \" USER: 그러면 그곳이 정확히 어디에 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 둥팅둥산 \" , the_most_suitable_people equal_to \" 가족 친화적인 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-66399231 \" AGENT_ACTS: (attraction) inform address equal_to \" 쑤저우시 우중구 몰리로 근처입니다 \"<|assistant_end|> USER: 감사합니다. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 둥팅둥산 \" , the_most_suitable_people equal_to \" 가족 친화적인 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform address equal_to \" 쑤저우시 우중구 몰리로 근처입니다 \"<|assistant_end|> AGENT_ACTS: <|assistant_start|>( attraction ) inform name equal_to \" 둥팅둥산 \" , features equal_to \" 옥띠처럼 생긴 환산길은 방문객들로 하여금 태후호와 길을 따라 있는 정교한 고대 건물들을 즐길 수 있게 해주며, 그들은 태후호의 흰 물고기, 은어, 흰 새우를 맛볼 수 있습니다. \" , opening_hours equal_to \" 하루 종일 \" , ticket_price equal_to \" 60위안 \" , score equal_to \" 4.5점 \" <|assistant_end|> USER: 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 우중구 \" , consumption equal_to \" 적당한 \" , name equal_to \" 둥팅둥산 \" , the_most_suitable_people equal_to \" 가족 친화적인 \"",
+    "prediction": "( attraction ) area equal_to \" 우중구 \" , the_most_suitable_people equal_to \" 가족 친화적인 \" , consumption equal_to \" 중간 가격대 \" , name equal_to \" 둥팅둥산 \" , opening_hours equal_to \" 하루 종일 \" , ticket_price equal_to \" 60위안 \" , score equal_to \" 4.5점 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요! 저는 외출하는 걸 그렇게 좋아하지 않는데 제 친구가 저를 보러 쑤저우에 올 거예요. 놀이공원을 추천해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 쑤저우 파라다이스 아쿠아월드 \" USER: 중간 가격대에 있는 곳이요. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 쑤저우 파라다이스 아쿠아월드 \" AGENT_ACTS: ( attraction ) recommend name equal_to \" 쑤저우 아쿠아리움 \" USER: 그곳의 전화번호를 말씀해 주시겠어요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 쑤저우 아쿠아리움 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 쑤저우 아쿠아리움 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-69381000 \" USER: 영업 시간이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 쑤저우 아쿠아리움 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-69381000 \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 오전 9시부터 오후 5시까지 \" USER: 그곳의 특별한 점은 무엇인가요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 쑤저우 아쿠아리움 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 오전 9시부터 오후 5시까지 \" AGENT_ACTS: <|assistant_start|>( attraction ) inform features equal_to \" 다양한 해양 생물을 보실 수 있고, 멋진 동물 공연을 감상하실 수 있고, 또 다채로운 해양 세계를 경험 \"<|assistant_end|> USER: 음, 굉장하네요. 감사합니다! 안녕히 계세요! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 적당한 \" , name equal_to \" 쑤저우 아쿠아리움 \" , the_most_suitable_people equal_to \" 친구 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 중간 가격대 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕히 계세요. 구수구에서 친구들과 갈 수 있는 더 저렴한 곳을 추천해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 저렴한 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 쑤저우 박물관 \" USER: 개장 시간이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 저렴한 \" , name equal_to \" 쑤저우 박물관 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 쑤저우 박물관 \" AGENT_ACTS: (attraction) inform opening_hours equal_to \" 오전 9시부터 오후 5시까지 \"<|assistant_end|> USER: 거기 지하철로 갈 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 저렴한 \" , name equal_to \" 쑤저우 박물관 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform opening_hours equal_to \" 오전 9시부터 오후 5시까지 \"<|assistant_end|> AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 없음 \" USER: 입장료는 얼마인가요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 저렴한 \" , name equal_to \" 쑤저우 박물관 \" , the_most_suitable_people equal_to \" 친구들 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" 없음 \" AGENT_ACTS: (attraction) inform ticket_price equal_to \" 무료 \" USER: 도와주셔서 정말 감사합니다, 안녕히 계세요! <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , name equal_to \" 쑤저우 박물관 \" , the_most_suitable_people equal_to \" 친구들과 갈 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , consumption equal_to \" 더 저렴한 \" , the_most_suitable_people equal_to \" 친구들과 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 저와 제 여자친구는 주말에 구수구에서 인기 있는 상업 중심지에 가기로 했습니다. 추천하시는 곳이 있나요? 거기 지하철을 타고 가고 싶어요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , the_most_suitable_people equal_to \" 데이트 \" , type equal_to \" 상업 중심지 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" <endofstate> <history> AGENT_ACTS: (attraction) recommend name equal_to \"시루 보행자 거리\" USER: 알겠습니다. 입장권은 필요 없죠? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , name equal_to \" 시루 보행자 거리 \" , the_most_suitable_people equal_to \" 데이트 \" , type equal_to \" 상업 중심지 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) recommend name equal_to \"시루 보행자 거리\" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 무료 \" USER: 하하, 주소를 말씀해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , name equal_to \" 시루 보행자 거리 \" , the_most_suitable_people equal_to \" 데이트 \" , type equal_to \" 상업 중심지 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 무료 \" AGENT_ACTS: (attraction) inform address equal_to \"쑤저우시 진창구 시루 보행자 거리\"<|assistant_end|> USER: 그리고 근처에 지하철 역이 있는지 한번 더 확인해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , metro_station equal_to \" 있음 \" , name equal_to \" 시루 보행자 거리 \" , the_most_suitable_people equal_to \" 데이트 \" , type equal_to \" 상업 중심지 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform address equal_to \"쑤저우시 진창구 시루 보행자 거리\"<|assistant_end|> AGENT_ACTS: (attraction) inform metro_station equal_to \" 있음 \" USER: 좋네요, 그럼 기차역에서 지하철을 타고 가면 되겠네요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , metro_station equal_to \" 있습니다 \" , name equal_to \" 시루 보행자 거리 \" , the_most_suitable_people equal_to \" 여자친구 \" , type equal_to \" 상업 중심지 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform metro_station equal_to \" 있음 \" AGENT_ACTS: (attraction) inform name equal_to \"시루 보행자 거리\" USER: 아니요, 감사합니다. 안녕히 계세요. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 구수구 \" , metro_station equal_to \" 있습니다 \" , name equal_to \" 시루 보행자 거리 \" , the_most_suitable_people equal_to \" 여자친구 \" , type equal_to \" 상업 중심지 \"",
+    "prediction": "( attraction ) area equal_to \" 구수구 \" , type equal_to \" 인기 있는 상업 중심지 \" , metro_station equal_to \" 있음 \" , ticket_price equal_to \" 무료 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 저는 쑤저우에 살고 있는데 외출을 잘 하지는 않습니다. 제 친구가 저를 보러 쑤저우로 오기로 해서 풍경이 좋은 곳에 데려갈까 생각 중입니다. 추천하시는 곳이 있나요? <endofhistory>",
+    "output": "( attraction ) type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" <endofstate> <history> AGENT_ACTS: <|assistant_start|>( attraction ) recommend name equal_to \" 천평산 풍경구 \"<|assistant_end|> USER: 아, 조금 더 비싼 곳에 가려고 하는데요. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: <|assistant_start|>( attraction ) recommend name equal_to \" 천평산 풍경구 \"<|assistant_end|> AGENT_ACTS: (attraction) recommend name equal_to \"진지 호수 풍경구\" USER: 평점이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) recommend name equal_to \"진지 호수 풍경구\" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5점 \" USER: 거기 지하철로 갈 수 있나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5점 \" AGENT_ACTS: (attraction) inform metro_station equal_to \" 있음 \"<|assistant_end|> USER: 그곳 전화번호가 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 진지 호수 풍경구 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform metro_station equal_to \" 있음 \"<|assistant_end|> AGENT_ACTS: (attraction) inform phone_number equal_to \" 400-7558558 \" USER: 도와주셔서 정말 감사합니다, 안녕히 계세요! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 진지 호수 풍경구 \" , the_most_suitable_people equal_to \" 친구 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) the_most_suitable_people equal_to \" 친구 \" , features equal_to \" 풍경이 좋은 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 제 친구가 저를 보러 오는데 내일 놀이공원에 갈 거예요. 그런데 제가 외출을 잘 안 해서 그러는데 조금 더 비싼 놀이공원을 추천해주시겠어요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS: (class) recommend name equal_to \"쑤저우 파라다이스 아쿠아월드\" USER: 그곳의 특징에 대해서 설명해 주시겠어요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 쑤저우 파라다이스 아쿠아월드 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: (class) recommend name equal_to \"쑤저우 파라다이스 아쿠아월드\" AGENT_ACTS: <|assistant_start|>( attraction ) inform features equal_to \" 숲 테마. 바다 근처의 광활한 숲에 있는 듯한 느낌이 들게하죠. \"<|assistant_end|> USER: 재미있겠네요. 영업 시간이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 쑤저우 파라다이스 아쿠아월드 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: <|assistant_start|>( attraction ) inform features equal_to \" 숲 테마. 바다 근처의 광활한 숲에 있는 듯한 느낌이 들게하죠. \"<|assistant_end|> AGENT_ACTS: (attraction) inform opening_hours equal_to \" 오전 9시부터 오후 5시까지 \"<|assistant_finish|> USER: 그렇군요. 평점이 높을 것 같은데, 맞나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 쑤저우 파라다이스 아쿠아월드 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform opening_hours equal_to \" 오전 9시부터 오후 5시까지 \"<|assistant_finish|> AGENT_ACTS: (attraction) inform score equal_to \" 4.4점 \"<|assistant_finish|> USER: 네, 알겠습니다. 도와주셔서 감사합니다. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 쑤저우 파라다이스 아쿠아월드 \" , the_most_suitable_people equal_to \" 친구 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform score equal_to \" 4.4점 \"<|assistant_finish|> AGENT_ACTS: <|assistant_start|>( attraction ) recommend name equal_to \" 쑤저우 파라다이스 아쿠아월드 \"<|assistant_end|> USER: 네, 그렇지만 지금은 더 질문할게 없어요. 안녕히 계세요! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 더 비싼 \" , name equal_to \" 쑤저우 파라다이스 아쿠아월드 \" , the_most_suitable_people equal_to \" 친구 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) type equal_to \" 놀이공원 \" , consumption equal_to \" 조금 더 비싼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 제 친구가 저를 보러 쑤저우에 오는데 풍경이 좋은 곳에 데려가려고 합니다. 더 비싼 명소를 추천해 주실 수 있나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \" <endofstate> <history> AGENT_ACTS: (class ) recommend name equal_to \" 진지 호수 풍경구 \" USER: 그 명소는 어떤가요? 특별한 점이 있나요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 사자방 명승지 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \" <endofstate> <history> AGENT_ACTS_PREV: (class ) recommend name equal_to \" 진지 호수 풍경구 \" AGENT_ACTS: ( attraction ) inform features equal_to \" 사자방 명승지 \" USER: 너무 좋네요. 제 친구가 경극을 정말 좋아하거든요. 그곳의 운영 시간도 말씀해 주시겠어요? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 사자방 명승지 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \", opening_hours equal_to \" 사자방 명승지 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \", opening_hours equal_to \" 사자방 명승지 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 사자방 명승지 \" AGENT_ACTS: (attraction ) inform opening_hours equal_to \" 사자방 명승지 \"<|assistant_end|> USER: 거기 지하철로 갈 수 있나요? 그렇다면 편리할텐데요. <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 사자방 명승지 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \", opening_hours equal_to \" 사자방 명승지 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \", opening_hours equal_to \" 사자방 명승지 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction ) inform opening_hours equal_to \" 사자방 명승지 \"<|assistant_end|> AGENT_ACTS: (attraction ) inform metro_station equal_to \" 없음 \" USER: 그럼 차로 가야겠네요. 질문에 모두 답해주셔서 감사합니다. 안녕히 계세요! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 조금 비싼 \" , name equal_to \" 사자방 풍경구 \" , the_most_suitable_people equal_to \" 친구 \" , type equal_to \" 풍경이 좋은 곳 \"",
+    "prediction": "( attraction ) consumption equal_to \" 더 비싼 \" , features equal_to \" 풍경이 좋은 \", opening_hours equal_to \" 사자방 명승지 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 저는 쑤저우 공업원구에 있는데 근처에 지하철 역이 있는 놀이공원에 가고 싶습니다. <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , metro_station equal_to \" 있음 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 화이브라더스 무비 월드 \" USER: 주소가 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , metro_station equal_to \" 있음 \" , name equal_to \" 화이브라더스 무비 월드 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 화이브라더스 무비 월드 \" AGENT_ACTS: (attraction) inform address equal_to \" 쑤저우시 쑤저우 공업원구 양청후로 188호 \"<|assistant_finish|> USER: 평점은 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , metro_station equal_to \" 있음 \" , name equal_to \" 화이브라더스 무비 월드 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform address equal_to \" 쑤저우시 쑤저우 공업원구 양청후로 188호 \"<|assistant_finish|> AGENT_ACTS: (attraction) inform score equal_to \" 4.5점 \" USER: 지하철로 갈 수 있나요? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , metro_station equal_to \" 있음 \" , name equal_to \" 화이브라더스 무비 월드 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \" <endofstate> <history> AGENT_ACTS_PREV: (attraction) inform score equal_to \" 4.5점 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 있음 \" USER: 도와주셔서 정말 감사합니다, 안녕히 계세요! <endofhistory>",
+    "output": "( attraction ) area equal_to \" 공업원구 \" , metro_station equal_to \" 수 있는 \" , name equal_to \" 화이브라더스 무비 월드 \" , type equal_to \" 놀이공원 \"",
+    "prediction": "( attraction ) area equal_to \" 쑤저우 공업원구 \" , type equal_to \" 놀이공원 \" , metro_station equal_to \" 있음 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 안녕하세요, 쑤저우로 출장을 왔는데 에슬리트 서점을 가고 싶습니다. 거기 지하철로 갈 수 있나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 에슬리트 서점 \"",
+    "prediction": "( attraction ) name equal_to \" 에슬리트 서점 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 에슬리트 서점 \" <endofstate> <history> AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 있음 \" USER: 잘됐네요. 영업 시간이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 에슬리트 서점 \"",
+    "prediction": "( attraction ) name equal_to \" 에슬리트 서점 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 에슬리트 서점 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform metro_station equal_to \" 있음 \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 오전 10시부터 오후 10시까지 \" USER: 평점이 어떻게 되나요? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 에슬리트 서점 \"",
+    "prediction": "( attraction ) name equal_to \" 에슬리트 서점 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 에슬리트 서점 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 오전 10시부터 오후 10시까지 \" AGENT_ACTS: (attraction ) inform score equal_to \" 4.7점 \" USER: 음, 거기 입장권이 필요 없죠? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 에슬리트 서점 \"",
+    "prediction": "( attraction ) name equal_to \" 에슬리트 서점 \" , ticket_price equal_to \" 무료 \""
+  }
+]

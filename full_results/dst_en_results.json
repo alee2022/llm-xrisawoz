@@ -1,0 +1,14 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> AGENT_ACTS: ( movie ) request decade , request production_country_or_area USER: Please recommend a movie from Taiwan, China from the 2000s. <endofhistory>",
+    "output": "( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Taiwan \"",
+    "prediction": "( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Taiwan, China \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Taiwan \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) request decade , request production_country_or_area AGENT_ACTS: ( movie ) recommend title equal_to \" Secret \" USER: What's its Douban rating? And who's the director? <endofhistory>",
+    "output": "( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Taiwan \"",
+    "prediction": "( movie ) decade equal_to \" the 2000s \" , production_country_or_area equal_to \" Taiwan \""
+  }
+]

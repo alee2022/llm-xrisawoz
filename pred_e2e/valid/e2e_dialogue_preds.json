@@ -1,0 +1,254 @@
+{
+  "attraction_goal_4-10_v2###2130": {
+    "turns": {
+      "1": {
+        "state": "( attraction ) type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 8 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \"",
+        "actions": "( attraction ) recommend name equal_to \" Zhouzhuang Town \"",
+        "response": [
+          "Zhouzhuang Town is a great choice for a visit. It's one of the most famous water towns near Suzhou and is known for its beautiful waterways and traditional architecture."
+        ]
+      },
+      "2": {
+        "state": "( attraction ) consumption equal_to \" moderate \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" the northwest corner of Gusu Old Town, Gusu District, Suzhou City \" , area \" Gusu District \" , available_options \" 3 \" , consumption \" moderate \" , features \" You can enjoy the scenery of old Suzhou, visit the old guild hall and other historical sites, take a cruise on the river and take photos of the beautiful night scenery. \" , metro_station \" true \" , name \" Shantang Street \" , opening_hours \" 08:30-21:00 \" , phone_number \" 0512-65314467 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( attraction ) recommend name equal_to \" Shantang Street \"",
+        "response": [
+          "Shantang Street would be a great choice for a place with average prices and a rich cultural experience."
+        ]
+      },
+      "3": {
+        "state": "( attraction ) consumption equal_to \" moderate \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" the northwest corner of Gusu Old Town, Gusu District, Suzhou City \" , area \" Gusu District \" , available_options \" 3 \" , consumption \" moderate \" , features \" You can enjoy the scenery of old Suzhou, visit the old guild hall and other historical sites, take a cruise on the river and take photos of the beautiful night scenery. \" , metro_station \" true \" , name \" Shantang Street \" , opening_hours \" 08:30-21:00 \" , phone_number \" 0512-65314467 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( attraction ) inform phone_number equal_to \" 0512-65314467 \"",
+        "response": [
+          "The phone number for the attraction is 0512-65314467."
+        ]
+      },
+      "4": {
+        "state": "( attraction ) consumption equal_to \" moderate \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" the northwest corner of Gusu Old Town, Gusu District, Suzhou City \" , area \" Gusu District \" , available_options \" 3 \" , consumption \" moderate \" , features \" You can enjoy the scenery of old Suzhou, visit the old guild hall and other historical sites, take a cruise on the river and take photos of the beautiful night scenery. \" , metro_station \" true \" , name \" Shantang Street \" , opening_hours \" 08:30-21:00 \" , phone_number \" 0512-65314467 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( attraction ) inform score equal_to \" 4.5 \"",
+        "response": [
+          "Yes, it has a high rating of 4.5."
+        ]
+      },
+      "5": {
+        "state": "( attraction ) consumption equal_to \" moderate \" , score equal_to \" 4.5 \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" the northwest corner of Gusu Old Town, Gusu District, Suzhou City \" , area \" Gusu District \" , available_options \" 3 \" , consumption \" moderate \" , features \" You can enjoy the scenery of old Suzhou, visit the old guild hall and other historical sites, take a cruise on the river and take photos of the beautiful night scenery. \" , metro_station \" true \" , name \" Shantang Street \" , opening_hours \" 08:30-21:00 \" , phone_number \" 0512-65314467 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( attraction ) inform features equal_to \" You can enjoy the scenery of old Suzhou, visit the old guild hall and other historical sites, take a cruise on the river and take photos of the beautiful night scenery. \"",
+        "response": [
+          "You can enjoy the scenery of old Suzhou, visit the old guild hall and other historical sites, take a cruise on the river, and take photos of the beautiful night scenery."
+        ]
+      },
+      "6": {
+        "state": "( attraction ) consumption equal_to \" moderate \" , score equal_to \" 4.5 \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" the northwest corner of Gusu Old Town, Gusu District, Suzhou City \" , area \" Gusu District \" , available_options \" 3 \" , consumption \" moderate \" , features \" You can enjoy the scenery of old Suzhou, visit the old guild hall and other historical sites, take a cruise on the river and take photos of the beautiful night scenery. \" , metro_station \" true \" , name \" Shantang Street \" , opening_hours \" 08:30-21:00 \" , phone_number \" 0512-65314467 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( general ) bye",
+        "response": [
+          "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+        ]
+      }
+    },
+    "API": {
+      "attraction": {
+        "type": "water town",
+        "consumption": "moderate"
+      }
+    }
+  },
+  "attraction_goal_4-35_v2###2036": {
+    "turns": {
+      "1": {
+        "state": "( attraction ) type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 8 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \"",
+        "actions": "( attraction ) recommend name equal_to \" Zhouzhuang Town \"",
+        "response": [
+          "Zhouzhuang Town is a great choice for a visit. It's one of the most famous water towns near Suzhou and is known for its beautiful waterways and traditional architecture."
+        ]
+      },
+      "2": {
+        "state": "( attraction ) consumption equal_to \" slightly expensive \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 8 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \"",
+        "actions": "( attraction ) recommend name equal_to \" Zhouzhuang Town \"",
+        "response": [
+          "Zhouzhuang Town is a great option if you're looking for a scenic area that's a bit more upscale. It's one of the most famous water towns in China and offers a beautiful and historic atmosphere."
+        ]
+      },
+      "3": {
+        "state": "( attraction ) consumption equal_to \" slightly expensive \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 8 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \"",
+        "actions": "( attraction ) inform metro_station equal_to \" false \"",
+        "response": [
+          "No, you cannot reach there directly by subway."
+        ]
+      },
+      "4": {
+        "state": "( attraction ) consumption equal_to \" slightly expensive \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 8 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \"",
+        "actions": "( attraction ) inform opening_hours equal_to \" 07:30-18:50 \"",
+        "response": [
+          "The opening hours are from 07:30 to 18:50."
+        ]
+      },
+      "5": {
+        "state": "( attraction ) consumption equal_to \" slightly expensive \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 2 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \"",
+        "actions": "( attraction ) inform ticket_price equal_to \" 100 yuan \"",
+        "response": [
+          "The ticket price is 100 yuan."
+        ]
+      },
+      "6": {
+        "state": "( attraction ) consumption equal_to \" slightly expensive \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 2 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \"",
+        "actions": "( general ) bye",
+        "response": [
+          "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+        ]
+      }
+    },
+    "API": {
+      "attraction": {
+        "type": "water town",
+        "consumption": "slightly expensive"
+      }
+    }
+  },
+  "attraction_goal_2-22_v2###7328": {
+    "turns": {
+      "1": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , type equal_to \" landscape scenic spot \"",
+        "api": "( attraction ) address \" No.158, Xinggang Street, Suzhou Industrial Park, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 1 \" , consumption \" slightly expensive \" , features \" get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou. \" , metro_station \" true \" , name \" Jinji Lake Scenic Area \" , opening_hours \" all day \" , phone_number \" 400-7558558 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" landscape scenic spot \"",
+        "actions": "( attraction ) recommend name equal_to \" Jinji Lake Scenic Area \"",
+        "response": [
+          "Sure, Jinji Lake Scenic Area is a great choice for you and your girlfriend. It's accessible by subway and offers a beautiful landscape to enjoy."
+        ]
+      },
+      "2": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , type equal_to \" landscape scenic spot \"",
+        "api": "( attraction ) address \" No.158, Xinggang Street, Suzhou Industrial Park, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 1 \" , consumption \" slightly expensive \" , features \" get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou. \" , metro_station \" true \" , name \" Jinji Lake Scenic Area \" , opening_hours \" all day \" , phone_number \" 400-7558558 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" landscape scenic spot \"",
+        "actions": "( attraction ) inform metro_station equal_to \" true \"",
+        "response": [
+          "Yes, you can reach the Humble Administrator's Garden by subway."
+        ]
+      },
+      "3": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , type equal_to \" landscape scenic spot \"",
+        "api": "( attraction ) address \" No.158, Xinggang Street, Suzhou Industrial Park, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 1 \" , consumption \" slightly expensive \" , features \" get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou. \" , metro_station \" true \" , name \" Jinji Lake Scenic Area \" , opening_hours \" all day \" , phone_number \" 400-7558558 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" landscape scenic spot \"",
+        "actions": "( attraction ) inform score equal_to \" 4.5 \"",
+        "response": [
+          "The Humble Administrator's Garden has a rating of 4.5."
+        ]
+      },
+      "4": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , type equal_to \" landscape scenic spot \"",
+        "api": "( attraction ) address \" No.158, Xinggang Street, Suzhou Industrial Park, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 1 \" , consumption \" slightly expensive \" , features \" get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou. \" , metro_station \" true \" , name \" Jinji Lake Scenic Area \" , opening_hours \" all day \" , phone_number \" 400-7558558 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" landscape scenic spot \"",
+        "actions": "( attraction ) inform phone_number equal_to \" 400-7558558 \"",
+        "response": [
+          "Sure, the phone number is 400-7558558."
+        ]
+      },
+      "5": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , type equal_to \" landscape scenic spot \"",
+        "api": "( attraction ) address \" No.158, Xinggang Street, Suzhou Industrial Park, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 1 \" , consumption \" slightly expensive \" , features \" get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou. \" , metro_station \" true \" , name \" Jinji Lake Scenic Area \" , opening_hours \" all day \" , phone_number \" 400-7558558 \" , score \" 4.5 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" landscape scenic spot \"",
+        "actions": "( general ) bye",
+        "response": [
+          "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+        ]
+      }
+    },
+    "API": {
+      "attraction": {
+        "area": "Suzhou Industrial Park",
+        "type": "landscape scenic spot",
+        "metro_station": "true"
+      }
+    }
+  },
+  "attraction_goal_4-38_v2###1966": {
+    "turns": {
+      "1": {
+        "state": "( attraction ) consumption equal_to \" cheap \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 188, Shantang Street, Mudu Town, Wuzhong District, Suzhou City \" , area \" Wuzhong District \" , available_options \" 3 \" , consumption \" cheap \" , features \" a water town featuring gardens. You can visit classical gardens such as Yanjia Garden, go on a boat ride and enjoy the flowing water. \" , metro_station \" false \" , name \" Mudu Town \" , opening_hours \" 08:30-17:00 \" , phone_number \" 0512-66514042 \" , score \" 4.4 \" , the_most_suitable_people \" friends \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( attraction ) recommend name equal_to \" Mudu Town \"",
+        "response": [
+          "Sure, Mudu Town is a great option for a more budget-friendly visit to one of Suzhou's water towns."
+        ]
+      },
+      "2": {
+        "state": "( attraction ) consumption equal_to \" cheap \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 188, Shantang Street, Mudu Town, Wuzhong District, Suzhou City \" , area \" Wuzhong District \" , available_options \" 3 \" , consumption \" cheap \" , features \" a water town featuring gardens. You can visit classical gardens such as Yanjia Garden, go on a boat ride and enjoy the flowing water. \" , metro_station \" false \" , name \" Mudu Town \" , opening_hours \" 08:30-17:00 \" , phone_number \" 0512-66514042 \" , score \" 4.4 \" , the_most_suitable_people \" friends \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( attraction ) inform features equal_to \" Mudu Town is a water town featuring gardens. You can visit classical gardens such as Yanjia Garden, go on a boat ride and enjoy the flowing water. \"",
+        "response": [
+          "Mudu Town is a water town featuring gardens. You can visit classical gardens such as Yanjia Garden, go on a boat ride and enjoy the flowing water."
+        ]
+      },
+      "3": {
+        "state": "( attraction ) consumption equal_to \" cheap \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 188, Shantang Street, Mudu Town, Wuzhong District, Suzhou City \" , area \" Wuzhong District \" , available_options \" 3 \" , consumption \" cheap \" , features \" a water town featuring gardens. You can visit classical gardens such as Yanjia Garden, go on a boat ride and enjoy the flowing water. \" , metro_station \" false \" , name \" Mudu Town \" , opening_hours \" 08:30-17:00 \" , phone_number \" 0512-66514042 \" , score \" 4.4 \" , the_most_suitable_people \" friends \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( attraction ) inform phone_number equal_to \" 0512-66514042 \" , address equal_to \" No. 188, Shantang Street, Mudu Town, Wuzhong District, Suzhou City \"",
+        "response": [
+          "Sure, the phone number is 0512-66514042, and the address is No. 188, Shantang Street, Mudu Town, Wuzhong District, Suzhou City."
+        ]
+      },
+      "4": {
+        "state": "( attraction ) consumption equal_to \" cheap \" , type equal_to \" water town \"",
+        "api": "( attraction ) address \" No. 188, Shantang Street, Mudu Town, Wuzhong District, Suzhou City \" , area \" Wuzhong District \" , available_options \" 3 \" , consumption \" cheap \" , features \" a water town featuring gardens. You can visit classical gardens such as Yanjia Garden, go on a boat ride and enjoy the flowing water. \" , metro_station \" false \" , name \" Mudu Town \" , opening_hours \" 08:30-17:00 \" , phone_number \" 0512-66514042 \" , score \" 4.4 \" , the_most_suitable_people \" friends \" , ticket_price \" free \" , type \" water town \"",
+        "actions": "( general ) bye",
+        "response": [
+          "You're welcome! If you have any more questions in the future, feel free to ask. Goodbye!"
+        ]
+      }
+    },
+    "API": {
+      "attraction": {
+        "type": "water town",
+        "consumption": "cheap"
+      }
+    }
+  },
+  "attraction_goal_2-9###4876": {
+    "turns": {
+      "1": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , type equal_to \" business center \"",
+        "api": "( attraction ) address \" 2-3F, No. 8, Yuelang Street, Industrial Park, Wuzhong District, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 4 \" , consumption \" slightly expensive \" , features \" What is special about Eslite Bookstore is that it integrates stationery, drink and food, and entertainment all in one building. \" , metro_station \" true \" , name \" Eslite Bookstore \" , opening_hours \" 10:00-22:00 \" , phone_number \" 0512-62986008 \" , score \" 4.7 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" commercial center \"",
+        "actions": "( attraction ) recommend name equal_to \" Eslite Bookstore \"",
+        "response": [
+          "Sure, Eslite Bookstore is located in Suzhou Industrial Park and can be easily reached by subway."
+        ]
+      },
+      "2": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , name equal_to \" Eslite Bookstore \" , type equal_to \" commercial center \"",
+        "api": "( attraction ) address \" 2-3F, No. 8, Yuelang Street, Industrial Park, Wuzhong District, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 4 \" , consumption \" slightly expensive \" , features \" What is special about Eslite Bookstore is that it integrates stationery, drink and food, and entertainment all in one building. \" , metro_station \" true \" , name \" Eslite Bookstore \" , opening_hours \" 10:00-22:00 \" , phone_number \" 0512-62986008 \" , score \" 4.7 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" commercial center \"",
+        "actions": "( attraction ) inform features equal_to \" Eslite Bookstore integrates stationery, drink and food, and entertainment all in one building. \"",
+        "response": [
+          "Eslite Bookstore is unique because it integrates stationery, drink and food, and entertainment all in one building, offering a comprehensive cultural and leisure experience."
+        ]
+      },
+      "3": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , name equal_to \" Eslite Bookstore \" , type equal_to \" commercial center \"",
+        "api": "( attraction ) address \" 2-3F, No. 8, Yuelang Street, Industrial Park, Wuzhong District, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 4 \" , consumption \" slightly expensive \" , features \" What is special about Eslite Bookstore is that it integrates stationery, drink and food, and entertainment all in one building. \" , metro_station \" true \" , name \" Eslite Bookstore \" , opening_hours \" 10:00-22:00 \" , phone_number \" 0512-62986008 \" , score \" 4.7 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" commercial center \"",
+        "actions": "( attraction ) inform metro_station equal_to \" true \"",
+        "response": [
+          "Yes, you can reach there by subway."
+        ]
+      },
+      "4": {
+        "state": "( attraction ) area equal_to \" Suzhou Industrial Park \" , metro_station equal_to \" true \" , name equal_to \" Eslite Bookstore \" , type equal_to \" commercial center \"",
+        "api": "( attraction ) address \" 2-3F, No. 8, Yuelang Street, Industrial Park, Wuzhong District, Suzhou City \" , area \" Suzhou Industrial Park \" , available_options \" 4 \" , consumption \" slightly expensive \" , features \" What is special about Eslite Bookstore is that it integrates stationery, drink and food, and entertainment all in one building. \" , metro_station \" true \" , name \" Eslite Bookstore \" , opening_hours \" 10:00-22:00 \" , phone_number \" 0512-62986008 \" , score \" 4.7 \" , the_most_suitable_people \" dating \" , ticket_price \" free \" , type \" commercial center \"",
+        "actions": "( attraction ) inform opening_hours equal_to \" 10:00-22:00 \"",
+        "response": [
+          "The opening hours are from 10:00 to 22:00."
+        ]
+      }
+    },
+    "API": {
+      "attraction": {
+        "area": "Suzhou Industrial Park",
+        "type": "business center",
+        "metro_station": "true"
+      }
+    }
+  }
+}

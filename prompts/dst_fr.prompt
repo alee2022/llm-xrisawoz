@@ -1,0 +1,21 @@
+{{system_start}}Similar to the examples below, generate belief state based on previous state and history.{{system_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, pouvez-vous me recommander des séries télé japonaises fascinantes ? <endofhistory>{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " Japon "{{assistant_end}}
+
+{{user_start}}DST: <state> null <endofstate> <history> USER: Bonjour, mes amis viennent me rendre visite. Y a-t-il des sites touristiques près du district de Gusu qui ne sont pas trop chers ? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) area equal_to " District de Gusu " , consumption equal_to " pas trop chers "{{assistant_end}}
+
+{{user_start}}DST: <state> ( restaurant ) area equal_to " Parc industriel de Suzhou " , name equal_to " fondue chinoise Haidilao " , pricerange equal_to " un peu cher " <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to " fondue chinoise Haidilao " AGENT_ACTS: ( restaurant ) inform phone_number equal_to " 0512-67603337 " USER: D'accord. Pouvez-vous m'aider à vérifier les heures d'ouverture ? <endofhistory>{{user_end}}
+{{assistant_start}}( restaurant ) area equal_to " Parc industriel de Suzhou " , name equal_to " fondue chinoise Haidilao " , pricerange equal_to " un peu cher "{{assistant_end}}
+
+{{user_start}}DST: <state> ( attraction ) type equal_to " parc d'attractions " <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to " parc d'attraction aquatique Terre-Forêt de Suzhou " AGENT_ACTS: ( attraction ) inform features equal_to " forest-themed. It is like being in a vast forest close to the ocean. " USER: Puis-je m'y rendre directement en métro ? <endofhistory>{{user_end}}
+{{assistant_start}}( attraction ) type equal_to " parc d'attractions "{{assistant_end}}
+
+{{user_start}}DST: <state> ( hotel ) area equal_to " Changshu " , star equal_to " 4 " <endofstate> <history> AGENT_ACTS: ( hotel ) recommend name equal_to " Atour Hotel de la route Changjiang " USER: Combien coûte une grande chambre ? <endofhistory>{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " Changshu " , name equal_to " Atour Hotel de la route Changjiang " , room_type equal_to " grande chambre " , star equal_to " 4 "{{assistant_end}}
+
+{{user_start}}DST: <state> ( movie ) production_country_or_area equal_to " Indien " , ( tv ) decade equal_to " années 2010 " , production_country_or_area equal_to " Japon " , type equal_to " polar " <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to " 8,0 " AGENT_ACTS: ( movie ) inform film_length equal_to " 172 minutes " USER: Ok, merci pour votre patience, au revoir, <endofhistory>{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " Indien " ( tv ) decade equal_to " années 2010 " , production_country_or_area equal_to " Japon " , type equal_to " polar "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

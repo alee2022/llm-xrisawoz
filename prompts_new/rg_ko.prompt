@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, generate a response to user given action and history.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: 안녕하세요, 재미있는 일본 TV 프로그램을 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}네, 어떤 시기의 일본 TV 프로그램을 찾으시나요?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( movie ) request <endofactions> <history> USER: 감사합니다, 인도 영화를 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}네, 보통 어떤 종류의 인도 영화를 시청하시나요?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: 네, 오랜 시간 답변해주셔서 감사합니다. 안녕히 계세요. <endofhistory>{{user_end}}
+{{assistant_start}}천만에요. 제 추천이 도움이 되었기를 바랍니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " 졸정원 " <endofactions> <history> USER: 안녕하세요, 제 친구들이 저를 보러 올 예정입니다. 구수구 근처에 많이 비싸지 않고 경치가 아름다운 곳이 있을까요? <endofhistory>{{user_end}}
+{{assistant_start}}네, 친구들과 시간을 보내시길 원하신다면 졸정원이 좋습니다. 전통적인 쑤저우 양식의 정원이고 당신의 집과도 가깝습니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform cuisine equal_to " 장쑤성과 저장성 요리 " , recommend name equal_to " 반위안 개인 가정 요리 " <endofactions> <history> USER: 네, 아마 종일 같이 시간을 보낼 것 같은데, 여기 근처에 있는 조금 더 비싼 식당을 추천해 주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}음, 반위안 개인 가정 요리는 좋은 선택입니다. 조금 더 비싸고 지역 특색이 있는 장쑤성과 저장성 요리를 제공합니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( car ) recommend name equal_to " 1.5L 가솔린 엔진이 탑재된 폭스바겐 T-크로스 " <endofactions> <history> USER: 안녕하세요, 가솔린 SUV를 사려고 하는데, 150,000위안 이하로 추천해주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}음, 1.5L 가솔린 엔진이 탑재된 폭스바겐 T-크로스가 잘 맞으실 겁니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) recommend name equal_to " 워무 부티크 호텔 " <endofactions> <history> USER: 우와, 밤새 영업하네요, 그러면 조금 더 오래 머무를 수 있겠어요. 스탠다드 객실이 있는 많이 비싸지 않은 호텔을 찾아주실 수 있으신가요? <endofhistory>{{user_end}}
+{{assistant_start}}워무 부티크 호텔이 좋을 것 같습니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hospital ) recommend name equal_to " 쑤저우 구룡병원 " <endofactions> <history> USER: 안녕하세요, 저희 아이가 몸이 안좋아서 소아과에 데려가려고 합니다. 어느 종합병원에 좋은 소아과가 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}안녕하세요, 좋은 소아과를 찾으시면 쑤저우 구룡병원에 가실 수 있습니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( weather ) inform wind equal_to " 다음 주 일요일 샤먼 " <endofactions> <history> USER: 저는 다음 주에 일 때문에 샤먼에 갈 예정인데, 언제 출발할지 아직 확실하지 않고, 날씨에 달려있어요. 다음 주 일요일 풍력과 풍향 확인을 도와주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}네, 다음 주 일요일 샤먼에는 강도 2의 북동풍이 있을거에요.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( flight ) recommend flight_information equal_to " 항저우 국제공항 제3터미널에서 선전 바오안 국제공항 제3터미널로 가는 하이난 항공 HU7394 " <endofactions> <history> USER: 안녕하세요, 저는 다음 주에 출장을 갑니다. 다음 주 금요일 항저우에서 선전으로 가는 비행기 확인을 도와주세요, 가급적이면 이코노미석으로요. <endofhistory>{{user_end}}
+{{assistant_start}}항저우 국제공항 제3터미널에서 선전 바오안 국제공항 제3터미널로 가는 하이난 항공 HU7394편을 타실 수 있습니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( pc ) greeting , recommend product_name equal_to " 레노버 7000 샤오신 차오 " <endofactions> <history> USER: 안녕하세요, 레노버사의 14인치 경량 노트북을 구매하고 싶은데, 가급적이면 8GB의 메모리 용량이면 좋겠습니다. <endofhistory>{{user_end}}
+{{assistant_start}}안녕하세요, 레노버 7000 샤오신 차오를 추천드립니다.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( train ) request departure <endofactions> <history> USER: 저는 다음 주에 출장을 갈 예정입니다. 다음 주 샤먼행 고속 열차가 있는지 확인하는 것을 도와주시겠어요? <endofhistory>{{user_end}}
+{{assistant_start}}어디서 출발하시나요?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( class ) request subject <endofactions> <history> USER: 안녕하세요, 제 아이가 6학년입니다. 과외 수업을 추천해 주실 수 있나요? <endofhistory>{{user_end}}
+{{assistant_start}}자녀분이 어떤 과목을 공부하기를 원하세요?{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

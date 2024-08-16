@@ -1,0 +1,20 @@
+[
+  {
+    "instruction": "",
+    "input": "null",
+    "output": "( attraction ) greeting , request area",
+    "prediction": "How can I assist you today? If you have any questions or need information, feel free to ask."
+  },
+  {
+    "instruction": "",
+    "input": "DA: <knowledge> ( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 3 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \" <endofknowledge> <state> ( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS: null USER: Kunshan. A good place to travel with friends, it's OK if it's a bit more expensive. <endofhistory>",
+    "output": "( attraction ) recommend name equal_to \" Zhouzhuang Town \"",
+    "prediction": "( attraction ) recommend name equal_to \" Zhouzhuang Town \""
+  },
+  {
+    "instruction": "",
+    "input": "DA: <knowledge> ( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 1 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \" <endofknowledge> <state> ( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" , name equal_to \" Zhouzhuang Town \" <endofstate> <history> AGENT_ACTS_PREV: null AGENT_ACTS: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" USER: What's special about it? <endofhistory>",
+    "output": "( attraction ) inform features equal_to \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \"",
+    "prediction": "( attraction ) inform features equal_to \" Zhouzhuang Town is famous for its many small bridges, winding waterways, the Twin Bridges, traditional Chinese riverboats, and the historical figure Shen Wansan. \""
+  }
+]

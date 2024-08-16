@@ -1,0 +1,14 @@
+[
+  {
+    "instruction": "",
+    "input": "API: <knowledge> null <endofknowledge> <state> ( attraction ) type equal_to \" water town \" <endofstate> <history> USER: I'm from Suzhou but I don't go out much. My friend is coming to Suzhou to visit me and I'm thinking about taking her to a water town. <endofhistory>",
+    "output": "yes",
+    "prediction": "yes"
+  },
+  {
+    "instruction": "",
+    "input": "API: <knowledge> ( attraction ) address \" No. 43, Quanfu Road, Zhouzhuang Town, Kunshan City, Suzhou City \" , area \" Kunshan \" , available_options \" 8 \" , consumption \" slightly expensive \" , features \" It's famous for its many small bridges and winding waterways, the Twin Bridges, and the traditional Chinese riverboats. You can also walk in the footsteps of Shen Wansan. \" , metro_station \" false \" , name \" Zhouzhuang Town \" , opening_hours \" 07:30-18:50 \" , phone_number \" 400-8282900 \" , score \" 4.5 \" , the_most_suitable_people \" friends \" , ticket_price \" 100 yuan \" , type \" water town \" <endofknowledge> <state> ( attraction ) consumption equal_to \" fair \" , type equal_to \" water town \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" USER: I'm looking for a place where the prices are fairly average. <endofhistory>",
+    "output": "yes",
+    "prediction": "yes"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: Hello! I'm from out-of-town and here to visit Suzhou. Can you recommend a fun place? <endofhistory>",
+    "output": "null",
+    "prediction": "The slot value \"fun place\" does not directly correspond to any of the predefined types in the given domain for attractions. However, it could be interpreted as a general term for a place where people go for entertainment. The closest matching type from the provided options would be \"amusement park\". If \"fun place\" is intended to mean an amusement park, then the normalized slot would be:"
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> AGENT_ACTS: ( attraction ) greeting , request area USER: Kunshan. A good place to travel with friends, it's OK if it's a bit more expensive. <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" travel with friends \"",
+    "prediction": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" <endofstate> <history> AGENT_ACTS_PREV: null AGENT_ACTS: ( attraction ) recommend name equal_to \" Zhouzhuang Town \" USER: What's special about it? <endofhistory>",
+    "output": "( attraction ) area equal_to \" Kunshan \" , name equal_to \" Zhouzhuang Town \" , the_most_suitable_people equal_to \" travel with friends \"",
+    "prediction": "( attraction ) area equal_to \" Kunshan \" , the_most_suitable_people equal_to \" friends \" , consumption equal_to \" slightly expensive \" , name equal_to \" Zhouzhuang Town \""
+  }
+]

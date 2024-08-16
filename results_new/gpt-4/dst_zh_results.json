@@ -1,0 +1,1502 @@
+[
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" 日本 \" , star equal_to \" 松本润 \" <endofstate> <history> AGENT_ACTS: ( tv ) recommend title equal_to \" 幸运七人组 \" USER: 嗯嗯,这个可以,但是能告诉,这部剧的豆瓣评分吗? <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" 日本 \" , star equal_to \" 松本润 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 日本 \" , star equal_to \" 松本润 \" , Douban_score equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5000 到 10000 \" , series equal_to \" 小米 -Air \" , usage equal_to \" 轻薄本 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform hard_disk_capacity equal_to \" 512GBSSD \" AGENT_ACTS: ( pc ) inform features equal_to \" 小米 Air13 \" USER: 这个电脑的 CPU 型号是什么? <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5000 到 10000 \" , series equal_to \" 小米 -Air \" , usage equal_to \" 轻薄本 \"",
+    "prediction": "( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5000 到 10000 \" , series equal_to \" 小米 -Air \" , usage equal_to \" 轻薄本 \" , cpu_model equal_to \" 不详 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我准备来苏州旅游,正在做旅游攻略。能给我找一家酒店吗?要一个大床房,休闲度假类型的就可以了。 <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 休闲度假 \" , room_type equal_to \" 大床房 \"",
+    "prediction": "( hotel ) room_type equal_to \" 大床房 \" , type equal_to \" 休闲度假 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴江 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 吴江 \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( hotel ) recommend name equal_to \" 苏州黎里水岸寒舍精品酒店 \" USER: 对了忘记和你说了,这个酒店里面的房型最好有标准间。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴江 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" ( hotel ) area equal_to \" 吴江 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \"",
+    "prediction": "( attraction ) area equal_to \" 吴江 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 吴江 \" , star equal_to \" 5 \" , room_type equal_to \" 标准间 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" 新区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 语文 \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform type equal_to \" 面授 \" AGENT_ACTS: ( class ) inform times equal_to \" 10 \" USER: 学费多少呀? <endofhistory>",
+    "output": "( class ) area equal_to \" 新区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 语文 \"",
+    "prediction": "( class ) area equal_to \" 新区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 语文 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 西交利物浦大学 \" , type equal_to \" 学校校园 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 免费 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 是 \" USER: 非常感谢。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 西交利物浦大学 \" , type equal_to \" 学校校园 \"",
+    "prediction": "( attraction ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 西交利物浦大学 \" , type equal_to \" 学校校园 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 成都 \" , destination equal_to \" 广州 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) general , inform departure_time equal_to \" 当天 17:05 \" AGENT_ACTS: ( flight ) inform ticket_price equal_to \" 1720 元 \" USER: 那下周日广州那边有风没有?我们第一天想去室外转转呢。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 成都 \" , destination equal_to \" 广州 \" ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 成都 \" , destination equal_to \" 广州 \" ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , type equal_to \" 商业中心 \" , ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 苏州金鸡湖李公堤瑞贝庭公寓酒店 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform parking equal_to \" 免费 \" AGENT_ACTS: ( attraction ) recommend name equal_to \" 圆融时代广场 \" USER: 我想顺便问一下他们家的开放时间。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , name equal_to \" 圆融时代广场 \" , type equal_to \" 商业中心 \" ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 苏州金鸡湖李公堤瑞贝庭公寓酒店 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( attraction ) area equal_to \" 工业园区 \" , type equal_to \" 商业中心 \" , ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 苏州金鸡湖李公堤瑞贝庭公寓酒店 \" , pricerange equal_to \" 中等 \" , ( attraction ) business_hours equal_to \" 未知 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" 常熟 \" , name equal_to \" 维也纳酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform score equal_to \" 4.8 \" AGENT_ACTS: ( hotel ) inform phone_number equal_to \" 0512-52018188 \" USER: 标准间房费多少? <endofhistory>",
+    "output": "( hotel ) area equal_to \" 常熟 \" , name equal_to \" 维也纳酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \"",
+    "prediction": "( hotel ) area equal_to \" 常熟 \" , name equal_to \" 维也纳酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \" , price equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) metro_station equal_to \" 是 \" , name equal_to \" 农乐园炭火烤肉 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform business_hours equal_to \" 周一至周日 11:00-14:0016:30-21:30 \" AGENT_ACTS: ( restaurant ) inform metro_station equal_to \" 是 \" USER: 有什么好吃菜吗? <endofhistory>",
+    "output": "( restaurant ) metro_station equal_to \" 是 \" , name equal_to \" 农乐园炭火烤肉 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( restaurant ) metro_station equal_to \" 是 \" , name equal_to \" 农乐园炭火烤肉 \" , pricerange equal_to \" 中等 \" , recommended_dishes equal_to \" 是 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我想买一辆汽油驱动的三厢车,预算在 15 到 20 万之间,能推荐一辆吗? <endofhistory>",
+    "output": "( car ) classification equal_to \" 三厢车 \" , hybrid equal_to \" 汽油 \" , pricerange equal_to \" 15~20 \"",
+    "prediction": "( car ) classification equal_to \" 三厢车 \" , hybrid equal_to \" 汽油 \" , pricerange equal_to \" 15-20 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴中区 \" , name equal_to \" 天平山景区 \" , type equal_to \" 山水景区 \" , ( hotel ) area equal_to \" 吴中区 \" , name equal_to \" 苏州太湖万豪酒店 \" , pricerange equal_to \" 偏贵 \" , ( restaurant ) area equal_to \" 吴中区 \" , cuisine equal_to \" 快餐简餐 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-66387422 \" AGENT_ACTS: ( restaurant ) recommend name equal_to \" 好人民间小吃 \" USER: 谢谢你的帮助,再见。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴中区 \" , name equal_to \" 天平山景区 \" , type equal_to \" 山水景区 \" ( hotel ) area equal_to \" 吴中区 \" , name equal_to \" 苏州太湖万豪酒店 \" , pricerange equal_to \" 偏贵 \" ( restaurant ) area equal_to \" 吴中区 \" , cuisine equal_to \" 快餐简餐 \"",
+    "prediction": "( attraction ) area equal_to \" 吴中区 \" , name equal_to \" 天平山景区 \" , type equal_to \" 山水景区 \" , ( hotel ) area equal_to \" 吴中区 \" , name equal_to \" 苏州太湖万豪酒店 \" , pricerange equal_to \" 偏贵 \" , ( restaurant ) area equal_to \" 吴中区 \" , cuisine equal_to \" 快餐简餐 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 便宜 \" , name equal_to \" 独墅湖教堂 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" 苏州市翠薇路 99 号 \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 免费 \" USER: 太好了,不花钱我就很开心,然后我想在附近找一个餐馆吃饭,给我找一个餐馆吧。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 便宜 \" , name equal_to \" 独墅湖教堂 \" ( restaurant ) area equal_to \" 工业园区 \"",
+    "prediction": "( restaurant ) area equal_to \" 工业园区 \" ( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 便宜 \" , name equal_to \" 独墅湖教堂 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 便宜 \" , type equal_to \" 山水景区 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 西山景区 \" USER: 知道评分怎么样吗?门票是多少? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 便宜 \" , name equal_to \" 西山景区 \" , type equal_to \" 山水景区 \"",
+    "prediction": "( attraction ) consumption equal_to \" 便宜 \" , type equal_to \" 山水景区 \" , name equal_to \" 西山景区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 高新区 \" , consumption equal_to \" 便宜 \" , name equal_to \" 苏州太湖国家湿地公园 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 苏州太湖国家湿地公园 \" AGENT_ACTS: ( attraction ) inform features equal_to \" 旅游、度假、玩乐、休闲、教育多合一的湿地公园,可谓是 “ 人间天堂 ” \" USER: 听起来很不错,这里能地铁直达吗? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 高新区 \" , consumption equal_to \" 便宜 \" , name equal_to \" 苏州太湖国家湿地公园 \"",
+    "prediction": "( attraction ) area equal_to \" 高新区 \" , consumption equal_to \" 便宜 \" , name equal_to \" 苏州太湖国家湿地公园 \" , accessible_by_public_transport equal_to \" 是 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周二 \" <endofstate> <history> AGENT_ACTS: ( weather ) inform weather_condition equal_to \" 晴 \" USER: 温度多少? <endofhistory>",
+    "output": "( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周二 \"",
+    "prediction": "( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周二 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 昆山 \" , the_most_suitable_people equal_to \" 朋友出游 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 周庄古镇 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: 这个地方具体位置在哪里呢? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 昆山 \" , the_most_suitable_people equal_to \" 朋友出游 \"",
+    "prediction": "( attraction ) area equal_to \" 昆山 \" , the_most_suitable_people equal_to \" 朋友出游 \" , name equal_to \" 周庄古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好,我喜欢追剧和看电影,您有没有 2000 年代热播的美剧推荐一下呢? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 美国 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 美国 \" , decade equal_to \" 2000 年代 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 休闲度假 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \" <endofstate> <history> AGENT_ACTS: ( hotel ) recommend name equal_to \" 沃姆精品酒店 \" USER: 酒店的电话号码是多少? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 沃姆精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 休闲度假 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \" , name equal_to \" 沃姆精品酒店 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) pricerange equal_to \" 小于 5000 \" , series equal_to \" 小米 - 笔记本 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform game_performance equal_to \" 入门级 \" AGENT_ACTS: ( pc ) inform GPU_category equal_to \" 独立显卡 \" USER: 还好,我还想对比一下同等价格区间的惠普 - 战系列电脑,你再帮我介绍一款吧,好吗? <endofhistory>",
+    "output": "( pc ) pricerange equal_to \" 小于 5000 \" , series equal_to \" 惠普 - 战系列 \"",
+    "prediction": "( pc ) pricerange equal_to \" 小于 5000 \" , series equal_to \" 惠普 - 战系列 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周三 \" , departure equal_to \" 上海 \" , destination equal_to \" 成都 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform ticket_price equal_to \" 420 元 \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 当天 12:55 \" USER: 会不会晚点呢? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周三 \" , departure equal_to \" 上海 \" , destination equal_to \" 成都 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周三 \" , departure equal_to \" 上海 \" , destination equal_to \" 成都 \" , delay equal_to \" 不确定 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 杭州 \" , destination equal_to \" 成都 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform departure_time equal_to \" 当天 18:50 \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 当天 22:15 \" USER: 这个航班平时准点不? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 杭州 \" , destination equal_to \" 成都 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 杭州 \" , destination equal_to \" 成都 \" , punctuality equal_to \" 不详 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 韩国 \" , type equal_to \" 喜剧片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) general , greeting AGENT_ACTS: ( tv ) recommend title equal_to \" 请回答 1988 \" USER: 这部剧的单集片长为多少呢? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 韩国 \" , type equal_to \" 喜剧片 \"",
+    "prediction": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 韩国 \" , type equal_to \" 喜剧片 \" , title equal_to \" 请回答 1988 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 爱情片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform name_list equal_to \" 黄宗泽 / 谢天华 / 陈法拉 / 徐子珊 \" AGENT_ACTS: ( tv ) inform director equal_to \" 庄伟建 \" USER: 这个剧每集大概要播多长时间? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 爱情片 \"",
+    "prediction": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 爱情片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 动车 \" , date equal_to \" 下周一上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform train_number equal_to \" D3292, 厦门北 - 上海虹桥 \" AGENT_ACTS: ( train ) inform ticket_price equal_to \" 411.0 元 \" USER: 请问具体发出和到达时间是几点?我需要约个车。 <endofhistory>",
+    "output": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周一上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \"",
+    "prediction": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周一上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \" , type equal_to \" 苏州园林 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) general , inform features equal_to \" 中国四大名园之一,世界文化遗产。 \" USER: 好的,我想找家休闲度假酒店住个大床房,苏州有没有这边价格比较便宜的? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \" , type equal_to \" 苏州园林 \" ( hotel ) hotel_type equal_to \" 休闲度假 \" , pricerange equal_to \" 便宜 \" , room_type equal_to \" 大床房 \"",
+    "prediction": "( hotel ) area equal_to \" 苏州 \" , pricerange equal_to \" 便宜 \" , room_type equal_to \" 大床房 \" , type equal_to \" 休闲度假 \" ( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \" , type equal_to \" 苏州园林 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好!我听说苏州的五芳斋,特别特别好吃,你知道它家的推荐菜是什么吗? <endofhistory>",
+    "output": "( restaurant ) name equal_to \" 五芳斋 \"",
+    "prediction": "( restaurant ) name equal_to \" 五芳斋 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 同里古镇 \" <endofstate> <history> AGENT_ACTS: ( attraction ) inform address equal_to \" 苏州市吴江区同里古镇 \" USER: 那评分怎么样? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 同里古镇 \"",
+    "prediction": "( attraction ) name equal_to \" 同里古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" 姑苏区 \" , metro_station equal_to \" 是 \" , name equal_to \" 松鹤楼 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to \" 松鹤楼 \" AGENT_ACTS: ( restaurant ) inform phone_number equal_to \" 0512-67700688 \" USER: 他们家的地址在哪里呢? <endofhistory>",
+    "output": "( restaurant ) area equal_to \" 姑苏区 \" , metro_station equal_to \" 是 \" , name equal_to \" 松鹤楼 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( restaurant ) area equal_to \" 姑苏区 \" , metro_station equal_to \" 是 \" , name equal_to \" 松鹤楼 \" , pricerange equal_to \" 偏贵 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , the_most_suitable_people equal_to \" 朋友出游 \" , type equal_to \" 学校校园 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , pricerange equal_to \" 便宜 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform address equal_to \" 苏州姑苏区娄门路 318 号 \" , inform parking equal_to \" 免费 \" AGENT_ACTS: ( attraction ) recommend name equal_to \" 苏州大学 \" USER: 这个大学电话号码是多少呀?评分怎么样? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州大学 \" , the_most_suitable_people equal_to \" 朋友出游 \" , type equal_to \" 学校校园 \" ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , pricerange equal_to \" 便宜 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , the_most_suitable_people equal_to \" 朋友出游 \" , type equal_to \" 学校校园 \" , name equal_to \" 苏州大学 \" ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , pricerange equal_to \" 便宜 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" 新区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 语文 \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform times equal_to \" 10 \" AGENT_ACTS: ( class ) inform price equal_to \" 1600 \" USER: 好的。我考虑下,谢谢你!再见! <endofhistory>",
+    "output": "( class ) area equal_to \" 新区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 语文 \"",
+    "prediction": "( class ) area equal_to \" 新区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 语文 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform ticket_price equal_to \" 2590 元 \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 当天 13:30 \" USER: 这个航班以往准点情况如何呀? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \" , punctuality equal_to \" 未知 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 100 元 \" AGENT_ACTS: ( attraction ) inform address equal_to \" 苏州市吴江区同里古镇 \" USER: 还要问一下这附近有没有价位便宜的酒店,推荐一家呀? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \" ( hotel ) area equal_to \" 吴江 \" , pricerange equal_to \" 便宜 \"",
+    "prediction": "( hotel ) area equal_to \" 吴江 \" , pricerange equal_to \" 便宜 \" ( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 南京 \" , destination equal_to \" 成都 \" <endofstate> <history> AGENT_ACTS: ( flight ) inform flight_information equal_to \" 中国国航 CA4524 ,禄口国际机场 T2- 双流国际机场 T2 \" USER: 票价多少? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 南京 \" , destination equal_to \" 成都 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 南京 \" , destination equal_to \" 成都 \" , price equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 黄宗泽 \" , type equal_to \" 爱情片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) recommend title equal_to \" 潜行狙击 \" AGENT_ACTS: ( tv ) inform Douban_score equal_to \" 8.5 \" USER: 好的,十分感谢。没有其他问题了,再见。 <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 黄宗泽 \" , type equal_to \" 爱情片 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 黄宗泽 \" , type equal_to \" 爱情片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 周庄古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 07:30-18:50 \" AGENT_ACTS: ( general ) general USER: 拜拜! <endofhistory>",
+    "output": "( attraction ) name equal_to \" 周庄古镇 \"",
+    "prediction": "( attraction ) name equal_to \" 周庄古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" 吴中区 \" , day equal_to \" 六 \" , grade equal_to \" 四年级 \" , subject equal_to \" 语文 \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform teacher equal_to \" 徐仲 \" AGENT_ACTS: ( class ) inform end_date equal_to \" 2020/4/11 \" USER: 好的。我考虑下,谢谢你!再见! <endofhistory>",
+    "output": "( class ) area equal_to \" 吴中区 \" , day equal_to \" 六 \" , grade equal_to \" 四年级 \" , subject equal_to \" 语文 \"",
+    "prediction": "( class ) area equal_to \" 吴中区 \" , day equal_to \" 六 \" , grade equal_to \" 四年级 \" , subject equal_to \" 语文 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \" <endofstate> <history> AGENT_ACTS: ( movie ) request decade USER: 找一部 2000 年代的吧。 <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \"",
+    "prediction": "( movie ) production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \" , decade equal_to \" 2000 年代 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 高新区 \" , name equal_to \" 苏州太湖国家湿地公园 \" , the_most_suitable_people equal_to \" 家庭亲子 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 60 元 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: 好的。我们还需要在高新区找一个三星级的酒店住,要个标准间吧,有哪家比较合适呀? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 高新区 \" , name equal_to \" 苏州太湖国家湿地公园 \" , the_most_suitable_people equal_to \" 家庭亲子 \" ( hotel ) area equal_to \" 高新区 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \"",
+    "prediction": "( hotel ) area equal_to \" 高新区 \" , star equal_to \" 三星级 \" , room_type equal_to \" 标准间 \" ( attraction ) area equal_to \" 高新区 \" , name equal_to \" 苏州太湖国家湿地公园 \" , the_most_suitable_people equal_to \" 家庭亲子 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 苏州 \" , date equal_to \" 下周二 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" 强 \" AGENT_ACTS: ( weather ) inform wind equal_to \" 西北风 2 级 \" USER: 好的,那我心里有数了,谢谢你,我得去收拾行李了。再见! <endofhistory>",
+    "output": "( weather ) city equal_to \" 苏州 \" , date equal_to \" 下周二 \"",
+    "prediction": "( weather ) city equal_to \" 苏州 \" , date equal_to \" 下周二 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 动作片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform director equal_to \" 庄伟建 \" AGENT_ACTS: ( tv ) inform Douban_score equal_to \" 8.5 \" USER: 那还挺不错的,谢谢你的推荐哈。 <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 动作片 \"",
+    "prediction": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 动作片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 杭州 \" , ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周四 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" 南方航空 CZ3501 ,白云国际机场 T2- 萧山国际机场 T3 \" AGENT_ACTS: ( flight ) inform punctuality_rate equal_to \" 100% \" USER: 这个比较靠谱。什么时刻起飞? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 杭州 \" ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周四 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 杭州 \" , ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周四 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request flight_information AGENT_ACTS: ( flight ) request arrival_time , request departure_time USER: 太棒了呢,谢谢你呀,一会订票去,拜拜。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 石路步行街 \" , type equal_to \" 商业中心 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 石路是清末洋务派盛宣怀所辟,以石子铺成路面,因而得名 “ 石路 ” 。较有历史的名店很多。 \" , inform score equal_to \" 4.4 \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 免费 \" USER: 谢谢,我得去准备准备了,再见。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 石路步行街 \" , type equal_to \" 商业中心 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 石路步行街 \" , type equal_to \" 商业中心 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 高新区 \" , the_most_suitable_people equal_to \" 家庭亲子 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 苏州太湖国家湿地公园 \" USER: 这个景点有什么特点吗? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 高新区 \" , name equal_to \" 苏州太湖国家湿地公园 \" , the_most_suitable_people equal_to \" 家庭亲子 \"",
+    "prediction": "( attraction ) area equal_to \" 高新区 \" , the_most_suitable_people equal_to \" 家庭亲子 \" , name equal_to \" 苏州太湖国家湿地公园 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 笔记本 \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 英寸 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) recommend product_name equal_to \" 宏碁 （Acer） 墨舞 EX215 \" AGENT_ACTS: ( pc ) inform standby_time equal_to \" 5-8 小时 \" USER: 电脑特性是什么? <endofhistory>",
+    "output": "( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 笔记本 \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 英寸 \"",
+    "prediction": "( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 笔记本 \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 英寸 \" , special_features equal_to \" 待查询 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 喜剧片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) request type AGENT_ACTS: ( movie ) recommend title equal_to \" 我不是药神 \" USER: 这部片的导演是谁?什么时候上映的呢? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 喜剧片 \"",
+    "prediction": "( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 喜剧片 \" , director equal_to \" 待查询 \" , release_date equal_to \" 待查询 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 南京 \" , date equal_to \" 下周六 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" 最高温度 17 摄氏度,最低温度 6 摄氏度 \" AGENT_ACTS: ( weather ) inform UV_intensity equal_to \" 强 \" USER: 行,看来没什么问题。那你给我推荐一个下周六从上海到南京带公务舱的航班如何? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 上海 \" , destination equal_to \" 南京 \" ( weather ) city equal_to \" 南京 \" , date equal_to \" 下周六 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 上海 \" , destination equal_to \" 南京 \" ( weather ) city equal_to \" 南京 \" , date equal_to \" 下周六 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" 新区 \" , day equal_to \" 六 \" , grade equal_to \" 五年级 \" , subject equal_to \" 英语 \" , time equal_to \" 上午 \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform class_number equal_to \" PE5T44034A \" , inform time equal_to \" 上午 \" AGENT_ACTS: ( class ) inform classroom equal_to \" 金河大厦 220 \" , inform price equal_to \" 1600 \" USER: 那价格还是可以的,下课时间是几点啊?课次是怎么安排的呢? <endofhistory>",
+    "output": "( class ) area equal_to \" 新区 \" , day equal_to \" 六 \" , grade equal_to \" 五年级 \" , subject equal_to \" 英语 \" , time equal_to \" 上午 \"",
+    "prediction": "( class ) area equal_to \" 新区 \" , day equal_to \" 六 \" , grade equal_to \" 五年级 \" , subject equal_to \" 英语 \" , time equal_to \" 上午 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 黄宗泽 \" , type equal_to \" 爱情片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform episode_length equal_to \" 45 分钟 \" AGENT_ACTS: ( tv ) request decade USER: 可以呀,片名是什么? <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 黄宗泽 \" , type equal_to \" 爱情片 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 黄宗泽 \" , type equal_to \" 爱情片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周三 \" , departure equal_to \" 深圳 \" , destination equal_to \" 杭州 \" , ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周五 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" 海南航空 HU7393 \" AGENT_ACTS: ( flight ) inform flight_information equal_to \" 海南航空 HU7393 ,宝安国际机场 T3- 萧山国际机场 T3 \" USER: 到达时间我知道了,出发时间是 ? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周三 \" , departure equal_to \" 深圳 \" , destination equal_to \" 杭州 \" ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周五 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周三 \" , departure equal_to \" 深圳 \" , destination equal_to \" 杭州 \" , ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周五 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 动作片 \" <endofstate> <history> AGENT_ACTS: ( movie ) recommend title equal_to \" 追龙 \" USER: 嗯嗯,这个豆瓣评分怎么样啊? <endofhistory>",
+    "output": "( movie ) production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 动作片 \"",
+    "prediction": "( movie ) production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 动作片 \" , title equal_to \" 追龙 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 日本 \" , type equal_to \" 爱情片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform episodes equal_to \" 11 集 \" , inform name_list equal_to \" 山下智久 / 长泽雅美 / 藤木直人 \" AGENT_ACTS: ( tv ) inform director equal_to \" 成田岳 \" USER: 好滴,那我都知道啦,暂时没有别的问题了,谢谢你哈!再见 <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 日本 \" , type equal_to \" 爱情片 \"",
+    "prediction": "( tv ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 日本 \" , type equal_to \" 爱情片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 动车 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 南京 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 一等座 \" <endofstate> <history> AGENT_ACTS: ( train ) recommend train_number equal_to \" D951 ,南京南 - 上海 \" USER: 好,这列火车几点从咱们南京出发? <endofhistory>",
+    "output": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 南京 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 一等座 \"",
+    "prediction": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 南京 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 一等座 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 游戏本 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) recommend product_name equal_to \" 戴尔 （DELL） 游匣 G3 灵越 3590 \" AGENT_ACTS: ( pc ) inform GPU_model equal_to \" GTX1660tiMQ6G \" USER: 可以查一下 CPU 型号吗? <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 游戏本 \"",
+    "prediction": "( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 游戏本 \" , CPU_model equal_to \" \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) production_country_or_area equal_to \" 美国 \" , star equal_to \" 维拉 · 法米加 \" , ( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 韩国 \" , type equal_to \" 喜剧片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) recommend title equal_to \" 招魂 \" AGENT_ACTS: ( movie ) inform Douban_score equal_to \" 7.9 \" , inform film_length equal_to \" 112 分钟 \" USER: 好的,谢谢你,再见。 <endofhistory>",
+    "output": "( movie ) production_country_or_area equal_to \" 美国 \" , star equal_to \" 维拉 · 法米加 \" ( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 韩国 \" , type equal_to \" 喜剧片 \"",
+    "prediction": "( movie ) production_country_or_area equal_to \" 美国 \" , star equal_to \" 维拉 · 法米加 \" ( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 韩国 \" , type equal_to \" 喜剧片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform name equal_to \" 虎丘景区 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.6 \" USER: 有啥特点吗? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \"",
+    "prediction": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , name equal_to \" 华谊兄弟电影世界 \" , the_most_suitable_people equal_to \" 情侣约会 \" , type equal_to \" 游乐场 \" , ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 粤菜 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform pricerange equal_to \" 中等 \" AGENT_ACTS: ( restaurant ) inform metro_station equal_to \" 是 \" USER: 能直达就太棒了,你有饭店的联系方式吗? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , name equal_to \" 华谊兄弟电影世界 \" , the_most_suitable_people equal_to \" 情侣约会 \" , type equal_to \" 游乐场 \" ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 粤菜 \" , metro_station equal_to \" 是 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( attraction ) area equal_to \" 工业园区 \" , name equal_to \" 华谊兄弟电影世界 \" , the_most_suitable_people equal_to \" 情侣约会 \" , type equal_to \" 游乐场 \" , ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 粤菜 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \" , contact equal_to \" 是 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , name equal_to \" 石湖景区 \" , type equal_to \" 山水景区 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( attraction ) inform opening_hours equal_to \" 全天 \" USER: 好的,谢谢。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , name equal_to \" 石湖景区 \" , type equal_to \" 山水景区 \"",
+    "prediction": "( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , name equal_to \" 石湖景区 \" , type equal_to \" 山水景区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" 小米 \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 英寸 \" , series equal_to \" 小米 - 笔记本 \" , usage equal_to \" 常规笔记本 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) greeting , recommend product_name equal_to \" 小米 Ruby \" AGENT_ACTS: ( pc ) inform operating_system equal_to \" Windows10 \" USER: 那待机时长是多久? <endofhistory>",
+    "output": "( pc ) brand equal_to \" 小米 \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 英寸 \" , series equal_to \" 小米 - 笔记本 \" , usage equal_to \" 常规笔记本 \"",
+    "prediction": "( pc ) brand equal_to \" 小米 \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 英寸 \" , series equal_to \" 小米 - 笔记本 \" , usage equal_to \" 常规笔记本 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) area equal_to \" 相城区 \" , key_departments equal_to \" 神经外科 \" , name equal_to \" 苏州市相城人民医院 \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) inform address equal_to \" 华元路 1060 号 \" AGENT_ACTS: ( hospital ) inform bus_routes equal_to \" 5 路、 7 路、 809 路、 814 路、 839 路、 878 路 \" USER: 哦哦,医院里有 CT 吗 ? <endofhistory>",
+    "output": "( hospital ) area equal_to \" 相城区 \" , key_departments equal_to \" 神经外科 \" , name equal_to \" 苏州市相城人民医院 \"",
+    "prediction": "( hospital ) area equal_to \" 相城区 \" , key_departments equal_to \" 神经外科 \" , name equal_to \" 苏州市相城人民医院 \" , has_ct equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform class_cabin equal_to \" 经济舱 \" AGENT_ACTS: ( flight ) inform punctuality_rate equal_to \" 98.26% \" USER: 到广州是几点呢? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \" , arrival_time equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 南京 \" , destination equal_to \" 深圳 \" , ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周一 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform wind equal_to \" 东北风 2 级 \" AGENT_ACTS: ( general ) general USER: 拜拜。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 南京 \" , destination equal_to \" 深圳 \" ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周一 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 南京 \" , destination equal_to \" 深圳 \" , ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周一 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,可不可以帮我找一家精神心理科的综合医院?家人说这俩天不舒服。 <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 精神心理科 \"",
+    "prediction": "( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 精神心理科 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) cuisine equal_to \" 韩国料理 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS: ( restaurant ) recommend name equal_to \" 农乐园炭火烤肉 \" USER: 这个餐厅具体位置在哪? <endofhistory>",
+    "output": "( restaurant ) cuisine equal_to \" 韩国料理 \" , name equal_to \" 农乐园炭火烤肉 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( restaurant ) cuisine equal_to \" 韩国料理 \" , pricerange equal_to \" 中等 \" , name equal_to \" 农乐园炭火烤肉 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" 最高温度 24 摄氏度,最低温度 14 摄氏度 \" , inform weather_condition equal_to \" 多云 \" AGENT_ACTS: ( weather ) inform UV_intensity equal_to \" 中等 \" USER: 那我就放心了,再麻烦你帮我推荐一个那天杭州飞广州的舱班吧,要有经济舱的。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 杭州 \" , destination equal_to \" 广州 \" ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 杭州 \" , destination equal_to \" 广州 \" ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) classification equal_to \" SUV \" , hybrid equal_to \" 汽油 \" , pricerange equal_to \" 20~30 \" , series equal_to \" T-ROC 探歌 \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) recommend name equal_to \" T-ROC 探歌 280TSIDSG 四驱豪华型 \" , recommend series equal_to \" T-ROC 探歌 \" AGENT_ACTS: ( car ) inform parking_assist_system equal_to \" true \" , inform ventilated_seats equal_to \" true \" USER: 那座椅加热呢? <endofhistory>",
+    "output": "( car ) classification equal_to \" SUV \" , hybrid equal_to \" 汽油 \" , pricerange equal_to \" 20~30 \" , series equal_to \" T-ROC 探歌 \"",
+    "prediction": "( car ) classification equal_to \" SUV \" , hybrid equal_to \" 汽油 \" , pricerange equal_to \" 20~30 \" , series equal_to \" T-ROC 探歌 \" , seat_heating equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好!我最近想采购一批台式电脑,但是不知道买什么牌子的,你能帮我看看吗? <endofhistory>",
+    "output": "( pc ) computer_type equal_to \" 台式机 \"",
+    "prediction": "( pc ) type equal_to \" 台式电脑 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 沙家浜风景区 \" , type equal_to \" 山水景区 \" , ( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" , ( restaurant ) cuisine equal_to \" 粤菜 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to \" 臻品粤茶餐厅 \" AGENT_ACTS: ( restaurant ) inform address equal_to \" 苏绣路 368 号天翔花园 133 号 \" , inform dishes equal_to \" 烧鹅 \" USER: 好的,感谢你的帮助,再见! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 沙家浜风景区 \" , type equal_to \" 山水景区 \" ( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" ( restaurant ) cuisine equal_to \" 粤菜 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 沙家浜风景区 \" , type equal_to \" 山水景区 \" , ( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" , ( restaurant ) cuisine equal_to \" 粤菜 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) CPU equal_to \" i7 \" , computer_type equal_to \" 台式机 \" , memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform GPU_category equal_to \" 独立显卡 \" AGENT_ACTS: ( pc ) inform hard_disk_capacity equal_to \" 256GBSSD+1TBHDD \" USER: 好的,目前我很满意,这款台式电脑的价格是多钱呢? <endofhistory>",
+    "output": "( pc ) CPU equal_to \" i7 \" , computer_type equal_to \" 台式机 \" , memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \"",
+    "prediction": "( pc ) CPU equal_to \" i7 \" , computer_type equal_to \" 台式机 \" , memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" 姑苏区 \" , pricerange equal_to \" 偏贵 \" , room_type equal_to \" 标准间 \" , ( restaurant ) area equal_to \" 姑苏区 \" , name equal_to \" 东吴面馆 \" , pricerange equal_to \" 便宜 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform metro_station equal_to \" 是 \" AGENT_ACTS: ( hotel ) recommend name equal_to \" 苏州吴宫泛太平洋酒店 \" USER: 请问那的停车场能免费停吗,还是收费的呢? <endofhistory>",
+    "output": "( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" , room_type equal_to \" 标准间 \" ( restaurant ) area equal_to \" 姑苏区 \" , name equal_to \" 东吴面馆 \" , pricerange equal_to \" 便宜 \"",
+    "prediction": "( hotel ) area equal_to \" 姑苏区 \" , pricerange equal_to \" 偏贵 \" , room_type equal_to \" 标准间 \" , parking equal_to \" unknown \" , ( restaurant ) area equal_to \" 姑苏区 \" , name equal_to \" 东吴面馆 \" , pricerange equal_to \" 便宜 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" 工业园区 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS: ( restaurant ) request cuisine USER: 什么菜系无所谓的,我希望能有地铁直达到这个餐馆。 <endofhistory>",
+    "output": "( restaurant ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( restaurant ) area equal_to \" 工业园区 \" , pricerange equal_to \" 偏贵 \" , near_subway equal_to \" 是 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , name equal_to \" 石湖景区 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( restaurant ) area equal_to \" 吴中区 \" , cuisine equal_to \" 韩国料理 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 赏石湖胜景,看山水相依、峰峦重叠,领略苏州的山水文化底蕴。 \" AGENT_ACTS: ( restaurant ) recommend name equal_to \" 汉城韩国料理 \" USER: 正中好啊,那餐馆评分挺高吧,是多少,营业时间是什么时候啊? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , name equal_to \" 石湖景区 \" , the_most_suitable_people equal_to \" 朋友出游 \" ( restaurant ) area equal_to \" 吴中区 \" , cuisine equal_to \" 韩国料理 \" , name equal_to \" 汉城韩国料理 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , name equal_to \" 石湖景区 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( restaurant ) area equal_to \" 吴中区 \" , cuisine equal_to \" 韩国料理 \" , pricerange equal_to \" 中等 \" , name equal_to \" 汉城韩国料理 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我朋友来苏州找我玩了,能不能推荐一个姑苏区消费水平中等的地方玩一玩啊? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好,有没有 2010 年代的热播日剧推荐一下呀? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 日本 \"",
+    "prediction": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 日本 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 商务出行 \" , room_type equal_to \" 大床房 \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) request room_type AGENT_ACTS: ( hotel ) inform name equal_to \" 苏州黎里水岸寒舍精品酒店 \" USER: 这家的地址在哪? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 5 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 商务出行 \" , room_type equal_to \" 大床房 \" , star equal_to \" 5 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" 下周三 \" , departure equal_to \" 北京 \" , destination equal_to \" 成都 \" , ( weather ) city equal_to \" 成都 \" , date equal_to \" 下周三 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" 最高温度 13 摄氏度,最低温度 4 摄氏度 \" AGENT_ACTS: ( flight ) request class_cabin USER: 经济舱。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周三 \" , departure equal_to \" 北京 \" , destination equal_to \" 成都 \" ( weather ) city equal_to \" 成都 \" , date equal_to \" 下周三 \"",
+    "prediction": "( flight ) date equal_to \" 下周三 \" , departure equal_to \" 北京 \" , destination equal_to \" 成都 \" , class_cabin equal_to \" 经济舱 \" ( weather ) city equal_to \" 成都 \" , date equal_to \" 下周三 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 周庄古镇 \" AGENT_ACTS: ( attraction ) inform address equal_to \" 4.5 \" USER: 好的,我还想知道这个景点都什么时间开放呢? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \"",
+    "prediction": "( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform ticket_price equal_to \" 1060 元 \" AGENT_ACTS: ( flight ) inform ticket_price equal_to \" 1800 元 \" USER: 好滴。谢谢啦。再见! <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 高新区 \" , consumption equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 苏州乐园森林水世界 \" USER: 怎么收费的呢,坐地铁能直接到吗? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 高新区 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 苏州乐园森林水世界 \"",
+    "prediction": "( attraction ) area equal_to \" 高新区 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 苏州乐园森林水世界 \" , transportation equal_to \" 地铁 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 惠普有新出的笔记本电脑吗?有的话给我找找轻薄本吧。 <endofhistory>",
+    "output": "( pc ) brand equal_to \" 惠普 \" , computer_type equal_to \" 笔记本 \" , usage equal_to \" 轻薄本 \"",
+    "prediction": "( pc ) brand equal_to \" 惠普 \" , usage equal_to \" 轻薄本 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周二 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform weather_condition equal_to \" 晴 \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" 最高温度 11 摄氏度,最低温度 0 摄氏度 \" USER: 行吧,我回去考虑考虑,跟小伙伴也商量一下。谢谢你了,再见。 <endofhistory>",
+    "output": "( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周二 \"",
+    "prediction": "( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周二 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我想去高新区找一个价位中等的餐厅,最好地铁直达,推荐一个吧。 <endofhistory>",
+    "output": "( restaurant ) area equal_to \" 高新区 \" , metro_station equal_to \" 是 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( restaurant ) area equal_to \" 高新区 \" , pricerange equal_to \" 中等 \" , traffic_info equal_to \" 地铁直达 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好!我想买一部商用电脑,你知道哪个比较好吗? <endofhistory>",
+    "output": "( pc ) usage equal_to \" 商用电脑 \"",
+    "prediction": "( pc ) usage equal_to \" 商用 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS: ( attraction ) recommend name equal_to \" 拙政园 \" USER: 这个地方真是如雷贯耳,具体在哪啊? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) brand equal_to \" 进口大众 \" , classification equal_to \" SUV \" , number_of_seats equal_to \" 4 \" , series equal_to \" 途锐 \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) recommend name equal_to \" 途锐 2.0TSI 锐翼版 \" AGENT_ACTS: ( car ) inform price equal_to \" 61.98 \" USER: 有没有座椅通风呢? <endofhistory>",
+    "output": "( car ) brand equal_to \" 进口大众 \" , classification equal_to \" SUV \" , number_of_seats equal_to \" 4 \" , series equal_to \" 途锐 \"",
+    "prediction": "( car ) brand equal_to \" 进口大众 \" , classification equal_to \" SUV \" , number_of_seats equal_to \" 4 \" , series equal_to \" 途锐 \" , seat_ventilation equal_to \" 是 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 林青霞 \" , type equal_to \" 爱情片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform Douban_score equal_to \" 7.4 \" AGENT_ACTS: ( movie ) inform film_length equal_to \" 108 分钟 \" USER: 好的,谢谢你的耐心讲解,我已经都了解了。 <endofhistory>",
+    "output": "( movie ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 林青霞 \" , type equal_to \" 爱情片 \"",
+    "prediction": "( movie ) production_country_or_area equal_to \" 中国香港 \" , star equal_to \" 林青霞 \" , type equal_to \" 爱情片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) recommend title equal_to \" 招魂 \" AGENT_ACTS: ( movie ) inform name_list equal_to \" 维拉 · 法米加 / 帕特里克 · 威尔森 / 莉莉 · 泰勒 \" USER: 看这部片子要花费我多长时间? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \"",
+    "prediction": "( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \" , film_length equal_to \" 未知 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform room_charge equal_to \" 789 元 \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.6 \" USER: 酒店的地址在什么地方? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 苏州海洋馆 \" , type equal_to \" 游乐场 \" , ( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 锦江之星 \" , pricerange equal_to \" 便宜 \" , ( restaurant ) cuisine equal_to \" 火锅 \" , name equal_to \" 熬八年火锅 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform score equal_to \" 4.2 \" AGENT_ACTS: ( general ) general USER: 没有问题了,你先忙吧,再见。 <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 苏州海洋馆 \" , type equal_to \" 游乐场 \" ( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 锦江之星 \" , pricerange equal_to \" 便宜 \" ( restaurant ) cuisine equal_to \" 火锅 \" , name equal_to \" 熬八年火锅 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 苏州海洋馆 \" , type equal_to \" 游乐场 \" , ( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 锦江之星 \" , pricerange equal_to \" 便宜 \" , ( restaurant ) cuisine equal_to \" 火锅 \" , name equal_to \" 熬八年火锅 \" , pricerange equal_to \" 偏贵 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) cuisine equal_to \" 火锅 \" , name equal_to \" 老天桥蛙炉火锅 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform dishes equal_to \" 牛蛙 \" , inform per_capita_consumption equal_to \" 120 元 \" AGENT_ACTS: ( restaurant ) inform phone_number equal_to \" 0512-65816338 \" USER: 谢啦,再见! <endofhistory>",
+    "output": "( restaurant ) cuisine equal_to \" 火锅 \" , name equal_to \" 老天桥蛙炉火锅 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( restaurant ) cuisine equal_to \" 火锅 \" , name equal_to \" 老天桥蛙炉火锅 \" , pricerange equal_to \" 偏贵 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 上海 \" , destination equal_to \" 广州 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform arrival_time equal_to \" 当天 16:05 \" AGENT_ACTS: ( flight ) inform ticket_price equal_to \" 1500 元 \" USER: 再帮我查一下下周日广州那天有没有风? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 上海 \" , destination equal_to \" 广州 \" ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 上海 \" , destination equal_to \" 广州 \" ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , the_most_suitable_people equal_to \" 朋友出游 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) greeting , request metro_station AGENT_ACTS: ( attraction ) recommend name equal_to \" 石湖景区 \" USER: 这个景点有什么特点? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , name equal_to \" 石湖景区 \" , the_most_suitable_people equal_to \" 朋友出游 \"",
+    "prediction": "( attraction ) area equal_to \" 吴中区 \" , metro_station equal_to \" 是 \" , the_most_suitable_people equal_to \" 朋友出游 \" , name equal_to \" 石湖景区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好!我最近想买一个电脑,最好是一个台式机,能帮我推荐一下吗? <endofhistory>",
+    "output": "( pc ) computer_type equal_to \" 台式机 \"",
+    "prediction": "( pc ) type equal_to \" 台式机 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 最近想找一个香港的电视剧,能帮我找一个吗? <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" 中国香港 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 香港 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周六下午 \" , departure equal_to \" 南京 \" , destination equal_to \" 北京 \" , seat_type equal_to \" 二等座 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform departure_time equal_to \" 当天 13:02 \" AGENT_ACTS: ( train ) inform ticket_price equal_to \" 443.5 元 \" USER: 我还想问问下周六北京那边的天气如何? <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周六下午 \" , departure equal_to \" 南京 \" , destination equal_to \" 北京 \" , seat_type equal_to \" 二等座 \" ( weather ) city equal_to \" 北京 \" , date equal_to \" 下周六 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周六下午 \" , departure equal_to \" 南京 \" , destination equal_to \" 北京 \" , seat_type equal_to \" 二等座 \" ( weather ) city equal_to \" 北京 \" , date equal_to \" 下周六 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 爱情片 \" , ( tv ) production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 剧情片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform film_length equal_to \" 101 分钟 \" AGENT_ACTS: ( tv ) recommend title equal_to \" 我们与恶的距离 \" USER: 豆瓣上的评分有多少呢?主演都有谁呀? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 爱情片 \" ( tv ) production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 剧情片 \"",
+    "prediction": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 爱情片 \" , ( tv ) production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 剧情片 \" , douban_score equal_to \" unknown \" , star equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) series equal_to \" 途昂 X \" <endofstate> <history> AGENT_ACTS: ( car ) inform 4WD equal_to \" 四驱 \" , recommend name equal_to \" 途昂 X380TSI 四驱豪华版 \" USER: 这款车价格是多少啊? <endofhistory>",
+    "output": "( car ) series equal_to \" 途昂 X \"",
+    "prediction": "( car ) series equal_to \" 途昂 X \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) name equal_to \" 苏州市立医院 ( 东区 ) \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) inform registration_time equal_to \" 7:30-11:30,12:30-16:30 \" AGENT_ACTS: ( hospital ) inform 3.0T_MRI equal_to \" false \" USER: 那 CT 总该会有的吧? <endofhistory>",
+    "output": "( hospital ) name equal_to \" 苏州市立医院 ( 东区 ) \"",
+    "prediction": "( hospital ) name equal_to \" 苏州市立医院 ( 东区 ) \" , CT equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) classification equal_to \" SUV \" , number_of_seats equal_to \" 4 \" <endofstate> <history> AGENT_ACTS: ( car ) request pricerange USER: 预算在大于 30 万吧。 <endofhistory>",
+    "output": "( car ) classification equal_to \" SUV \" , number_of_seats equal_to \" 4 \" , pricerange equal_to \" >30 \"",
+    "prediction": "( car ) classification equal_to \" SUV \" , number_of_seats equal_to \" 4 \" , pricerange equal_to \" >30 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 动作片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) request AGENT_ACTS: ( movie ) inform title equal_to \" 叶问 \" USER: 请问这部电影的豆瓣评分是多少? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 动作片 \"",
+    "prediction": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 动作片 \" , title equal_to \" 叶问 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) 4WD equal_to \" 四驱 \" , classification equal_to \" SUV \" , series equal_to \" T-ROC 探歌 \" , size equal_to \" 中小型 \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) recommend name equal_to \" T-ROC 探歌 280TSIDSG 四驱豪华型 \" AGENT_ACTS: ( car ) inform price equal_to \" 20.38 \" USER: 请问这款车是否有座椅通风和定速巡航功能呢? <endofhistory>",
+    "output": "( car ) 4WD equal_to \" 四驱 \" , classification equal_to \" SUV \" , series equal_to \" T-ROC 探歌 \" , size equal_to \" 中小型 \"",
+    "prediction": "( car ) 4WD equal_to \" 四驱 \" , classification equal_to \" SUV \" , series equal_to \" T-ROC 探歌 \" , size equal_to \" 中小型 \" , seat_ventilation equal_to \" 不确定 \" , cruise_control equal_to \" 不确定 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) day equal_to \" 六 \" , grade equal_to \" 五年级 \" , subject equal_to \" 数学 \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) request day AGENT_ACTS: ( class ) request area USER: 我家是在姑苏区和新区之间,在这两个区域哪个都是可以的。离我家都很近。 <endofhistory>",
+    "output": "( class ) area equal_to \" 新区 \" , day equal_to \" 六 \" , grade equal_to \" 五年级 \" , subject equal_to \" 数学 \"",
+    "prediction": "( class ) day equal_to \" 六 \" , grade equal_to \" 五年级 \" , subject equal_to \" 数学 \" , area equal_to \" 姑苏区 \" or \" 新区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" 专科医院 \" , level equal_to \" 三级 \" <endofstate> <history> AGENT_ACTS: ( hospital ) general USER: 是公立医院就更好了。 <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" 专科医院 \" , level equal_to \" 三级 \" , public_or_private equal_to \" 公立医院 \"",
+    "prediction": "( hospital ) general_or_specialized equal_to \" 专科医院 \" , level equal_to \" 三级 \" , public_or_private equal_to \" 公立 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) departure equal_to \" 杭州 \" , destination equal_to \" 深圳 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request departure AGENT_ACTS: ( flight ) request date USER: 查查下周六出发的吧。 <endofhistory>",
+    "output": "( flight ) date equal_to \" 下周六 \" , departure equal_to \" 杭州 \" , destination equal_to \" 深圳 \"",
+    "prediction": "( flight ) departure equal_to \" 杭州 \" , destination equal_to \" 深圳 \" , date equal_to \" 下周六 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform room_charge equal_to \" 789 元 \" AGENT_ACTS: ( hotel ) inform parking equal_to \" 免费 \" USER: 这个酒店的地址在哪里呢? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,最近我准备去苏州旅游,可以在工业园区帮我找一家干净点的酒店吗? <endofhistory>",
+    "output": "( hotel ) area equal_to \" 工业园区 \"",
+    "prediction": "( hotel ) area equal_to \" 工业园区 \" , hygiene equal_to \" 干净 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我来苏州看朋友,顺便游玩一下,你帮我看看姑苏区哪个景区适合朋友出游呢? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , the_most_suitable_people equal_to \" 朋友出游 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 动车 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等卧 \" <endofstate> <history> AGENT_ACTS: ( train ) inform train_number equal_to \" D709 ,北京南 - 上海 \" USER: 好的,这个车二等卧票价多少? <endofhistory>",
+    "output": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等卧 \"",
+    "prediction": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等卧 \" , price equal_to \" 未知 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 台式机 \" , series equal_to \" 宏碁 - 商祺 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) recommend product_name equal_to \" 宏碁 （Acer） 商祺 SQX4270660N \" AGENT_ACTS: ( pc ) inform price equal_to \" 3499.0 \" USER: 太好了,我的预算是 5000 以内,这个价格刚刚好。 <endofhistory>",
+    "output": "( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 台式机 \" , pricerange equal_to \" 小于 5000 \" , series equal_to \" 宏碁 - 商祺 \"",
+    "prediction": "( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 台式机 \" , series equal_to \" 宏碁 - 商祺 \" , price equal_to \" <5000 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我想找一家公立医院,姑苏区的专科医院吧,麻烦你你帮我任选一家。 <endofhistory>",
+    "output": "( hospital ) area equal_to \" 姑苏区 \" , general_or_specialized equal_to \" 专科医院 \" , public_or_private equal_to \" 公立医院 \"",
+    "prediction": "( hospital ) area equal_to \" 姑苏区 \" , general_or_specialized equal_to \" 专科医院 \" , public_or_private equal_to \" 公立 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" 联想 \" , computer_type equal_to \" 笔记本 \" , screen_size equal_to \" 15.6 英寸 \" , usage equal_to \" 轻薄本 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) request screen_size AGENT_ACTS: ( pc ) request memory_capacity USER: 8GB 的。 <endofhistory>",
+    "output": "( pc ) brand equal_to \" 联想 \" , computer_type equal_to \" 笔记本 \" , memory_capacity equal_to \" 8GB \" , screen_size equal_to \" 15.6 英寸 \" , usage equal_to \" 轻薄本 \"",
+    "prediction": "( pc ) brand equal_to \" 联想 \" , computer_type equal_to \" 笔记本 \" , screen_size equal_to \" 15.6 英寸 \" , usage equal_to \" 轻薄本 \" , memory_capacity equal_to \" 8GB \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) name equal_to \" 常熟颐文阁酒店 \" , ( restaurant ) name equal_to \" 闺蜜家 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform parking equal_to \" 免费 \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.4 \" USER: 好的。我很满意!感谢你的服务,再见! <endofhistory>",
+    "output": "( hotel ) name equal_to \" 常熟颐文阁酒店 \" ( restaurant ) name equal_to \" 闺蜜家 \"",
+    "prediction": "( hotel ) name equal_to \" 常熟颐文阁酒店 \" , ( restaurant ) name equal_to \" 闺蜜家 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 云顶之星连锁酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 1 \" , ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 日本料理 \" , name equal_to \" 万魚亭 · 鹤家日本料理铁板烧 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform parking equal_to \" 免费 \" AGENT_ACTS: ( hotel ) inform room_charge equal_to \" 152 元 \" USER: 哦了,太感谢了。 <endofhistory>",
+    "output": "( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 云顶之星连锁酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 1 \" ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 日本料理 \" , name equal_to \" 万魚亭 · 鹤家日本料理铁板烧 \"",
+    "prediction": "( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 云顶之星连锁酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 1 \" , ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 日本料理 \" , name equal_to \" 万魚亭 · 鹤家日本料理铁板烧 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好!您能不能帮我查一下下周六北京是什么样的天气? <endofhistory>",
+    "output": "( weather ) city equal_to \" 北京 \" , date equal_to \" 下周六 \"",
+    "prediction": "( weather ) city equal_to \" 北京 \" , date equal_to \" 下周六 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" 园区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 英语 \" <endofstate> <history> AGENT_ACTS: ( class ) recommend class_number equal_to \" PE5P36112A \" USER: 在哪里上课呢? <endofhistory>",
+    "output": "( class ) area equal_to \" 园区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 英语 \"",
+    "prediction": "( class ) area equal_to \" 园区 \" , grade equal_to \" 五年级 \" , level equal_to \" 精进班 \" , subject equal_to \" 英语 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 普外科 \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) request general_or_specialized AGENT_ACTS: ( hospital ) recommend name equal_to \" 苏州大学附属第一医院 \" USER: 不知道这地址是在? <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 普外科 \" , name equal_to \" 苏州大学附属第一医院 \"",
+    "prediction": "( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 普外科 \" , name equal_to \" 苏州大学附属第一医院 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 科幻片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform release_date equal_to \" 2006-09-29( 中国台湾 ) \" AGENT_ACTS: ( movie ) inform name_list equal_to \" 张震 / 林嘉欣 / 江口洋介 / 徐熙媛 \" USER: 哇!有徐熙媛呀。我刚好还想找一个她主演的台剧呢。 <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" 中国台湾 \" , star equal_to \" 徐熙媛 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 中国台湾 \" , star equal_to \" 徐熙媛 \" ( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 科幻片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 芳芳法餐厅 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to \" 芳芳法餐厅 \" AGENT_ACTS: ( restaurant ) inform business_hours equal_to \" 周一至周日 11:30-22:00 \" USER: 好的,再帮我查下这个餐馆的评分吧。 <endofhistory>",
+    "output": "( restaurant ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 芳芳法餐厅 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( restaurant ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 芳芳法餐厅 \" , pricerange equal_to \" 偏贵 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 我想买一辆 SUV ,买来越野用, 3 个人能坐下就行,你有什么好点的建议呢? <endofhistory>",
+    "output": "( car ) classification equal_to \" SUV \"",
+    "prediction": "( car ) classification equal_to \" SUV \" , use equal_to \" 越野 \" , seating_capacity equal_to \" 3 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , name equal_to \" 东方之门 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 云顶之星连锁酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 1 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" 云顶之星连锁酒店 \" AGENT_ACTS: ( hotel ) inform address equal_to \" 苏州工业园区苏州大道东 288 号 \" USER: 那这家酒店的订房电话是多少? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , name equal_to \" 东方之门 \" , the_most_suitable_people equal_to \" 朋友出游 \" ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 云顶之星连锁酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 1 \"",
+    "prediction": "( attraction ) area equal_to \" 工业园区 \" , name equal_to \" 东方之门 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 云顶之星连锁酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 1 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" 昆山 \" , pricerange equal_to \" 便宜 \" , room_type equal_to \" 大床房 \" , ( restaurant ) area equal_to \" 昆山 \" , name equal_to \" 周庄花间堂桔梗餐厅 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) request room_type AGENT_ACTS: ( hotel ) recommend name equal_to \" 周庄隐江南徐家民宿 \" USER: 行,这家酒店的地址你发给我一下吧,我开车过去。 <endofhistory>",
+    "output": "( hotel ) area equal_to \" 昆山 \" , name equal_to \" 周庄隐江南徐家民宿 \" , pricerange equal_to \" 便宜 \" , room_type equal_to \" 大床房 \" ( restaurant ) area equal_to \" 昆山 \" , name equal_to \" 周庄花间堂桔梗餐厅 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( hotel ) area equal_to \" 昆山 \" , pricerange equal_to \" 便宜 \" , room_type equal_to \" 大床房 \" , name equal_to \" 周庄隐江南徐家民宿 \" , ( restaurant ) area equal_to \" 昆山 \" , name equal_to \" 周庄花间堂桔梗餐厅 \" , pricerange equal_to \" 中等 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我听说付小姐在成都不错,我想问下电话号码。 <endofhistory>",
+    "output": "( restaurant ) name equal_to \" 付小姐在成都 \"",
+    "prediction": "( restaurant ) name equal_to \" 付小姐在成都 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \" , ( restaurant ) cuisine equal_to \" 江浙菜 \" , name equal_to \" 外婆家 \" , pricerange equal_to \" 便宜 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend business_hours equal_to \" 周一至周日 11:00-14:0016:30-21:00 \" AGENT_ACTS: ( restaurant ) inform phone_number equal_to \" 0512-62857757 \" USER: 谢谢你的帮助,再见! <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \" ( restaurant ) cuisine equal_to \" 江浙菜 \" , name equal_to \" 外婆家 \" , pricerange equal_to \" 便宜 \"",
+    "prediction": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \" , ( restaurant ) cuisine equal_to \" 江浙菜 \" , name equal_to \" 外婆家 \" , pricerange equal_to \" 便宜 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好,我计划换台小于 5000 元的电脑 <endofhistory>",
+    "output": "( pc ) pricerange equal_to \" 小于 5000 \"",
+    "prediction": "( pc ) pricerange equal_to \" <5000 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5000 到 10000 \" , series equal_to \" 联想 - 扬天 \" , usage equal_to \" 商用电脑 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform features equal_to \" 未明确说明 \" AGENT_ACTS: ( pc ) inform GPU_category equal_to \" 独立显卡 \" USER: 好。请问,有没有同等条件的轻薄本啊? <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 轻薄本 \"",
+    "prediction": "( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5000 到 10000 \" , series equal_to \" 联想 - 扬天 \" , usage equal_to \" 轻薄本 \" , GPU_category equal_to \" 独立显卡 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 动车 \" , date equal_to \" 下周四上午 \" , departure equal_to \" 深圳 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" , ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周四 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) request arrival_time AGENT_ACTS: ( general ) request duration USER: 那票价是多钱呢? <endofhistory>",
+    "output": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周四上午 \" , departure equal_to \" 深圳 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周四 \"",
+    "prediction": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周四上午 \" , departure equal_to \" 深圳 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" , ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周四 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" 中国大陆 \" , star equal_to \" 胡歌 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform episodes equal_to \" 50 集 \" AGENT_ACTS: ( tv ) inform director equal_to \" 蒋家骏 \" USER: 这个电视剧每集看下来需要多长时间? <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" 中国大陆 \" , star equal_to \" 胡歌 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 中国大陆 \" , star equal_to \" 胡歌 \" , episodes equal_to \" 50 集 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周三 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" 最高温度 11 摄氏度,最低温度 5 摄氏度 \" , inform weather_condition equal_to \" 多云转晴 \" AGENT_ACTS: ( weather ) inform wind equal_to \" 西北风 3-4 级 \" USER: 好的。下周三下午我要从上海到厦门,计划坐一等座的高铁,请问当天有哪个车呢? <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周三下午 \" , departure equal_to \" 上海 \" , destination equal_to \" 厦门 \" , seat_type equal_to \" 一等座 \" ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周三 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , departure equal_to \" 上海 \" , destination equal_to \" 厦门 \" , date equal_to \" 下周三 \" , seat equal_to \" 一等座 \" ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周三 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 80 年代 \" , production_country_or_area equal_to \" 中国台湾 \" <endofstate> <history> AGENT_ACTS: ( movie ) recommend title equal_to \" ['上海滩十三太保'] | ['六朝怪谈'] | ['好小子'] \" USER: 有没有好看的动作片,帮忙推荐一部。 <endofhistory>",
+    "output": "( movie ) decade equal_to \" 80 年代 \" , production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 动作片 \"",
+    "prediction": "( movie ) decade equal_to \" 80 年代 \" , production_country_or_area equal_to \" 中国台湾 \" , type equal_to \" 动作片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 商用电脑 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform GPU_model equal_to \" 丽台 P2000 \" AGENT_ACTS: ( pc ) inform CPU_model equal_to \" i7-9700 \" USER: 多少钱? <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 商用电脑 \"",
+    "prediction": "( pc ) memory_capacity equal_to \" 16GB \" , pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 商用电脑 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周四 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" 弱 \" AGENT_ACTS: ( general ) general USER: 没有了,再见! <endofhistory>",
+    "output": "( weather ) city equal_to \" 广州 \" , date equal_to \" 下周四 \"",
+    "prediction": "( weather ) city equal_to \" 广州 \" , date equal_to \" 下周四 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 常熟 \" , name equal_to \" 沙家浜风景区 \" , the_most_suitable_people equal_to \" 家庭亲子 \" , ( hotel ) area equal_to \" 常熟 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform ticket_price equal_to \" 110 元 \" AGENT_ACTS: ( hotel ) recommend name equal_to \" 常熟中江广场皇冠假日酒店 \" USER: 这家行,它家房费什么标准? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 常熟 \" , name equal_to \" 沙家浜风景区 \" , the_most_suitable_people equal_to \" 家庭亲子 \" ( hotel ) area equal_to \" 常熟 \" , name equal_to \" 常熟中江广场皇冠假日酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \"",
+    "prediction": "( attraction ) area equal_to \" 常熟 \" , name equal_to \" 沙家浜风景区 \" , the_most_suitable_people equal_to \" 家庭亲子 \" ( hotel ) area equal_to \" 常熟 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \" , name equal_to \" 常熟中江广场皇冠假日酒店 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周三下午 \" , departure equal_to \" 上海 \" , destination equal_to \" 北京 \" , seat_type equal_to \" 二等座 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform departure_time equal_to \" 当天 15:00 \" AGENT_ACTS: ( train ) inform arrival_time equal_to \" 当天 19:36 \" USER: 知道了,谢谢,再见。 <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周三下午 \" , departure equal_to \" 上海 \" , destination equal_to \" 北京 \" , seat_type equal_to \" 二等座 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周三下午 \" , departure equal_to \" 上海 \" , destination equal_to \" 北京 \" , seat_type equal_to \" 二等座 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" 常熟 \" , name equal_to \" 常熟长江路亚朵酒店 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 标准间 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" 常熟长江路亚朵酒店 \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.8 \" USER: 那停车场是有没有的?咋收费呢? <endofhistory>",
+    "output": "( hotel ) area equal_to \" 常熟 \" , name equal_to \" 常熟长江路亚朵酒店 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 标准间 \"",
+    "prediction": "( hotel ) area equal_to \" 常熟 \" , name equal_to \" 常熟长江路亚朵酒店 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 标准间 \" , parking equal_to \" 有 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request punctuality_rate AGENT_ACTS: ( flight ) request flight_information USER: 那这趟航班的出发时间和到达时间呢? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" , departure_time equal_to \" unknown \" , arrival_time equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) 4WD equal_to \" 两驱 \" , classification equal_to \" 三厢车 \" , series equal_to \" 帕萨特 \" , size equal_to \" 中型 \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) inform price equal_to \" 18.49 \" AGENT_ACTS: ( car ) inform ventilated_seats equal_to \" false \" USER: 座椅加热呢? <endofhistory>",
+    "output": "( car ) 4WD equal_to \" 两驱 \" , classification equal_to \" 三厢车 \" , series equal_to \" 帕萨特 \" , size equal_to \" 中型 \"",
+    "prediction": "( car ) 4WD equal_to \" 两驱 \" , classification equal_to \" 三厢车 \" , series equal_to \" 帕萨特 \" , size equal_to \" 中型 \", heated_seats equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 苏州金鸡湖李公堤瑞贝庭公寓酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 4 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform score equal_to \" 4.6 \" AGENT_ACTS: ( hotel ) inform address equal_to \" 苏州工业园区李公堤三期 E 区商业街 9 幢 \" USER: 我还得问一句这家酒店好停车不,有免费的停车场吗? <endofhistory>",
+    "output": "( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 苏州金鸡湖李公堤瑞贝庭公寓酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 4 \"",
+    "prediction": "( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 苏州金鸡湖李公堤瑞贝庭公寓酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 4 \" , parking equal_to \" 是 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 台式机 \" , pricerange equal_to \" 小于 5000 \" , series equal_to \" 宏碁 - 商祺 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) general AGENT_ACTS: ( pc ) inform features equal_to \" 未有明确说明 \" USER: 哦哦,那它的硬盘容量是多少? <endofhistory>",
+    "output": "( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 台式机 \" , pricerange equal_to \" 小于 5000 \" , series equal_to \" 宏碁 - 商祺 \"",
+    "prediction": "( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 台式机 \" , pricerange equal_to \" 小于 5000 \" , series equal_to \" 宏碁 - 商祺 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 北京 \" , date equal_to \" 下周六 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) general , greeting AGENT_ACTS: ( weather ) inform tamperature equal_to \" 最高温度 9 摄氏度,最低温度 -3 摄氏度 \" USER: 好的,再帮我看一下紫外线强度和风力风向。 <endofhistory>",
+    "output": "( weather ) city equal_to \" 北京 \" , date equal_to \" 下周六 \"",
+    "prediction": "( weather ) city equal_to \" 北京 \" , date equal_to \" 下周六 \" , wind equal_to \" \" , uv_index equal_to \" \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 90 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 动作片 \" , ( tv ) production_country_or_area equal_to \" 中国大陆 \" , star equal_to \" 欧阳奋强 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform release_date equal_to \" 1993-02-11( 中国香港 ) \" AGENT_ACTS: ( tv ) recommend title equal_to \" 红楼梦 \" USER: 这部剧的豆瓣评分是几分? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 90 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 动作片 \" ( tv ) production_country_or_area equal_to \" 中国大陆 \" , star equal_to \" 欧阳奋强 \"",
+    "prediction": "( movie ) decade equal_to \" 90 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 动作片 \" , ( tv ) production_country_or_area equal_to \" 中国大陆 \" , star equal_to \" 欧阳奋强 \" , title equal_to \" 红楼梦 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 动车 \" , date equal_to \" 下周日下午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 南京 \" , seat_type equal_to \" 一等座 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) recommend train_number equal_to \" D2282 ,厦门北 - 南京 \" AGENT_ACTS: ( train ) inform ticket_price equal_to \" 826.0 元 \" USER: 我朋友说去接我,这趟车的到达时间是几点呀? <endofhistory>",
+    "output": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周日下午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 南京 \" , seat_type equal_to \" 一等座 \"",
+    "prediction": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周日下午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 南京 \" , seat_type equal_to \" 一等座 \" , arrival_time equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好,我想找一部车太贤主演的韩国的电影,推荐一下。 <endofhistory>",
+    "output": "( movie ) production_country_or_area equal_to \" 韩国 \" , star equal_to \" 车太贤 \"",
+    "prediction": "( movie ) production_country_or_area equal_to \" 韩国 \" , star equal_to \" 车太贤 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform director equal_to \" 温子仁 \" AGENT_ACTS: ( general ) general USER: 不需要了,谢谢你。 <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \"",
+    "prediction": "( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我下周想去广州,能帮我看看机票吗? <endofhistory>",
+    "output": "( flight ) destination equal_to \" 广州 \"",
+    "prediction": "( flight ) destination equal_to \" 广州 \" , date equal_to \" 下周 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴江 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 吴江 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform room_type equal_to \" 标准间 \" AGENT_ACTS: ( hotel ) inform room_charge equal_to \" 789 元 \" USER: 还行,有钱。能告诉我这个酒店的地址么? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴江 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" ( hotel ) area equal_to \" 吴江 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \"",
+    "prediction": "( attraction ) area equal_to \" 吴江 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 吴江 \" , name equal_to \" 苏州黎里水岸寒舍精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 5 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) brand equal_to \" 上汽大众 \" , classification equal_to \" MPV \" , number_of_seats equal_to \" 4 \" , series equal_to \" 途安 L \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) recommend name equal_to \" 途安 L280TSI 拓界版 \" AGENT_ACTS: ( car ) inform pricerange equal_to \" 15~20 \" USER: 这款车有倒车影像功能吗 ? <endofhistory>",
+    "output": "( car ) brand equal_to \" 上汽大众 \" , classification equal_to \" MPV \" , number_of_seats equal_to \" 4 \" , series equal_to \" 途安 L \"",
+    "prediction": "( car ) brand equal_to \" 上汽大众 \" , classification equal_to \" MPV \" , number_of_seats equal_to \" 4 \" , series equal_to \" 途安 L \" , reverse_image equal_to \" 不确定 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,明天想请朋友吃火锅,有偏贵点的火锅餐厅吗?推荐一个吧。 <endofhistory>",
+    "output": "( restaurant ) cuisine equal_to \" 火锅 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( restaurant ) pricerange equal_to \" 偏贵 \" , food equal_to \" 火锅 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 上海 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" 南方航空 CZ3537 ,白云国际机场 T2- 虹桥国际机场 T2 \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 当天 11:00 \" USER: 这趟航班的到达时间是几点呀? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 上海 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 上海 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) production_country_or_area equal_to \" 韩国 \" , type equal_to \" 悬疑片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) recommend title equal_to \" 信号 \" AGENT_ACTS: ( tv ) inform Douban_score equal_to \" 9.2 \" USER: 感谢感谢,再见! <endofhistory>",
+    "output": "( tv ) production_country_or_area equal_to \" 韩国 \" , type equal_to \" 悬疑片 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 韩国 \" , type equal_to \" 悬疑片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" , ( restaurant ) area equal_to \" 姑苏区 \" , cuisine equal_to \" 西北菜 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) request cuisine AGENT_ACTS: ( restaurant ) recommend name equal_to \" 北疆饭店 \" USER: 行啊,我相信你的眼光,那我就去这家饭店吃饭吧。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" ( restaurant ) area equal_to \" 姑苏区 \" , cuisine equal_to \" 西北菜 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" , ( restaurant ) area equal_to \" 姑苏区 \" , cuisine equal_to \" 西北菜 \" , name equal_to \" 北疆饭店 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) departure equal_to \" 厦门 \" , destination equal_to \" 杭州 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request departure AGENT_ACTS: ( flight ) request date USER: 下周日那天出发。 <endofhistory>",
+    "output": "( flight ) date equal_to \" 下周日 \" , departure equal_to \" 厦门 \" , destination equal_to \" 杭州 \"",
+    "prediction": "( flight ) departure equal_to \" 厦门 \" , destination equal_to \" 杭州 \" , date equal_to \" 下周日 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" , room_type equal_to \" 标准间 \" , ( restaurant ) cuisine equal_to \" 川菜 \" , name equal_to \" 付小姐在成都 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" 苏州吴宫泛太平洋酒店 \" AGENT_ACTS: ( hotel ) recommend room_type equal_to \" 标准间 \" USER: 他家地址是在哪? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" , room_type equal_to \" 标准间 \" ( restaurant ) cuisine equal_to \" 川菜 \" , name equal_to \" 付小姐在成都 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" , room_type equal_to \" 标准间 \" , ( restaurant ) cuisine equal_to \" 川菜 \" , name equal_to \" 付小姐在成都 \" , pricerange equal_to \" 中等 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) name equal_to \" 沙家浜风景区 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform phone_number equal_to \" 0512-52500000 \" AGENT_ACTS: ( attraction ) inform metro_station equal_to \" 否 \" USER: 哦,那就比较麻烦了,但还是要谢谢你!再见! <endofhistory>",
+    "output": "( attraction ) name equal_to \" 沙家浜风景区 \"",
+    "prediction": "( attraction ) name equal_to \" 沙家浜风景区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 精神心理科 \" , name equal_to \" 苏州大学附属第一医院 \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) inform DSA equal_to \" true \" AGENT_ACTS: ( hospital ) inform 3.0T_MRI equal_to \" true \" USER: CT 都有,这家医院设备确实齐全。 <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 精神心理科 \" , name equal_to \" 苏州大学附属第一医院 \"",
+    "prediction": "( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 精神心理科 \" , name equal_to \" 苏州大学附属第一医院 \" , CT equal_to \" true \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周日 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" 最高温度 21 摄氏度,最低温度 9 摄氏度 \" AGENT_ACTS: ( weather ) inform weather_condition equal_to \" 多云转阴 \" USER: 没有雨就行,那光照呢? <endofhistory>",
+    "output": "( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周日 \"",
+    "prediction": "( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周日 \" , weather_condition equal_to \" 多云转阴 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 商务出行 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \" , ( restaurant ) cuisine equal_to \" 粤菜 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform metro_station equal_to \" 是 \" AGENT_ACTS: ( hotel ) recommend name equal_to \" 苏州慢享主题酒店 \" USER: 哦,他家的电话你有吗?我还有些事情要咨询。 <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州慢享主题酒店 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \" ( restaurant ) cuisine equal_to \" 粤菜 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 商务出行 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \" , phone_number equal_to \" \" , ( restaurant ) cuisine equal_to \" 粤菜 \" , name equal_to \" 臻品粤茶餐厅 \" , pricerange equal_to \" 中等 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , destination equal_to \" 厦门 \" <endofstate> <history> AGENT_ACTS: ( flight ) request date , request departure USER: 我下周一从上海走。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 上海 \" , destination equal_to \" 厦门 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , destination equal_to \" 厦门 \" , date equal_to \" 下周一 \" , departure equal_to \" 上海 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,正在做去苏州旅行的攻略,现在想找一个休闲度假类的三星酒店,要标准间。 <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 休闲度假 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \"",
+    "prediction": "( hotel ) city equal_to \" 苏州 \" , star equal_to \" 三星 \" , type equal_to \" 休闲度假 \" , room_type equal_to \" 标准间 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我孩子五年级,我想给他报个英语辅导班,上课时间最好是周日下午,方便我接送,帮忙推荐一个合适的班。 <endofhistory>",
+    "output": "( class ) day equal_to \" 日 \" , grade equal_to \" 五年级 \" , subject equal_to \" 英语 \" , time equal_to \" 下午 \"",
+    "prediction": "( class ) grade equal_to \" 五年级 \" , subject equal_to \" 英语 \" , time equal_to \" 周日下午 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 肿瘤科 \" , name equal_to \" 苏州市立医院 ( 东区 ) \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) recommend name equal_to \" 苏州市立医院 ( 东区 ) \" AGENT_ACTS: ( hospital ) inform DSA equal_to \" true \" USER: 那就好,什么时间去能挂号? <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 肿瘤科 \" , name equal_to \" 苏州市立医院 ( 东区 ) \"",
+    "prediction": "( hospital ) general_or_specialized equal_to \" 综合医院 \" , key_departments equal_to \" 肿瘤科 \" , name equal_to \" 苏州市立医院 ( 东区 ) \" , registration_time equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周二上午 \" , departure equal_to \" 广州 \" , destination equal_to \" 上海 \" <endofstate> <history> AGENT_ACTS: ( train ) inform train_number equal_to \" G86 ,广州南 - 上海虹桥 \" USER: 一等座多少钱呀? <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周二上午 \" , departure equal_to \" 广州 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 一等座 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周二上午 \" , departure equal_to \" 广州 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 一等座 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 90 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 喜剧片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) request type AGENT_ACTS: ( tv ) general USER: 太好了,片名是什么? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 90 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 喜剧片 \"",
+    "prediction": "( tv ) decade equal_to \" 90 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 喜剧片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 我是苏州人,但不怎么出去玩,朋友来苏州找我,准备带她逛逛山水景区,你能给我推荐一个消费便宜的地吗? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 便宜 \" , type equal_to \" 山水景区 \"",
+    "prediction": "( attraction ) area equal_to \" 苏州 \" , consumption equal_to \" 便宜 \" , type equal_to \" 山水景区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,周末在家无聊想找部好看的电视剧。你帮我找一部 2010 年代的港剧吧,爱情片。 <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 中国香港 \" , type equal_to \" 爱情片 \"",
+    "prediction": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 香港 \" , type equal_to \" 爱情片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \" <endofstate> <history> AGENT_ACTS_PREV: ( general ) general AGENT_ACTS: ( general ) general USER: 那必须的,那再见啦! <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \"",
+    "prediction": "( movie ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 恐怖片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" 高新区 \" , pricerange equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS: ( restaurant ) recommend name equal_to \" 巴蜀传香 \" USER: 忘了告诉你,找个能地铁直达的。 <endofhistory>",
+    "output": "( restaurant ) area equal_to \" 高新区 \" , metro_station equal_to \" 是 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( restaurant ) area equal_to \" 高新区 \" , pricerange equal_to \" 中等 \" , traffic_info equal_to \" 地铁直达 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) area equal_to \" 姑苏区 \" <endofstate> <history> AGENT_ACTS: ( hospital ) general USER: 那呼吸内科哪家医院更好? <endofhistory>",
+    "output": "( hospital ) area equal_to \" 姑苏区 \" , key_departments equal_to \" 呼吸内科 \"",
+    "prediction": "( hospital ) area equal_to \" 姑苏区 \" , key_departments equal_to \" 呼吸内科 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" 下周四 \" , departure equal_to \" 上海 \" , destination equal_to \" 深圳 \" , ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周一 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" 东方航空 MU5335 ,浦东国际机场 T1- 宝安国际机场 T3 \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 当天 11:50 \" , inform departure_time equal_to \" 当天 09:15 \" USER: 我知道了,谢谢你的帮助,再见。 <endofhistory>",
+    "output": "( flight ) date equal_to \" 下周四 \" , departure equal_to \" 上海 \" , destination equal_to \" 深圳 \" ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周一 \"",
+    "prediction": "( flight ) date equal_to \" 下周四 \" , departure equal_to \" 上海 \" , destination equal_to \" 深圳 \" , ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周一 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,工作原因要到吴中区出差,附近有带大床房的酒店么,便宜点的就行。 <endofhistory>",
+    "output": "( hotel ) area equal_to \" 吴中区 \" , pricerange equal_to \" 便宜 \" , room_type equal_to \" 大床房 \"",
+    "prediction": "( hotel ) area equal_to \" 吴中区 \" , room_type equal_to \" 大床房 \" , pricerange equal_to \" 便宜 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 商务出行 \" , star equal_to \" 4 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) request star AGENT_ACTS: ( hotel ) request room_type USER: 大床房。 <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 商务出行 \" , room_type equal_to \" 大床房 \" , star equal_to \" 4 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 商务出行 \" , star equal_to \" 4 \" , room_type equal_to \" 大床房 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" 南方航空 CZ3171 ,宝安国际机场 T3- 首都国际机场 T2 \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 当天 20:40 \" USER: 时间有点晚,它准时么,不会还要延误吧? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" , punctuality equal_to \" 未知 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" <endofstate> <history> AGENT_ACTS: ( attraction ) greeting , recommend name equal_to \" 拙政园 \" USER: 这里的评分多少? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" 高新区 \" , metro_station equal_to \" 是 \" , name equal_to \" 熬八年火锅 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) recommend name equal_to \" 熬八年火锅 \" AGENT_ACTS: ( restaurant ) inform metro_station equal_to \" 是 \" USER: 那就好,这家店具体在哪啊? <endofhistory>",
+    "output": "( restaurant ) area equal_to \" 高新区 \" , metro_station equal_to \" 是 \" , name equal_to \" 熬八年火锅 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( restaurant ) area equal_to \" 高新区 \" , metro_station equal_to \" 是 \" , name equal_to \" 熬八年火锅 \" , pricerange equal_to \" 偏贵 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" <endofstate> <history> AGENT_ACTS: ( flight ) recommend flight_information equal_to \" 南方航空 CZ3171 ,宝安国际机场 T3- 首都国际机场 T2 \" USER: 行,我经常坐南方航空的飞机,告诉我它的起飞时间吧 ! <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" , airline equal_to \" 南方航空 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" 东方航空 MU5132 ,首都国际机场 T2- 白云国际机场 T1 \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 当天 11:10 \" , inform punctuality_rate equal_to \" 98.26% \" USER: 嗯,不错。那到广州的时间是几点? <endofhistory>",
+    "output": "( flight ) date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \"",
+    "prediction": "( flight ) date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \" , arrival_time equal_to \" 14:30 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,请帮我看看下周四从广州到厦门的航班有哪个呢?我要和女友去玩玩,哈。 <endofhistory>",
+    "output": "( flight ) date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \"",
+    "prediction": "( flight ) date equal_to \" 下周四 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我和朋友来苏州出差,请问圆融时代广场电话多少? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 圆融时代广场 \"",
+    "prediction": "( attraction ) name equal_to \" 圆融时代广场 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , type equal_to \" 水乡古镇 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) request type AGENT_ACTS: ( attraction ) recommend name equal_to \" 山塘街 \" USER: 行啊,这个景点的评分高吗? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , type equal_to \" 水乡古镇 \" , name equal_to \" 山塘街 \" ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州吴宫泛太平洋酒店 \" , pricerange equal_to \" 偏贵 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \" , ( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周四 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" 南方航空 CZ3741 ,白云国际机场 T2- 高崎国际机场 T3 \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 当天 13:30 \" , inform departure_time equal_to \" 当天 12:10 \" USER: 好的,我明白啦。太感谢你了。再见哦。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \" ( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周四 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \" , ( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周四 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 想问一下苏州工业园区附近有价格适中、地铁直达的饭店吗? <endofhistory>",
+    "output": "( restaurant ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , pricerange equal_to \" 中等 \"",
+    "prediction": "( restaurant ) area equal_to \" 工业园区 \" , pricerange equal_to \" 中等 \" , traffic_info equal_to \" 地铁直达 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 武汉 \" , date equal_to \" 下周一 \" <endofstate> <history> AGENT_ACTS: ( weather ) inform wind equal_to \" 东风 2 级 \" USER: 那天武汉的天气情况如何呢? <endofhistory>",
+    "output": "( weather ) city equal_to \" 武汉 \" , date equal_to \" 下周一 \"",
+    "prediction": "( weather ) city equal_to \" 武汉 \" , date equal_to \" 下周一 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州金陵南林饭店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 4 \" , ( restaurant ) area equal_to \" 姑苏区 \" , cuisine equal_to \" 江浙菜 \" , name equal_to \" 松鹤楼 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform score equal_to \" 4.7 \" AGENT_ACTS: ( hotel ) inform address equal_to \" 苏州姑苏区十全街滚绣坊 20 号 \" USER: 今天幸亏有你帮忙,谢谢啦!再见! <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \" ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州金陵南林饭店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 4 \" ( restaurant ) area equal_to \" 姑苏区 \" , cuisine equal_to \" 江浙菜 \" , name equal_to \" 松鹤楼 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \" , name equal_to \" 拙政园 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州金陵南林饭店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 4 \" , ( restaurant ) area equal_to \" 姑苏区 \" , cuisine equal_to \" 江浙菜 \" , name equal_to \" 松鹤楼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) name equal_to \" 苏州金鸡湖新罗酒店 \" , room_type equal_to \" 标准间 \" , ( restaurant ) name equal_to \" 农乐园炭火烤肉 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) general , inform room_charge equal_to \" 640 元 \" AGENT_ACTS: ( hotel ) inform address equal_to \" 苏州工业园区旺墩路现代休闲广场 \" USER: 那这个酒店的停车场是免费使用的吗? <endofhistory>",
+    "output": "( hotel ) name equal_to \" 苏州金鸡湖新罗酒店 \" , room_type equal_to \" 标准间 \" ( restaurant ) name equal_to \" 农乐园炭火烤肉 \"",
+    "prediction": "( hotel ) name equal_to \" 苏州金鸡湖新罗酒店 \" , room_type equal_to \" 标准间 \" , parking equal_to \" unknown \" , ( restaurant ) name equal_to \" 农乐园炭火烤肉 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 动车 \" , date equal_to \" 下周五上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" , ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周五 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform arrival_time equal_to \" 当天 18:37 \" , inform departure_time equal_to \" 当天 10:16 \" AGENT_ACTS: ( weather ) inform weather_condition equal_to \" 小雨 \" USER: 谢谢,没有其它问题了,感谢你的服务。再见! <endofhistory>",
+    "output": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周五上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周五 \"",
+    "prediction": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周五上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" , ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周五 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我在考虑买辆汽车,最好是中小型的 SUV ,两驱的吧,麻烦你帮我找一款。 <endofhistory>",
+    "output": "( car ) 4WD equal_to \" 两驱 \" , classification equal_to \" SUV \" , size equal_to \" 中小型 \"",
+    "prediction": "( car ) classification equal_to \" SUV \" , size equal_to \" 中小型 \" , drive equal_to \" 两驱 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 下周我要去杭州出差,想提前了解一下那边的天气情况,麻烦你帮我查一下下周二杭州的温度好吧! <endofhistory>",
+    "output": "( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周二 \"",
+    "prediction": "( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周二 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州永顺快捷酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 1 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" 苏州永顺快捷酒店 \" AGENT_ACTS: ( hotel ) inform parking equal_to \" 收费 \" USER: 地址在哪? <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州永顺快捷酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 1 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 商务出行 \" , name equal_to \" 苏州永顺快捷酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 1 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \" , ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周二 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform tamperature equal_to \" 最高温度 11 摄氏度,最低温度 0 摄氏度 \" , inform weather_condition equal_to \" 晴 \" AGENT_ACTS: ( train ) USER: 我想要二等座。 <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \" , seat_type equal_to \" 二等座 \" ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周二 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周二下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \" , seat_type equal_to \" 二等座 \" ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周二 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 日本 \" , type equal_to \" 喜剧片 \" <endofstate> <history> AGENT_ACTS_PREV: ( tv ) inform director equal_to \" 福田雄一 \" AGENT_ACTS: ( tv ) inform name_list equal_to \" 贺来贤人 / 伊藤健太郎 / 清野菜名 \" USER: 播完一集需要 1 小时吗? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 日本 \" , star equal_to \" 贺来贤人 \" , type equal_to \" 喜剧片 \"",
+    "prediction": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 日本 \" , type equal_to \" 喜剧片 \" , duration equal_to \" 1 小时 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 印度 \" , type equal_to \" 科幻片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform release_date equal_to \" 2006-06-23( 印度 ) \" AGENT_ACTS: ( movie ) inform film_length equal_to \" 185 分钟 \" USER: 这部剧的主演都有些谁? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 印度 \" , type equal_to \" 科幻片 \"",
+    "prediction": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 印度 \" , type equal_to \" 科幻片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 动车 \" , date equal_to \" 下周一上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" , ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周一 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform arrival_time equal_to \" 当天 18:37 \" , inform departure_time equal_to \" 当天 10:16 \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" 最高温度 10 摄氏度,最低温度 1 摄氏度 \" , inform weather_condition equal_to \" 晴 \" USER: 如果我改在下周五上午的动车有哪个? <endofhistory>",
+    "output": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周五上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周一 \"",
+    "prediction": "( train ) classification equal_to \" 动车 \" , date equal_to \" 下周五上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 上海 \" , seat_type equal_to \" 二等座 \" ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周一 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) general_or_specialized equal_to \" 专科医院 \" , key_departments equal_to \" 精神心理科 \" , name equal_to \" 苏州市广济医院 \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) inform CT equal_to \" true \" AGENT_ACTS: ( hospital ) inform address equal_to \" 广前路 11 号 \" USER: 知道,不过平时不太注意,好了,谢谢你。 <endofhistory>",
+    "output": "( hospital ) general_or_specialized equal_to \" 专科医院 \" , key_departments equal_to \" 精神心理科 \" , name equal_to \" 苏州市广济医院 \"",
+    "prediction": "( hospital ) general_or_specialized equal_to \" 专科医院 \" , key_departments equal_to \" 精神心理科 \" , name equal_to \" 苏州市广济医院 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我想买一辆进口大众的 SUV , 4 个人坐,能推荐一辆吗? <endofhistory>",
+    "output": "( car ) brand equal_to \" 进口大众 \" , classification equal_to \" SUV \" , number_of_seats equal_to \" 4 \"",
+    "prediction": "( car ) brand equal_to \" 大众 \" , classification equal_to \" SUV \" , import_or_domestic equal_to \" 进口 \" , seating_capacity equal_to \" 4 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 成都 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform punctuality_rate equal_to \" 98.32% \" AGENT_ACTS: ( flight ) inform flight_information equal_to \" 中国国航 CA4592 ,浦东国际机场 T2- 双流国际机场 T2 \" USER: 哦,那这天的出发时间呢? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 成都 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 成都 \" , departure_time equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 拙政园 \" , the_most_suitable_people equal_to \" 家庭亲子 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 2 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform score equal_to \" 4.5 \" AGENT_ACTS: ( general ) general USER: 再见。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 拙政园 \" , the_most_suitable_people equal_to \" 家庭亲子 \" ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 2 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 拙政园 \" , the_most_suitable_people equal_to \" 家庭亲子 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , room_type equal_to \" 大床房 \" , star equal_to \" 2 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 同里古镇 \" AGENT_ACTS: ( attraction ) inform ticket_price equal_to \" 100 元 \" USER: 价格还行,他们家地址在哪里呢? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \"",
+    "prediction": "( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform features equal_to \" 山体与江南园林风光相融,精致秀美,了解春秋旧事,观虎丘斜塔。 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65323488 \" USER: 谢谢。 <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \"",
+    "prediction": "( attraction ) consumption equal_to \" 中等 \" , name equal_to \" 虎丘景区 \" , type equal_to \" 姑苏古迹 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 厦门 \" , destination equal_to \" 北京 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform ticket_price equal_to \" 8800 元 \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 当天 14:00 \" , inform departure_time equal_to \" 当天 11:00 \" USER: 知道了呢。下周二到北京不知道北京的风大吗? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 厦门 \" , destination equal_to \" 北京 \" ( weather ) city equal_to \" 北京 \" , date equal_to \" 下周二 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 厦门 \" , destination equal_to \" 北京 \" ( weather ) city equal_to \" 北京 \" , date equal_to \" 下周二 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,周末在家无聊,想找部好看的电视剧。你帮我找一部韩国的吧, 2010 年代的犯罪片。 <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 韩国 \" , type equal_to \" 犯罪片 \"",
+    "prediction": "( tv ) production_country_or_area equal_to \" 韩国 \" , decade equal_to \" 2010 年代 \" , type equal_to \" 犯罪片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( class ) area equal_to \" 吴中区 \" , day equal_to \" 日 \" , grade equal_to \" 四年级 \" , subject equal_to \" 语文 \" , time equal_to \" 下午 \" <endofstate> <history> AGENT_ACTS_PREV: ( class ) inform campus equal_to \" 吴中大厦 \" , inform teacher equal_to \" 陈梦雪 \" AGENT_ACTS: ( class ) inform price equal_to \" 1600 \" , inform start_date equal_to \" 2020 年 4 月 19 日 \" USER: 好的,谢谢你啊,我在看看吧,再见。 <endofhistory>",
+    "output": "( class ) area equal_to \" 吴中区 \" , day equal_to \" 日 \" , grade equal_to \" 四年级 \" , subject equal_to \" 语文 \" , time equal_to \" 下午 \"",
+    "prediction": "( class ) area equal_to \" 吴中区 \" , day equal_to \" 日 \" , grade equal_to \" 四年级 \" , subject equal_to \" 语文 \" , time equal_to \" 下午 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 我想买一辆汽油驱动的价格在 20-30 万之间的 SUV 。 <endofhistory>",
+    "output": "( car ) classification equal_to \" SUV \" , hybrid equal_to \" 汽油 \" , pricerange equal_to \" 20~30 \" , series equal_to \" T-ROC 探歌 \"",
+    "prediction": "( car ) classification equal_to \" SUV \" , hybrid equal_to \" 汽油 \" , pricerange equal_to \" 20-30 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 厦门 \" , ( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周一 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform departure_time equal_to \" 当天 10:05 \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 当天 12:00 \" USER: 好的好的,谢谢你啊,麻烦你了。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 厦门 \" ( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周一 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 厦门 \" , ( weather ) city equal_to \" 厦门 \" , date equal_to \" 下周一 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform arrival_time equal_to \" 当天 13:30 \" AGENT_ACTS: ( general ) general USER: 再见。 <endofhistory>",
+    "output": "( flight ) date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \"",
+    "prediction": "( flight ) date equal_to \" 下周六 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 吴江 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform name equal_to \" 同里月上酒店 \" AGENT_ACTS: ( hotel ) inform room_charge equal_to \" 328 元 \" USER: 价格还可以,帮我查一下电话号码吧。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" ( hotel ) area equal_to \" 吴江 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \"",
+    "prediction": "( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 同里古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 吴江 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \" , name equal_to \" 同里月上酒店 \" , room_charge equal_to \" 328 元 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,下周要去深圳出差,有合适的火车吗? <endofhistory>",
+    "output": "( train ) destination equal_to \" 深圳 \"",
+    "prediction": "( train ) destination equal_to \" 深圳 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 南京 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" 东方航空 MU2882 ,浦东国际机场 T1- 禄口国际机场 T2 \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 当天 23:05 \" USER: 几点能到南京呢? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 南京 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 南京 \" , arrival_time equal_to \" 未知 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 喜剧片 \" <endofstate> <history> AGENT_ACTS: ( tv ) recommend title equal_to \" 生活大爆炸第十二季 \" USER: 这部剧是什么时间首播的? <endofhistory>",
+    "output": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 喜剧片 \"",
+    "prediction": "( tv ) decade equal_to \" 2010 年代 \" , production_country_or_area equal_to \" 美国 \" , type equal_to \" 喜剧片 \" , first_broadcast equal_to \" 未知 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , pricerange equal_to \" 便宜 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 山塘街 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 0512-65314467 \" USER: 他们家是否地铁直达呢? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , pricerange equal_to \" 便宜 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 山塘街 \" , type equal_to \" 水乡古镇 \" , ( hotel ) area equal_to \" 姑苏区 \" , name equal_to \" 速 8 酒店 \" , pricerange equal_to \" 便宜 \" , ( metro ) destination equal_to \" 山塘街 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 广州 \" , ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) recommend flight_information equal_to \" 上海航空 FM9309 ,虹桥国际机场 T2- 白云国际机场 T1 \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 当天 13:30 \" USER: 到达目的地的时间是几点呢? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 广州 \" ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周二 \" , departure equal_to \" 上海 \" , destination equal_to \" 广州 \" , ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周日 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( car ) series equal_to \" 朗逸 \" <endofstate> <history> AGENT_ACTS_PREV: ( car ) inform price equal_to \" 14.69 \" AGENT_ACTS: ( car ) inform heated_seats equal_to \" false \" , inform ventilated_seats equal_to \" false \" USER: 定速巡航有没有呢? <endofhistory>",
+    "output": "( car ) series equal_to \" 朗逸 \"",
+    "prediction": "( car ) series equal_to \" 朗逸 \" , cruise_control equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周六下午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 杭州 \" , ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周六 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) recommend train_number equal_to \" G1656 ,厦门北 - 杭州东 \" AGENT_ACTS: ( train ) inform departure_time equal_to \" 当天 14:10 \" USER: 最后再帮我确认一下下周六杭州的天气吧 ! <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周六下午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 杭州 \" ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周六 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周六下午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 杭州 \" ( weather ) city equal_to \" 杭州 \" , date equal_to \" 下周六 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 偏贵 \" , metro_station equal_to \" 是 \" , name equal_to \" 金鸡湖景区 \" , ( hotel ) area equal_to \" 工业园区 \" , star equal_to \" 3 \" , ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 江浙菜 \" , name equal_to \" 得月楼 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform phone_number equal_to \" 0512-62656999 \" AGENT_ACTS: ( hotel ) recommend name equal_to \" 沃姆精品酒店 \" USER: 这家酒店有标准间吗? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 偏贵 \" , metro_station equal_to \" 是 \" , name equal_to \" 金鸡湖景区 \" ( hotel ) area equal_to \" 工业园区 \" , name equal_to \" 沃姆精品酒店 \" , star equal_to \" 3 \" ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 江浙菜 \" , name equal_to \" 得月楼 \"",
+    "prediction": "( hotel ) area equal_to \" 工业园区 \" , star equal_to \" 3 \" , room_type equal_to \" 标准间 \" ( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 偏贵 \" , metro_station equal_to \" 是 \" , name equal_to \" 金鸡湖景区 \" , ( restaurant ) area equal_to \" 工业园区 \" , cuisine equal_to \" 江浙菜 \" , name equal_to \" 得月楼 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hospital ) area equal_to \" 姑苏区 \" , general_or_specialized equal_to \" 专科医院 \" , name equal_to \" 苏州市中医医院 \" , public_or_private equal_to \" 公立医院 \" <endofstate> <history> AGENT_ACTS_PREV: ( hospital ) recommend name equal_to \" 苏州市中医医院 \" AGENT_ACTS: ( hospital ) inform address equal_to \" 吴中西路 889 号 \" USER: 医院的挂号时间也不知道。 <endofhistory>",
+    "output": "( hospital ) area equal_to \" 姑苏区 \" , general_or_specialized equal_to \" 专科医院 \" , name equal_to \" 苏州市中医医院 \" , public_or_private equal_to \" 公立医院 \"",
+    "prediction": "( hospital ) area equal_to \" 姑苏区 \" , general_or_specialized equal_to \" 专科医院 \" , name equal_to \" 苏州市中医医院 \" , public_or_private equal_to \" 公立医院 \" , registration_time equal_to \" 不详 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 昆山 \" , name equal_to \" 周庄多瓦台临河客栈 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) recommend name equal_to \" 周庄多瓦台临河客栈 \" AGENT_ACTS: ( hotel ) inform phone_number equal_to \" 181-3619-1632 \" USER: 好的,那这个酒店的评分高不高呢? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" ( hotel ) area equal_to \" 昆山 \" , name equal_to \" 周庄多瓦台临河客栈 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \"",
+    "prediction": "( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 昆山 \" , name equal_to \" 周庄多瓦台临河客栈 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好,我是北京人,下周准备去杭州旅游,请帮我找一班下周一下午的高铁,车票我要二等座的。 <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周一下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \" , seat_type equal_to \" 二等座 \"",
+    "prediction": "( train ) departure equal_to \" 北京 \" , destination equal_to \" 杭州 \" , date equal_to \" 下周一 \" , time equal_to \" 下午 \" , seat_type equal_to \" 二等座 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 我是上海人,想去北京旅游,能不能帮我找一班下周一下午的高铁?车票要二等座。 <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周一下午 \" , departure equal_to \" 上海 \" , destination equal_to \" 北京 \" , seat_type equal_to \" 二等座 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周一 \" , departure equal_to \" 上海 \" , destination equal_to \" 北京 \" , seat_type equal_to \" 二等座 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 苏州乐园森林水世界 \" , type equal_to \" 游乐场 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 苏州乐园森林水世界 \" AGENT_ACTS: ( attraction ) inform features equal_to \" 各项水上娱乐项目皆具森林特色,被赋予森林主题,让人身处浩瀚森林又能享受到海洋般的舒爽水游乐 \" USER: 太好了。坐地铁可以直接到吗? <endofhistory>",
+    "output": "( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 苏州乐园森林水世界 \" , type equal_to \" 游乐场 \"",
+    "prediction": "( attraction ) consumption equal_to \" 偏贵 \" , name equal_to \" 苏州乐园森林水世界 \" , type equal_to \" 游乐场 \" , public_transportation equal_to \" 地铁 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" , ( restaurant ) area equal_to \" 吴江 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform address equal_to \" 苏州市吴江区同里古镇 \" , inform phone_number equal_to \" 0512-63325728 \" AGENT_ACTS: ( restaurant ) recommend name equal_to \" 重庆德庄火锅直营店 \" USER: 这家人均消费大概多少,有啥推荐菜么? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" ( restaurant ) area equal_to \" 吴江 \" , name equal_to \" 重庆德庄火锅直营店 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( attraction ) area equal_to \" 吴江 \" , consumption equal_to \" 偏贵 \" ( restaurant ) area equal_to \" 吴江 \" , pricerange equal_to \" 偏贵 \" , name equal_to \" 重庆德庄火锅直营店 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 乐乐茶 \" , pricerange equal_to \" 便宜 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform per_capita_consumption equal_to \" 44 元 \" AGENT_ACTS: ( restaurant ) inform dishes equal_to \" 星空流沙软包 \" USER: 那这家餐厅能地铁直达哇。 <endofhistory>",
+    "output": "( restaurant ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 乐乐茶 \" , pricerange equal_to \" 便宜 \"",
+    "prediction": "( restaurant ) area equal_to \" 工业园区 \" , metro_station equal_to \" 是 \" , name equal_to \" 乐乐茶 \" , pricerange equal_to \" 便宜 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 印度 \" , type equal_to \" 科幻片 \" <endofstate> <history> AGENT_ACTS_PREV: ( movie ) inform title equal_to \" 印度超人 \" AGENT_ACTS: ( movie ) inform release_date equal_to \" 2006-06-23( 印度 ) \" USER: 哦,片长时多长时间了? <endofhistory>",
+    "output": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 印度 \" , type equal_to \" 科幻片 \"",
+    "prediction": "( movie ) decade equal_to \" 2000 年代 \" , production_country_or_area equal_to \" 印度 \" , type equal_to \" 科幻片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 苏州 \" , date equal_to \" 下周五 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform weather_condition equal_to \" 阴转小雨 \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" 最高温度 15 摄氏度,最低温度 8 摄氏度 \" USER: 当地紫外线强度如何? <endofhistory>",
+    "output": "( weather ) city equal_to \" 苏州 \" , date equal_to \" 下周五 \"",
+    "prediction": "( weather ) city equal_to \" 苏州 \" , date equal_to \" 下周五 \" , ultraviolet_intensity equal_to \" 不详 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我身体有些不适,想去苏州市广济医院看一下,能帮我查一下都几路公交能到这家医院么? <endofhistory>",
+    "output": "( hospital ) name equal_to \" 苏州市广济医院 \"",
+    "prediction": "( hospital ) name equal_to \" 苏州市广济医院 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我考虑买一辆中小型的 SUV ,请问有什么好的推荐吗? <endofhistory>",
+    "output": "( car ) classification equal_to \" SUV \" , size equal_to \" 中小型 \"",
+    "prediction": "( car ) classification equal_to \" 中小型 SUV \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周二 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" 很强 \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" 最高温度 17 摄氏度,最低温度 7 摄氏度 \" USER: 再帮我看看那天是什么天气吧 ! <endofhistory>",
+    "output": "( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周二 \"",
+    "prediction": "( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周二 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 杭州 \" , destination equal_to \" 深圳 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) request flight_information AGENT_ACTS: ( flight ) request departure_time USER: 那到达时间呢? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 杭州 \" , destination equal_to \" 深圳 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 杭州 \" , destination equal_to \" 深圳 \" , arrival_time equal_to \" unknown \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 北京 \" , date equal_to \" 下周日 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" 强 \" AGENT_ACTS: ( weather ) inform tamperature equal_to \" 最高温度 9 摄氏度,最低温度 -2 摄氏度 \" USER: 天气呢? <endofhistory>",
+    "output": "( weather ) city equal_to \" 北京 \" , date equal_to \" 下周日 \"",
+    "prediction": "( weather ) city equal_to \" 北京 \" , date equal_to \" 下周日 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( weather ) city equal_to \" 上海 \" , date equal_to \" 下周三 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) request UV_intensity AGENT_ACTS: ( weather ) request wind USER: 好的,谢谢你啦,拜拜。 <endofhistory>",
+    "output": "( weather ) city equal_to \" 上海 \" , date equal_to \" 下周三 \"",
+    "prediction": "( weather ) city equal_to \" 上海 \" , date equal_to \" 下周三 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 头等舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 上海 \" , destination equal_to \" 北京 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" 东方航空 MU5101 ,虹桥国际机场 T2- 首都国际机场 T2 \" AGENT_ACTS: ( flight ) inform departure_time equal_to \" 当天 08:00 \" USER: 那时候到达啊?我到了北京后还得着急开会呢。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 头等舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 上海 \" , destination equal_to \" 北京 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 头等舱 \" , date equal_to \" 下周六 \" , departure equal_to \" 上海 \" , destination equal_to \" 北京 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周三上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 成都 \" , seat_type equal_to \" 一等座 \" , ( weather ) city equal_to \" 成都 \" , date equal_to \" 下周五 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) recommend train_number equal_to \" G2278 \" AGENT_ACTS: ( train ) general USER: 那下周三成都是晴天吗? <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周三上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 成都 \" , seat_type equal_to \" 一等座 \" ( weather ) city equal_to \" 成都 \" , date equal_to \" 下周三 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周三上午 \" , departure equal_to \" 厦门 \" , destination equal_to \" 成都 \" , seat_type equal_to \" 一等座 \" , ( weather ) city equal_to \" 成都 \" , date equal_to \" 下周三 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 沃姆精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform parking equal_to \" 免费 \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.7 \" USER: 谢谢你的帮助,再见。 <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 沃姆精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \"",
+    "prediction": "( hotel ) hotel_type equal_to \" 休闲度假 \" , name equal_to \" 沃姆精品酒店 \" , room_type equal_to \" 标准间 \" , star equal_to \" 3 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( restaurant ) cuisine equal_to \" 火锅 \" , pricerange equal_to \" 偏贵 \" <endofstate> <history> AGENT_ACTS_PREV: ( restaurant ) inform per_capita_consumption equal_to \" 120 元 \" AGENT_ACTS: ( restaurant ) inform metro_station equal_to \" 否 \" USER: 能再帮我找找苏州这边偏贵的商务出行的酒店吗?要大床房。 <endofhistory>",
+    "output": "( hotel ) hotel_type equal_to \" 商务出行 \" , pricerange equal_to \" 偏贵 \" , room_type equal_to \" 大床房 \" ( restaurant ) cuisine equal_to \" 火锅 \" , pricerange equal_to \" 偏贵 \"",
+    "prediction": "( hotel ) area equal_to \" 苏州 \" , pricerange equal_to \" 偏贵 \" , room_type equal_to \" 大床房 \" ( restaurant ) cuisine equal_to \" 火锅 \" , pricerange equal_to \" 偏贵 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 金鸡湖景区 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 全天 \" AGENT_ACTS: ( attraction ) inform phone_number equal_to \" 400-7558558 \" USER: 好的。对了,这附近,有没有好吃的餐馆啊? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 金鸡湖景区 \" ( restaurant ) area equal_to \" 工业园区 \"",
+    "prediction": "( restaurant ) area equal_to \" 工业园区 \" ( attraction ) area equal_to \" 工业园区 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 金鸡湖景区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 商用电脑 \" <endofstate> <history> AGENT_ACTS: ( pc ) request memory_capacity USER: 内存希望 8GB 的。 <endofhistory>",
+    "output": "( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 商用电脑 \"",
+    "prediction": "( pc ) pricerange equal_to \" 5000 到 10000 \" , usage equal_to \" 商用电脑 \" , memory_capacity equal_to \" 8GB \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 深圳 \" , destination equal_to \" 成都 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform flight_information equal_to \" 海南航空 HU7393 ,宝安国际机场 T3- 萧山国际机场 T3 \" , inform ticket_price equal_to \" 3300 元 \" AGENT_ACTS: ( flight ) inform ticket_price equal_to \" 4690 元 \" , recommend flight_information equal_to \" 海南航空 HU7751 ,宝安国际机场 T3- 双流国际机场 T2 \" USER: 好的,谢谢你的帮助,再见。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 深圳 \" , destination equal_to \" 成都 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周日 \" , departure equal_to \" 深圳 \" , destination equal_to \" 成都 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州博物馆 \" , the_most_suitable_people equal_to \" 朋友出游 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) inform opening_hours equal_to \" 09:00-17:00 \" AGENT_ACTS: ( attraction ) inform features equal_to \" 贝聿铭设计的新馆清新雅致,欣赏镇馆之宝越窑秘色瓷莲花碗 \" USER: 听起来还不错,我想找个区域附近的一星级酒店。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州博物馆 \" , the_most_suitable_people equal_to \" 朋友出游 \" ( hotel ) area equal_to \" 姑苏区 \" , star equal_to \" 1 \"",
+    "prediction": "( hotel ) area equal_to \" 姑苏区 \" , stars equal_to \" 一星级 \" ( attraction ) area equal_to \" 姑苏区 \" , name equal_to \" 苏州博物馆 \" , the_most_suitable_people equal_to \" 朋友出游 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 我合计下周去北京玩,你帮看看深圳到北京的航班呗? <endofhistory>",
+    "output": "( flight ) departure equal_to \" 深圳 \" , destination equal_to \" 北京 \"",
+    "prediction": "( flight ) departure equal_to \" 深圳 \" , destination equal_to \" 北京 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周四下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 成都 \" , seat_type equal_to \" 一等座 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform ticket_price equal_to \" 1246.0 元 \" AGENT_ACTS: ( train ) inform departure_time equal_to \" 当天 15:13 \" USER: 那什么时候能到成都? <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周四下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 成都 \" , seat_type equal_to \" 一等座 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周四下午 \" , departure equal_to \" 北京 \" , destination equal_to \" 成都 \" , seat_type equal_to \" 一等座 \" , arrival_time equal_to \" 当天 22:36 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 您好,我想找一部中国大陆 90 年代的动作片电影。 <endofhistory>",
+    "output": "( movie ) decade equal_to \" 90 年代 \" , production_country_or_area equal_to \" 中国大陆 \" , type equal_to \" 动作片 \"",
+    "prediction": "( movie ) production_country_or_area equal_to \" 中国大陆 \" , decade equal_to \" 1990 年代 \" , type equal_to \" 动作片 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我们出差来苏州,抽空想去苏州太湖国家湿地公园转转,你帮我们查一下票价好吗? <endofhistory>",
+    "output": "( attraction ) name equal_to \" 苏州太湖国家湿地公园 \"",
+    "prediction": "( attraction ) name equal_to \" 苏州太湖国家湿地公园 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我们来苏州旅游,请你帮我在姑苏区找个消费水平中等的景点。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \"",
+    "prediction": "( attraction ) area equal_to \" 姑苏区 \" , consumption equal_to \" 中等 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) date equal_to \" 下周四 \" , destination equal_to \" 广州 \" <endofstate> <history> AGENT_ACTS: ( flight ) request departure USER: 我从北京出发,对了,我要公务舱,麻烦帮我推荐一下。 <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 北京 \" , destination equal_to \" 广州 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( pc ) computer_type equal_to \" 笔记本 \" <endofstate> <history> AGENT_ACTS: ( pc ) request brand USER: 宏碁。 <endofhistory>",
+    "output": "( pc ) brand equal_to \" 宏碁 \" , computer_type equal_to \" 笔记本 \"",
+    "prediction": "( pc ) computer_type equal_to \" 笔记本 \" , brand equal_to \" 宏碁 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \" <endofstate> <history> AGENT_ACTS_PREV: ( flight ) inform departure_time equal_to \" 当天 11:10 \" AGENT_ACTS: ( flight ) inform arrival_time equal_to \" 当天 13:30 \" USER: 票价是多少 ? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 经济舱 \" , date equal_to \" 下周一 \" , departure equal_to \" 北京 \" , destination equal_to \" 杭州 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我孩子五年级,我想给他报个语文辅导班,上课时间最好是周六或周日上午下午,上课地点最好在园区或姑苏区,方便我接送,帮忙推荐一个合适的班。 <endofhistory>",
+    "output": "( class ) area equal_to \" 园区 \" , day equal_to \" 六 \" , grade equal_to \" 五年级 \" , subject equal_to \" 语文 \"",
+    "prediction": "( class ) grade equal_to \" 五年级 \" , subject equal_to \" 语文 \" , time equal_to \" 周六或周日上午下午 \" , area equal_to \" 园区或姑苏区 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> null <endofstate> <history> USER: 你好,我下礼拜想去广州去耍一耍,能不能给我查查下周日成都飞广州的航班啊? <endofhistory>",
+    "output": "( flight ) date equal_to \" 下周日 \" , departure equal_to \" 成都 \" , destination equal_to \" 广州 \"",
+    "prediction": "( flight ) date equal_to \" 下周日 \" , departure equal_to \" 成都 \" , destination equal_to \" 广州 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 昆山 \" , name equal_to \" 周庄多瓦台临河客栈 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \" <endofstate> <history> AGENT_ACTS_PREV: ( hotel ) inform phone_number equal_to \" 181-3619-1632 \" AGENT_ACTS: ( hotel ) inform score equal_to \" 4.8 \" USER: 太好了,我很满意,谢谢你了,再见。 <endofhistory>",
+    "output": "( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" ( hotel ) area equal_to \" 昆山 \" , name equal_to \" 周庄多瓦台临河客栈 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \"",
+    "prediction": "( attraction ) area equal_to \" 昆山 \" , consumption equal_to \" 偏贵 \" , name equal_to \" 周庄古镇 \" , the_most_suitable_people equal_to \" 朋友出游 \" , ( hotel ) area equal_to \" 昆山 \" , name equal_to \" 周庄多瓦台临河客栈 \" , pricerange equal_to \" 中等 \" , room_type equal_to \" 大床房 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" , ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周四 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform UV_intensity equal_to \" 弱 \" , inform tamperature equal_to \" 最高温度 20 摄氏度,最低温度 14 摄氏度 \" AGENT_ACTS: ( flight ) inform flight_information equal_to \" 南方航空 CZ3171 ,宝安国际机场 T3- 首都国际机场 T2 \" USER: 这趟航班的票价是多少呢? <endofhistory>",
+    "output": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周四 \"",
+    "prediction": "( flight ) class_cabin equal_to \" 公务舱 \" , date equal_to \" 下周四 \" , departure equal_to \" 深圳 \" , destination equal_to \" 北京 \" , price equal_to \" unknown \" ( weather ) city equal_to \" 深圳 \" , date equal_to \" 下周四 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周五下午 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \" , seat_type equal_to \" 一等座 \" , ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周五 \" <endofstate> <history> AGENT_ACTS_PREV: ( train ) inform departure_time equal_to \" 当天 14:54 \" AGENT_ACTS: ( train ) inform duration equal_to \" 4 小时 27 分 \" USER: 好的。没有其它问题了,感谢你的服务。再见! <endofhistory>",
+    "output": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周五下午 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \" , seat_type equal_to \" 一等座 \" ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周五 \"",
+    "prediction": "( train ) classification equal_to \" 高铁 \" , date equal_to \" 下周五下午 \" , departure equal_to \" 广州 \" , destination equal_to \" 厦门 \" , seat_type equal_to \" 一等座 \" , ( weather ) city equal_to \" 广州 \" , date equal_to \" 下周五 \""
+  },
+  {
+    "instruction": "",
+    "input": "DST: <state> ( attraction ) area equal_to \" 高新区 \" , name equal_to \" 苏州太湖国家湿地公园 \" , the_most_suitable_people equal_to \" 家庭亲子 \" <endofstate> <history> AGENT_ACTS_PREV: ( attraction ) recommend name equal_to \" 苏州太湖国家湿地公园 \" AGENT_ACTS: ( attraction ) inform score equal_to \" 4.5 \" USER: 他家开放时间是什么时候? <endofhistory>",
+    "output": "( attraction ) area equal_to \" 高新区 \" , name equal_to \" 苏州太湖国家湿地公园 \" , the_most_suitable_people equal_to \" 家庭亲子 \"",
+    "prediction": "( attraction ) area equal_to \" 高新区 \" , name equal_to \" 苏州太湖国家湿地公园 \" , the_most_suitable_people equal_to \" 家庭亲子 \""
+  }
+]

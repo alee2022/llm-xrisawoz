@@ -1,0 +1,23 @@
+{{system_start}}Similar to the examples below, normalize the given belief state so that values for the following slots contain only among the following. Do not change the belief state if not necessary.
+{{header}}
+{{system_end}}
+
+{{user_start}}( movie ) production_country_or_area equal_to " télévision coréenne " , star equal_to " Cha Tae-hyun "{{user_end}}
+{{assistant_start}}( movie ) production_country_or_area equal_to " Corée " , star equal_to " Cha Tae-hyun "{{assistant_end}}
+
+{{user_start}}( tv ) production_country_or_area equal_to " Amérique " , type equal_to " les séries télé scientifiques "{{user_end}}
+{{assistant_start}}( tv ) production_country_or_area equal_to " Amérique " , type equal_to " science-fiction "{{assistant_end}}
+
+{{user_start}}( restaurant ) cuisine equal_to " sud-coréennes " , pricerange equal_to " pas trop chers "{{user_end}}
+{{assistant_start}}( restaurant ) cuisine equal_to " cuisine sud-coréenne " , pricerange equal_to " modérée "{{assistant_end}}
+
+{{user_start}}( flight ) class_cabin equal_to " économique " , date equal_to " mercredi prochain " , departure equal_to " Shanghaï " , destination equal_to " Chengdu "{{user_end}}
+{{assistant_start}}( flight ) class_cabin equal_to " classe économique " , date equal_to " mercredi prochain " , departure equal_to " Shanghaï " , destination equal_to " Chengdu "{{assistant_end}}
+
+{{user_start}}( hotel ) area equal_to " Changshu " , name equal_to " L'hôtel Vienna " , room_type equal_to " une chambre standard " , star equal_to " 3 "{{user_end}}
+{{assistant_start}}( hotel ) area equal_to " Changshu " , name equal_to " L'hôtel Vienna " , room_type equal_to " chambre standard " , star equal_to " 3 "{{assistant_end}}
+
+{{user_start}}( pc ) memory_capacity equal_to " 16GB " , pricerange equal_to " 5,000 to 10,000 yuan " , usage equal_to " gaming laptop "{{user_end}}
+{{assistant_start}}( pc ) memory_capacity equal_to " 16GB " , pricerange equal_to " 5,000-10,000 " , usage equal_to " gaming laptop "{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

@@ -1,0 +1,21 @@
+{{system_start}}Given the provided information, respond to the user.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: 您好,能给我推荐点好看的日剧吗? <endofhistory>{{user_end}}
+{{assistant_start}}好的,您想看哪个时期的日剧呢?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " 拙政园 " <endofactions> <history> USER: 你好,最近朋友想来找我玩,姑苏区附近有没有消费水平中等的景点? <endofhistory>{{user_end}}
+{{assistant_start}}好的,跟朋友一起玩,给您推荐拙政园,这个景点是苏州园林的典型代表,离您家也近。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform business_hours equal_to " 周一至周日 09:00-07:00 " <endofactions> <history> USER: 好的,我记下了,能帮我查一下餐馆的营业时间吗? <endofhistory>{{user_end}}
+{{assistant_start}}可以,营业时间是周一至周日 09:00-07:00 。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) inform metro_station equal_to " 否 " <endofactions> <history> USER: 是不是地铁直达的呢? <endofhistory>{{user_end}}
+{{assistant_start}}抱歉,亲。不是地铁直达的。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) inform room_charge equal_to " 312 元 " <endofactions> <history> USER: 他家的大床房多钱? <endofhistory>{{user_end}}
+{{assistant_start}}房费是 312 元。{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: 好的,谢谢您的耐心解答,再见。 <endofhistory>{{user_end}}
+{{assistant_start}}不用客气的,希望您能喜欢我推荐的影视剧。{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

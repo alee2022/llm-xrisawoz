@@ -1,0 +1,20 @@
+[
+  {
+    "instruction": "",
+    "input": "null",
+    "output": "no",
+    "prediction": "It seems like there was no specific question or statement provided. If you have any inquiries or need assistance, feel free to ask!"
+  },
+  {
+    "instruction": "",
+    "input": "API: <knowledge> null <endofknowledge> <state> ( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들 \" , consumption equal_to \" 조금 비싼 \" <endofstate> <history> AGENT_ACTS: null USER: 쿤산시요. 친구들과 여행하기 좋은 장소면 조금 더 비싸도 괜찮아요. <endofhistory>",
+    "output": "yes",
+    "prediction": "yes"
+  },
+  {
+    "instruction": "",
+    "input": "API: <knowledge> ( attraction ) address \" 쑤저우시 쿤산시 저우좡 마을 촨푸로 43호 \" , area \" 쿤산시 \" , available_options \" 3 \" , consumption \" 조금 비싼 \" , features \" 그곳은 많은 작은 다리, 구불구불한 수로, 쌍교와 중국 전통 강 보트로 유명합니다. 또한 심만삼의 발자취를 따라 걸을 수 있습니다. \" , metro_station \" 없음 \" , name \" 저우좡 마을 \" , opening_hours \" 오전 7시 반부터 오후 6시 50분까지 \" , phone_number \" 400-8282900 \" , score \" 4.5점 \" , the_most_suitable_people \" 친구들 \" , ticket_price \" 100 위안 \" , type \" 수향마을 \" <endofknowledge> <state> ( attraction ) area equal_to \" 쿤산시 \" , the_most_suitable_people equal_to \" 친구들 \" , consumption equal_to \" 조금 더 비싼 \" <endofstate> <history> AGENT_ACTS_PREV: null AGENT_ACTS: ( attraction ) recommend name equal_to \" 저우좡 마을 \" USER: 그곳의 특별한 점은 무엇인가요? <endofhistory>",
+    "output": "yes",
+    "prediction": "no"
+  }
+]

@@ -1,0 +1,42 @@
+{{system_start}}Similar to the examples below, generate a response to user given action and history.{{system_end}}
+
+{{user_start}}RG: <actions> ( tv ) request decade <endofactions> <history> USER: Hi, can you recommend some fascinating Japanese TV shows? <endofhistory>{{user_end}}
+{{assistant_start}}Alright, a Japanese TV show from what period?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( movie ) request <endofactions> <history> USER: Thanks, could you recommend an Indian movie? <endofhistory>{{user_end}}
+{{assistant_start}}Ok, what kind of Indian movies do you normally like to watch?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( general ) bye <endofactions> <history> USER: Ok, thank you for your patience, bye, <endofhistory>{{user_end}}
+{{assistant_start}}You are welcome. Hope you enjoy my recommendations.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( attraction ) recommend name equal_to " Humble Administrator's Garden " <endofactions> <history> USER: Hi, my friends are coming to visit me. Are there any scenic areas near Gusu District that are not that expensive? <endofhistory>{{user_end}}
+{{assistant_start}}Alright, if you want to hang out with your friends, Humble Administrator's Garden is a nice place. It is a traditional Suzhou-style garden and also near to your home.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( restaurant ) inform cuisine equal_to " Jiangsu Zhejiang Cuisine " , recommend name equal_to " Banyuan Private Home Cuisine " <endofactions> <history> USER: Ok, we may spend the whole day together, can you recommend some a bit more expensive restaurants near here? <endofhistory>{{user_end}}
+{{assistant_start}}Well, Banyuan Private Home Cuisine is a good choice. It is a bit more expensive and serves Jiangsu Zhejiang Cuisine with local features.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( car ) recommend name equal_to " Volkswagen T-Cross with a 1.5 L petrol engine " <endofactions> <history> USER: Hello, I want to buy a gas-powered SUV, can you recommend one within 150,000 yuan? <endofhistory>{{user_end}}
+{{assistant_start}}Well, Volkswagen T-Cross with a 1.5 L petrol engine will suit your needs.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hotel ) recommend name equal_to " Womu Boutique Hotel " <endofactions> <history> USER: Wow, it is open all night, then we can stay a bit longer. Could you find a not that expensive hotel with standard rooms? <endofhistory>{{user_end}}
+{{assistant_start}}Womu Boutique Hotel would be a good choice.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( hospital ) recommend name equal_to " Suzhou Kowloon Hospital " <endofactions> <history> USER: Hi, my child doesn't feel well and I want to take her to a pediatric clinic. Which general hospital has a good pediatric clinic? <endofhistory>{{user_end}}
+{{assistant_start}}Hello, you can go to Suzhou Kowloon Hospital for a good pediatric clinic.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( weather ) inform wind equal_to " next Sunday in Xiamen " <endofactions> <history> USER: I will come to Xiamen next week for work but am still not sure which day I will set out, it depends on the weather. Could you help me check the wind force and direction for next Sunday? <endofhistory>{{user_end}}
+{{assistant_start}}Ok, it will be northeast force 2 next Sunday in Xiamen.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( flight ) recommend flight_information equal_to " HU7394 of Hainan Airlines from Terminal 3 of Hangzhou International Airport to Terminal 3 of Shenzhen Baoan International Airport " <endofactions> <history> USER: Hello, I'm going on a business trip next week. Please help me check the flights from Hangzhou to Shenzhen next Friday, preferably in economy class. <endofhistory>{{user_end}}
+{{assistant_start}}You can take flight HU7394 of Hainan Airlines from Terminal 3 of Hangzhou International Airport to Terminal 3 of Shenzhen Baoan International Airport.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( pc ) greeting , recommend product_name equal_to " Lenovo 7000 Xiaoxin Chao " <endofactions> <history> USER: Hello, I want to buy a 14-inch lightweight laptop from Lenovo, preferably with a memory capacity of 8GB. <endofhistory>{{user_end}}
+{{assistant_start}}Hi, I recommend Lenovo 7000 Xiaoxin Chao.{{assistant_end}}
+
+{{user_start}}RG: <actions> ( train ) request departure <endofactions> <history> USER: I will go on a business trip next week. Can you help me check if there are any high-speed trains to Xiamen next week? <endofhistory>{{user_end}}
+{{assistant_start}}From where will you depart?{{assistant_end}}
+
+{{user_start}}RG: <actions> ( class ) request subject <endofactions> <history> USER: Hello, my child is in sixth grade. Could you recommend a tutorial class for me? <endofhistory>{{user_end}}
+{{assistant_start}}Which subject's do you want your child to study?{{assistant_end}}
+
+{{user_start}}{{input_from_rg}}{{user_end}}

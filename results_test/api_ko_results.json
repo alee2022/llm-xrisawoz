@@ -1,0 +1,20 @@
+[
+  {
+    "instruction": "",
+    "input": "API: <knowledge> ( pc ) available_options \" 3 \" , brand \" 레노버 \" , colour \" 해당사항 없음 \" , computer_type \" 데스크톱 \" , cpu \" 인텔 코어 i5 \" , cpu_model \" 인텔 코어 i5-9400F \" , features \" 해당사항 없음 \" , game_performance \" 보급형 \" , gpu_category \" 개별 그래픽 카드 \" , gpu_model \" GT730 \" , hard_disk_capacity \" 256GB SSD + 1TB HDD \" , memory_capacity \" 8GB \" , operating_system \" 윈도우 10 \" , price \" 4,889위안 \" , pricerange \" 5,000에서 10,000 \" , product_name \" 레노버 티안이 510Pro \" , screen_size \" 23-25인치 \" , series \" 레노버 티안 \" , standby_time \" N/A \" , usage \" 사무용 \" , weight \" 7.48kg \" <endofknowledge> <state> ( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5,000에서 10,000 \" , usage equal_to \" 사무용 컴퓨터 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform hard_disk_capacity equal_to \" 256GB SSD + 1TB HDD \" , inform price equal_to \" 4,889위안 \" AGENT_ACTS: ( pc ) inform game_performance equal_to \" 보급형 \" USER: 네. 추천 정말 감사합니다. 고려해 볼게요. 안녕히 계세요! <endofhistory>",
+    "output": "no",
+    "prediction": "invalid domain"
+  },
+  {
+    "instruction": "",
+    "input": "API: <knowledge> ( pc ) available_options \" 7 \" , brand \" 레노버 \" , colour \" 해당사항 없음 \" , computer_type \" 데스크톱 \" , cpu \" 인텔 코어 i3 \" , cpu_model \" 인텔 코어 i3-9100 \" , features \" 해당사항 없음 \" , game_performance \" 보급형 \" , gpu_category \" 내장 그래픽 카드 \" , gpu_model \" 기타 \" , hard_disk_capacity \" 1TB HDD \" , memory_capacity \" 8GB \" , operating_system \" 윈도우 10 \" , price \" 2,889위안 \" , pricerange \" 5,000 미만 \" , product_name \" 레노버 티안이 510S \" , screen_size \" 20-21.5인치 \" , series \" 레노버 티안 \" , standby_time \" N/A \" , usage \" 사무용 \" , weight \" 5.875kg \" <endofknowledge> <state> ( pc ) memory_capacity equal_to \" 8GB \" , pricerange equal_to \" 5,000 미만 \" , usage equal_to \" 사무용 \" <endofstate> <history> AGENT_ACTS_PREV: ( pc ) inform operating_system equal_to \" 윈도우 10 \" AGENT_ACTS: ( pc ) inform colour equal_to \" 구체적인 설명은 없습니다 \" USER: 이 데스크톱의 성능이 게임하기에 적합한가요? <endofhistory>",
+    "output": "yes",
+    "prediction": "invalid domain"
+  },
+  {
+    "instruction": "",
+    "input": "API: <knowledge> ( weather ) available_options \" 1 \" , city \" 청두 \" , date \" 다음 주 금요일 \" , temperature \" 최고 기온은 섭씨 15도 그리고 최저 기온은 섭씨 7도입니다. \" , uv_intensity \" 보통 \" , weather_condition \" 구름만 많겠습니다 \" , wind \" 풍향이 없는 산들바람 \" <endofknowledge> <state> ( weather ) city equal_to \" 청두 \" , date equal_to \" 다음 주 금요일 \" <endofstate> <history> AGENT_ACTS_PREV: ( weather ) inform weather_condition equal_to \" 흐리겠습니다 \" AGENT_ACTS: ( weather ) inform temperature equal_to \" The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 4 degrees Celsius \" USER: 그러면 흐리고 15도니까 자외선 차단제는 필요 없겠죠? 자외선 강도를 확인해 주실 수 있나요? <endofhistory>",
+    "output": "yes",
+    "prediction": "invalid domain"
+  }
+]
